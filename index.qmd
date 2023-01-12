@@ -1,26 +1,35 @@
 ---
-title: "Introduction to Data Science Course Website"
+title: "Spatial Data Analysis"
 ---
 
 ## Course overview
 
-**Course overview from STA 199: Introduction to Data Science at Duke University**
+**Course overview from GEOG 385: Spatial Data Analysis at San Diego State University**
 
-Intro to data science and statistical thinking. Learn to explore, visualize,and analyze data to understand natural phenomena, investigate patterns, model outcomes,and make predictions, and do so in a reproducible and shareable manner. Gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, data visualization, and effectively communicating results. Work on problems and case studies inspired by and based on real-world questions and data. The course will focus on the R statistical computing language.
+
+The purpose of this course is to introduce you to methods of spatial
+data analysis. The focus is on both the conceptual and applied aspects
+of spatial statistical methods. We will place particular emphasis on
+the computational aspects of Exploratory Spatial Data Analysis (ESDA)
+methods for three diﬀerent types of spatial data: point processes,
+lattice, and geostatistical. We will also cover an introduction to
+regression analysis on spatially referenced data. Throughout the
+course you will gain valuable hands-on experience with several
+specialized software packages for spatial data analysis. The
+overriding goal of the course is for you to acquire familiarity with
+the fundamental methodological and operational issues in the
+statistical analysis of geographic information and the ability to
+extend these methods in your own research.
 
 ## Class meetings
 
 | Meeting | Location | Time                   |
 |---------|----------|------------------------|
-| Lecture | Room A   | Mon & Wed 10 - 11:15am |
-| Lab 01  | Room B   | Thu 10 - 11:15am       |
-| Lab 02  | Room C   | Thu 1:45 - 3pm         |
-| Lab 03  | Room D   | Thu 3:30 - 4:45pm      |
+| Lecture | GMCS 107 | Tue & Thu 2:00 - 3:15pm |
 
 ## Teaching team 
 
 | Name                 | Office hours   | Location   |
 |----------------------|----------------|------------|
-| Instructor           | Tue 2 - 3pm    | Office 123 |
-| Teaching Assistant 1 | Mon 5 - 7pm    | Zoom       |
-| Teaching Assistant 2 | Fri 11am - 1pm | Zoom       |
+| Instructor           | Tue 3:30 - 4:30pm    | PFSA 316G |
+| Teaching Assistant 1 | TBD    | Zoom       |

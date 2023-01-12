@@ -1,0 +1,261 @@
+---
+title: "Spatial Analysis"
+author: "Sergio Rey"
+date: "January 24, 2023"
+logo: "images/esda.png"
+format: 
+  revealjs:
+    theme: simple
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+---
+
+
+# Spatial Analysis
+<br/>
+
+::: {.incremental}
+- What is Spatial Analysis?
+- What is Exploratory Data Analysis?
+- What is Exploratory Spatial Data Analysis?
+:::
+
+# What is Spatial Analysis?
+
+
+## GIS Then
+
+![Snow Map](images/snowmap3.png){width=".85\\linewidth"}
+
+## GIS Now
+
+![Crime Map](images/crimemap.png){width=".85\\linewidth"}
+
+
+
+## GIS Functions
+
+Anselin-Getis (1992) Taxonomy
+
+-   Input
+
+-   Storage
+
+-   [Analysis]{.alert}
+
+-   Output
+
+Many other taxonomies
+
+## GIScience
+
+Goodchild (1992)
+
+-   cross-disciplinary
+
+-   central role for spatial analysis
+
+-   scientific *glue*
+
+
+## What is Spatial Analysis?
+
+From Data to Information
+
+-   *beyond* mapping
+
+-   added *value*
+
+-   transformations, manipulations and application of analytical methods
+    to spatial (geographic data)
+
+
+## Locational Invariance
+
+How Insights *Change* with *Location*
+
+-   spatial analysis is *not* locationally invariant
+
+-   the results change when the locations of the study objects change
+
+-   *where* matters
+
+## State Income Distributions 1929
+
+![Relative Quintiles](images/income29.png)
+
+## State Income Distributions 1929
+
+![Income Distribution](images/density29.png)
+
+## Randomized Income Distribution 1929
+
+![Random Permutation](images/income29random.png)
+
+## Randomized Income Density 1929
+
+![Income Distribution](images/density29random.png)
+
+
+## Localtional Invariance
+::: {layout-nrow=2}
+![](images/income29.png){width=300}
+
+![](images/density29.png){width=300}
+
+![](images/income29random.png){width=300}
+
+![](images/density29random.png){width=300}
+:::
+
+
+## Locational Variance
+
+![Observed](images/income29.png)
+
+## Spatial Autocorrelation Income 1929
+
+![Moran Scatterplot](images/moran29.png){width=300}
+
+##  Randomized Income 1929
+
+![Moran Scatterplot (Random)](images/moran29random.png){width=300}
+
+## Locational Variance
+
+::: {layout-nrow=2}
+
+![](images/income29.png){width=300}
+
+![](images/moran29.png){width=300}
+
+
+![](images/income29random.png){width=300}
+
+![](images/moran29random.png){width=300}
+:::
+
+## Components of Spatial Analysis
+::: {.incremental}
+
+- Mapping and Geovisualization *showing* interesting patterns
+- Exploratory Spatial Data Analysis *discovering* interesting patterns
+- Spatial Modeling *explaining* interesting patterns
+:::
+
+
+## Summary: Spatial Analysis
+
+- Beyond Mapping 
+- Central role for *analysis*
+- Distinguished by Locational Variance
+- Location matters
+
+### Components 
+- showing
+- discovering
+- explaining
+
+
+# What is Exploratory Data Analysis?
+
+## Exploratory Data Analysis (EDA)
+
+### What is EDA?
+
+EDA is an approach, not simply a set of techniques, but an
+attitude/philosophy about how a data analysis should be carried out.
+
+Postpones the usual assumptions about what kind of model the data follow
+
+Origins Tukey, J. (1977) *Exploratory Data Analysis*. Addison, Wesely
+
+## Components of EDA
+
+Set of techniques to
+
+-   maximize insight into a data set
+
+-   uncover underlying structures
+
+-   extract important variables
+
+-   detect outliers and anonalies
+
+-   test underlying assumptions
+
+-   suggest hypotheses
+
+-   develop parsimonious models
+
+## EDA Techniqes
+
+Statistical Graphics
+
+-   EDA relies heavily on statistical graphics
+
+-   EDA is not identical to statistical graphics
+
+-   Graphics support pattern recognition and open-minded exploration
+
+-   Interactive graphcs push this even further
+
+Quantitiatve Methods: Although heavily graphic in orientation, there are
+also a number of numerical techniques in EDA.
+
+## EDA Versus Confirmatory Analysis
+
+### Confirmatory Analysis (e.g. regression)
+
+Problem $\rightarrow$ Theory $\rightarrow$ Model $\rightarrow$ Data $\rightarrow$ Conclusion
+
+### Exploratory Analysis
+Problem $\rightarrow$ Data $\rightarrow$ Analysis $\rightarrow$ Model
+
+# What is Exploratory Spatial Data Analysis?
+
+## Exploratory Spatial Data Analysis (ESDA)
+
+
+### Definitions
+
+-   Type of EDA
+
+-   Extended to include spatial attributes of the data
+
+### Crossfertilization
+
+-   Applying classic EDA to spatial data
+
+-   Developing new EDA methods for spatial data
+
+-   Interactions between EDA and ESDA
+
+## How does ESDA fit in spatial analysis?
+
+Spatial Modeling?
+
+-   Modeling based on assumptionss
+
+-   ESDA largely model free
+
+-   Matter of degree (e.g., clustering)
+
+Mapping?
+
+-   Maps play a critical role in ESDA
+
+-   Does a map = ESDA?
+
+-   No. ESDA = map, manipulation + visualization
+
+
+# Next Up
+</br>
+**Spatial Analysis Software**
+

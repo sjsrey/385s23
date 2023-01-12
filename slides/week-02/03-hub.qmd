@@ -1,0 +1,42 @@
+---
+title: "Computational Environments for Spatial Data Analysis"
+author: "Sergio Rey"
+date: "January 26, 2023"
+logo: "images/esda.png"
+format: 
+  revealjs:
+    theme: simple
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+---
+
+
+# Computational Environments for Spatial Data Analysis
+<br/>
+
+::: {.incremental}
+- Open Source: What and Why
+- Jupyter and Jupyter Hub
+- Resources
+:::
+
+# Open Source: What and Why
+
+# Jupyter and Jupyter Hub
+
+
+# Resources
+
+
+
+![Snow Map](images/snowmap3.png){width=".85\\linewidth"}
+
+# Next Up
+</br>
+**Spatial Data**
+

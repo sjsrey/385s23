@@ -1,67 +1,51 @@
 ---
-title: "Syllabus"
+title: "Course Introduction"
+date: "January 19, 2023"
+format: 
+  revealjs:
+    theme: simple
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+  echo: true
 ---
 
-<hr>
+# Welcome to Spatial Data Analysis!
+<br/>
 
+::: {.incremental}
+- Syllabus
+- Computational Environment(s)
+- Introductions
+:::
 
-
+# Syllabus
 
 ## Introduction
 
-Welcome to 385: Spatial Data Analysis!
+> This course introduces the fundamental concepts of spatial data analysis. Key fundamentals include spatial sampling, descriptive statistics for areal data, inferential statistics, use of maps in data analysis.
+
+## Approach
+
+> The course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts.
+
+## Scope
+
+> In the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field.
 
 
-The purpose of this course is to introduce you to methods of spatial
-data analysis. The focus is on both the conceptual and applied aspects
-of spatial statistical methods. We will place particular emphasis on
-the computational aspects of Exploratory Spatial Data Analysis (ESDA)
-methods for three diﬀerent types of spatial data: point processes,
-lattice, and geostatistical. We will also cover an introduction to
-regression analysis on spatially referenced data. Throughout the
-course you will gain valuable hands-on experience with several
-specialized software packages for spatial data analysis. The
-overriding goal of the course is for you to acquire familiarity with
-the fundamental methodological and operational issues in the
-statistical analysis of geographic information and the ability to
-extend these methods in your own research.
-
-
-The course takes an explicitly computational thinking
-approach to its pedagogy. Students are introduced to computational
-concepts and tools that are increasingly important to research that
-engages with geospatial data. By adopting these tools, students
-acquire a deeper engagement with, and mastery of, the substantive
-concepts.
-
-In the scope of a 15-week semester course we can only introduce a handful
-of the key concepts and methods relevant to the field of spatial data analysis. As
-such, the course is not intended as an exhaustive treatment. Instead,
-the goal is that students will acquire an understanding of the more
-common and useful methods and practices, and use the course as an entry
-point for further engagement with the field.
 
 ## Prerequisites
 
-
-- [GEOG 101](https://catalog.sdsu.edu/preview_course_nopop.php?catoid=5&coid=31440) or [GEOG 102](https://catalog.sdsu.edu/preview_course_nopop.php?catoid=5&coid=31442) 
-- [STAT 250](https://catalog.sdsu.edu/preview_course_nopop.php?catoid=5&coid=33000) or comparable course in statistics.
-
-## Computational Learning
-
-We will using [open
-source](https://en.wikipedia.org/wiki/Open-source_software) geospatial
-software throughout the course together with [Jupyter
-Notebooks](https://jupyter.org), and [Python](https://python.org) as our
-scripting language.
-
-All software for the course will be made available through
-[JupyterHub](https://jupyter.org/) a web-based framework. Students
-wishing to install these materials on their own machines will be given
-instructions to do so, **but this is not required**.
+![](images/prerequisites.png)
 
 
-## Readings
+
+## Schedule, Reading, and Content
 
 All required readings are available through the links listed
 below. Assigned readings should be completed before the date listed in
@@ -71,12 +55,14 @@ prepared means having completed the readings and thought about the
 content. It will be difficult to do well in this course without having
 completed the readings.
 
+
+## Readings
+
 | Abbrevation | Source                                                                                      |
 |-------------|---------------------------------------------------------------------------------------------|
 | GDS         | Rey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press. |
 | GSA         | de Smith, M., M.F. Goodchild, P.A. Longly (2021) Geospatial Analysis. Winchelsea Press.     |
 | SAH         | de Smith, M. (2021) Statistical Analysis Handbook. Drumlin Security Ltd.                    |
-
 
 
 ## Schedule (Planned)
@@ -86,36 +72,66 @@ completed the readings.
 |    1 |   Jan-19 | Introduction                          |                   |                |
 |    2 |   Jan-24 | Spatial Analysis                      |     [GDS 1][gds1] | Quiz 1         |
 |      |   Jan-26 | Spatial Analysis Software             |     [GDS 2][gds2] | Exercise 1 Out |
-|    3 |   Jan-31 | Spatial Data                          |     [GDS 3][gds3] | Quiz 2         |
+|    3 |   Jan-31 | Spatial Data                          |     [GDS 3][gds3] |                |
 |      |   Feb-02 | Point Pattern Basics                  | [GDS 8.1][gds8.1] |                |
+
+[gds1]: https://geographicdata.science/book/notebooks/01_geo_thinking.html
+[gds2]: https://geographicdata.science/book/notebooks/02_geospatial_computational_environment.html
+[gds3]: https://geographicdata.science/book/notebooks/03_spatial_data.html
+[gds8.1]: https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html
+
+
+## 
+
+| Week |    Dates | Topic                                 |           Reading | Activities     |
+|-----:|---------:|:--------------------------------------|------------------:|----------------|
 |    4 |   Feb-07 | Centrography                          | [GDS 8.2][gds8.2] | Quiz 3         |
 |      |   Feb-09 | Point Processes                       |                   | Exericse 1 Due |
 |    5 |   Feb-14 | Nearest Neighbor Methods              | [GDS 8.3][gds8.3] | Quiz 4         |
 |      |   Feb-16 | Distance Distributions                |                   | Exercise 2 Out |
 |    6 |   Feb-21 | Area Data                             |   [GDS II][gdsii] | Quiz 5         |
 |      |   Feb-23 | Visualization of Area Data            |     [GDS 5][gds5] |                |
+
+
+[gds8.2]: https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html#centrography
+[gds8.3]: https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html#randomness-clustering
+[gds9]: https://geographicdata.science/book/notebooks/09_spatial_inequality.html
+[gds11]: https://geographicdata.science/book/notebooks/11_regression.html 
+[gdsii]: https://geographicdata.science/book/intro_part_ii.html
+[gds5]:  https://geographicdata.science/book/notebooks/05_choropleth.html
+[gds6.1]:  https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html#understanding-spatial-autocorrelation
+[gds4]: https://geographicdata.science/book/notebooks/04_spatial_weights.html
+
+
+## 
+
+| Week |    Dates | Topic                                 |           Reading | Activities     |
+|-----:|---------:|:--------------------------------------|------------------:|----------------|
 |    7 |   Feb-28 | Spatial Autocorrelation Concepts      | [GDS 6.1][gds6.1] | Quiz 6         |
 |      |   Mar-02 | Spatial Weights                       |     [GDS 4][gds4] | Exercise 2 Due |
 |    8 |   Mar-07 | Join Count Tests                      | [GDS 5.1][gds5.1] | Quiz 7         |
 |      |   Mar-09 | Global Autocorrelation Tests          | [GDS 5.2][gds5.2] |                |
 |    9 |   Mar-14 | Local Autocorrelation                 |     [GDS 6][gds6] | Quiz 8         |
 |      |   Mar-16 | Geostatistical Data                   |   [GSA gs][gsags] | Exercise 3 Out |
+
+[gds5.1]:  https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html#binary-case-join-counts
+[gds5.2]: https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html#continuous-case-moran-plot-and-moran-s-i
+[gds6]: https://geographicdata.science/book/notebooks/07_local_autocorrelation.html
+[gsags]: https://www.spatialanalysisonline.com/HTML/geostatistical_interpolation_m.htm?zoom_highlightsub=geostatistical
+[gsakrg]: https://www.spatialanalysisonline.com/HTML/kriging_interpolation.htm 
+[gsaint]: https://www.spatialanalysisonline.com/HTML/deterministic_interpolation_me.htm
+
+
+## 
+
+| Week |    Dates | Topic                                 |           Reading | Activities     |
+|-----:|---------:|:--------------------------------------|------------------:|----------------|
 |   10 |   Mar-21 | Spatial Interpolation                 | [GSA int][gsaint] | Quiz 9         |
 |      |   Mar-23 | Kriging                               | [GSA krg][gsakrg] |                |
-|      | *Mar-28* | *Spring Break*                        |                   |                |
-|      | *Mar-30* | *Spring Break*                        |                   |                |
 |   11 |   Apr-04 | Introduction to Multivariate Analysis |   [SAH mv][sahmv] | Quiz 10        |
 |      |   Apr-06 | Correlation and Spatial Correlation   | [SAH cor][sahcor] | Exercise 3 Due |
 |   12 |   Apr-11 | Introduction to Regression            | [GSA reg][gsareg] | Exercise 4 Out |
 |      |   Apr-13 | Inference in Regression               | [SAH inf][sahinf] |                |
-|   13 |   Apr-18 | Regression with Spatial Data          |   [GDS 11][gds11] |                |
-|      |   Apr-20 | Diagnostics for Spatial Effects       |                   |                |
-|   14 |   Apr-25 | Spatial Dynamics                      |     [GDS 9][gds9] | Exercise 4 Due |
-|      |   Apr-27 | Next Steps With Spatial Data Analysis |                   |                |
-|   15 |   May-02 | Presentations                         |                   |                |
-|      |   May-04 | Presentations                         |                   |                |
-|      |   May-10 | Final Examination (13:00-15:00)       |                   |                |
-
 
 [gds1]: https://geographicdata.science/book/notebooks/01_geo_thinking.html
 [gds2]: https://geographicdata.science/book/notebooks/02_geospatial_computational_environment.html
@@ -141,10 +157,22 @@ completed the readings.
 [sahinf]: https://www.statsref.com/HTML/simple_regression.html
 [python]: http://python.org
 
+##
+
+| Week |    Dates | Topic                                 |           Reading | Activities     |
+|-----:|---------:|:--------------------------------------|------------------:|----------------|
+|   13 |   Apr-18 | Regression with Spatial Data          |   [GDS 11][gds11] |                |
+|      |   Apr-20 | Diagnostics for Spatial Effects       |                   |                |
+|   14 |   Apr-25 | Spatial Dynamics                      |     [GDS 9][gds9] | Exercise 4 Due |
+|      |   Apr-27 | Next Steps With Spatial Data Analysis |                   |                |
+|   15 |   May-02 | Presentations                         |                   |                |
+|      |   May-04 | Presentations                         |                   |                |
+
+
+
 
 
 ## Grading
-
 
 
 GEOG385 uses [specification
@@ -155,16 +183,7 @@ that you submit that is evaluated to be of an acceptable level of
 quality. The acceptable level of quality demonstrates competency in the
 concepts and methods covered in the course.
 
-There is a two-step process for determination of your final course grade
-at the end of the quarter:
-
-1.  Using your quizzes, exercises, and projects, your **base grade** is
-    determined.
-2.  Using your final exam results, determine if your base grade includes
-    a \"plus\", \"minus\", or level drop to form the course grade.
-
-For Step 1, the base grade is determined using the following
-specification:
+## Base Grade
 
   Level   Hurdles
   ------- -------------------------------------------------------------------------------------
@@ -174,8 +193,9 @@ specification:
   C       Pass at least 6 of 10 quizzes, earn \"Demonstrates Competency\" on 2 of 4 exercises
   D       Pass at least 5 of 10 quizzes, earn \"Demonstrates Competency\" on 1 of 4 exercises
   F       Fail to clear D-level hurdles
+  
+## Final Grade
 
-For Step 2, your final course grade is determined as follows:
 
 -   If you earn at least 85% on the final exam, you will obtain a + for
     your grade. So an A base grade becomes a final A+ course grade, a B
@@ -187,6 +207,7 @@ For Step 2, your final course grade is determined as follows:
     on.
 -   If you score less than 50% on the final exam, your course grade will
     drop one level: An A base grade becomes a final B course grade.
+
 
 ## Quizzes
 
@@ -202,6 +223,9 @@ Each exercise is graded using a **CRN** rubric that classifies work with
 marks of **C** (\"Demonstrates Competence\"), **R** (\"Needs
 Revision\"), or **N** (\"Not assessable\"):
 
+
+## Exercises
+
 Of each exercise the following questions will be asked: Does the work
 demonstrate that the student understands the concepts? Does the work
 demonstrate competence and meet the expectations outlined in the
@@ -210,12 +234,16 @@ exercise?
 If the answer is \"yes\" to both of the questions, a student passes the
 hurdle for that exercise.
 
+## Exercises
+
 If the initial submission does not clear the hurdle, then a second
 question is asked: Is there evidence of partial understanding of the
 concepts? If the answer to this question is \"Yes\" the student can
 exchange one token to attempt a revision of their work. If the answer is
 \"No\", the student does not clear the hurdle for this exercise and will
 not have the opportunity to revise their work.
+
+
 
 ## Project
 
@@ -225,25 +253,28 @@ evaluation. There will be opportunities for feedback along the way, but
 the final submission will be evaluated. There will be no opportunity for
 revising this final submission.
 
+
+## Project
+
 Students need to commit to the project by specifying their team (maximum
 of 4 members on a team) by **2-09**. Once the commitment is made, the team
 composition is final. Any student who does not submit a team definition
 by this date will not be able to pursue the project.
 
-Details on the project rubric will be given out on **1-31**.
+Details on the project rubric will be given out on **3-02**.
 
 ## Final Exam
 
-A closed book, closed note, timed final exam will be given on **May 10
-(13:00-15:00)**. The exam will be based on a blend of previous quiz questions
-and additional questions that pertain to material covered in class.
+A closed book, closed note, timed final exam will be given on TBD. The
+exam will be based on a blend of previous quiz questions and additional
+questions that pertain to material covered in class.
 
 ## Tokens
 
 Each student is provided with three tokens at the beginning of the
 semester.
 
-Using Tokens
+## Using Tokens
 
 1.  One token can be used for a one-day extension for an exercise.
 
@@ -252,7 +283,7 @@ Using Tokens
 
 3.  Two tokens can be used to request a make-up date for the final exam.
 
-Earning Tokens
+## Earning Tokens
 
 1.  Handing in an exercise at least 24 hours before its due date.
 
@@ -260,13 +291,19 @@ Earning Tokens
 
 3.  Attempting all 10 quizzes.
 
-Remaining Tokens
+## Remaining Tokens
 
 Each token that remains unused after **4-27** will be counted as a passed
 quiz. *Tokens cannot be exchanged with other students*.
 
-## Policies
-### Accomodations
+
+## Aministration
+
+
+
+
+
+## Accomodations
 If you are a student with a disability and are in need of
 accommodations for this class, please contact Student Ability
 Success Center at (619) 594-6473 as soon as possible.  Please know
@@ -274,7 +311,7 @@ accommodations are not retroactive, and I cannot provide
 accommodations based upon disability until I have received an
 accommodation letter from Student Ability Success Center.
 
-### Privacy and Intellectual Property
+## Privacy and Intellectual Property
 Student Privacy and Intellectual Property: The Family Educational
 Rights and Privacy Act (FERPA) mandates the protection of student
 information, including contact information, grades, and graded
@@ -287,7 +324,7 @@ maintain intellectual property rights to work products they create as
 part of this course unless they are formally notified otherwise.
 
 
-### Academic Integrity
+## Academic Integrity
 
 The SDSU student academic integrity policy lists violations in detail.
 These violations fall into eight broad areas that include but are not
@@ -295,10 +332,10 @@ limited to: cheating, fabrication, plagiarism, facilitating academic
 misconduct, unauthorized collaboration, interference or sabotage,
 non-compliance with research regulations and retaliation. For more
 information about the SDSU student academic integrity policy, please see
-the following: <https://sacd.sdsu.edu/student-rights/academic-dishonesty>.
+the following: <http://www.sa.sdsu.edu/srr/index.html>.
 
 
-### Code of Conduct
+## Code of Conduct
 
 As course instructor, I am dedicated to providing a harassment-free
 learning experience for all students, regardless of gender, sexual
@@ -307,6 +344,9 @@ or choice of operating system. All course participants are expected to
 show respect and courtesy to other students throughout the semester. As
 a learning community we do not tolerate harassment of participants in
 any form.
+
+
+## Code of Conduct
 
 -   All communication should be appropriate for a professional audience
     including people of many different backgrounds. Sexual language and
@@ -322,4 +362,139 @@ any form.
 This code of conduct is an adaptation of the [SciPy 2018 Code of
 Conduct](https://scipy2018.scipy.org/ehome/299527/648147/index9a04.html).
 
+
+
+
+
+
+
+
+
+
+
+
+
+# Computer Applications
+
+## Computational Learning
+```{python}
+#| echo: true
+#| code-fold: true
+#| code-summary: "Show me the code"
+#| code-block-background: true
+#| highlight-style: vim-dark
+
+import libpysal.examples
+import geopandas 
+
+# get path to built-in dataset for Mexico
+pth = libpysal.examples.get_path("mexicojoin.shp")
+# load the file with geopandas to create a GeoDataframe
+gdf = geopandas.read_file(pth)
+# call the plot method of the GeoDataFrame
+gdf.plot(edgecolor='white');
+```
+
+
+
+
+## Open Source
+
+
+![](images/pysal.png)
+
+
+## Server or Laptop
+
+You can choose to either use an account on our course [JupyterHub]() or install the packages on your own laptop.
+
+Either way, you will be using Jupyter Notebooks for all computation:
+
+
+![](images/jupyter.png)
+
+
+
+# Introductions
+
+<!-- /Users/serge/Documents/p/pbpl273/20w/pp4gisprivate/content/lectures/lecture_01.md -->
+
+## My Program 
+
+<CENTER>
+<img src="images/cgs.png" alt="ac_hotel" />
+</CENTER>
+
+[`url`](http://spatial.ucr.edu)
+
+## Why am I here
+<CENTER>
+<img src="images/john_sinton.png" alt="ac_hotel" />
+</CENTER>
+
+
+
+## Why am I here
+
+<CENTER>
+<img src="images/atlantic_city.png" alt="ac_hotel" />
+</CENTER>
+
+
+## ['Trump turned this place into a ghost town']( https://www.theguardian.com/artanddesign/2019/apr/08/atlantic-city-trump-ghost-town-gambling-brian-rose-photographer)
+<CENTER>
+<img src="images/ac_hotel.png" alt="ac_hotel" />
+</CENTER>
+
+
+
+## Stockton
+<CENTER>
+<img src="images/ac_stockton.png" alt="ac_hotel" />
+</CENTER>
+
+## Stockton
+<CENTER>
+<img src="images/camp0.png" alt="ac_hotel" />
+</CENTER>
+
+
+
+## Stockton
+<CENTER>
+<img src="images/camp1.png" alt="ac_hotel" />
+</CENTER>
+
+
+## Stockton
+<CENTER>
+<img src="images/camp2.png" alt="ac_hotel" />
+</CENTER>
+
+
+## Stockton
+<CENTER>
+<img src="images/camp3.png" alt="ac_hotel" />
+</CENTER>
+
+
+
+
+## You
+
+Take a few minutes and let us know a bit about yourself
+
+- Name
+- Program/Concentration
+- Why you are here
+
+
+# Next Up
+</br>
+**Introduction to Spatial Analysis**
+
+
+<!-- # An Include Follows -->
+
+<!-- {{< include shared/open_source.qmd >}} -->
 

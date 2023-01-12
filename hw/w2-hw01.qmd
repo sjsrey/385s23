@@ -1,8 +1,8 @@
 ---
-title: "HW 01: Pet Names"
-date: "September 14, 2022"
-categories: "Homework"
+title: "Quiz 01"
+date: "January 24, 2023"
+categories: "Quiz"
 ---
 
-Add instructions for assignment. 
+Quiz 1 is on the canvas site
 
