@@ -5,7 +5,7 @@ format:
   revealjs:
     theme: simple
     transition: fade
-    slide-number: true
+    slide-number: false
     incremental: false 
     chalkboard: true
     center: true
@@ -447,17 +447,19 @@ Either way, you will be using Jupyter Notebooks for all computation:
 </CENTER>
 
 
+## Stockton and Atlantic City 
 
-## Stockton
-<CENTER>
-<img src="images/ac_stockton.png" alt="ac_hotel" />
-</CENTER>
+![](images/ac_stockton.png)
+
+## Stockton and Atlantic City 
+
+![[Source](https://magicseaweed.com/photo/277698/album/f862aa6d699520cc347176933bf28573/)](images/ac_pier.png)
+
 
 ## Stockton
 <CENTER>
 <img src="images/camp0.png" alt="ac_hotel" />
 </CENTER>
-
 
 
 ## Stockton

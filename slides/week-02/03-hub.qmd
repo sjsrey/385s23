@@ -1,5 +1,5 @@
 ---
-title: "Computational Environments for Spatial Data Analysis"
+title: "Spatial Data Analysis Software"
 author: "Sergio Rey"
 date: "January 26, 2023"
 logo: "images/esda.png"
@@ -16,7 +16,7 @@ execute:
 ---
 
 
-# Computational Environments for Spatial Data Analysis
+# Spatial Data Analysis Software
 <br/>
 
 ::: {.incremental}

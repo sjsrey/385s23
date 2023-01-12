@@ -25,11 +25,11 @@ extend these methods in your own research.
 
 | Meeting | Location | Time                   |
 |---------|----------|------------------------|
-| Lecture | GMCS 107 | Tue & Thu 2:00 - 3:15pm |
+| Lecture | [GMCS 307](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202?m/611838?s/gmcs) | Tue & Thu 2:00 - 3:15pm |
 
 ## Teaching team 
 
-| Name                 | Office hours   | Location   |
-|----------------------|----------------|------------|
-| Instructor           | Tue 3:30 - 4:30pm    | PFSA 316G |
-| Teaching Assistant 1 | TBD    | Zoom       |
+| Name        | Office hours      | Location  |
+|-------------|-------------------|-----------|
+| [Sergio Rey](https://geography.sdsu.edu/people/bios/rey) | Thu 3:30 - 4:30pm | [PFSA 316G](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/) |
+| Dylan Skrah | Tue 3:20-4:20pm     | Zoom      |

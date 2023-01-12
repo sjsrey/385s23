@@ -18,27 +18,26 @@ listing:
 editor: visual
 ---
 
-## Weekly schedule
+## Weekly schedule 
+Materials will be posted here as the semester progresses
 
 ::: {#schedule}
 :::
 
 ## Assignments
 
-Below are assignment due dates for the semester. You can find details and assignment instructions in the relevant week on the schedule.
+ You can find details and assignment instructions in the relevant week on the schedule.
 
-### Homework
+### Exercises
 
-Homework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment.
+Exercises will be due on Thursdays at 2:00pm. You will have two weeks to
+complete each homework assignment. Details will be provided on the weekly schedule.
 
-### Labs
+### Quizzes
 
-Labs will be due on Fridays at 11:59pm. You will start the lab during your scheduled lab section.
+On-line quizzes are due on Tuesdays at 2:00pm. Details are available by week in
+the schedule.
 
-### Exams
+### Exam
 
-There will be two exams on the dates:
-
--   October 12, 9am - October 14, 11:59pm
-
--   November 16, 9am - November 16: 11:59pm
+There will be a final exam on May 19 (13:00-15:00)
