@@ -1,0 +1,646 @@
+[
+  {
+    "objectID": "labs/w3-lab02.html",
+    "href": "labs/w3-lab02.html",
+    "title": "Lab 02: Data visualization with ggplot2!",
+    "section": "",
+    "text": "Add instructions for assignment."
+  },
+  {
+    "objectID": "labs/w2-lab01.html",
+    "href": "labs/w2-lab01.html",
+    "title": "Exercise 01",
+    "section": "",
+    "text": "On Canvas"
+  },
+  {
+    "objectID": "syllabus.html#introduction",
+    "href": "syllabus.html#introduction",
+    "title": "Syllabus",
+    "section": "Introduction",
+    "text": "Introduction\nWelcome to 385: Spatial Data Analysis!\nThe purpose of this course is to introduce you to methods of spatial data analysis. The focus is on both the conceptual and applied aspects of spatial statistical methods. We will place particular emphasis on the computational aspects of Exploratory Spatial Data Analysis (ESDA) methods for three diﬀerent types of spatial data: point processes, lattice, and geostatistical. We will also cover an introduction to regression analysis on spatially referenced data. Throughout the course you will gain valuable hands-on experience with several specialized software packages for spatial data analysis. The overriding goal of the course is for you to acquire familiarity with the fundamental methodological and operational issues in the statistical analysis of geographic information and the ability to extend these methods in your own research.\nThe course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts.\nIn the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field."
+  },
+  {
+    "objectID": "syllabus.html#prerequisites",
+    "href": "syllabus.html#prerequisites",
+    "title": "Syllabus",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nGEOG 101 or GEOG 102\nSTAT 250 or comparable course in statistics."
+  },
+  {
+    "objectID": "syllabus.html#computational-learning",
+    "href": "syllabus.html#computational-learning",
+    "title": "Syllabus",
+    "section": "Computational Learning",
+    "text": "Computational Learning\nWe will using open source geospatial software throughout the course together with Jupyter Notebooks, and Python as our scripting language.\nAll software for the course will be made available through JupyterHub a web-based framework. Students wishing to install these materials on their own machines will be given instructions to do so, but this is not required."
+  },
+  {
+    "objectID": "syllabus.html#readings",
+    "href": "syllabus.html#readings",
+    "title": "Syllabus",
+    "section": "Readings",
+    "text": "Readings\nAll required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore coming into class prepared means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings.\n\n\n\n\n\n\n\nAbbrevation\nSource\n\n\n\n\nGDS\nRey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press.\n\n\nGSA\nde Smith, M., M.F. Goodchild, P.A. Longly (2021) Geospatial Analysis. Winchelsea Press.\n\n\nSAH\nde Smith, M. (2021) Statistical Analysis Handbook. Drumlin Security Ltd."
+  },
+  {
+    "objectID": "syllabus.html#schedule-planned",
+    "href": "syllabus.html#schedule-planned",
+    "title": "Syllabus",
+    "section": "Schedule (Planned)",
+    "text": "Schedule (Planned)\n\n\n\nWeek\nDates\nTopic\nReading\nActivities\n\n\n\n\n1\nJan-19\nIntroduction\n\n\n\n\n2\nJan-24\nSpatial Analysis\nGDS 1\nQuiz 1\n\n\n\nJan-26\nSpatial Analysis Software\nGDS 2\nExercise 1 Out\n\n\n3\nJan-31\nSpatial Data\nGDS 3\nQuiz 2\n\n\n\nFeb-02\nPoint Pattern Basics\nGDS 8.1\n\n\n\n4\nFeb-07\nCentrography\nGDS 8.2\nQuiz 3\n\n\n\nFeb-09\nPoint Processes\n\nExericse 1 Due\n\n\n5\nFeb-14\nNearest Neighbor Methods\nGDS 8.3\nQuiz 4\n\n\n\nFeb-16\nDistance Distributions\n\nExercise 2 Out\n\n\n6\nFeb-21\nArea Data\nGDS II\nQuiz 5\n\n\n\nFeb-23\nVisualization of Area Data\nGDS 5\n\n\n\n7\nFeb-28\nSpatial Autocorrelation Concepts\nGDS 6.1\nQuiz 6\n\n\n\nMar-02\nSpatial Weights\nGDS 4\nExercise 2 Due\n\n\n8\nMar-07\nJoin Count Tests\nGDS 5.1\nQuiz 7\n\n\n\nMar-09\nGlobal Autocorrelation Tests\nGDS 5.2\n\n\n\n9\nMar-14\nLocal Autocorrelation\nGDS 6\nQuiz 8\n\n\n\nMar-16\nGeostatistical Data\nGSA gs\nExercise 3 Out\n\n\n10\nMar-21\nSpatial Interpolation\nGSA int\nQuiz 9\n\n\n\nMar-23\nKriging\nGSA krg\n\n\n\n\nMar-28\nSpring Break\n\n\n\n\n\nMar-30\nSpring Break\n\n\n\n\n11\nApr-04\nIntroduction to Multivariate Analysis\nSAH mv\nQuiz 10\n\n\n\nApr-06\nCorrelation and Spatial Correlation\nSAH cor\nExercise 3 Due\n\n\n12\nApr-11\nIntroduction to Regression\nGSA reg\nExercise 4 Out\n\n\n\nApr-13\nInference in Regression\nSAH inf\n\n\n\n13\nApr-18\nRegression with Spatial Data\nGDS 11\n\n\n\n\nApr-20\nDiagnostics for Spatial Effects\n\n\n\n\n14\nApr-25\nSpatial Dynamics\nGDS 9\nExercise 4 Due\n\n\n\nApr-27\nNext Steps With Spatial Data Analysis\n\n\n\n\n15\nMay-02\nPresentations\n\n\n\n\n\nMay-04\nPresentations\n\n\n\n\n\nMay-10\nFinal Examination (13:00-15:00)"
+  },
+  {
+    "objectID": "syllabus.html#grading",
+    "href": "syllabus.html#grading",
+    "title": "Syllabus",
+    "section": "Grading",
+    "text": "Grading\nGEOG385 uses specification grading in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course.\nThere is a two-step process for determination of your final course grade at the end of the quarter:\n\nUsing your quizzes, exercises, and projects, your base grade is determined.\nUsing your final exam results, determine if your base grade includes a \"plus\", \"minus\", or level drop to form the course grade.\n\nFor Step 1, the base grade is determined using the following specification:\n\n\n\nLevel\nHurdles\n\n\n\n\nA\nPass at least 8 of 10 quizzes, earn \"Demonstrates Competency\" on 4 of 4 exercises,\n\n\n\nand submit an project that earns \"Demonstrates Competency\"\n\n\nB\nPass at least 7 of 10 quizzes, earn \"Demonstrates Competency\" on 3 of 4 exercises\n\n\nC\nPass at least 6 of 10 quizzes, earn \"Demonstrates Competency\" on 2 of 4 exercises\n\n\nD\nPass at least 5 of 10 quizzes, earn \"Demonstrates Competency\" on 1 of 4 exercises\n\n\nF\nFail to clear D-level hurdles\n\n\n\nFor Step 2, your final course grade is determined as follows:\n\nIf you earn at least 85% on the final exam, you will obtain a + for your grade. So an A base grade becomes a final A+ course grade, a B becomes a B+, and so on.\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a - for your grade. So an A becomes and A-, a B becomes a B-, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade."
+  },
+  {
+    "objectID": "syllabus.html#quizzes",
+    "href": "syllabus.html#quizzes",
+    "title": "Syllabus",
+    "section": "Quizzes",
+    "text": "Quizzes\nQuizzes are graded on a pass/fail basis. Starting in week two, there will be a quiz due before each Tuesday session that pertains to the background reading that is required before our work in class."
+  },
+  {
+    "objectID": "syllabus.html#exercises",
+    "href": "syllabus.html#exercises",
+    "title": "Syllabus",
+    "section": "Exercises",
+    "text": "Exercises\nFour exercises will be introduced in class and are due in two weeks.\nEach exercise is graded using a CRN rubric that classifies work with marks of C (\"Demonstrates Competence\"), R (\"Needs Revision\"), or N (\"Not assessable\"):\nOf each exercise the following questions will be asked: Does the work demonstrate that the student understands the concepts? Does the work demonstrate competence and meet the expectations outlined in the exercise?\nIf the answer is \"yes\" to both of the questions, a student passes the hurdle for that exercise.\nIf the initial submission does not clear the hurdle, then a second question is asked: Is there evidence of partial understanding of the concepts? If the answer to this question is \"Yes\" the student can exchange one token to attempt a revision of their work. If the answer is \"No\", the student does not clear the hurdle for this exercise and will not have the opportunity to revise their work."
+  },
+  {
+    "objectID": "syllabus.html#project",
+    "href": "syllabus.html#project",
+    "title": "Syllabus",
+    "section": "Project",
+    "text": "Project\nThe project is a required hurdle to earn a level A grade. In order to clear this hurdle, the project must obtain a \"Demonstrates Competence\" evaluation. There will be opportunities for feedback along the way, but the final submission will be evaluated. There will be no opportunity for revising this final submission.\nStudents need to commit to the project by specifying their team (maximum of 4 members on a team) by 2-09. Once the commitment is made, the team composition is final. Any student who does not submit a team definition by this date will not be able to pursue the project.\nDetails on the project rubric will be given out on 1-31."
+  },
+  {
+    "objectID": "syllabus.html#final-exam",
+    "href": "syllabus.html#final-exam",
+    "title": "Syllabus",
+    "section": "Final Exam",
+    "text": "Final Exam\nA closed book, closed note, timed final exam will be given on May 10 (13:00-15:00). The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class."
+  },
+  {
+    "objectID": "syllabus.html#tokens",
+    "href": "syllabus.html#tokens",
+    "title": "Syllabus",
+    "section": "Tokens",
+    "text": "Tokens\nEach student is provided with three tokens at the beginning of the semester.\nUsing Tokens\n\nOne token can be used for a one-day extension for an exercise.\nOne token can be used to revise an exercise that was submitted on-time but evaluated as \"Needing Revision\".\nTwo tokens can be used to request a make-up date for the final exam.\n\nEarning Tokens\n\nHanding in an exercise at least 24 hours before its due date.\nSubmitting all four exercises on time (or early).\nAttempting all 10 quizzes.\n\nRemaining Tokens\nEach token that remains unused after 4-27 will be counted as a passed quiz. Tokens cannot be exchanged with other students."
+  },
+  {
+    "objectID": "syllabus.html#policies",
+    "href": "syllabus.html#policies",
+    "title": "Syllabus",
+    "section": "Policies",
+    "text": "Policies\n\nAccomodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.\n\n\nPrivacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use [Canvas / Blackboard] to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.\n\n\nAcademic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: https://sacd.sdsu.edu/student-rights/academic-dishonesty.\n\n\nCode of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct."
+  },
+  {
+    "objectID": "hw/w1-hw00.html",
+    "href": "hw/w1-hw00.html",
+    "title": "Prerequisite Quiz",
+    "section": "",
+    "text": "Prerequisite Quiz on Canvas"
+  },
+  {
+    "objectID": "hw/w3-hw02.html",
+    "href": "hw/w3-hw02.html",
+    "title": "HW 02: Data visualization",
+    "section": "",
+    "text": "Add instructions for assignment."
+  },
+  {
+    "objectID": "hw/w2-hw01.html",
+    "href": "hw/w2-hw01.html",
+    "title": "Quiz 01",
+    "section": "",
+    "text": "Quiz 1 is on the canvas site"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#gis-then",
+    "href": "slides/week-02/02-spatial-analysis.html#gis-then",
+    "title": "Spatial Analysis",
+    "section": "GIS Then",
+    "text": "GIS Then\n\nSnow Map"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#gis-now",
+    "href": "slides/week-02/02-spatial-analysis.html#gis-now",
+    "title": "Spatial Analysis",
+    "section": "GIS Now",
+    "text": "GIS Now\n\nCrime Map"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#gis-functions",
+    "href": "slides/week-02/02-spatial-analysis.html#gis-functions",
+    "title": "Spatial Analysis",
+    "section": "GIS Functions",
+    "text": "GIS Functions\nAnselin-Getis (1992) Taxonomy\n\nInput\nStorage\nAnalysis\nOutput\n\nMany other taxonomies"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#giscience",
+    "href": "slides/week-02/02-spatial-analysis.html#giscience",
+    "title": "Spatial Analysis",
+    "section": "GIScience",
+    "text": "GIScience\nGoodchild (1992)\n\ncross-disciplinary\ncentral role for spatial analysis\nscientific glue"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#what-is-spatial-analysis-1",
+    "href": "slides/week-02/02-spatial-analysis.html#what-is-spatial-analysis-1",
+    "title": "Spatial Analysis",
+    "section": "What is Spatial Analysis?",
+    "text": "What is Spatial Analysis?\nFrom Data to Information\n\nbeyond mapping\nadded value\ntransformations, manipulations and application of analytical methods to spatial (geographic data)"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#locational-invariance",
+    "href": "slides/week-02/02-spatial-analysis.html#locational-invariance",
+    "title": "Spatial Analysis",
+    "section": "Locational Invariance",
+    "text": "Locational Invariance\nHow Insights Change with Location\n\nspatial analysis is not locationally invariant\nthe results change when the locations of the study objects change\nwhere matters"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#state-income-distributions-1929",
+    "href": "slides/week-02/02-spatial-analysis.html#state-income-distributions-1929",
+    "title": "Spatial Analysis",
+    "section": "State Income Distributions 1929",
+    "text": "State Income Distributions 1929\n\nRelative Quintiles"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#state-income-distributions-1929-1",
+    "href": "slides/week-02/02-spatial-analysis.html#state-income-distributions-1929-1",
+    "title": "Spatial Analysis",
+    "section": "State Income Distributions 1929",
+    "text": "State Income Distributions 1929\n\nIncome Distribution"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#randomized-income-distribution-1929",
+    "href": "slides/week-02/02-spatial-analysis.html#randomized-income-distribution-1929",
+    "title": "Spatial Analysis",
+    "section": "Randomized Income Distribution 1929",
+    "text": "Randomized Income Distribution 1929\n\nRandom Permutation"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#randomized-income-density-1929",
+    "href": "slides/week-02/02-spatial-analysis.html#randomized-income-density-1929",
+    "title": "Spatial Analysis",
+    "section": "Randomized Income Density 1929",
+    "text": "Randomized Income Density 1929\n\nIncome Distribution"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#localtional-invariance",
+    "href": "slides/week-02/02-spatial-analysis.html#localtional-invariance",
+    "title": "Spatial Analysis",
+    "section": "Localtional Invariance",
+    "text": "Localtional Invariance"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#locational-variance",
+    "href": "slides/week-02/02-spatial-analysis.html#locational-variance",
+    "title": "Spatial Analysis",
+    "section": "Locational Variance",
+    "text": "Locational Variance\n\nObserved"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#spatial-autocorrelation-income-1929",
+    "href": "slides/week-02/02-spatial-analysis.html#spatial-autocorrelation-income-1929",
+    "title": "Spatial Analysis",
+    "section": "Spatial Autocorrelation Income 1929",
+    "text": "Spatial Autocorrelation Income 1929\n\nMoran Scatterplot"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#randomized-income-1929",
+    "href": "slides/week-02/02-spatial-analysis.html#randomized-income-1929",
+    "title": "Spatial Analysis",
+    "section": "Randomized Income 1929",
+    "text": "Randomized Income 1929\n\nMoran Scatterplot (Random)"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#locational-variance-1",
+    "href": "slides/week-02/02-spatial-analysis.html#locational-variance-1",
+    "title": "Spatial Analysis",
+    "section": "Locational Variance",
+    "text": "Locational Variance"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#components-of-spatial-analysis",
+    "href": "slides/week-02/02-spatial-analysis.html#components-of-spatial-analysis",
+    "title": "Spatial Analysis",
+    "section": "Components of Spatial Analysis",
+    "text": "Components of Spatial Analysis\n\n\nMapping and Geovisualization showing interesting patterns\nExploratory Spatial Data Analysis discovering interesting patterns\nSpatial Modeling explaining interesting patterns"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#summary-spatial-analysis",
+    "href": "slides/week-02/02-spatial-analysis.html#summary-spatial-analysis",
+    "title": "Spatial Analysis",
+    "section": "Summary: Spatial Analysis",
+    "text": "Summary: Spatial Analysis\n\nBeyond Mapping\nCentral role for analysis\nDistinguished by Locational Variance\nLocation matters\n\nComponents\n\nshowing\ndiscovering\nexplaining"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#exploratory-data-analysis-eda",
+    "href": "slides/week-02/02-spatial-analysis.html#exploratory-data-analysis-eda",
+    "title": "Spatial Analysis",
+    "section": "Exploratory Data Analysis (EDA)",
+    "text": "Exploratory Data Analysis (EDA)\nWhat is EDA?\nEDA is an approach, not simply a set of techniques, but an attitude/philosophy about how a data analysis should be carried out.\nPostpones the usual assumptions about what kind of model the data follow\nOrigins Tukey, J. (1977) Exploratory Data Analysis. Addison, Wesely"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#components-of-eda",
+    "href": "slides/week-02/02-spatial-analysis.html#components-of-eda",
+    "title": "Spatial Analysis",
+    "section": "Components of EDA",
+    "text": "Components of EDA\nSet of techniques to\n\nmaximize insight into a data set\nuncover underlying structures\nextract important variables\ndetect outliers and anonalies\ntest underlying assumptions\nsuggest hypotheses\ndevelop parsimonious models"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#eda-techniqes",
+    "href": "slides/week-02/02-spatial-analysis.html#eda-techniqes",
+    "title": "Spatial Analysis",
+    "section": "EDA Techniqes",
+    "text": "EDA Techniqes\nStatistical Graphics\n\nEDA relies heavily on statistical graphics\nEDA is not identical to statistical graphics\nGraphics support pattern recognition and open-minded exploration\nInteractive graphcs push this even further\n\nQuantitiatve Methods: Although heavily graphic in orientation, there are also a number of numerical techniques in EDA."
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#eda-versus-confirmatory-analysis",
+    "href": "slides/week-02/02-spatial-analysis.html#eda-versus-confirmatory-analysis",
+    "title": "Spatial Analysis",
+    "section": "EDA Versus Confirmatory Analysis",
+    "text": "EDA Versus Confirmatory Analysis\nConfirmatory Analysis (e.g. regression)\nProblem \\(\\rightarrow\\) Theory \\(\\rightarrow\\) Model \\(\\rightarrow\\) Data \\(\\rightarrow\\) Conclusion\nExploratory Analysis\nProblem \\(\\rightarrow\\) Data \\(\\rightarrow\\) Analysis \\(\\rightarrow\\) Model"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#exploratory-spatial-data-analysis-esda",
+    "href": "slides/week-02/02-spatial-analysis.html#exploratory-spatial-data-analysis-esda",
+    "title": "Spatial Analysis",
+    "section": "Exploratory Spatial Data Analysis (ESDA)",
+    "text": "Exploratory Spatial Data Analysis (ESDA)\nDefinitions\n\nType of EDA\nExtended to include spatial attributes of the data\n\nCrossfertilization\n\nApplying classic EDA to spatial data\nDeveloping new EDA methods for spatial data\nInteractions between EDA and ESDA"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#how-does-esda-fit-in-spatial-analysis",
+    "href": "slides/week-02/02-spatial-analysis.html#how-does-esda-fit-in-spatial-analysis",
+    "title": "Spatial Analysis",
+    "section": "How does ESDA fit in spatial analysis?",
+    "text": "How does ESDA fit in spatial analysis?\nSpatial Modeling?\n\nModeling based on assumptionss\nESDA largely model free\nMatter of degree (e.g., clustering)\n\nMapping?\n\nMaps play a critical role in ESDA\nDoes a map = ESDA?\nNo. ESDA = map, manipulation + visualization"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#introduction",
+    "href": "slides/week-01/01-introduction.html#introduction",
+    "title": "Course Introduction",
+    "section": "Introduction",
+    "text": "Introduction\n\nThis course introduces the fundamental concepts of spatial data analysis. Key fundamentals include spatial sampling, descriptive statistics for areal data, inferential statistics, use of maps in data analysis."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#approach",
+    "href": "slides/week-01/01-introduction.html#approach",
+    "title": "Course Introduction",
+    "section": "Approach",
+    "text": "Approach\n\nThe course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#scope",
+    "href": "slides/week-01/01-introduction.html#scope",
+    "title": "Course Introduction",
+    "section": "Scope",
+    "text": "Scope\n\nIn the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#prerequisites",
+    "href": "slides/week-01/01-introduction.html#prerequisites",
+    "title": "Course Introduction",
+    "section": "Prerequisites",
+    "text": "Prerequisites"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#schedule-reading-and-content",
+    "href": "slides/week-01/01-introduction.html#schedule-reading-and-content",
+    "title": "Course Introduction",
+    "section": "Schedule, Reading, and Content",
+    "text": "Schedule, Reading, and Content\nAll required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore coming into class prepared means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#readings",
+    "href": "slides/week-01/01-introduction.html#readings",
+    "title": "Course Introduction",
+    "section": "Readings",
+    "text": "Readings\n\n\n\n\n\n\n\nAbbrevation\nSource\n\n\n\n\nGDS\nRey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press.\n\n\nGSA\nde Smith, M., M.F. Goodchild, P.A. Longly (2021) Geospatial Analysis. Winchelsea Press.\n\n\nSAH\nde Smith, M. (2021) Statistical Analysis Handbook. Drumlin Security Ltd."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#schedule-planned",
+    "href": "slides/week-01/01-introduction.html#schedule-planned",
+    "title": "Course Introduction",
+    "section": "Schedule (Planned)",
+    "text": "Schedule (Planned)\n\n\n\nWeek\nDates\nTopic\nReading\nActivities\n\n\n\n\n1\nJan-19\nIntroduction\n\n\n\n\n2\nJan-24\nSpatial Analysis\nGDS 1\nQuiz 1\n\n\n\nJan-26\nSpatial Analysis Software\nGDS 2\nExercise 1 Out\n\n\n3\nJan-31\nSpatial Data\nGDS 3\n\n\n\n\nFeb-02\nPoint Pattern Basics\nGDS 8.1"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#section",
+    "href": "slides/week-01/01-introduction.html#section",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Week\nDates\nTopic\nReading\nActivities\n\n\n\n\n4\nFeb-07\nCentrography\nGDS 8.2\nQuiz 3\n\n\n\nFeb-09\nPoint Processes\n\nExericse 1 Due\n\n\n5\nFeb-14\nNearest Neighbor Methods\nGDS 8.3\nQuiz 4\n\n\n\nFeb-16\nDistance Distributions\n\nExercise 2 Out\n\n\n6\nFeb-21\nArea Data\nGDS II\nQuiz 5\n\n\n\nFeb-23\nVisualization of Area Data\nGDS 5"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#section-1",
+    "href": "slides/week-01/01-introduction.html#section-1",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Week\nDates\nTopic\nReading\nActivities\n\n\n\n\n7\nFeb-28\nSpatial Autocorrelation Concepts\nGDS 6.1\nQuiz 6\n\n\n\nMar-02\nSpatial Weights\nGDS 4\nExercise 2 Due\n\n\n8\nMar-07\nJoin Count Tests\nGDS 5.1\nQuiz 7\n\n\n\nMar-09\nGlobal Autocorrelation Tests\nGDS 5.2\n\n\n\n9\nMar-14\nLocal Autocorrelation\nGDS 6\nQuiz 8\n\n\n\nMar-16\nGeostatistical Data\nGSA gs\nExercise 3 Out"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#section-2",
+    "href": "slides/week-01/01-introduction.html#section-2",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Week\nDates\nTopic\nReading\nActivities\n\n\n\n\n10\nMar-21\nSpatial Interpolation\nGSA int\nQuiz 9\n\n\n\nMar-23\nKriging\nGSA krg\n\n\n\n11\nApr-04\nIntroduction to Multivariate Analysis\nSAH mv\nQuiz 10\n\n\n\nApr-06\nCorrelation and Spatial Correlation\nSAH cor\nExercise 3 Due\n\n\n12\nApr-11\nIntroduction to Regression\nGSA reg\nExercise 4 Out\n\n\n\nApr-13\nInference in Regression\nSAH inf"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#section-3",
+    "href": "slides/week-01/01-introduction.html#section-3",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Week\nDates\nTopic\nReading\nActivities\n\n\n\n\n13\nApr-18\nRegression with Spatial Data\nGDS 11\n\n\n\n\nApr-20\nDiagnostics for Spatial Effects\n\n\n\n\n14\nApr-25\nSpatial Dynamics\nGDS 9\nExercise 4 Due\n\n\n\nApr-27\nNext Steps With Spatial Data Analysis\n\n\n\n\n15\nMay-02\nPresentations\n\n\n\n\n\nMay-04\nPresentations"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#grading",
+    "href": "slides/week-01/01-introduction.html#grading",
+    "title": "Course Introduction",
+    "section": "Grading",
+    "text": "Grading\nGEOG385 uses specification grading in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#base-grade",
+    "href": "slides/week-01/01-introduction.html#base-grade",
+    "title": "Course Introduction",
+    "section": "Base Grade",
+    "text": "Base Grade\n\n\n\nLevel\nHurdles\n\n\n\n\nA\nPass at least 8 of 10 quizzes, earn \"Demonstrates Competency\" on 4 of 4 exercises,\n\n\n\nand submit an project that earns \"Demonstrates Competency\"\n\n\nB\nPass at least 7 of 10 quizzes, earn \"Demonstrates Competency\" on 3 of 4 exercises\n\n\nC\nPass at least 6 of 10 quizzes, earn \"Demonstrates Competency\" on 2 of 4 exercises\n\n\nD\nPass at least 5 of 10 quizzes, earn \"Demonstrates Competency\" on 1 of 4 exercises\n\n\nF\nFail to clear D-level hurdles"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#final-grade",
+    "href": "slides/week-01/01-introduction.html#final-grade",
+    "title": "Course Introduction",
+    "section": "Final Grade",
+    "text": "Final Grade\n\nIf you earn at least 85% on the final exam, you will obtain a + for your grade. So an A base grade becomes a final A+ course grade, a B becomes a B+, and so on.\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a - for your grade. So an A becomes and A-, a B becomes a B-, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#quizzes",
+    "href": "slides/week-01/01-introduction.html#quizzes",
+    "title": "Course Introduction",
+    "section": "Quizzes",
+    "text": "Quizzes\nQuizzes are graded on a pass/fail basis. Starting in week two, there will be a quiz due before each Tuesday session that pertains to the background reading that is required before our work in class."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#exercises",
+    "href": "slides/week-01/01-introduction.html#exercises",
+    "title": "Course Introduction",
+    "section": "Exercises",
+    "text": "Exercises\nFour exercises will be introduced in class and are due in two weeks.\nEach exercise is graded using a CRN rubric that classifies work with marks of C (\"Demonstrates Competence\"), R (\"Needs Revision\"), or N (\"Not assessable\"):"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#exercises-1",
+    "href": "slides/week-01/01-introduction.html#exercises-1",
+    "title": "Course Introduction",
+    "section": "Exercises",
+    "text": "Exercises\nOf each exercise the following questions will be asked: Does the work demonstrate that the student understands the concepts? Does the work demonstrate competence and meet the expectations outlined in the exercise?\nIf the answer is \"yes\" to both of the questions, a student passes the hurdle for that exercise."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#exercises-2",
+    "href": "slides/week-01/01-introduction.html#exercises-2",
+    "title": "Course Introduction",
+    "section": "Exercises",
+    "text": "Exercises\nIf the initial submission does not clear the hurdle, then a second question is asked: Is there evidence of partial understanding of the concepts? If the answer to this question is \"Yes\" the student can exchange one token to attempt a revision of their work. If the answer is \"No\", the student does not clear the hurdle for this exercise and will not have the opportunity to revise their work."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#project",
+    "href": "slides/week-01/01-introduction.html#project",
+    "title": "Course Introduction",
+    "section": "Project",
+    "text": "Project\nThe project is a required hurdle to earn a level A grade. In order to clear this hurdle, the project must obtain a \"Demonstrates Competence\" evaluation. There will be opportunities for feedback along the way, but the final submission will be evaluated. There will be no opportunity for revising this final submission."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#project-1",
+    "href": "slides/week-01/01-introduction.html#project-1",
+    "title": "Course Introduction",
+    "section": "Project",
+    "text": "Project\nStudents need to commit to the project by specifying their team (maximum of 4 members on a team) by 2-09. Once the commitment is made, the team composition is final. Any student who does not submit a team definition by this date will not be able to pursue the project.\nDetails on the project rubric will be given out on 3-02."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#final-exam",
+    "href": "slides/week-01/01-introduction.html#final-exam",
+    "title": "Course Introduction",
+    "section": "Final Exam",
+    "text": "Final Exam\nA closed book, closed note, timed final exam will be given on TBD. The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#tokens",
+    "href": "slides/week-01/01-introduction.html#tokens",
+    "title": "Course Introduction",
+    "section": "Tokens",
+    "text": "Tokens\nEach student is provided with three tokens at the beginning of the semester."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#using-tokens",
+    "href": "slides/week-01/01-introduction.html#using-tokens",
+    "title": "Course Introduction",
+    "section": "Using Tokens",
+    "text": "Using Tokens\n\nOne token can be used for a one-day extension for an exercise.\nOne token can be used to revise an exercise that was submitted on-time but evaluated as \"Needing Revision\".\nTwo tokens can be used to request a make-up date for the final exam."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#earning-tokens",
+    "href": "slides/week-01/01-introduction.html#earning-tokens",
+    "title": "Course Introduction",
+    "section": "Earning Tokens",
+    "text": "Earning Tokens\n\nHanding in an exercise at least 24 hours before its due date.\nSubmitting all four exercises on time (or early).\nAttempting all 10 quizzes."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#remaining-tokens",
+    "href": "slides/week-01/01-introduction.html#remaining-tokens",
+    "title": "Course Introduction",
+    "section": "Remaining Tokens",
+    "text": "Remaining Tokens\nEach token that remains unused after 4-27 will be counted as a passed quiz. Tokens cannot be exchanged with other students."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#aministration",
+    "href": "slides/week-01/01-introduction.html#aministration",
+    "title": "Course Introduction",
+    "section": "Aministration",
+    "text": "Aministration"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#accomodations",
+    "href": "slides/week-01/01-introduction.html#accomodations",
+    "title": "Course Introduction",
+    "section": "Accomodations",
+    "text": "Accomodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#privacy-and-intellectual-property",
+    "href": "slides/week-01/01-introduction.html#privacy-and-intellectual-property",
+    "title": "Course Introduction",
+    "section": "Privacy and Intellectual Property",
+    "text": "Privacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use [Canvas / Blackboard] to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#academic-integrity",
+    "href": "slides/week-01/01-introduction.html#academic-integrity",
+    "title": "Course Introduction",
+    "section": "Academic Integrity",
+    "text": "Academic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: http://www.sa.sdsu.edu/srr/index.html."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#code-of-conduct",
+    "href": "slides/week-01/01-introduction.html#code-of-conduct",
+    "title": "Course Introduction",
+    "section": "Code of Conduct",
+    "text": "Code of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#code-of-conduct-1",
+    "href": "slides/week-01/01-introduction.html#code-of-conduct-1",
+    "title": "Course Introduction",
+    "section": "Code of Conduct",
+    "text": "Code of Conduct\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#computational-learning",
+    "href": "slides/week-01/01-introduction.html#computational-learning",
+    "title": "Course Introduction",
+    "section": "Computational Learning",
+    "text": "Computational Learning\n\n\nShow me the code\nimport libpysal.examples\nimport geopandas \n\n# get path to built-in dataset for Mexico\npth = libpysal.examples.get_path(\"mexicojoin.shp\")\n# load the file with geopandas to create a GeoDataframe\ngdf = geopandas.read_file(pth)\n# call the plot method of the GeoDataFrame\ngdf.plot(edgecolor='white');"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#open-source",
+    "href": "slides/week-01/01-introduction.html#open-source",
+    "title": "Course Introduction",
+    "section": "Open Source",
+    "text": "Open Source"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#server-or-laptop",
+    "href": "slides/week-01/01-introduction.html#server-or-laptop",
+    "title": "Course Introduction",
+    "section": "Server or Laptop",
+    "text": "Server or Laptop\nYou can choose to either use an account on our course JupyterHub or install the packages on your own laptop.\nEither way, you will be using Jupyter Notebooks for all computation:"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#my-program",
+    "href": "slides/week-01/01-introduction.html#my-program",
+    "title": "Course Introduction",
+    "section": "My Program",
+    "text": "My Program\n\n\n\nurl"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#why-am-i-here",
+    "href": "slides/week-01/01-introduction.html#why-am-i-here",
+    "title": "Course Introduction",
+    "section": "Why am I here",
+    "text": "Why am I here"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#why-am-i-here-1",
+    "href": "slides/week-01/01-introduction.html#why-am-i-here-1",
+    "title": "Course Introduction",
+    "section": "Why am I here",
+    "text": "Why am I here"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#trump-turned-this-place-into-a-ghost-town",
+    "href": "slides/week-01/01-introduction.html#trump-turned-this-place-into-a-ghost-town",
+    "title": "Course Introduction",
+    "section": "‘Trump turned this place into a ghost town’",
+    "text": "‘Trump turned this place into a ghost town’"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#stockton-and-atlantic-city",
+    "href": "slides/week-01/01-introduction.html#stockton-and-atlantic-city",
+    "title": "Course Introduction",
+    "section": "Stockton and Atlantic City",
+    "text": "Stockton and Atlantic City"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#stockton-and-atlantic-city-1",
+    "href": "slides/week-01/01-introduction.html#stockton-and-atlantic-city-1",
+    "title": "Course Introduction",
+    "section": "Stockton and Atlantic City",
+    "text": "Stockton and Atlantic City\n\nSource"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#stockton",
+    "href": "slides/week-01/01-introduction.html#stockton",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#stockton-1",
+    "href": "slides/week-01/01-introduction.html#stockton-1",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#stockton-2",
+    "href": "slides/week-01/01-introduction.html#stockton-2",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#stockton-3",
+    "href": "slides/week-01/01-introduction.html#stockton-3",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#you",
+    "href": "slides/week-01/01-introduction.html#you",
+    "title": "Course Introduction",
+    "section": "You",
+    "text": "You\nTake a few minutes and let us know a bit about yourself\n\nName\nProgram/Concentration\nWhy you are here"
+  },
+  {
+    "objectID": "weeks/week-01.html",
+    "href": "weeks/week-01.html",
+    "title": "Week 01",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nCourse Introduction\n\n\nThu, Jan 19\n\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\nTitle\n\n\nDue\n\n\n\n\n\n\nQuiz\n\n\nPrerequisite Quiz\n\n\nThu, Jan 19\n\n\n\n\n\n\nNo matching items\n\n\n\n\nReadings\n\n\n\n\n\n\nCourse Syllabus"
+  },
+  {
+    "objectID": "weeks/week-02.html",
+    "href": "weeks/week-02.html",
+    "title": "Week 02",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nSpatial Analysis\n\n\nTue, Jan 24\n\n\n\n\nSpatial Data Analysis Software\n\n\nThu, Jan 26\n\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\nTitle\n\n\nDue\n\n\n\n\n\n\nQuiz\n\n\nQuiz 01\n\n\nTue, Jan 24\n\n\n\n\nExercise\n\n\nExercise 01\n\n\nThu, Feb 09\n\n\n\n\n\n\nNo matching items\n\n\n\n\nReadings\n\nGeographic Data Science with Python: Chapter 1 - Geographic Thinking for Data Scientists\nGeographic Data Science with Python: Chapter 2 - Computational Tools for Geographic Data Science"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Materials will be posted here as the semester progresses\n\n\n\n\n\n\nWeek\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\nWeek 01\n\n\nJan 19\n\n\nWelcome to Spatial Data Analysis\n\n\n\n\nWeek 02\n\n\nJan 24 - 26\n\n\nSpatial Analysis\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "schedule.html#assignments",
+    "href": "schedule.html#assignments",
+    "title": "Schedule",
+    "section": "Assignments",
+    "text": "Assignments\nYou can find details and assignment instructions in the relevant week on the schedule.\n\nExercises\nExercises will be due on Thursdays at 2:00pm. You will have two weeks to complete each homework assignment. Details will be provided on the weekly schedule.\n\n\nQuizzes\nOn-line quizzes are due on Tuesdays at 2:00pm. Details are available by week in the schedule.\n\n\nExam\nThere will be a final exam on May 19 (13:00-15:00)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Spatial Data Analysis",
+    "section": "",
+    "text": "Course overview from GEOG 385: Spatial Data Analysis at San Diego State University\nThe purpose of this course is to introduce you to methods of spatial data analysis. The focus is on both the conceptual and applied aspects of spatial statistical methods. We will place particular emphasis on the computational aspects of Exploratory Spatial Data Analysis (ESDA) methods for three diﬀerent types of spatial data: point processes, lattice, and geostatistical. We will also cover an introduction to regression analysis on spatially referenced data. Throughout the course you will gain valuable hands-on experience with several specialized software packages for spatial data analysis. The overriding goal of the course is for you to acquire familiarity with the fundamental methodological and operational issues in the statistical analysis of geographic information and the ability to extend these methods in your own research."
+  },
+  {
+    "objectID": "index.html#class-meetings",
+    "href": "index.html#class-meetings",
+    "title": "Spatial Data Analysis",
+    "section": "Class meetings",
+    "text": "Class meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nGMCS 307\nTue & Thu 2:00 - 3:15pm"
+  },
+  {
+    "objectID": "index.html#teaching-team",
+    "href": "index.html#teaching-team",
+    "title": "Spatial Data Analysis",
+    "section": "Teaching team",
+    "text": "Teaching team\n\n\n\nName\nOffice hours\nLocation\n\n\n\n\nSergio Rey\nThu 3:30 - 4:30pm\nPFSA 316G\n\n\nDylan Skrah\nTue 3:20-4:20pm\nZoom"
+  }
+]
