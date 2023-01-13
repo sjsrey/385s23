@@ -406,7 +406,7 @@ gdf.plot(edgecolor='white');
 
 ## Server or Laptop
 
-You can choose to either use an account on our course [JupyterHub]() or install the packages on your own laptop.
+You can choose to either use an account on our course [JupyterHub](https://jupyter.org/hub) or install the packages on your own laptop.
 
 Either way, you will be using Jupyter Notebooks for all computation:
 

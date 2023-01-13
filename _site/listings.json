@@ -1,15 +1,5 @@
 [
   {
-    "listing": "/weeks/week-02.html",
-    "items": [
-      "/slides/week-02/03-ggplot.html",
-      "/slides/week-02/04-viz-numeric-data.html",
-      "/slides/week-02/05-viz-categorical-data.html",
-      "/hw/w2-hw01.html",
-      "/labs/w2-lab01.html"
-    ]
-  },
-  {
     "listing": "/weeks/week-03.html",
     "items": [
       "/slides/week-03/06-grammar-data-wrangle.html",
@@ -22,8 +12,17 @@
   {
     "listing": "/weeks/week-01.html",
     "items": [
-      "/slides/week-01/01-example.html",
-      "/slides/week-01/02-demo.html"
+      "/slides/week-01/01-introduction.html",
+      "/hw/w1-hw00.html"
+    ]
+  },
+  {
+    "listing": "/weeks/week-02.html",
+    "items": [
+      "/slides/week-02/02-spatial-analysis.html",
+      "/slides/week-02/03-hub.html",
+      "/hw/w2-hw01.html",
+      "/labs/w2-lab01.html"
     ]
   },
   {

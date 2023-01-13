@@ -2,19 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.36">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Teach Data Science Course Website - Syllabus</title>
+<title>Spatial Data Analysis - Syllabus</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -74,8 +79,8 @@ ul.task-list{list-style: none;}
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./" class="sidebar-logo-link">
-      <img src="./images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/esda.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="https://github.com/rstudio-conf-2022/teach-ds-course-website" title="GitHub" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
@@ -109,32 +114,28 @@ ul.task-list{list-style: none;}
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#course-learning-objectives" id="toc-course-learning-objectives" class="nav-link active" data-scroll-target="#course-learning-objectives">Course Learning Objectives</a></li>
-  <li><a href="#textbooks" id="toc-textbooks" class="nav-link" data-scroll-target="#textbooks">Textbooks</a></li>
-  <li><a href="#course-community" id="toc-course-community" class="nav-link" data-scroll-target="#course-community">Course community</a>
-  <ul class="collapse">
-  <li><a href="#inclusive-community" id="toc-inclusive-community" class="nav-link" data-scroll-target="#inclusive-community">Inclusive community</a></li>
-  <li><a href="#accessibility" id="toc-accessibility" class="nav-link" data-scroll-target="#accessibility">Accessibility</a></li>
-  <li><a href="#communication" id="toc-communication" class="nav-link" data-scroll-target="#communication">Communication</a></li>
-  </ul></li>
-  <li><a href="#activities-assessment" id="toc-activities-assessment" class="nav-link" data-scroll-target="#activities-assessment">Activities &amp; Assessment</a>
-  <ul class="collapse">
-  <li><a href="#labs" id="toc-labs" class="nav-link" data-scroll-target="#labs">Labs</a></li>
-  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
-  <li><a href="#exams" id="toc-exams" class="nav-link" data-scroll-target="#exams">Exams</a></li>
-  <li><a href="#final-project" id="toc-final-project" class="nav-link" data-scroll-target="#final-project">Final Project</a></li>
-  </ul></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
+  <li><a href="#computational-learning" id="toc-computational-learning" class="nav-link" data-scroll-target="#computational-learning">Computational Learning</a></li>
+  <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a></li>
+  <li><a href="#schedule-planned" id="toc-schedule-planned" class="nav-link" data-scroll-target="#schedule-planned">Schedule (Planned)</a></li>
   <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading">Grading</a></li>
-  <li><a href="#course-policies" id="toc-course-policies" class="nav-link" data-scroll-target="#course-policies">Course policies</a>
+  <li><a href="#quizzes" id="toc-quizzes" class="nav-link" data-scroll-target="#quizzes">Quizzes</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  <li><a href="#project" id="toc-project" class="nav-link" data-scroll-target="#project">Project</a></li>
+  <li><a href="#final-exam" id="toc-final-exam" class="nav-link" data-scroll-target="#final-exam">Final Exam</a></li>
+  <li><a href="#tokens" id="toc-tokens" class="nav-link" data-scroll-target="#tokens">Tokens</a></li>
+  <li><a href="#policies" id="toc-policies" class="nav-link" data-scroll-target="#policies">Policies</a>
   <ul class="collapse">
-  <li><a href="#academic-honesty" id="toc-academic-honesty" class="nav-link" data-scroll-target="#academic-honesty">Academic honesty</a></li>
-  <li><a href="#late-work-extensions" id="toc-late-work-extensions" class="nav-link" data-scroll-target="#late-work-extensions">Late work &amp; extensions</a></li>
+  <li><a href="#accomodations" id="toc-accomodations" class="nav-link" data-scroll-target="#accomodations">Accomodations</a></li>
+  <li><a href="#privacy-and-intellectual-property" id="toc-privacy-and-intellectual-property" class="nav-link" data-scroll-target="#privacy-and-intellectual-property">Privacy and Intellectual Property</a></li>
+  <li><a href="#academic-integrity" id="toc-academic-integrity" class="nav-link" data-scroll-target="#academic-integrity">Academic Integrity</a></li>
+  <li><a href="#code-of-conduct" id="toc-code-of-conduct" class="nav-link" data-scroll-target="#code-of-conduct">Code of Conduct</a></li>
   </ul></li>
-  <li><a href="#important-dates" id="toc-important-dates" class="nav-link" data-scroll-target="#important-dates">Important dates</a></li>
   </ul>
 </nav>
     </div>
@@ -151,147 +152,420 @@ ul.task-list{list-style: none;}
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
 
 </header>
 
-<p><strong>Excerpts of Fall 2021 syllabus from STA 199: Introduction to Data Science at Duke University</strong></p>
 <hr>
-<section id="course-learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="course-learning-objectives">Course Learning Objectives</h2>
-<p>By the end of the semester, you will…</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Welcome to 385: Spatial Data Analysis!</p>
+<p>The purpose of this course is to introduce you to methods of spatial data analysis. The focus is on both the conceptual and applied aspects of spatial statistical methods. We will place particular emphasis on the computational aspects of Exploratory Spatial Data Analysis (ESDA) methods for three diﬀerent types of spatial data: point processes, lattice, and geostatistical. We will also cover an introduction to regression analysis on spatially referenced data. Throughout the course you will gain valuable hands-on experience with several specialized software packages for spatial data analysis. The overriding goal of the course is for you to acquire familiarity with the fundamental methodological and operational issues in the statistical analysis of geographic information and the ability to extend these methods in your own research.</p>
+<p>The course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts.</p>
+<p>In the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field.</p>
+</section>
+<section id="prerequisites" class="level2">
+<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
 <ul>
-<li>learn to explore, visualize, and analyze data in a reproducible and shareable manner</li>
-<li>gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, and data visualization work on problems and case studies inspired by and based on real-world questions and data</li>
-<li>learn to effectively communicate results through written assignments and final project presentation</li>
+<li><a href="https://catalog.sdsu.edu/preview_course_nopop.php?catoid=5&amp;coid=31440">GEOG 101</a> or <a href="https://catalog.sdsu.edu/preview_course_nopop.php?catoid=5&amp;coid=31442">GEOG 102</a></li>
+<li><a href="https://catalog.sdsu.edu/preview_course_nopop.php?catoid=5&amp;coid=33000">STAT 250</a> or comparable course in statistics.</li>
 </ul>
 </section>
-<section id="textbooks" class="level2">
-<h2 class="anchored" data-anchor-id="textbooks">Textbooks</h2>
-<p>All books are freely available online. Hardcopies are also available for purchase.</p>
+<section id="computational-learning" class="level2">
+<h2 class="anchored" data-anchor-id="computational-learning">Computational Learning</h2>
+<p>We will using <a href="https://en.wikipedia.org/wiki/Open-source_software">open source</a> geospatial software throughout the course together with <a href="https://jupyter.org">Jupyter Notebooks</a>, and <a href="https://python.org">Python</a> as our scripting language.</p>
+<p>All software for the course will be made available through <a href="https://jupyter.org/">JupyterHub</a> a web-based framework. Students wishing to install these materials on their own machines will be given instructions to do so, <strong>but this is not required</strong>.</p>
+</section>
+<section id="readings" class="level2">
+<h2 class="anchored" data-anchor-id="readings">Readings</h2>
+<p>All required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore coming into class prepared means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings.</p>
 <table class="table">
-<tbody>
-<tr class="odd">
-<td><a href="http://r4ds.had.co.nz/">R for Data Science</a></td>
-<td>Grolemund, Wickham</td>
-<td>O’Reilly, 1st edition, 2016</td>
-</tr>
-<tr class="even">
-<td><a href="https://openintro-ims.netlify.app/">Introduction to Modern Statistics</a></td>
-<td>Çetinkaya-Rundel, Hardin</td>
-<td>OpenIntro Inc., 1st Edition, 2021</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="course-community" class="level2">
-<h2 class="anchored" data-anchor-id="course-community">Course community</h2>
-<section id="inclusive-community" class="level3">
-<h3 class="anchored" data-anchor-id="inclusive-community">Inclusive community</h3>
-<p>It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students’ learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength, and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with <a href="https://provost.duke.edu/initiatives/commitment-to-diversity-and-inclusion">Duke’s Commitment to Diversity and Inclusion</a>. Your suggestions are encouraged and appreciated.</p>
-</section>
-<section id="accessibility" class="level3">
-<h3 class="anchored" data-anchor-id="accessibility">Accessibility</h3>
-<p>If there is any portion of the course that is not accessible to you due to challenges with technology or the course format, please let me know so we can make appropriate accommodations.</p>
-<p>The Student Disability Access Office (SDAO) is available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to request or update accommodations under these circumstances.</p>
-</section>
-<section id="communication" class="level3">
-<h3 class="anchored" data-anchor-id="communication">Communication</h3>
-<p>All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website.</p>
-<p>Announcements will be emailed through Sakai Announcements periodically. Please check your email regularly to ensure you have the latest announcements for the course.</p>
-</section>
-</section>
-<section id="activities-assessment" class="level2">
-<h2 class="anchored" data-anchor-id="activities-assessment">Activities &amp; Assessment</h2>
-<section id="labs" class="level3">
-<h3 class="anchored" data-anchor-id="labs">Labs</h3>
-<p>In labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation.</p>
-</section>
-<section id="homework" class="level3">
-<h3 class="anchored" data-anchor-id="homework">Homework</h3>
-<p>In homework, you will apply what you’ve learned during lecture and lab to complete data analysis tasks.</p>
-</section>
-<section id="exams" class="level3">
-<h3 class="anchored" data-anchor-id="exams">Exams</h3>
-<p>There will be two, take-home, open-note exams. Through these exams you have the opportunity to demonstrate what you’ve learned in the course thus far.</p>
-</section>
-<section id="final-project" class="level3">
-<h3 class="anchored" data-anchor-id="final-project">Final Project</h3>
-<p>The purpose of the <a href="./project/">final project</a> is to apply what you’ve learned throughout the semester to analyze an interesting data-driven research question.</p>
-</section>
-</section>
-<section id="grading" class="level2">
-<h2 class="anchored" data-anchor-id="grading">Grading</h2>
-<p>The final course grade will be calculated as follows:</p>
-<center>
-<table class="table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 87%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Category</th>
-<th>Percentage</th>
+<th>Abbrevation</th>
+<th>Source</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Homework</td>
-<td>30%</td>
+<td>GDS</td>
+<td>Rey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press.</td>
 </tr>
 <tr class="even">
-<td>Labs</td>
-<td>15%</td>
+<td>GSA</td>
+<td>de Smith, M., M.F. Goodchild, P.A. Longly (2021) Geospatial Analysis. Winchelsea Press.</td>
 </tr>
 <tr class="odd">
-<td>Final Project</td>
-<td>15%</td>
-</tr>
-<tr class="even">
-<td>Exam 01</td>
-<td>17.5%</td>
-</tr>
-<tr class="odd">
-<td>Exam 02</td>
-<td>17.5%</td>
-</tr>
-<tr class="even">
-<td>In-class exercises</td>
-<td>5%</td>
+<td>SAH</td>
+<td>de Smith, M. (2021) Statistical Analysis Handbook. Drumlin Security Ltd.</td>
 </tr>
 </tbody>
 </table>
-</center></section>
-<section id="course-policies" class="level2">
-<h2 class="anchored" data-anchor-id="course-policies">Course policies</h2>
-<section id="academic-honesty" class="level3">
-<h3 class="anchored" data-anchor-id="academic-honesty">Academic honesty</h3>
-<p><strong>TL;DR: Don’t cheat!</strong></p>
-<p>Please abide by the following as you work on assignments in this course:</p>
+</section>
+<section id="schedule-planned" class="level2">
+<h2 class="anchored" data-anchor-id="schedule-planned">Schedule (Planned)</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Week</th>
+<th style="text-align: right;">Dates</th>
+<th style="text-align: left;">Topic</th>
+<th style="text-align: right;">Reading</th>
+<th>Activities</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">Jan-19</td>
+<td style="text-align: left;">Introduction</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">Jan-24</td>
+<td style="text-align: left;">Spatial Analysis</td>
+<td style="text-align: right;"><a href="https://geographicdata.science/book/notebooks/01_geo_thinking.html">GDS 1</a></td>
+<td>Quiz 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: right;">Jan-26</td>
+<td style="text-align: left;">Spatial Analysis Software</td>
+<td style="text-align: right;"><a href="https://geographicdata.science/book/notebooks/02_geospatial_computational_environment.html">GDS 2</a></td>
+<td>Exercise 1 Out</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">Jan-31</td>
+<td style="text-align: left;">Spatial Data</td>
+<td style="text-align: right;"><a href="https://geographicdata.science/book/notebooks/03_spatial_data.html">GDS 3</a></td>
+<td>Quiz 2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: right;">Feb-02</td>
+<td style="text-align: left;">Point Pattern Basics</td>
+<td style="text-align: right;"><a href="https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html">GDS 8.1</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">Feb-07</td>
+<td style="text-align: left;">Centrography</td>
+<td style="text-align: right;"><a href="https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html#centrography">GDS 8.2</a></td>
+<td>Quiz 3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: right;">Feb-09</td>
+<td style="text-align: left;">Point Processes</td>
+<td style="text-align: right;"></td>
+<td>Exericse 1 Due</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">Feb-14</td>
+<td style="text-align: left;">Nearest Neighbor Methods</td>
+<td style="text-align: right;"><a href="https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html#randomness-clustering">GDS 8.3</a></td>
+<td>Quiz 4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: right;">Feb-16</td>
+<td style="text-align: left;">Distance Distributions</td>
+<td style="text-align: right;"></td>
+<td>Exercise 2 Out</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">Feb-21</td>
+<td style="text-align: left;">Area Data</td>
+<td style="text-align: right;"><a href="https://geographicdata.science/book/intro_part_ii.html">GDS II</a></td>
+<td>Quiz 5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: right;">Feb-23</td>
+<td style="text-align: left;">Visualization of Area Data</td>
+<td style="text-align: right;"><a href="https://geographicdata.science/book/notebooks/05_choropleth.html">GDS 5</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">Feb-28</td>
+<td style="text-align: left;">Spatial Autocorrelation Concepts</td>
+<td style="text-align: right;"><a href="https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html#understanding-spatial-autocorrelation">GDS 6.1</a></td>
+<td>Quiz 6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: right;">Mar-02</td>
+<td style="text-align: left;">Spatial Weights</td>
+<td style="text-align: right;"><a href="https://geographicdata.science/book/notebooks/04_spatial_weights.html">GDS 4</a></td>
+<td>Exercise 2 Due</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">Mar-07</td>
+<td style="text-align: left;">Join Count Tests</td>
+<td style="text-align: right;"><a href="https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html#binary-case-join-counts">GDS 5.1</a></td>
+<td>Quiz 7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: right;">Mar-09</td>
+<td style="text-align: left;">Global Autocorrelation Tests</td>
+<td style="text-align: right;"><a href="https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html#continuous-case-moran-plot-and-moran-s-i">GDS 5.2</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">Mar-14</td>
+<td style="text-align: left;">Local Autocorrelation</td>
+<td style="text-align: right;"><a href="https://geographicdata.science/book/notebooks/07_local_autocorrelation.html">GDS 6</a></td>
+<td>Quiz 8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: right;">Mar-16</td>
+<td style="text-align: left;">Geostatistical Data</td>
+<td style="text-align: right;"><a href="https://www.spatialanalysisonline.com/HTML/geostatistical_interpolation_m.htm?zoom_highlightsub=geostatistical">GSA gs</a></td>
+<td>Exercise 3 Out</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">Mar-21</td>
+<td style="text-align: left;">Spatial Interpolation</td>
+<td style="text-align: right;"><a href="https://www.spatialanalysisonline.com/HTML/deterministic_interpolation_me.htm">GSA int</a></td>
+<td>Quiz 9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: right;">Mar-23</td>
+<td style="text-align: left;">Kriging</td>
+<td style="text-align: right;"><a href="https://www.spatialanalysisonline.com/HTML/kriging_interpolation.htm">GSA krg</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><em>Mar-28</em></td>
+<td style="text-align: left;"><em>Spring Break</em></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><em>Mar-30</em></td>
+<td style="text-align: left;"><em>Spring Break</em></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">Apr-04</td>
+<td style="text-align: left;">Introduction to Multivariate Analysis</td>
+<td style="text-align: right;"><a href="https://www.statsref.com/HTML/multivariate_distributions.html?zoom_highlightsub=multivariate">SAH mv</a></td>
+<td>Quiz 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: right;">Apr-06</td>
+<td style="text-align: left;">Correlation and Spatial Correlation</td>
+<td style="text-align: right;"><a href="https://www.statsref.com/HTML/correlation.html">SAH cor</a></td>
+<td>Exercise 3 Due</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">Apr-11</td>
+<td style="text-align: left;">Introduction to Regression</td>
+<td style="text-align: right;"><a href="https://www.spatialanalysisonline.com/HTML/regression_overview.htm?zoom_highlightsub=regression">GSA reg</a></td>
+<td>Exercise 4 Out</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: right;">Apr-13</td>
+<td style="text-align: left;">Inference in Regression</td>
+<td style="text-align: right;"><a href="https://www.statsref.com/HTML/simple_regression.html">SAH inf</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">Apr-18</td>
+<td style="text-align: left;">Regression with Spatial Data</td>
+<td style="text-align: right;"><a href="https://geographicdata.science/book/notebooks/11_regression.html">GDS 11</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: right;">Apr-20</td>
+<td style="text-align: left;">Diagnostics for Spatial Effects</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">Apr-25</td>
+<td style="text-align: left;">Spatial Dynamics</td>
+<td style="text-align: right;"><a href="https://geographicdata.science/book/notebooks/09_spatial_inequality.html">GDS 9</a></td>
+<td>Exercise 4 Due</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: right;">Apr-27</td>
+<td style="text-align: left;">Next Steps With Spatial Data Analysis</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">May-02</td>
+<td style="text-align: left;">Presentations</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: right;">May-04</td>
+<td style="text-align: left;">Presentations</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: right;">May-10</td>
+<td style="text-align: left;">Final Examination (13:00-15:00)</td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="grading" class="level2">
+<h2 class="anchored" data-anchor-id="grading">Grading</h2>
+<p>GEOG385 uses <a href="https://www.insidehighered.com/views/2016/01/19/new-ways-grade-more-effectively-essay">specification grading</a> in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course.</p>
+<p>There is a two-step process for determination of your final course grade at the end of the quarter:</p>
+<ol type="1">
+<li>Using your quizzes, exercises, and projects, your <strong>base grade</strong> is determined.</li>
+<li>Using your final exam results, determine if your base grade includes a "plus", "minus", or level drop to form the course grade.</li>
+</ol>
+<p>For Step 1, the base grade is determined using the following specification:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Level</th>
+<th style="text-align: left;">Hurdles</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">Pass at least 8 of 10 quizzes, earn "Demonstrates Competency" on 4 of 4 exercises,</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>and</strong> submit an project that earns "Demonstrates Competency"</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">B</td>
+<td style="text-align: left;">Pass at least 7 of 10 quizzes, earn "Demonstrates Competency" on 3 of 4 exercises</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">Pass at least 6 of 10 quizzes, earn "Demonstrates Competency" on 2 of 4 exercises</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">D</td>
+<td style="text-align: left;">Pass at least 5 of 10 quizzes, earn "Demonstrates Competency" on 1 of 4 exercises</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">Fail to clear D-level hurdles</td>
+</tr>
+</tbody>
+</table>
+<p>For Step 2, your final course grade is determined as follows:</p>
 <ul>
-<li>You may discuss individual homework and lab assignments with other students; however, you may not directly share (or copy) code or write up with other students. For team assignments, you may collaborate freely within your team. You may discuss the assignment with other teams; however, you may not directly share (or copy) code or write up with another team. Unauthorized sharing (or copying) of the code or write up will be considered a violation for all students involved.</li>
-<li>You may not discuss or otherwise work with others on the exams.</li>
-<li><strong>Reusing code</strong>: Unless explicitly stated otherwise, you may make use of online resources (e.g.&nbsp;StackOverflow) for coding examples on assignments. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.</li>
+<li>If you earn at least 85% on the final exam, you will obtain a + for your grade. So an A base grade becomes a final A+ course grade, a B becomes a B+, and so on.</li>
+<li>If you score between 70-85% on the final exam, your base grade becomes your course grade.</li>
+<li>If you score between 50% and 69% on the final exam, you will obtain a - for your grade. So an A becomes and A-, a B becomes a B-, and so on.</li>
+<li>If you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade.</li>
 </ul>
 </section>
-<section id="late-work-extensions" class="level3">
-<h3 class="anchored" data-anchor-id="late-work-extensions">Late work &amp; extensions</h3>
-<p>The due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline. Note that the lowest homework and lab assignment will be dropped to accommodate such circumstances.</p>
+<section id="quizzes" class="level2">
+<h2 class="anchored" data-anchor-id="quizzes">Quizzes</h2>
+<p>Quizzes are graded on a pass/fail basis. Starting in week two, there will be a quiz due before each Tuesday session that pertains to the background reading that is required before our work in class.</p>
 </section>
+<section id="exercises" class="level2">
+<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
+<p>Four exercises will be introduced in class and are due in two weeks.</p>
+<p>Each exercise is graded using a <strong>CRN</strong> rubric that classifies work with marks of <strong>C</strong> ("Demonstrates Competence"), <strong>R</strong> ("Needs Revision"), or <strong>N</strong> ("Not assessable"):</p>
+<p>Of each exercise the following questions will be asked: Does the work demonstrate that the student understands the concepts? Does the work demonstrate competence and meet the expectations outlined in the exercise?</p>
+<p>If the answer is "yes" to both of the questions, a student passes the hurdle for that exercise.</p>
+<p>If the initial submission does not clear the hurdle, then a second question is asked: Is there evidence of partial understanding of the concepts? If the answer to this question is "Yes" the student can exchange one token to attempt a revision of their work. If the answer is "No", the student does not clear the hurdle for this exercise and will not have the opportunity to revise their work.</p>
 </section>
-<section id="important-dates" class="level2">
-<h2 class="anchored" data-anchor-id="important-dates">Important dates</h2>
+<section id="project" class="level2">
+<h2 class="anchored" data-anchor-id="project">Project</h2>
+<p>The project is a required hurdle to earn a level A grade. In order to clear this hurdle, the project must obtain a "Demonstrates Competence" evaluation. There will be opportunities for feedback along the way, but the final submission will be evaluated. There will be no opportunity for revising this final submission.</p>
+<p>Students need to commit to the project by specifying their team (maximum of 4 members on a team) by <strong>2-09</strong>. Once the commitment is made, the team composition is final. Any student who does not submit a team definition by this date will not be able to pursue the project.</p>
+<p>Details on the project rubric will be given out on <strong>1-31</strong>.</p>
+</section>
+<section id="final-exam" class="level2">
+<h2 class="anchored" data-anchor-id="final-exam">Final Exam</h2>
+<p>A closed book, closed note, timed final exam will be given on <strong>May 10 (13:00-15:00)</strong>. The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class.</p>
+</section>
+<section id="tokens" class="level2">
+<h2 class="anchored" data-anchor-id="tokens">Tokens</h2>
+<p>Each student is provided with three tokens at the beginning of the semester.</p>
+<p>Using Tokens</p>
+<ol type="1">
+<li><p>One token can be used for a one-day extension for an exercise.</p></li>
+<li><p>One token can be used to revise an exercise that was submitted on-time but evaluated as "Needing Revision".</p></li>
+<li><p>Two tokens can be used to request a make-up date for the final exam.</p></li>
+</ol>
+<p>Earning Tokens</p>
+<ol type="1">
+<li><p>Handing in an exercise at least 24 hours before its due date.</p></li>
+<li><p>Submitting all four exercises on time (or early).</p></li>
+<li><p>Attempting all 10 quizzes.</p></li>
+</ol>
+<p>Remaining Tokens</p>
+<p>Each token that remains unused after <strong>4-27</strong> will be counted as a passed quiz. <em>Tokens cannot be exchanged with other students</em>.</p>
+</section>
+<section id="policies" class="level2">
+<h2 class="anchored" data-anchor-id="policies">Policies</h2>
+<section id="accomodations" class="level3">
+<h3 class="anchored" data-anchor-id="accomodations">Accomodations</h3>
+<p>If you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.</p>
+</section>
+<section id="privacy-and-intellectual-property" class="level3">
+<h3 class="anchored" data-anchor-id="privacy-and-intellectual-property">Privacy and Intellectual Property</h3>
+<p>Student Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use [Canvas / Blackboard] to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.</p>
+</section>
+<section id="academic-integrity" class="level3">
+<h3 class="anchored" data-anchor-id="academic-integrity">Academic Integrity</h3>
+<p>The SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: <a href="https://sacd.sdsu.edu/student-rights/academic-dishonesty" class="uri">https://sacd.sdsu.edu/student-rights/academic-dishonesty</a>.</p>
+</section>
+<section id="code-of-conduct" class="level3">
+<h3 class="anchored" data-anchor-id="code-of-conduct">Code of Conduct</h3>
+<p>As course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.</p>
 <ul>
-<li><p><strong>Aug 23:</strong> Classes begin</p></li>
-<li><p><strong>Sep 3</strong>: Drop/add ends</p></li>
-<li><p><strong>Oct 4-5</strong>: Fall break</p></li>
-<li><p><strong>Nov 5</strong>: Last day to withdraw with W</p></li>
-<li><p><strong>Nov 24-26:</strong> Thanksgiving recess</p></li>
-<li><p><strong>Dec 3</strong>: Classes end</p></li>
-<li><p><strong>Dec 4-7</strong>: Reading period</p></li>
-<li><p><strong>Dec 8-13</strong>: Final exams</p></li>
+<li><p>All communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.</p></li>
+<li><p>Be kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.</p></li>
+<li><p>Students violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.</p></li>
 </ul>
+<p>This code of conduct is an adaptation of the <a href="https://scipy2018.scipy.org/ehome/299527/648147/index9a04.html">SciPy 2018 Code of Conduct</a>.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -336,7 +610,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -364,31 +655,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
