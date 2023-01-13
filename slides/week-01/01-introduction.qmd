@@ -422,10 +422,10 @@ Either way, you will be using Jupyter Notebooks for all computation:
 ## My Program 
 
 <CENTER>
-<img src="images/cgs.png" alt="ac_hotel" />
+<img src="images/cogs.png" alt="cogs" />
 </CENTER>
 
-[`url`](http://spatial.ucr.edu)
+[`url`](http://cogs.sdsu.edu)
 
 ## Why am I here
 <CENTER>
