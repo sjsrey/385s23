@@ -1,2 +1,2 @@
-# Geograph 385 Spatial Data Analysis
+# Geography 385 Spatial Data Analysis
 
