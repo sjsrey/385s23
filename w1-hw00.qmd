@@ -1,8 +1,0 @@
----
-title: "Prerequisite Quiz"
-date: "January 19, 2023"
-categories: "Quiz"
----
-
-[Prerequisite Quiz on Canvas](https://sdsu.instructure.com/courses/116162/quizzes/224625)
-
