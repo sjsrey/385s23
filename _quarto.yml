@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  preview:
+    port: 4385
 
 website:
   title: "Spatial Data Analysis"
