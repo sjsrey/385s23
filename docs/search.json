@@ -1,5 +1,75 @@
 [
   {
+    "objectID": "labs/w3-lab02.html",
+    "href": "labs/w3-lab02.html",
+    "title": "Lab 02: Data visualization with ggplot2!",
+    "section": "",
+    "text": "Add instructions for assignment."
+  },
+  {
+    "objectID": "labs/w2-lab01.html",
+    "href": "labs/w2-lab01.html",
+    "title": "Exercise 01",
+    "section": "",
+    "text": "On Canvas"
+  },
+  {
+    "objectID": "weeks/week-02.html",
+    "href": "weeks/week-02.html",
+    "title": "Week 02",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nSpatial Analysis\n\n\nTue, Jan 24\n\n\n\n\nSpatial Data Analysis Software\n\n\nThu, Jan 26\n\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\nTitle\n\n\nDue\n\n\n\n\n\n\nQuiz\n\n\nQuiz 01\n\n\nTue, Jan 24\n\n\n\n\nExercise\n\n\nExercise 01\n\n\nThu, Feb 09\n\n\n\n\n\n\nNo matching items\n\n\n\n\nReadings\n\nGeographic Data Science with Python: Chapter 1 - Geographic Thinking for Data Scientists\nGeographic Data Science with Python: Chapter 2 - Computational Tools for Geographic Data Science"
+  },
+  {
+    "objectID": "weeks/week-01.html",
+    "href": "weeks/week-01.html",
+    "title": "Week 01",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nCourse Introduction\n\n\nThu, Jan 19\n\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\nTitle\n\n\nDue\n\n\n\n\n\n\nQuiz\n\n\nPrerequisite Quiz\n\n\nThu, Jan 19\n\n\n\n\n\n\nNo matching items\n\n\n\n\nReadings\n\n\n\n\n\n\nCourse Syllabus"
+  },
+  {
+    "objectID": "hw/w3-hw02.html",
+    "href": "hw/w3-hw02.html",
+    "title": "HW 02: Data visualization",
+    "section": "",
+    "text": "Add instructions for assignment."
+  },
+  {
+    "objectID": "hw/w2-hw01.html",
+    "href": "hw/w2-hw01.html",
+    "title": "Quiz 01",
+    "section": "",
+    "text": "Quiz 1 is on the canvas site"
+  },
+  {
+    "objectID": "hw/w1-hw00.html",
+    "href": "hw/w1-hw00.html",
+    "title": "Prerequisite Quiz",
+    "section": "",
+    "text": "Prerequisite Quiz on Canvas"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Spatial Data Analysis",
+    "section": "",
+    "text": "Course overview from GEOG 385: Spatial Data Analysis at San Diego State University\nThe purpose of this course is to introduce you to methods of spatial data analysis. The focus is on both the conceptual and applied aspects of spatial statistical methods. We will place particular emphasis on the computational aspects of Exploratory Spatial Data Analysis (ESDA) methods for three diﬀerent types of spatial data: point processes, lattice, and geostatistical. We will also cover an introduction to regression analysis on spatially referenced data. Throughout the course you will gain valuable hands-on experience with several specialized software packages for spatial data analysis. The overriding goal of the course is for you to acquire familiarity with the fundamental methodological and operational issues in the statistical analysis of geographic information and the ability to extend these methods in your own research."
+  },
+  {
+    "objectID": "index.html#class-meetings",
+    "href": "index.html#class-meetings",
+    "title": "Spatial Data Analysis",
+    "section": "Class meetings",
+    "text": "Class meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nGMCS 307\nTue & Thu 2:00 - 3:15pm"
+  },
+  {
+    "objectID": "index.html#teaching-team",
+    "href": "index.html#teaching-team",
+    "title": "Spatial Data Analysis",
+    "section": "Teaching team",
+    "text": "Teaching team\n\n\n\nName\nOffice hours\nLocation\n\n\n\n\nSergio Rey\nThu 3:30 - 4:30pm\nPFSA 316G\n\n\nDylan Skrah\nTue 3:20-4:20pm\nZoom"
+  },
+  {
     "objectID": "slides/week-01/01-introduction.html#introduction",
     "href": "slides/week-01/01-introduction.html#introduction",
     "title": "Course Introduction",
@@ -144,7 +214,7 @@
     "href": "slides/week-01/01-introduction.html#final-exam",
     "title": "Course Introduction",
     "section": "Final Exam",
-    "text": "Final Exam\nA closed book, closed note, timed final exam will be given on TBD. The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class."
+    "text": "Final Exam\nA closed book, closed note, timed final exam will be given on May 10 (13:00-15:00). The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class."
   },
   {
     "objectID": "slides/week-01/01-introduction.html#tokens",
@@ -572,26 +642,5 @@
     "title": "Schedule",
     "section": "Assignments",
     "text": "Assignments\nYou can find details and assignment instructions in the relevant week on the schedule.\n\nExercises\nExercises will be due on Thursdays at 2:00pm. You will have two weeks to complete each homework assignment. Details will be provided on the weekly schedule.\n\n\nQuizzes\nOn-line quizzes are due on Tuesdays at 2:00pm. Details are available by week in the schedule.\n\n\nExam\nThere will be a final exam on May 19 (13:00-15:00)"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Spatial Data Analysis",
-    "section": "",
-    "text": "Course overview from GEOG 385: Spatial Data Analysis at San Diego State University\nThe purpose of this course is to introduce you to methods of spatial data analysis. The focus is on both the conceptual and applied aspects of spatial statistical methods. We will place particular emphasis on the computational aspects of Exploratory Spatial Data Analysis (ESDA) methods for three diﬀerent types of spatial data: point processes, lattice, and geostatistical. We will also cover an introduction to regression analysis on spatially referenced data. Throughout the course you will gain valuable hands-on experience with several specialized software packages for spatial data analysis. The overriding goal of the course is for you to acquire familiarity with the fundamental methodological and operational issues in the statistical analysis of geographic information and the ability to extend these methods in your own research."
-  },
-  {
-    "objectID": "index.html#class-meetings",
-    "href": "index.html#class-meetings",
-    "title": "Spatial Data Analysis",
-    "section": "Class meetings",
-    "text": "Class meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nGMCS 307\nTue & Thu 2:00 - 3:15pm"
-  },
-  {
-    "objectID": "index.html#teaching-team",
-    "href": "index.html#teaching-team",
-    "title": "Spatial Data Analysis",
-    "section": "Teaching team",
-    "text": "Teaching team\n\n\n\nName\nOffice hours\nLocation\n\n\n\n\nSergio Rey\nThu 3:30 - 4:30pm\nPFSA 316G\n\n\nDylan Skrah\nTue 3:20-4:20pm\nZoom"
   }
 ]
