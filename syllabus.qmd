@@ -1,9 +1,27 @@
 ---
-title: "Syllabus"
+title: "Geography 385 Spatial Data Analysis"
+subtitle: "Spring 2023"
+format:
+  html:
+    theme: cosmo 
+  pdf:
+    colorlinks: true
 ---
 
 <hr>
 
+## Class meetings
+
+| Meeting | Location | Time                   |
+|---------|----------|------------------------|
+| Lecture | [GMCS 307](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202?m/611838?s/gmcs) | Tue & Thu 2:00 - 3:15pm |
+
+## Teaching team 
+
+| Name        | Office hours      | Location  |
+|-------------|-------------------|-----------|
+| [Sergio Rey](https://geography.sdsu.edu/people/bios/rey) | Thu 3:30 - 4:30pm | [PSFA 361G](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/) |
+| Dylan Skrah | Tue 3:20-4:20pm     | [PSFA 361F](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/)    |
 
 
 
@@ -46,6 +64,8 @@ point for further engagement with the field.
 
 - [GEOG 101](https://catalog.sdsu.edu/preview_course_nopop.php?catoid=5&coid=31440) or [GEOG 102](https://catalog.sdsu.edu/preview_course_nopop.php?catoid=5&coid=31442) 
 - [STAT 250](https://catalog.sdsu.edu/preview_course_nopop.php?catoid=5&coid=33000) or comparable course in statistics.
+
+All students are required to complete the [prerequisite assessment quiz](https://sdsu.instructure.com/courses/116162/quizzes/224625) before Monday 1/24 11:59pm.
 
 ## Computational Learning
 
@@ -278,7 +298,7 @@ accommodation letter from Student Ability Success Center.
 Student Privacy and Intellectual Property: The Family Educational
 Rights and Privacy Act (FERPA) mandates the protection of student
 information, including contact information, grades, and graded
-assignments. I will use [Canvas / Blackboard] to communicate with you,
+assignments. I will use Canvas to communicate with you,
 and I will not post grades or leave graded assignments in public
 places. Students will be notified at the time of an assignment if
 copies of student work will be retained beyond the end of the semester

@@ -5,7 +5,7 @@ project:
     port: 4385
 
 website:
-  title: "Spatial Data Analysis"
+  title: "Geography 385 Spatial Data Analysis"
   sidebar:
     background: primary
     logo: "images/esda.png"
@@ -27,6 +27,7 @@ website:
 format:
   html:
     theme: cosmo
+    subtitle: "Spring 2023"
    # css: styles.css
     toc: true
 

@@ -27,14 +27,36 @@ execute:
 
 # Open Source: What and Why
 
-# Jupyter and Jupyter Hub
+##  Open Source: Freedoms
 
+1. Free as in Beer
+2. Free as in Speech
+
+## Open Science
+
+![COS](images/openscience.png){width=".85\\linewidth"}
+
+
+## Open Education
+
+My beliefs:
+
+- acces to quality education in everyone's birthright
+- human knowledge is a [public good](https://en.wikipedia.org/wiki/Public_good_(economics)) that should be available to all
+- human knowledge is a public good that we all can contribute to
+
+# JupyterHub and Jupyter 
+
+## Jupyter Hub
+
+- Logging on
+- Interface
 
 # Resources
 
+- [How to Use Jupyter Notebook: A Beginner's Tutorial](https://www.dataquest.io/blog/jupyter-notebook-tutorial/)
+- [Think Python](https://www.greenteapress.com/thinkpython/html/index.html)
 
-
-![Snow Map](images/snowmap3.png){width=".85\\linewidth"}
 
 # Next Up
 </br>
