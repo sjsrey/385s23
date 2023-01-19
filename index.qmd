@@ -2,7 +2,6 @@
 title: "Spatial Data Analysis"
 ---
 
-## Course overview
 
 **Course overview from GEOG 385: Spatial Data Analysis at San Diego State University**
 
@@ -32,4 +31,4 @@ extend these methods in your own research.
 | Name        | Office hours      | Location  |
 |-------------|-------------------|-----------|
 | [Sergio Rey](https://geography.sdsu.edu/people/bios/rey) | Thu 3:30 - 4:30pm | [PSFA 361G](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/) |
-| Dylan Skrah | Tue 3:20-4:20pm     | Zoom      |
+| Dylan Skrah | Tue 3:20-4:20pm     | [PSFA 361F](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/) | 
