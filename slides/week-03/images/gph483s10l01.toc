@@ -1,0 +1,16 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Course Introduction}{6}{0}{1}
+\beamer@subsectionintoc {1}{1}{Objectives}{6}{0}{1}
+\beamer@subsectionintoc {1}{2}{Content and Structure}{8}{0}{1}
+\beamer@sectionintoc {2}{Logistics}{14}{0}{2}
+\beamer@subsectionintoc {2}{1}{Grading}{14}{0}{2}
+\beamer@subsectionintoc {2}{2}{Readings}{20}{0}{2}
+\beamer@subsectionintoc {2}{3}{Software}{22}{0}{2}
+\beamer@sectionintoc {3}{GIS and Spatial Analysis}{24}{0}{3}
+\beamer@subsectionintoc {3}{1}{Big Picture}{24}{0}{3}
+\beamer@subsectionintoc {3}{2}{What is Spatial Analysis?}{30}{0}{3}
+\beamer@sectionintoc {4}{EDA and ESDA}{43}{0}{4}
+\beamer@subsectionintoc {4}{1}{Exploratory Data Analysis (EDA)}{43}{0}{4}
+\beamer@subsectionintoc {4}{2}{Exploratory Spatial Data Analysis (ESDA)}{48}{0}{4}
+\beamer@subsectionintoc {4}{3}{Geovisualization}{51}{0}{4}

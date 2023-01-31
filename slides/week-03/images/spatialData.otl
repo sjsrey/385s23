@@ -1,0 +1,67 @@
+preamble
+	@author \textsc{Sergio Rey}
+	@institute \textbf{GPH 483/598}\\\textbf{Geographic Information Analysis}\\School of Geographical Sciences\\Arizona State University\\Spring 2009
+	@instituteShort ASU
+	@title Spatial Data
+	@subtitle 
+	@titleShort GPH 483/598
+	@date 
+	@dateShort Spatial Data
+Spatial Data
+	Types
+		Spatial Data is Special
+		| \begin{quote} Spatial data comes in many varieties and it is not
+		| easy to arrive at a system of classification that is simultaneously
+		| exclusive, exhaustive, imaginative, and satisfying. 
+		| \end{quote}
+		| -- G. Upton \& B. Fingelton
+		Types of Spatial Data
+			Events
+			| addresses of crimes
+			Continuous \alert{surfaces}
+			| air quality,  rainfall
+			Discrete spatial \alert{objects}
+			| county income
+		What is special about spatial data?
+			Location, Location, Location
+			| where matters
+			Dependence is the rule, not the exception
+			| * spatial interaction, contagion
+			| * spatial externalities
+			| * spillovers, copy-catting
+			Spatial Scale
+			| Inference can change with scale
+		Nature of Spatial Data
+			Georeferenced
+			| attribute data together with location
+			Geocoding
+			| * associate observations with location
+			| * point: latitude-longitude (GPS)
+			| * areal unit: spatial reference
+		Geocoding on-line
+		Where is the office?
+		Geocoding: google link
+		Geocoding
+		Geocoding
+		Location
+			Location as a \alert{Given}
+			| * in most spatial data analyses no choice in location
+			| * no sampling in the usual sense
+			| * data = attributes augmented with \alert{locational} information
+	What is special about spatial data?  Spatial Effects Spatial Data Analysis
+		Spatial Effects
+			The Trilogy
+			|\begin{itemize}
+			|\item Spatial Dependence
+			|\item Spatial Heterogeneity
+			|\item Spatial Scale
+			|\end{itemize}
+		First Law of Geography
+			Waldo Tobler
+			|\begin{itemize}
+			|\item	"everything depends on everything else, but closer things more so"
+			|\item	Structure of spatial dependence
+			|\item	Distance Decay
+			|\item	Closeness = Similarity
+			|\end{itemize}
+	Spatial Process Point, Geostatistical, Lattice, Network

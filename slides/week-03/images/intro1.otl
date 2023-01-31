@@ -1,0 +1,27 @@
+preamble
+	@author Sergio Rey
+	@institute ASU
+	@instituteShort ASU
+	@title Introduction to Exploratory Spatial Data Analysis
+	@subtitle GIS and Spatial Analysis
+	@date December 19, 2008
+	@dateShort GIS and Spatial Analysis
+GIS and Spatial Analysis
+	Now and Then
+		Dr. Snow
+		Modern Day Version
+	GIS as Tools
+		GIS as Tools
+			Burrough
+				quote
+			GISes
+				information systems
+	GIS Functions
+		Taxonomies
+			Anselin-Getis (1992): functions
+				| * Input
+				| * Storage
+				| * Analysis
+				| * Output
+Spatial Data
+Spatial Data Analysis

@@ -1,0 +1,21 @@
+\frametitle {Learning Latexslides}
+
+\begin{block}
+
+\begin{itemize}
+\item Have a look at the source code for this presentation, it can be found in the file \emp{exampletalk.py}. Going through the presentation and the source code simultaneously should get you started.
+\end{itemize}
+
+\end{block}
+\begin{block}
+
+\begin{itemize}
+\item When running\begin{Verbatim}[fontsize=\footnotesize,tabsize=4,baselinestretch=0.85,fontfamily=tt,xleftmargin=7mm]
+
+unix> latexslides mytalk.py
+\end{Verbatim}
+the file \emp{mytalk.py} is created. This file contains the basics and will help you get started on a new talk.
+\end{itemize}
+
+\end{block}
+

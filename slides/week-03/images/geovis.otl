@@ -1,0 +1,71 @@
+preamble
+	@author Sergio Rey
+	@institute School of Geographical Sciences\\Arizona State University
+	@instituteShort ASU
+	@title GeoVisualization and ESDA
+	@subtitle Introduction to Exploratory Spatial Data Analysis
+	@titleShort RRI Short Course
+	@date December 19, 2008
+	@dateShort GIS and Spatial Analysis
+Geovisualization
+	Geovisualization
+		Mapping Issues
+			How to Lie with Maps
+			| * Monmonnier (1996)
+			| * many design issues
+			| * projections
+			| * perceptions can be tricked
+		Geovisualization
+			Beyond Mapping
+			| * Comping Map and Scientific Visualization Methods
+			| ** exploit human pattern recognition
+			| * Statistical Maps
+			| ** innovative map devices
+	Visual Analytics
+		Visual Analytics
+			What?
+			| The science of analytical reasoning facilitated by interactive
+			| visual interfaces (NVAC 2005)
+			Components
+			| * science of analytical reasoning
+			| * visual representation and interaction
+			| * data representation and transformation
+			| * production, presentation and dissemination
+		Visual Analytics
+			Tools
+			| * synthesis information
+			| * derive insights
+			| * detect the expected and discover the unexpected
+			| * understandable assessments
+			| * communicate effectively
+			| * focused on poly actions
+		Visual Explanations
+		| * Tufte (1997)
+		| * Reasoning about Evidence and Design of Graphics
+		| ** documenting sources (metadata)
+		| ** appropriate comparisons
+		| ** quantify and show cause and effect
+		| **  multivariate nature of analytic problems
+		| ** evaluate alternative explanations
+Statistical Maps
+	Choropleth Map
+		Choropleth Map
+			Map Counterpart of Histogram
+			| * values for discrete spatial units
+			| * choro from choros (region), NOT chloro
+			Discrete Approximation
+			| * intervals
+			| * continuous shading
+		Map Design Issues
+			Choice of Intervals
+			| * cut points: equal interval, natural breaks
+			| * statistical critera: equal share (quantile), standard deviation
+			Choice of Colors
+			| * important for perception of pattern
+			| * measurement scale
+		Choropleth Map
+		|  \begin{center}
+		|	\includegraphics[width=0.8\linewidth]{income29.png}
+		|  \end{center}
+		Outlier Maps
+

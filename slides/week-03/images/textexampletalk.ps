@@ -1,0 +1,2457 @@
+%!PS-Adobe-2.0
+%%Creator: dvips(k) 5.96.1 Copyright 2007 Radical Eye Software
+%%Title: textexampletalk.dvi
+%%CreationDate: Tue Nov 18 11:30:32 2008
+%%Pages: 32
+%%PageOrder: Ascend
+%%BoundingBox: 0 0 595 842
+%%DocumentFonts: Courier Helvetica
+%%DocumentPaperSizes: a4
+%%EndComments
+%DVIPSWebPage: (www.radicaleye.com)
+%DVIPSCommandLine: dvips -Ppdf textexampletalk.dvi
+%DVIPSParameters: dpi=8000
+%DVIPSSource:  TeX output 2008.11.18:1130
+%%BeginProcSet: tex.pro 0 0
+%!
+/TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
+N}B/A{dup}B/TR{translate}N/isls false N/vsize 11 72 mul N/hsize 8.5 72
+mul N/landplus90{false}def/@rigin{isls{[0 landplus90{1 -1}{-1 1}ifelse 0
+0 0]concat}if 72 Resolution div 72 VResolution div neg scale isls{
+landplus90{VResolution 72 div vsize mul 0 exch}{Resolution -72 div hsize
+mul 0}ifelse TR}if Resolution VResolution vsize -72 div 1 add mul TR[
+matrix currentmatrix{A A round sub abs 0.00001 lt{round}if}forall round
+exch round exch]setmatrix}N/@landscape{/isls true N}B/@manualfeed{
+statusdict/manualfeed true put}B/@copies{/#copies X}B/FMat[1 0 0 -1 0 0]
+N/FBB[0 0 0 0]N/nn 0 N/IEn 0 N/ctr 0 N/df-tail{/nn 8 dict N nn begin
+/FontType 3 N/FontMatrix fntrx N/FontBBox FBB N string/base X array
+/BitMaps X/BuildChar{CharBuilder}N/Encoding IEn N end A{/foo setfont}2
+array copy cvx N load 0 nn put/ctr 0 N[}B/sf 0 N/df{/sf 1 N/fntrx FMat N
+df-tail}B/dfs{div/sf X/fntrx[sf 0 0 sf neg 0 0]N df-tail}B/E{pop nn A
+definefont setfont}B/Cw{Cd A length 5 sub get}B/Ch{Cd A length 4 sub get
+}B/Cx{128 Cd A length 3 sub get sub}B/Cy{Cd A length 2 sub get 127 sub}
+B/Cdx{Cd A length 1 sub get}B/Ci{Cd A type/stringtype ne{ctr get/ctr ctr
+1 add N}if}B/CharBuilder{save 3 1 roll S A/base get 2 index get S
+/BitMaps get S get/Cd X pop/ctr 0 N Cdx 0 Cx Cy Ch sub Cx Cw add Cy
+setcachedevice Cw Ch true[1 0 0 -1 -.1 Cx sub Cy .1 sub]{Ci}imagemask
+restore}B/D{/cc X A type/stringtype ne{]}if nn/base get cc ctr put nn
+/BitMaps get S ctr S sf 1 ne{A A length 1 sub A 2 index S get sf div put
+}if put/ctr ctr 1 add N}B/I{cc 1 add D}B/bop{userdict/bop-hook known{
+bop-hook}if/SI save N @rigin 0 0 moveto/V matrix currentmatrix A 1 get A
+mul exch 0 get A mul add .99 lt{/QV}{/RV}ifelse load def pop pop}N/eop{
+SI restore userdict/eop-hook known{eop-hook}if showpage}N/@start{
+userdict/start-hook known{start-hook}if pop/VResolution X/Resolution X
+1000 div/DVImag X/IEn 256 array N 2 string 0 1 255{IEn S A 360 add 36 4
+index cvrs cvn put}for pop 65781.76 div/vsize X 65781.76 div/hsize X}N
+/p{show}N/RMat[1 0 0 -1 0 0]N/BDot 260 string N/Rx 0 N/Ry 0 N/V{}B/RV/v{
+/Ry X/Rx X V}B statusdict begin/product where{pop false[(Display)(NeXT)
+(LaserWriter 16/600)]{A length product length le{A length product exch 0
+exch getinterval eq{pop true exit}if}{pop}ifelse}forall}{false}ifelse
+end{{gsave TR -.1 .1 TR 1 1 scale Rx Ry false RMat{BDot}imagemask
+grestore}}{{gsave TR -.1 .1 TR Rx Ry scale 1 1 false RMat{BDot}
+imagemask grestore}}ifelse B/QV{gsave newpath transform round exch round
+exch itransform moveto Rx 0 rlineto 0 Ry neg rlineto Rx neg 0 rlineto
+fill grestore}B/a{moveto}B/delta 0 N/tail{A/delta X 0 rmoveto}B/M{S p
+delta add tail}B/b{S p tail}B/c{-4 M}B/d{-3 M}B/e{-2 M}B/f{-1 M}B/g{0 M}
+B/h{1 M}B/i{2 M}B/j{3 M}B/k{4 M}B/w{0 rmoveto}B/l{p -4 w}B/m{p -3 w}B/n{
+p -2 w}B/o{p -1 w}B/q{p 1 w}B/r{p 2 w}B/s{p 3 w}B/t{p 4 w}B/x{0 S
+rmoveto}B/y{3 2 roll p a}B/bos{/SS save N}B/eos{SS restore}B end
+
+%%EndProcSet
+%%BeginProcSet: alt-rule.pro 0 0
+%!
+% Patch by TVZ
+% Makes dvips files draw rules with stroke rather than fill.
+% Makes narrow rules more predictable at low resolutions
+% after distilling to PDF.
+% May have unknown consequences for very thick rules.
+% Tested only with dvips 5.85(k).
+TeXDict begin
+/QV {
+  gsave newpath /ruleY X /ruleX X
+  Rx Ry gt
+  { ruleX ruleY Ry 2 div sub moveto Rx 0 rlineto Ry }
+  { ruleX Rx 2 div add ruleY moveto 0 Ry neg rlineto Rx }
+  ifelse
+  setlinewidth 0 setlinecap stroke grestore
+} bind def
+end
+
+%%EndProcSet
+%%BeginProcSet: pstricks.pro 0 0
+%!
+% PostScript prologue for pstricks.tex.
+% Version 1.01, 2006/01/11
+% For distribution, see pstricks.tex.
+%
+/tx@Dict 200 dict def tx@Dict begin
+/ADict 25 dict def
+/CM { matrix currentmatrix } bind def
+/SLW /setlinewidth load def
+/CLW /currentlinewidth load def
+/CP /currentpoint load def
+/ED { exch def } bind def
+/L /lineto load def
+/T /translate load def
+/TMatrix { } def
+/RAngle { 0 } def
+/Sqrt { dup 0 lt { pop 0 } { sqrt } ifelse } def  % return 0 for negative arguments 
+/Atan { /atan load stopped { pop pop 0 } if } def % return 0 if atan not known
+/ATAN1 {neg -1 atan 180 sub } def		% atan(x) (only one parameter)
+/Div { dup 0 eq { pop } { div } ifelse } def  	% control the division
+/NET { neg exch neg exch T } def	      	% change coordinate system to the negative one		
+/Pyth { dup mul exch dup mul add sqrt } def   	% Pythagoras, epects 2 parameter
+/PtoC { 2 copy cos mul 3 1 roll sin mul } def 	% Polar to Cartesian
+%----------------- hv added 20050516 ---------------
+/Pi 3.14159265359 def 
+/TwoPi 6.28318530718 def
+/Euler 2.71828182846 def 
+/RadtoDeg { 180 mul Pi div } bind def % convert from radian to degrees
+/DegtoRad { Pi mul 180 div } bind def % viceversa
+%----------------- hv end---------------------------
+/PathLength@ { /z z y y1 sub x x1 sub Pyth add def /y1 y def /x1 x def } def
+/PathLength { flattenpath /z 0 def 
+  { /y1 ED /x1 ED /y2 y1 def /x2 x1 def
+  }{ /y ED /x ED PathLength@ } {} { /y y2 def /x x2 def PathLength@ }
+  /pathforall load stopped { pop pop pop pop } if z } def
+/STP { .996264 dup scale } def
+/STV { SDict begin normalscale end STP  } def
+%
+%%-------------- DG begin patch 15 ---------------%%
+%/DashLine { dup 0 gt { /a .5 def PathLength exch div } { pop /a 1 def
+%PathLength } ifelse /b ED /x ED /y ED /z y x add def b a .5 sub 2 mul y
+%mul sub z Div round z mul a .5 sub 2 mul y mul add b exch Div dup y mul
+%/y ED x mul /x ED x 0 gt y 0 gt and { [ y x ] 1 a sub y mul } { [ 1 0 ]
+%0 } ifelse setdash stroke } def
+/DashLine {
+  dup 0 gt { /a .5 def PathLength exch div } { pop /a 1 def PathLength } ifelse
+  /b ED /x1 ED /y1 ED /x ED /y ED 
+  /z y x add y1 add x1 add def
+  /Coef b a .5 sub 2 mul y mul sub z Div round 
+    z mul a .5 sub 2 mul y mul add b exch Div def 
+  /y y Coef mul def 
+  /x x Coef mul def 
+  /y1 y1 Coef mul def 
+  /x1 x1 Coef mul def
+  x1 0 gt y1 0 gt or x 0 gt or y 0 gt and 
+    { [ y x y1 x1 ] 1 a sub y mul }
+    { [ 1 0 ] 0 } ifelse 
+  setdash stroke
+} def
+%%-------------- DG end patch 15 ---------------%%
+/DotLine { 
+  /b PathLength def 
+  /a ED /z ED /y CLW def 
+  /z y z add def 
+  a 0 gt { 
+    /b b a div def 
+  }{ 
+    a 0 eq { 
+      /b b y sub def 
+    }{ a -3 eq { 
+      /b b y add def } if 
+    } ifelse 
+  } ifelse 
+  [ 0 b b z Div round Div dup 0 le { pop 1 } if ] 
+  a 0 gt { 0 }{ y 2 div a -2 gt { neg }if } ifelse 
+  setdash 1 setlinecap stroke 
+} def
+%
+/LineFill { % hv ------------ patch 7 -------------
+  gsave 
+  abs /hatchWidthInc ED
+  abs /hatchSepInc ED
+  abs CLW add /a ED 
+  a 0 dtransform round exch round exch
+  2 copy idtransform 
+  exch Atan rotate 
+  idtransform pop /a ED 
+  .25 .25 itransform pathbbox 
+  /y2 ED 
+  a Div ceiling cvi /x2 ED /y1 ED 
+  a Div cvi /x1 ED /y2 y2 y1 sub def 
+  clip 
+  newpath 
+  2 setlinecap 
+  systemdict
+  /setstrokeadjust known { true setstrokeadjust } if 
+  x2 x1 sub 1 add { 
+    x1 a mul y1 moveto 0 y2 rlineto stroke 
+    /x1 x1 1 add 
+      hatchWidthInc 0 gt { CLW add } if 
+    def 
+    hatchSepInc 0 gt hatchWidthInc 0 gt or { 
+      /a a hatchSepInc add def
+      CLW hatchWidthInc add SLW 
+    } if
+  } repeat 
+  grestore 
+  pop pop } def
+%
+%gsave abs CLW add /a ED a 0 dtransform round exch round exch
+%2 copy idtransform exch Atan rotate idtransform pop /a ED .25 .25
+%% DG/SR modification begin - Dec. 12, 1997 - Patch 2
+%%itransform translate pathbbox /y2 ED a Div ceiling cvi /x2 ED /y1 ED a
+%itransform pathbbox /y2 ED a Div ceiling cvi /x2 ED /y1 ED a
+%% DG/SR modification end
+%Div cvi /x1 ED /y2 y2 y1 sub def clip newpath 2 setlinecap systemdict
+%/setstrokeadjust known { true setstrokeadjust } if x2 x1 sub 1 add { x1
+%% DG/SR modification begin - Jun.  1, 1998 - Patch 3 (from Michael Vulis)
+%% a mul y1 moveto 0 y2 rlineto stroke /x1 x1 1 add def } repeat grestore }
+%% def
+%a mul y1 moveto 0 y2 rlineto stroke /x1 x1 1 add def } repeat grestore
+%pop pop } def
+%% DG/SR modification end
+%
+/BeginArrow { ADict begin /@mtrx CM def gsave 2 copy T 2 index sub neg
+exch 3 index sub exch Atan rotate newpath } def
+/EndArrow { @mtrx setmatrix CP grestore end } def
+/Arrow { CLW mul add dup 2 div /w ED mul dup /h ED mul /a ED { 0 h T 1 -1
+scale } if w neg h moveto 0 0 L w h L w neg a neg rlineto gsave fill
+grestore } def
+/Tbar { CLW mul add /z ED z -2 div CLW 2 div moveto z 0 rlineto stroke 0
+CLW moveto } def
+/Bracket { CLW mul add dup CLW sub 2 div /x ED mul CLW add /y ED /z CLW 2
+div def x neg y moveto x neg CLW 2 div L x CLW 2 div L x y L stroke 0
+CLW moveto } def
+/RoundBracket { CLW mul add dup 2 div /x ED mul /y ED /mtrx CM def 0 CLW
+2 div T x y mul 0 ne { x y scale } if 1 1 moveto .85 .5 .35 0 0 0
+curveto -.35 0 -.85 .5 -1 1 curveto mtrx setmatrix stroke 0 CLW moveto }
+def
+/SD { 0 360 arc fill } def
+/EndDot { % DS is the dot size 
+  { /z DS def } { /z 0 def } ifelse 
+  /b ED 0 z DS SD b { 0 z DS CLW sub SD } if 
+  0 DS z add CLW 4 div sub moveto } def
+%
+/Shadow { [ { /moveto load } { /lineto load } { /curveto load } {
+  /closepath load } /pathforall load stopped { pop pop pop pop CP /moveto
+  load } if ] cvx newpath 3 1 roll T exec } def
+%
+/NArray { aload length 2 div dup dup cvi eq not { exch pop } if /n exch
+cvi def } def
+/NArray { % holds the coordinates and on top of stack the showpoints boolean
+  /f ED 
+  counttomark 2 div dup cvi /n ED 
+  n eq not { exch pop } if
+  f { ] aload /Points ED } { n 2 mul 1 add -1 roll pop } ifelse 
+} def
+/Line { 
+  NArray n 0 eq not 
+    { n 1 eq { 0 0 /n 2 def } if ArrowA /n n 2 sub def 
+      n { Lineto } repeat 
+      CP 4 2 roll ArrowB L pop pop 
+    } if 
+} def
+/Arcto { /a [ 6 -2 roll ] cvx def a r /arcto load stopped { 5 } { 4 }
+  ifelse { pop } repeat a } def
+/CheckClosed { dup n 2 mul 1 sub index eq 2 index n 2 mul 1 add index eq
+  and { pop pop /n n 1 sub def } if } def
+/Polygon { NArray n 2 eq { 0 0 /n 3 def } if n 3 lt { n { pop pop }
+  repeat } { n 3 gt { CheckClosed } if n 2 mul -2 roll /y0 ED /x0 ED /y1
+  ED /x1 ED x1 y1 /x1 x0 x1 add 2 div def /y1 y0 y1 add 2 div def x1 y1
+  moveto /n n 2 sub def n { Lineto } repeat x1 y1 x0 y0 6 4 roll Lineto
+  Lineto pop pop closepath } ifelse } def
+/Diamond { 
+  /mtrx CM def 
+  T rotate 
+  /h ED 
+  /w ED 
+  dup 0 eq { pop } { CLW mul neg 
+    /d ED 
+    /a w h Atan def 
+    /h d a sin Div h add def 
+    /w d a cos Div w add def } ifelse 
+  mark w 2 div h 2 div w 0 0 h neg w neg 0 0 h w 2 div h 2 div 
+  /ArrowA { moveto } def 
+  /ArrowB { } def 
+  false Line 
+  closepath mtrx setmatrix } def
+% DG modification begin - Jan. 15, 1997
+%/Triangle { /mtrx CM def translate rotate /h ED 2 div /w ED dup 0 eq {
+%pop } { CLW mul /d ED /h h d w h Atan sin Div sub def /w w d h w Atan 2
+%div dup cos exch sin Div mul sub def } ifelse mark 0 d w neg d 0 h w d 0
+%d /ArrowA { moveto } def /ArrowB { } def false Line closepath mtrx
+%setmatrix } def
+/Triangle { /mtrx CM def translate rotate /h ED 2 div /w ED dup
+CLW mul /d ED /h h d w h Atan sin Div sub def /w w d h w Atan 2
+div dup cos exch sin Div mul sub def mark 0 d w neg d 0 h w d 0
+d /ArrowA { moveto } def /ArrowB { } def false Line closepath mtrx
+% DG/SR modification begin - Jun.  1, 1998 - Patch 3 (from Michael Vulis)
+% setmatrix } def
+setmatrix pop } def
+% DG/SR modification end
+/CCA { /y ED /x ED 2 copy y sub /dy1 ED x sub /dx1 ED /l1 dx1 dy1 Pyth
+def } def
+/CCA { /y ED /x ED 2 copy y sub /dy1 ED x sub /dx1 ED /l1 dx1 dy1 Pyth
+def } def
+/CC { /l0 l1 def /x1 x dx sub def /y1 y dy sub def /dx0 dx1 def /dy0 dy1
+def CCA /dx dx0 l1 c exp mul dx1 l0 c exp mul add def /dy dy0 l1 c exp
+mul dy1 l0 c exp mul add def /m dx0 dy0 Atan dx1 dy1 Atan sub 2 div cos
+abs b exp a mul dx dy Pyth Div 2 div def /x2 x l0 dx mul m mul sub def
+/y2 y l0 dy mul m mul sub def /dx l1 dx mul m mul neg def /dy l1 dy mul
+m mul neg def } def
+/IC { /c c 1 add def c 0 lt { /c 0 def } { c 3 gt { /c 3 def } if }
+ifelse /a a 2 mul 3 div 45 cos b exp div def CCA /dx 0 def /dy 0 def }
+def
+/BOC { IC CC x2 y2 x1 y1 ArrowA CP 4 2 roll x y curveto } def
+/NC { CC x1 y1 x2 y2 x y curveto } def
+/EOC { x dx sub y dy sub 4 2 roll ArrowB 2 copy curveto } def
+/BAC { IC CC x y moveto CC x1 y1 CP ArrowA } def
+/NAC { x2 y2 x y curveto CC x1 y1 } def
+/EAC { x2 y2 x y ArrowB curveto pop pop } def
+/OpenCurve { 
+  NArray n 3 lt 
+    { n { pop pop } repeat } 
+    { BOC /n n 3 sub def n { NC } repeat EOC } ifelse 
+} def
+/AltCurve { { false NArray n 2 mul 2 roll [ n 2 mul 3 sub 1 roll ] aload
+/Points ED n 2 mul -2 roll } { false NArray } ifelse n 4 lt { n { pop
+pop } repeat } { BAC /n n 4 sub def n { NAC } repeat EAC } ifelse } def
+/ClosedCurve { NArray n 3 lt { n { pop pop } repeat } { n 3 gt {
+CheckClosed } if 6 copy n 2 mul 6 add 6 roll IC CC x y moveto n { NC }
+repeat closepath pop pop } ifelse } def
+/SQ { /r ED r r moveto r r neg L r neg r neg L r neg r L fill } def
+/ST { /y ED /x ED x y moveto x neg y L 0 x L fill } def
+/SP { /r ED gsave 0 r moveto 4 { 72 rotate 0 r L } repeat fill grestore }
+def
+/FontDot { DS 2 mul dup matrix scale matrix concatmatrix exch matrix
+rotate matrix concatmatrix exch findfont exch makefont setfont } def
+/Rect { x1 y1 y2 add 2 div moveto x1 y2 lineto x2 y2 lineto x2 y1 lineto
+x1 y1 lineto closepath } def
+/OvalFrame { x1 x2 eq y1 y2 eq or { pop pop x1 y1 moveto x2 y2 L } { y1
+y2 sub abs x1 x2 sub abs 2 copy gt { exch pop } { pop } ifelse 2 div
+exch { dup 3 1 roll mul exch } if 2 copy lt { pop } { exch pop } ifelse
+/b ED x1 y1 y2 add 2 div moveto x1 y2 x2 y2 b arcto x2 y2 x2 y1 b arcto
+x2 y1 x1 y1 b arcto x1 y1 x1 y2 b arcto 16 { pop } repeat closepath }
+ifelse } def
+/Frame { CLW mul /a ED 3 -1 roll 2 copy gt { exch } if a sub /y2 ED a add
+/y1 ED 2 copy gt { exch } if a sub /x2 ED a add /x1 ED 1 index 0 eq {
+pop pop Rect } { OvalFrame } ifelse } def
+/BezierNArray { /f ED counttomark 2 div dup cvi /n ED n eq not { exch pop
+} if n 1 sub neg 3 mod 3 add 3 mod { 0 0 /n n 1 add def } repeat f { ]
+aload /Points ED } { n 2 mul 1 add -1 roll pop } ifelse } def
+/OpenBezier { BezierNArray n 1 eq { pop pop } { ArrowA n 4 sub 3 idiv { 6
+2 roll 4 2 roll curveto } repeat 6 2 roll 4 2 roll ArrowB curveto }
+ifelse } def
+/ClosedBezier { BezierNArray n 1 eq { pop pop } { moveto n 1 sub 3 idiv {
+6 2 roll 4 2 roll curveto } repeat closepath } ifelse } def
+/BezierShowPoints { gsave Points aload length 2 div cvi /n ED moveto n 1
+sub { lineto } repeat CLW 2 div SLW [ 4 4 ] 0 setdash stroke grestore }
+def
+/Parab { /y0 exch def /x0 exch def /y1 exch def /x1 exch def /dx x0 x1
+sub 3 div def /dy y0 y1 sub 3 div def x0 dx sub y0 dy add x1 y1 ArrowA
+x0 dx add y0 dy add x0 2 mul x1 sub y1 ArrowB curveto /Points [ x1 y1 x0
+y0 x0 2 mul x1 sub y1 ] def } def
+/Grid { newpath /a 4 string def /b ED /c ED /n ED cvi dup 1 lt { pop 1 }
+if /s ED s div dup 0 eq { pop 1 } if /dy ED s div dup 0 eq { pop 1 } if
+/dx ED dy div round dy mul /y0 ED dx div round dx mul /x0 ED dy div
+round cvi /y2 ED dx div round cvi /x2 ED dy div round cvi /y1 ED dx div
+round cvi /x1 ED /h y2 y1 sub 0 gt { 1 } { -1 } ifelse def /w x2 x1 sub
+0 gt { 1 } { -1 } ifelse def b 0 gt { /z1 b 4 div CLW 2 div add def
+/Helvetica findfont b scalefont setfont /b b .95 mul CLW 2 div add def }
+if systemdict /setstrokeadjust known { true setstrokeadjust /t { } def }
+{ /t { transform 0.25 sub round 0.25 add exch 0.25 sub round 0.25 add
+exch itransform } bind def } ifelse gsave n 0 gt { 1 setlinecap [ 0 dy n
+div ] dy n div 2 div setdash } { 2 setlinecap } ifelse /i x1 def /f y1
+dy mul n 0 gt { dy n div 2 div h mul sub } if def /g y2 dy mul n 0 gt {
+dy n div 2 div h mul add } if def x2 x1 sub w mul 1 add dup 1000 gt {
+pop 1000 } if { i dx mul dup y0 moveto b 0 gt { gsave c i a cvs dup
+stringwidth pop /z2 ED w 0 gt {z1} {z1 z2 add neg} ifelse h 0 gt {b neg}
+{z1} ifelse rmoveto show grestore } if dup t f moveto g t L stroke /i i
+w add def } repeat grestore gsave n 0 gt
+% DG/SR modification begin - Nov. 7, 1997 - Patch 1
+%{ 1 setlinecap [ 0 dx n div ] dy n div 2 div setdash }
+{ 1 setlinecap [ 0 dx n div ] dx n div 2 div setdash }
+% DG/SR modification end
+{ 2 setlinecap } ifelse /i y1 def /f x1 dx mul
+n 0 gt { dx n div 2 div w mul sub } if def /g x2 dx mul n 0 gt { dx n
+div 2 div w mul add } if def y2 y1 sub h mul 1 add dup 1000 gt { pop
+1000 } if { newpath i dy mul dup x0 exch moveto b 0 gt { gsave c i a cvs
+dup stringwidth pop /z2 ED w 0 gt {z1 z2 add neg} {z1} ifelse h 0 gt
+{z1} {b neg} ifelse rmoveto show grestore } if dup f exch t moveto g
+exch t L stroke /i i h add def } repeat grestore } def
+/ArcArrow { /d ED /b ED /a ED gsave newpath 0 -1000 moveto clip newpath 0
+1 0 0 b grestore c mul /e ED pop pop pop r a e d PtoC y add exch x add
+exch r a PtoC y add exch x add exch b pop pop pop pop a e d CLW 8 div c
+mul neg d } def
+/Ellipse { /mtrx CM def T scale 0 0 1 5 3 roll arc mtrx setmatrix } def
+%
+/ArcAdjust { %%%% Vincent Guirardel
+% given a target length (targetLength) and an initial angle (angle0) [in the stack],
+% let  M(angle0)=(rx*cos(angle0),ry*sin(angle0))=(x0,y0).
+% This computes an angle t such that (x0,y0) is at distance 
+% targetLength from the point M(t)=(rx*cos(t),ry*sin(t)).
+% NOTE: this an absolute angle, it does not have to be added or substracted to angle0
+% contrary to TvZ's code.
+% To achieve, this, one iterates the following process: start with some angle t,
+% compute the point M' at distance targetLength of (x0,y0) on the semi-line [(x0,y0) M(t)].
+% Now take t' (= new angle) so that (0,0) M(t') and M' are aligned.
+%
+% Another difference with TvZ's code is that we need d (=add/sub) to be defined.
+% the value of d = add/sub is used to know on which side we have to move.
+% It is only used in the initialisation of the angle before the iteration.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Input stack:  1: target length 2: initial angle
+% variables used : rx, ry, d (=add/sub)
+%
+  /targetLength ED /angle0 ED
+  /x0 rx angle0 cos mul def
+  /y0 ry angle0 sin mul def
+% we are looking for an angle t such that (x0,y0) is at distance targetLength 
+% from the point M(t)=(rx*cos(t),ry*sin(t)))
+%initialisation of angle (using 1st order approx = TvZ's code)
+  targetLength 57.2958 mul
+  angle0 sin rx mul dup mul
+  angle0 cos ry mul dup mul
+  add sqrt div 
+% if initialisation angle is two large (more than 90 degrees) set it to 90 degrees
+% (if the ellipse is very curved at the point where we draw the arrow, %
+% the value can be much more than 360 degrees !)
+% this should avoid going on the wrong side (more than 180 degrees) or go near
+% a bad attractive point (at 180 degrees)
+  dup 90 ge { pop 90 } if 
+  angle0 exch d % add or sub
+% maximum number of times to iterate the iterative procedure:
+% iterative procedure: takes an angle t on top of stack, computes a 
+% better angle (and put it on top of stack)
+  30 { dup
+% compute distance D between (x0,y0) and M(t)
+    dup cos rx mul x0 sub dup mul exch sin ry mul y0 sub dup mul add sqrt
+% if D almost equals targetLength, we stop
+    dup targetLength sub abs 1e-5 le { pop exit } if
+% stack now contains D t
+% compute the point M(t') at distance targetLength of (x0,y0) on the semi-line [(x0,y0) M(t)]:
+% M(t')= ( (x(t)-x0)*targetLength/d+x0 , (y(t)-y0)*targetLength/d+y0 )
+    exch dup cos rx mul x0 sub  exch sin ry mul y0 sub
+% stack contains:  y(t)-y0, x(t)-x0, d
+    2 index Div targetLength mul y0 add ry Div exch
+    2 index Div targetLength mul x0 add rx Div
+% stack contains x(t')/rx , y(t')/ry , d
+% now compute t', and remove D from stack
+    atan exch pop
+  } repeat
+% we don't look at what happened... in particular, if targetLength is greater 
+% than the diameter of the ellipse...
+% the final angle will be around /angle0 + 180. maybe we should treat this pathological case...
+% after iteration, stack contains an angle t such that M(t) is the tail of the arrow
+% to give back the result as a an angle relative to angle0 we could add the following line:
+% angle0 sub 0 exch d
+%
+% begin bug fix 2006-01-11
+% we want to adjust the new angle t' by a multiple of 360 so that  | t'-angle0 | <= 180
+%(we don't want to make the ellipse turn more or less than it should)...
+dup angle0 sub dup abs 180 gt { 180 add 360 div floor 360 mul sub } { pop } ifelse
+% end bug fix
+} def
+%
+/EllipticArcArrow {
+  /d ED      % add/sub
+  /b ED      % arrow procedure
+  /a1 ED     % angle
+  gsave
+  newpath
+  0 -1000 moveto
+  clip                  % Set clippath far from arrow.
+  newpath
+  0 1 0 0 b             % Draw arrow to determine length.
+  grestore
+% Length of arrow is on top of stack. Next 3 numbers are junk.
+%
+  a1 exch ArcAdjust   % Angular position of base of arrow.
+  /a2 ED
+  pop pop pop
+  a2 cos rx mul x add
+  a2 sin ry mul y add
+  a1 cos rx mul x add
+  a1 sin ry mul y add
+% Now arrow tip coor and base coor are on stack.
+  b pop pop pop pop       % Draw arrow, and discard coordinates.
+  a2 CLW 8 div
+% change value of d (test it by looking if  `` 1 1 d '' gives 2 or not )
+  1 1 d 2 eq { /d { sub } def } { /d { add } def } ifelse
+  ArcAdjust
+% resets original value of d
+  1 1 d 2 eq { /d { sub } def } { /d { add } def } ifelse  % Adjust angle to give overlap.
+} def
+%%------------------ tvz/DG/hv (2004-05-10) end -------------------%%
+%
+/Rot { CP CP translate 3 -1 roll neg rotate NET  } def
+/RotBegin { tx@Dict /TMatrix known not { /TMatrix { } def /RAngle { 0 }
+def } if /TMatrix [ TMatrix CM ] cvx def /a ED a Rot /RAngle [ RAngle
+dup a add ] cvx def } def
+/RotEnd { /TMatrix [ TMatrix setmatrix ] cvx def /RAngle [ RAngle pop ]
+cvx def } def
+/PutCoor { gsave CP T CM STV exch exec moveto setmatrix CP grestore } def
+/PutBegin { /TMatrix [ TMatrix CM ] cvx def CP 4 2 roll T moveto } def
+/PutEnd { CP /TMatrix [ TMatrix setmatrix ] cvx def moveto } def
+/Uput { /a ED add 2 div /h ED 2 div /w ED /s a sin def /c a cos def /b s
+abs c abs 2 copy gt dup /q ED { pop } { exch pop } ifelse def /w1 c b
+div w mul def /h1 s b div h mul def q { w1 abs w sub dup c mul abs } {
+h1 abs h sub dup s mul abs } ifelse } def
+/UUput { /z ED abs /y ED /x ED q { x s div c mul abs y gt } { x c div s
+mul abs y gt } ifelse { x x mul y y mul sub z z mul add sqrt z add } { q
+{ x s div } { x c div } ifelse abs } ifelse a PtoC h1 add exch w1 add
+exch } def
+/BeginOL { dup (all) eq exch TheOL eq or { IfVisible not { Visible
+/IfVisible true def } if } { IfVisible { Invisible /IfVisible false def
+} if } ifelse } def
+/InitOL { /OLUnit [ 3000 3000 matrix defaultmatrix dtransform ] cvx def
+/Visible { CP OLUnit idtransform T moveto } def /Invisible { CP OLUnit
+neg exch neg exch idtransform T moveto } def /BOL { BeginOL } def
+/IfVisible true def } def
+end
+% END pstricks.pro
+
+%%EndProcSet
+%%BeginProcSet: pst-dots.pro 0 0
+%!
+%% PostScript prologue for pstricks.tex.
+%% Version 2.00,                                    Suggestion of 2006/12/19
+%% For distribution, see pstricks.tex.
+%%
+%% Timothy Van Zandt <tvz@Princeton.EDU>
+%%
+%% Modified by Etienne Riga  - Dec. 16, 1999
+%% Modified by Herbert Voss (hv) - 2004/12/27 
+%% Modified by Etienne Riga  - 2005/01/01 (er)
+%% to add /Diamond, /SolidDiamond and /BoldDiamond
+%
+10 dict dup begin
+  /FontType 3 def
+  /FontMatrix [.001 0 0 .001 0 0] def
+  /FontBBox [-571.5 -742.5 571.5 742.5] def
+%  /FontBBox [-1000 -1000 1000 1000] def
+%                See end of file in /BuildGlyph
+  /Encoding 256 array def
+  0 1 255 {Encoding exch/.notdef put} for
+  Encoding
+    dup (b) 0 get /Bullet put
+    dup (c) 0 get /Circle put
+    dup (C) 0 get /BoldCircle put
+    dup (u) 0 get /SolidTriangle put
+    dup (t) 0 get /Triangle put
+    dup (T) 0 get /BoldTriangle put
+    dup (r) 0 get /SolidSquare put
+    dup (s) 0 get /Square put
+    dup (S) 0 get /BoldSquare put
+    dup (q) 0 get /SolidPentagon put
+    dup (p) 0 get /Pentagon put
+    dup (P) 0 get /BoldPentagon put
+%%%		  
+    dup (k) 0 get /Asterisk put
+    dup (K) 0 get /BoldAsterisk put
+    dup (J) 0 get /SolidAsterisk put
+    dup (h) 0 get /Hexagon put
+    dup (H) 0 get /BoldHexagon put
+    dup (G) 0 get /SolidHexagon put
+    dup (a) 0 get /Add put
+    dup (A) 0 get /BoldAdd put
+    dup (x) 0 get /Mul put
+    dup (X) 0 get /BoldMul put
+    dup (m) 0 get /Oplus put
+    dup (M) 0 get /BOplus put
+    dup (e) 0 get /SolidOplus put
+    dup (n) 0 get /Otimes put
+    dup (N) 0 get /BOtimes put
+    dup (E) 0 get /SolidOtimes put
+    dup (i) 0 get /Bar put
+    dup (I) 0 get /BoldBar put
+    dup (l) 0 get /SolidDiamond put
+    dup (d) 0 get /Diamond put
+        (D) 0 get /BoldDiamond put
+%%%  
+/CharProcs 47 dict def
+  CharProcs begin
+    /CirclePath {0 0 500 0 360 arc closepath} def
+      /Bullet {CirclePath fill} def
+	  /Circle {CirclePath .9 .9 scale CirclePath eofill} def
+	  /BoldCircle {CirclePath .8 .8 scale CirclePath eofill} def
+    /TrianglePath {0 660 moveto -571.5 -330 lineto 571.5 -330 lineto
+		closepath} def
+	  /SolidTriangle {TrianglePath fill} def
+      /Triangle {TrianglePath .85 .85 scale TrianglePath eofill} def
+      /BoldTriangle {TrianglePath .7 .7 scale TrianglePath eofill} def
+    /SquarePath {-450 450 moveto 450 450 lineto 450 -450 lineto -450 -450 lineto
+		closepath} def
+      /SolidSquare {SquarePath fill} def
+      /Square {SquarePath .89 .89 scale SquarePath eofill} def
+      /BoldSquare {SquarePath .78 .78 scale SquarePath eofill} def
+    /PentagonPath {-337.8 -465 moveto 337.8 -465 lineto 546.6 177.6 lineto
+		0 574.7 lineto -546.6 177.6 lineto closepath} def
+      /SolidPentagon {PentagonPath fill} def
+      /Pentagon {PentagonPath .89 .89 scale PentagonPath eofill} def
+      /BoldPentagon {PentagonPath .78 .78 scale PentagonPath eofill} def
+%-------------- hv begin 2004/07/25   from: er 2003/03/24
+    /HexagonPath {0 550 moveto -476 275 lineto -476 -275 lineto
+		0 -550 lineto 476 -275 lineto 476 275 lineto closepath} def
+      /SolidHexagon {HexagonPath fill} def
+      /Hexagon {HexagonPath .89 .89 scale HexagonPath eofill} def
+      /BoldHexagon {HexagonPath .79 .79 scale HexagonPath eofill} def
+	/AsteriskPath {20 0 moveto 10 250 180 500 0 500 curveto
+		-180 500 -10 250 -20 0 curveto closepath} def
+      /Asterisk {AsteriskPath 60 rotate AsteriskPath 60 rotate AsteriskPath
+	    60 rotate AsteriskPath 60 rotate AsteriskPath 60 rotate AsteriskPath 
+		fill} def
+	/Basterp {50 250 220 500 0 500 curveto
+        -220 500 -50 250 -50 30 cos 100 mul curveto} def
+	/BoldAsteriskPath {50 30 cos 100 mul moveto  Basterp
+                     60 rotate Basterp 60 rotate Basterp
+                     60 rotate Basterp 60 rotate Basterp
+                     60 rotate Basterp closepath} def
+      /BoldAsterisk {BoldAsteriskPath fill} def
+	  /SolidAsterisk {CirclePath .9 .9 scale BoldAsteriskPath eofill} def
+    /CrossPath {40 550 moveto -40 550 lineto -40 40 lineto -550 40 lineto
+        -550 -40 lineto -40 -40 lineto -40 -550 lineto 40 -550 lineto 
+		40 -40 lineto 550 -40 lineto 550 40 lineto 40 40 lineto closepath} def
+    /BoldCrossPath {80 550 moveto -80 550 lineto -80 80 lineto -550 80 lineto
+        -550 -80 lineto -80 -80 lineto -80 -550 lineto 80 -550 lineto 
+		80 -80 lineto 550 -80 lineto 550 80 lineto 80 80 lineto closepath} def
+      /Add {CrossPath fill} def
+      /Mul {45 rotate CrossPath fill} def
+      /BoldAdd {BoldCrossPath fill} def
+      /BoldMul {45 rotate BoldCrossPath fill} def
+	  /Oplus {CirclePath .9 .9 scale CirclePath eofill
+		.775 .775 scale CrossPath  fill} def 
+	  /SolidOplus {CirclePath .775 .775 scale BoldCrossPath eofill} def 
+	  /BOplus {CirclePath .8 .8 scale CirclePath eofill
+		.775 .775 scale BoldCrossPath fill} def 
+	  /Otimes {CirclePath .9 .9 scale CirclePath eofill
+		45 rotate .775 .775 scale CrossPath fill} def 
+	  /BOtimes {CirclePath .8 .8 scale CirclePath eofill
+		45 rotate .775 .775 scale BoldCrossPath  fill } def 
+	  /SolidOtimes {CirclePath 45 rotate .775 .775 scale BoldCrossPath eofill} def 
+    /BarPath {40 660 moveto -40 660 lineto -40 -660 lineto 40 -660 lineto
+		closepath} def
+      /Bar {BarPath fill} def
+    /BoldBarPath {80 660 moveto -80 660 lineto -80 -660 lineto 80 -660 lineto
+		closepath} def
+      /BoldBar {BoldBarPath fill} def
+    /DiamondPath {0 742.5 moveto -428.5 0 lineto 0 -742.5 lineto 
+		428.5 0 lineto closepath} def
+      /SolidDiamond {DiamondPath fill} def
+      /Diamond {DiamondPath .865 .865 scale DiamondPath eofill} def
+      /BoldDiamond {DiamondPath .73 .73 scale DiamondPath eofill} def
+%%%
+    /.notdef { } def
+  end
+  /BuildGlyph {
+    exch
+    begin
+%      Metrics 1 index get exec 0
+       0 0
+%      BBoxes 3 index get exec
+      -1000 -1000 1000 1000
+%     -571.5 -742.5 571.5 742.5
+      setcachedevice
+      CharProcs begin load exec end
+    end
+  } def
+  /BuildChar {
+    1 index /Encoding get exch get
+    1 index /BuildGlyph get exec
+  } bind def
+end
+/PSTricksDotFont exch definefont pop
+
+
+%%EndProcSet
+%%BeginProcSet: pst-node.pro 0 0
+%!
+% PostScript prologue for pst-node.tex.
+% Version 97 patch 1, 97/05/09.
+% For distribution, see pstricks.tex.
+%
+/tx@NodeDict 400 dict def tx@NodeDict begin
+tx@Dict begin /T /translate load def end
+/NewNode { gsave /next ED dict dup 3 1 roll def exch { dup 3 1 roll def }
+if begin tx@Dict begin STV CP T exec end /NodeMtrx CM def next end
+grestore } def
+/InitPnode { /Y ED /X ED /NodePos { NodeSep Cos mul NodeSep Sin mul } def
+} def
+/InitCnode { /r ED /Y ED /X ED /NodePos { NodeSep r add dup Cos mul exch
+Sin mul } def } def
+/GetRnodePos { Cos 0 gt { /dx r NodeSep add def } { /dx l NodeSep sub def
+} ifelse Sin 0 gt { /dy u NodeSep add def } { /dy d NodeSep sub def }
+ifelse dx Sin mul abs dy Cos mul abs gt { dy Cos mul Sin div dy } { dx
+dup Sin mul Cos Div } ifelse } def
+/InitRnode { /Y ED /X ED X sub /r ED /l X neg def Y add neg /d ED Y sub
+/u ED /NodePos { GetRnodePos } def } def
+/DiaNodePos { w h mul w Sin mul abs h Cos mul abs add Div NodeSep add dup
+Cos mul exch Sin mul } def
+/TriNodePos { Sin s lt { d NodeSep sub dup Cos mul Sin Div exch } { w h
+mul w Sin mul h Cos abs mul add Div NodeSep add dup Cos mul exch Sin mul
+} ifelse } def
+/InitTriNode { sub 2 div exch 2 div exch 2 copy T 2 copy 4 index index /d
+ED pop pop pop pop -90 mul rotate /NodeMtrx CM def /X 0 def /Y 0 def d
+sub abs neg /d ED d add /h ED 2 div h mul h d sub Div /w ED /s d w Atan
+sin def /NodePos { TriNodePos } def } def
+/OvalNodePos { /ww w NodeSep add def /hh h NodeSep add def Sin ww mul Cos
+hh mul Atan dup cos ww mul exch sin hh mul } def
+/GetCenter { begin X Y NodeMtrx transform CM itransform end } def
+/XYPos { dup sin exch cos Do /Cos ED /Sin ED /Dist ED Cos 0 gt { Dist
+Dist Sin mul Cos div } { Cos 0 lt { Dist neg Dist Sin mul Cos div neg }
+{ 0 Dist Sin mul } ifelse } ifelse Do } def
+/GetEdge { dup 0 eq { pop begin 1 0 NodeMtrx dtransform CM idtransform
+exch atan sub dup sin /Sin ED cos /Cos ED /NodeSep ED NodePos NodeMtrx
+dtransform CM idtransform end } { 1 eq {{exch}} {{}} ifelse /Do ED pop
+XYPos } ifelse } def
+/AddOffset { 1 index 0 eq { pop pop } { 2 copy 5 2 roll cos mul add 4 1
+roll sin mul sub exch } ifelse } def
+/GetEdgeA { NodeSepA AngleA NodeA NodeSepTypeA GetEdge OffsetA AngleA
+AddOffset yA add /yA1 ED xA add /xA1 ED } def
+/GetEdgeB { NodeSepB AngleB NodeB NodeSepTypeB GetEdge OffsetB AngleB
+AddOffset yB add /yB1 ED xB add /xB1 ED } def
+/GetArmA { ArmTypeA 0 eq { /xA2 ArmA AngleA cos mul xA1 add def /yA2 ArmA
+AngleA sin mul yA1 add def } { ArmTypeA 1 eq {{exch}} {{}} ifelse /Do ED
+ArmA AngleA XYPos OffsetA AngleA AddOffset yA add /yA2 ED xA add /xA2 ED
+} ifelse } def
+/GetArmB { ArmTypeB 0 eq { /xB2 ArmB AngleB cos mul xB1 add def /yB2 ArmB
+AngleB sin mul yB1 add def } { ArmTypeB 1 eq {{exch}} {{}} ifelse /Do ED
+ArmB AngleB XYPos OffsetB AngleB AddOffset yB add /yB2 ED xB add /xB2 ED
+} ifelse } def
+/InitNC { /b ED /a ED /NodeSepTypeB ED /NodeSepTypeA ED /NodeSepB ED
+/NodeSepA ED /OffsetB ED /OffsetA ED tx@NodeDict a known tx@NodeDict b
+known and dup { /NodeA a load def /NodeB b load def NodeA GetCenter /yA
+ED /xA ED NodeB GetCenter /yB ED /xB ED } if } def
+/LPutLine { 4 copy 3 -1 roll sub neg 3 1 roll sub Atan /NAngle ED 1 t sub
+mul 3 1 roll 1 t sub mul 4 1 roll t mul add /Y ED t mul add /X ED } def
+/LPutLines { mark LPutVar counttomark 2 div 1 sub /n ED t floor dup n gt
+{ pop n 1 sub /t 1 def } { dup t sub neg /t ED } ifelse cvi 2 mul { pop
+} repeat LPutLine cleartomark } def
+/BezierMidpoint { /y3 ED /x3 ED /y2 ED /x2 ED /y1 ED /x1 ED /y0 ED /x0 ED
+/t ED /cx x1 x0 sub 3 mul def /cy y1 y0 sub 3 mul def /bx x2 x1 sub 3
+mul cx sub def /by y2 y1 sub 3 mul cy sub def /ax x3 x0 sub cx sub bx
+sub def /ay y3 y0 sub cy sub by sub def ax t 3 exp mul bx t t mul mul
+add cx t mul add x0 add ay t 3 exp mul by t t mul mul add cy t mul add
+y0 add 3 ay t t mul mul mul 2 by t mul mul add cy add 3 ax t t mul mul
+mul 2 bx t mul mul add cx add atan /NAngle ED /Y ED /X ED } def
+/HPosBegin { yB yA ge { /t 1 t sub def } if /Y yB yA sub t mul yA add def
+} def
+/HPosEnd { /X Y yyA sub yyB yyA sub Div xxB xxA sub mul xxA add def
+/NAngle yyB yyA sub xxB xxA sub Atan def } def
+/HPutLine { HPosBegin /yyA ED /xxA ED /yyB ED /xxB ED HPosEnd  } def
+/HPutLines { HPosBegin yB yA ge { /check { le } def } { /check { ge } def
+} ifelse /xxA xA def /yyA yA def mark xB yB LPutVar { dup Y check { exit
+} { /yyA ED /xxA ED } ifelse } loop /yyB ED /xxB ED cleartomark HPosEnd 
+} def
+/VPosBegin { xB xA lt { /t 1 t sub def } if /X xB xA sub t mul xA add def
+} def
+/VPosEnd { /Y X xxA sub xxB xxA sub Div yyB yyA sub mul yyA add def
+/NAngle yyB yyA sub xxB xxA sub Atan def } def
+/VPutLine { VPosBegin /yyA ED /xxA ED /yyB ED /xxB ED VPosEnd  } def
+/VPutLines { VPosBegin xB xA ge { /check { le } def } { /check { ge } def
+} ifelse /xxA xA def /yyA yA def mark xB yB LPutVar { 1 index X check {
+exit } { /yyA ED /xxA ED } ifelse } loop /yyB ED /xxB ED cleartomark
+VPosEnd  } def
+/HPutCurve { gsave newpath /SaveLPutVar /LPutVar load def LPutVar 8 -2
+roll moveto curveto flattenpath /LPutVar [ {} {} {} {} pathforall ] cvx
+def grestore exec /LPutVar /SaveLPutVar load def } def
+/NCCoor { /AngleA yB yA sub xB xA sub Atan def /AngleB AngleA 180 add def
+GetEdgeA GetEdgeB /LPutVar [ xB1 yB1 xA1 yA1 ] cvx def /LPutPos {
+LPutVar LPutLine } def /HPutPos { LPutVar HPutLine } def /VPutPos {
+LPutVar VPutLine } def LPutVar } def
+/NCLine { NCCoor tx@Dict begin ArrowA CP 4 2 roll ArrowB lineto pop pop
+end } def
+/NCLines { false NArray n 0 eq { NCLine } { 2 copy yA sub exch xA sub
+Atan /AngleA ED n 2 mul dup index exch index yB sub exch xB sub Atan
+/AngleB ED GetEdgeA GetEdgeB /LPutVar [ xB1 yB1 n 2 mul 4 add 4 roll xA1
+yA1 ] cvx def mark LPutVar tx@Dict begin false Line end /LPutPos {
+LPutLines } def /HPutPos { HPutLines } def /VPutPos { VPutLines } def }
+ifelse } def
+/NCCurve { GetEdgeA GetEdgeB xA1 xB1 sub yA1 yB1 sub Pyth 2 div dup 3 -1
+roll mul /ArmA ED mul /ArmB ED /ArmTypeA 0 def /ArmTypeB 0 def GetArmA
+GetArmB xA2 yA2 xA1 yA1 tx@Dict begin ArrowA end xB2 yB2 xB1 yB1 tx@Dict
+begin ArrowB end curveto /LPutVar [ xA1 yA1 xA2 yA2 xB2 yB2 xB1 yB1 ]
+cvx def /LPutPos { t LPutVar BezierMidpoint } def /HPutPos { { HPutLines
+} HPutCurve } def /VPutPos { { VPutLines } HPutCurve } def } def
+/NCAngles { GetEdgeA GetEdgeB GetArmA GetArmB /mtrx AngleA matrix rotate
+def xA2 yA2 mtrx transform pop xB2 yB2 mtrx transform exch pop mtrx
+itransform /y0 ED /x0 ED mark ArmB 0 ne { xB1 yB1 } if xB2 yB2 x0 y0 xA2
+yA2 ArmA 0 ne { xA1 yA1 } if tx@Dict begin false Line end /LPutVar [ xB1
+yB1 xB2 yB2 x0 y0 xA2 yA2 xA1 yA1 ] cvx def /LPutPos { LPutLines } def
+/HPutPos { HPutLines } def /VPutPos { VPutLines } def } def
+/NCAngle { GetEdgeA GetEdgeB GetArmB /mtrx AngleA matrix rotate def xB2
+yB2 mtrx itransform pop xA1 yA1 mtrx itransform exch pop mtrx transform
+/y0 ED /x0 ED mark ArmB 0 ne { xB1 yB1 } if xB2 yB2 x0 y0 xA1 yA1
+tx@Dict begin false Line end /LPutVar [ xB1 yB1 xB2 yB2 x0 y0 xA1 yA1 ]
+cvx def /LPutPos { LPutLines } def /HPutPos { HPutLines } def /VPutPos {
+VPutLines } def } def
+/NCBar { GetEdgeA GetEdgeB GetArmA GetArmB /mtrx AngleA matrix rotate def
+xA2 yA2 mtrx itransform pop xB2 yB2 mtrx itransform pop sub dup 0 mtrx
+transform 3 -1 roll 0 gt { /yB2 exch yB2 add def /xB2 exch xB2 add def }
+{ /yA2 exch neg yA2 add def /xA2 exch neg xA2 add def } ifelse mark ArmB
+0 ne { xB1 yB1 } if xB2 yB2 xA2 yA2 ArmA 0 ne { xA1 yA1 } if tx@Dict
+begin false Line end /LPutVar [ xB1 yB1 xB2 yB2 xA2 yA2 xA1 yA1 ] cvx
+def /LPutPos { LPutLines } def /HPutPos { HPutLines } def /VPutPos {
+VPutLines } def } def
+/NCDiag { GetEdgeA GetEdgeB GetArmA GetArmB mark ArmB 0 ne { xB1 yB1 } if
+xB2 yB2 xA2 yA2 ArmA 0 ne { xA1 yA1 } if tx@Dict begin false Line end
+/LPutVar [ xB1 yB1 xB2 yB2 xA2 yA2 xA1 yA1 ] cvx def /LPutPos {
+LPutLines } def /HPutPos { HPutLines } def /VPutPos { VPutLines } def }
+def
+/NCDiagg { GetEdgeA GetArmA yB yA2 sub xB xA2 sub Atan 180 add /AngleB ED
+GetEdgeB mark xB1 yB1 xA2 yA2 ArmA 0 ne { xA1 yA1 } if tx@Dict begin
+false Line end /LPutVar [ xB1 yB1 xA2 yA2 xA1 yA1 ] cvx def /LPutPos {
+LPutLines } def /HPutPos { HPutLines } def /VPutPos { VPutLines } def }
+def
+/NCLoop { GetEdgeA GetEdgeB GetArmA GetArmB /mtrx AngleA matrix rotate
+def xA2 yA2 mtrx transform loopsize add /yA3 ED /xA3 ED /xB3 xB2 yB2
+mtrx transform pop def xB3 yA3 mtrx itransform /yB3 ED /xB3 ED xA3 yA3
+mtrx itransform /yA3 ED /xA3 ED mark ArmB 0 ne { xB1 yB1 } if xB2 yB2
+xB3 yB3 xA3 yA3 xA2 yA2 ArmA 0 ne { xA1 yA1 } if tx@Dict begin false
+Line end /LPutVar [ xB1 yB1 xB2 yB2 xB3 yB3 xA3 yA3 xA2 yA2 xA1 yA1 ]
+cvx def /LPutPos { LPutLines } def /HPutPos { HPutLines } def /VPutPos {
+VPutLines } def } def
+% DG/SR modification begin - May 9, 1997 - Patch 1
+%/NCCircle { 0 0 NodesepA nodeA \tx@GetEdge pop xA sub 2 div dup 2 exp r
+%r mul sub abs sqrt atan 2 mul /a ED r AngleA 90 add PtoC yA add exch xA add
+%exch 2 copy /LPutVar [ 4 2 roll r AngleA ] cvx def /LPutPos { LPutVar t 360
+%mul add dup 5 1 roll 90 sub \tx@PtoC 3 -1 roll add /Y ED add /X ED /NAngle ED
+/NCCircle { NodeSepA 0 NodeA 0 GetEdge pop 2 div dup 2 exp r
+r mul sub abs sqrt atan 2 mul /a ED r AngleA 90 add PtoC yA add exch xA add
+exch 2 copy /LPutVar [ 4 2 roll r AngleA ] cvx def /LPutPos { LPutVar t 360
+mul add dup 5 1 roll 90 sub PtoC 3 -1 roll add /Y ED add /X ED /NAngle ED
+% DG/SR modification end
+} def /HPutPos { LPutPos } def /VPutPos { LPutPos } def r AngleA 90 sub a add
+AngleA 270 add a sub tx@Dict begin /angleB ED /angleA ED /r ED /c 57.2957 r
+Div def /y ED /x ED } def
+/NCBox { /d ED /h ED /AngleB yB yA sub xB xA sub Atan def /AngleA AngleB
+180 add def GetEdgeA GetEdgeB /dx d AngleB sin mul def /dy d AngleB cos
+mul neg def /hx h AngleB sin mul neg def /hy h AngleB cos mul def
+/LPutVar [ xA1 hx add yA1 hy add xB1 hx add yB1 hy add xB1 dx add yB1 dy
+add xA1 dx add yA1 dy add ] cvx def /LPutPos { LPutLines } def /HPutPos
+{ xB yB xA yA LPutLine } def /VPutPos { HPutPos } def mark LPutVar
+tx@Dict begin false Polygon end } def
+/NCArcBox { /l ED neg /d ED /h ED /a ED /AngleA yB yA sub xB xA sub Atan
+def /AngleB AngleA 180 add def /tA AngleA a sub 90 add def /tB tA a 2
+mul add def /r xB xA sub tA cos tB cos sub Div dup 0 eq { pop 1 } if def
+/x0 xA r tA cos mul add def /y0 yA r tA sin mul add def /c 57.2958 r div
+def /AngleA AngleA a sub 180 add def /AngleB AngleB a add 180 add def
+GetEdgeA GetEdgeB /AngleA tA 180 add yA yA1 sub xA xA1 sub Pyth c mul
+sub def /AngleB tB 180 add yB yB1 sub xB xB1 sub Pyth c mul add def l 0
+eq { x0 y0 r h add AngleA AngleB arc x0 y0 r d add AngleB AngleA arcn }
+{ x0 y0 translate /tA AngleA l c mul add def /tB AngleB l c mul sub def
+0 0 r h add tA tB arc r h add AngleB PtoC r d add AngleB PtoC 2 copy 6 2
+roll l arcto 4 { pop } repeat r d add tB PtoC l arcto 4 { pop } repeat 0
+0 r d add tB tA arcn r d add AngleA PtoC r h add AngleA PtoC 2 copy 6 2
+roll l arcto 4 { pop } repeat r h add tA PtoC l arcto 4 { pop } repeat }
+ifelse closepath /LPutVar [ x0 y0 r AngleA AngleB h d ] cvx def /LPutPos
+{ LPutVar /d ED /h ED /AngleB ED /AngleA ED /r ED /y0 ED /x0 ED t 1 le {
+r h add AngleA 1 t sub mul AngleB t mul add dup 90 add /NAngle ED PtoC }
+{ t 2 lt { /NAngle AngleB 180 add def r 2 t sub h mul t 1 sub d mul add
+add AngleB PtoC } { t 3 lt { r d add AngleB 3 t sub mul AngleA 2 t sub
+mul add dup 90 sub /NAngle ED PtoC } { /NAngle AngleA 180 add def r 4 t
+sub d mul t 3 sub h mul add add AngleA PtoC } ifelse } ifelse } ifelse
+y0 add /Y ED x0 add /X ED } def /HPutPos { LPutPos } def /VPutPos {
+LPutPos } def } def
+/Tfan { /AngleA yB yA sub xB xA sub Atan def GetEdgeA w xA1 xB sub yA1 yB
+sub Pyth Pyth w Div CLW 2 div mul 2 div dup AngleA sin mul yA1 add /yA1
+ED AngleA cos mul xA1 add /xA1 ED /LPutVar [ xA1 yA1 m { xB w add yB xB
+w sub yB } { xB yB w sub xB yB w add } ifelse xA1 yA1 ] cvx def /LPutPos
+{ LPutLines } def /VPutPos@ { LPutVar flag { 8 4 roll pop pop pop pop }
+{ pop pop pop pop 4 2 roll } ifelse } def /VPutPos { VPutPos@ VPutLine }
+def /HPutPos { VPutPos@ HPutLine } def mark LPutVar tx@Dict begin
+/ArrowA { moveto } def /ArrowB { } def false Line closepath end } def
+/LPutCoor { NAngle tx@Dict begin /NAngle ED end gsave CM STV CP Y sub neg
+exch X sub neg exch moveto setmatrix CP grestore } def
+/LPut { tx@NodeDict /LPutPos known { LPutPos } { CP /Y ED /X ED /NAngle 0
+def } ifelse LPutCoor  } def
+/HPutAdjust { Sin Cos mul 0 eq { 0 } { d Cos mul Sin div flag not { neg }
+if h Cos mul Sin div flag { neg } if 2 copy gt { pop } { exch pop }
+ifelse } ifelse s add flag { r add neg } { l add } ifelse X add /X ED }
+def
+/VPutAdjust { Sin Cos mul 0 eq { 0 } { l Sin mul Cos div flag { neg } if
+r Sin mul Cos div flag not { neg } if 2 copy gt { pop } { exch pop }
+ifelse } ifelse s add flag { d add } { h add neg } ifelse Y add /Y ED }
+def
+end
+% END pst-node.pro
+
+%%EndProcSet
+%%BeginProcSet: pst-text.pro 0 0
+%!
+% PostScript header file pst-text.pro
+% Version 1.0, 2005-11-29 (hv)
+% For distribution, see pstricks.tex.
+
+/tx@TextPathDict 40 dict def
+tx@TextPathDict begin
+
+% Syntax:  <dist> PathPosition -
+% Function: Searches for position of currentpath distance <dist> from
+%           beginning. Sets (X,Y)=position, and Angle=tangent.
+/PathPosition
+{ /targetdist exch def
+  /pathdist 0 def
+  /continue true def
+  /X { newx } def /Y { newy } def /Angle 0 def
+  gsave
+    flattenpath
+    { movetoproc }  { linetoproc } { } { firstx firsty linetoproc }
+    /pathforall load stopped { pop pop pop pop /X 0 def /Y 0 def } if
+  grestore
+} def
+
+/movetoproc { continue { @movetoproc } { pop pop } ifelse } def
+
+/@movetoproc
+{ /newy exch def /newx exch def
+  /firstx newx def /firsty newy def
+} def
+
+/linetoproc { continue { @linetoproc } { pop pop } ifelse } def
+
+/@linetoproc {
+  /oldx newx def /oldy newy def
+  /newy exch def /newx exch def
+  /dx newx oldx sub def
+  /dy newy oldy sub def
+  /dist dx dup mul dy dup mul add sqrt def
+  /pathdist pathdist dist add def
+  pathdist targetdist ge
+  { pathdist targetdist sub dist div dup
+    dy mul neg newy add /Y exch def
+    dx mul neg newx add /X exch def
+    /Angle dy dx atan def
+    /continue false def
+  } if
+} def
+
+/TextPathShow { 
+  /String exch def
+  /CharCount 0 def
+% hv begin 2005-11-29   1.00
+%   String length
+%   { String CharCount 1 getinterval ShowChar
+%     /CharCount CharCount 1 add def
+   /CharSize 1 def
+   currentfont /FontType get 0 eq
+   { currentfont /FMapType get dup 2 eq exch dup 5 eq exch 9 eq or or
+     { /CharSize 2 def} if
+   } if
+   String length CharSize idiv
+   { String CharCount CharSize getinterval ShowChar
+     /CharCount CharCount CharSize add def
+% hv end 2005-11-29   1.00
+  } repeat
+} def
+
+% Syntax: <pathlength> <position> InitTextPath -
+/InitTextPath
+{ gsave
+    currentpoint /Y exch def /X exch def
+    exch X Hoffset sub sub mul
+    Voffset Hoffset sub add
+    neg X add /Hoffset exch def
+    /Voffset Y def
+  grestore
+} def
+
+/Transform
+{ PathPosition
+  dup
+  Angle cos mul Y add exch
+  Angle sin mul neg X add exch
+  translate
+  Angle rotate
+} def
+
+/ShowChar { 
+  /Char exch def
+  gsave
+    Char end stringwidth
+    tx@TextPathDict begin
+    2 div /Sy exch def 2 div /Sx exch def
+
+%%%  MV 10-09-99 00:36
+    /sc?currentpoint where {pop sc?currentpoint} {currentpoint} ifelse
+%   currentpoint
+
+    Voffset sub Sy add exch
+    Hoffset sub Sx add
+    Transform
+    Sx neg Sy neg moveto
+    Char end tx@TextPathSavedShow
+    tx@TextPathDict begin
+  grestore
+  Sx 2 mul Sy 2 mul rmoveto
+} def
+%
+end
+% END pst-text.pro
+
+%%EndProcSet
+%%BeginProcSet: 8r.enc 0 0
+% File 8r.enc  TeX Base 1 Encoding  Revision 2.0  2002-10-30
+%
+% @@psencodingfile@{
+%   author    = "S. Rahtz, P. MacKay, Alan Jeffrey, B. Horn, K. Berry,
+%                W. Schmidt, P. Lehman",
+%   version   = "2.0",
+%   date      = "27nov06",
+%   filename  = "8r.enc",
+%   email     = "tex-fonts@@tug.org",
+%   docstring = "This is the encoding vector for Type1 and TrueType
+%                fonts to be used with TeX.  This file is part of the
+%                PSNFSS bundle, version 9"
+% @}
+% 
+% The idea is to have all the characters normally included in Type 1 fonts
+% available for typesetting. This is effectively the characters in Adobe
+% Standard encoding, ISO Latin 1, Windows ANSI including the euro symbol,
+% MacRoman, and some extra characters from Lucida.
+% 
+% Character code assignments were made as follows:
+% 
+% (1) the Windows ANSI characters are almost all in their Windows ANSI
+% positions, because some Windows users cannot easily reencode the
+% fonts, and it makes no difference on other systems. The only Windows
+% ANSI characters not available are those that make no sense for
+% typesetting -- rubout (127 decimal), nobreakspace (160), softhyphen
+% (173). quotesingle and grave are moved just because it's such an
+% irritation not having them in TeX positions.
+% 
+% (2) Remaining characters are assigned arbitrarily to the lower part
+% of the range, avoiding 0, 10 and 13 in case we meet dumb software.
+% 
+% (3) Y&Y Lucida Bright includes some extra text characters; in the
+% hopes that other PostScript fonts, perhaps created for public
+% consumption, will include them, they are included starting at 0x12.
+% These are /dotlessj /ff /ffi /ffl.
+% 
+% (4) hyphen appears twice for compatibility with both ASCII and Windows.
+%
+% (5) /Euro was assigned to 128, as in Windows ANSI
+%
+% (6) Missing characters from MacRoman encoding incorporated as follows:
+%
+%     PostScript      MacRoman        TeXBase1
+%     --------------  --------------  --------------
+%     /notequal       173             0x16
+%     /infinity       176             0x17
+%     /lessequal      178             0x18
+%     /greaterequal   179             0x19
+%     /partialdiff    182             0x1A
+%     /summation      183             0x1B
+%     /product        184             0x1C
+%     /pi             185             0x1D
+%     /integral       186             0x81
+%     /Omega          189             0x8D
+%     /radical        195             0x8E
+%     /approxequal    197             0x8F
+%     /Delta          198             0x9D
+%     /lozenge        215             0x9E
+%
+/TeXBase1Encoding [
+% 0x00
+ /.notdef /dotaccent /fi /fl
+ /fraction /hungarumlaut /Lslash /lslash
+ /ogonek /ring /.notdef /breve
+ /minus /.notdef /Zcaron /zcaron
+% 0x10
+ /caron /dotlessi /dotlessj /ff
+ /ffi /ffl /notequal /infinity
+ /lessequal /greaterequal /partialdiff /summation
+ /product /pi /grave /quotesingle
+% 0x20
+ /space /exclam /quotedbl /numbersign
+ /dollar /percent /ampersand /quoteright
+ /parenleft /parenright /asterisk /plus
+ /comma /hyphen /period /slash
+% 0x30
+ /zero /one /two /three
+ /four /five /six /seven
+ /eight /nine /colon /semicolon
+ /less /equal /greater /question
+% 0x40
+ /at /A /B /C
+ /D /E /F /G
+ /H /I /J /K
+ /L /M /N /O
+% 0x50
+ /P /Q /R /S
+ /T /U /V /W
+ /X /Y /Z /bracketleft
+ /backslash /bracketright /asciicircum /underscore
+% 0x60
+ /quoteleft /a /b /c
+ /d /e /f /g
+ /h /i /j /k
+ /l /m /n /o
+% 0x70
+ /p /q /r /s
+ /t /u /v /w
+ /x /y /z /braceleft
+ /bar /braceright /asciitilde /.notdef
+% 0x80
+ /Euro /integral /quotesinglbase /florin
+ /quotedblbase /ellipsis /dagger /daggerdbl
+ /circumflex /perthousand /Scaron /guilsinglleft
+ /OE /Omega /radical /approxequal
+% 0x90
+ /.notdef /.notdef /.notdef /quotedblleft
+ /quotedblright /bullet /endash /emdash
+ /tilde /trademark /scaron /guilsinglright
+ /oe /Delta /lozenge /Ydieresis
+% 0xA0
+ /.notdef /exclamdown /cent /sterling
+ /currency /yen /brokenbar /section
+ /dieresis /copyright /ordfeminine /guillemotleft
+ /logicalnot /hyphen /registered /macron
+% 0xB0
+ /degree /plusminus /twosuperior /threesuperior
+ /acute /mu /paragraph /periodcentered
+ /cedilla /onesuperior /ordmasculine /guillemotright
+ /onequarter /onehalf /threequarters /questiondown
+% 0xC0
+ /Agrave /Aacute /Acircumflex /Atilde
+ /Adieresis /Aring /AE /Ccedilla
+ /Egrave /Eacute /Ecircumflex /Edieresis
+ /Igrave /Iacute /Icircumflex /Idieresis
+% 0xD0
+ /Eth /Ntilde /Ograve /Oacute
+ /Ocircumflex /Otilde /Odieresis /multiply
+ /Oslash /Ugrave /Uacute /Ucircumflex
+ /Udieresis /Yacute /Thorn /germandbls
+% 0xE0
+ /agrave /aacute /acircumflex /atilde
+ /adieresis /aring /ae /ccedilla
+ /egrave /eacute /ecircumflex /edieresis
+ /igrave /iacute /icircumflex /idieresis
+% 0xF0
+ /eth /ntilde /ograve /oacute
+ /ocircumflex /otilde /odieresis /divide
+ /oslash /ugrave /uacute /ucircumflex
+ /udieresis /yacute /thorn /ydieresis
+] def
+
+
+%%EndProcSet
+%%BeginProcSet: texps.pro 0 0
+%!
+TeXDict begin/rf{findfont dup length 1 add dict begin{1 index/FID ne 2
+index/UniqueID ne and{def}{pop pop}ifelse}forall[1 index 0 6 -1 roll
+exec 0 exch 5 -1 roll VResolution Resolution div mul neg 0 0]FontType 0
+ne{/Metrics exch def dict begin Encoding{exch dup type/integertype ne{
+pop pop 1 sub dup 0 le{pop}{[}ifelse}{FontMatrix 0 get div Metrics 0 get
+div def}ifelse}forall Metrics/Metrics currentdict end def}{{1 index type
+/nametype eq{exit}if exch pop}loop}ifelse[2 index currentdict end
+definefont 3 -1 roll makefont/setfont cvx]cvx def}def/ObliqueSlant{dup
+sin S cos div neg}B/SlantFont{4 index mul add}def/ExtendFont{3 -1 roll
+mul exch}def/ReEncodeFont{CharStrings rcheck{/Encoding false def dup[
+exch{dup CharStrings exch known not{pop/.notdef/Encoding true def}if}
+forall Encoding{]exch pop}{cleartomark}ifelse}if/Encoding exch def}def
+end
+
+%%EndProcSet
+%%BeginProcSet: special.pro 0 0
+%!
+TeXDict begin/SDict 200 dict N SDict begin/@SpecialDefaults{/hs 612 N
+/vs 792 N/ho 0 N/vo 0 N/hsc 1 N/vsc 1 N/ang 0 N/CLIP 0 N/rwiSeen false N
+/rhiSeen false N/letter{}N/note{}N/a4{}N/legal{}N}B/@scaleunit 100 N
+/@hscale{@scaleunit div/hsc X}B/@vscale{@scaleunit div/vsc X}B/@hsize{
+/hs X/CLIP 1 N}B/@vsize{/vs X/CLIP 1 N}B/@clip{/CLIP 2 N}B/@hoffset{/ho
+X}B/@voffset{/vo X}B/@angle{/ang X}B/@rwi{10 div/rwi X/rwiSeen true N}B
+/@rhi{10 div/rhi X/rhiSeen true N}B/@llx{/llx X}B/@lly{/lly X}B/@urx{
+/urx X}B/@ury{/ury X}B/magscale true def end/@MacSetUp{userdict/md known
+{userdict/md get type/dicttype eq{userdict begin md length 10 add md
+maxlength ge{/md md dup length 20 add dict copy def}if end md begin
+/letter{}N/note{}N/legal{}N/od{txpose 1 0 mtx defaultmatrix dtransform S
+atan/pa X newpath clippath mark{transform{itransform moveto}}{transform{
+itransform lineto}}{6 -2 roll transform 6 -2 roll transform 6 -2 roll
+transform{itransform 6 2 roll itransform 6 2 roll itransform 6 2 roll
+curveto}}{{closepath}}pathforall newpath counttomark array astore/gc xdf
+pop ct 39 0 put 10 fz 0 fs 2 F/|______Courier fnt invertflag{PaintBlack}
+if}N/txpose{pxs pys scale ppr aload pop por{noflips{pop S neg S TR pop 1
+-1 scale}if xflip yflip and{pop S neg S TR 180 rotate 1 -1 scale ppr 3
+get ppr 1 get neg sub neg ppr 2 get ppr 0 get neg sub neg TR}if xflip
+yflip not and{pop S neg S TR pop 180 rotate ppr 3 get ppr 1 get neg sub
+neg 0 TR}if yflip xflip not and{ppr 1 get neg ppr 0 get neg TR}if}{
+noflips{TR pop pop 270 rotate 1 -1 scale}if xflip yflip and{TR pop pop
+90 rotate 1 -1 scale ppr 3 get ppr 1 get neg sub neg ppr 2 get ppr 0 get
+neg sub neg TR}if xflip yflip not and{TR pop pop 90 rotate ppr 3 get ppr
+1 get neg sub neg 0 TR}if yflip xflip not and{TR pop pop 270 rotate ppr
+2 get ppr 0 get neg sub neg 0 S TR}if}ifelse scaleby96{ppr aload pop 4
+-1 roll add 2 div 3 1 roll add 2 div 2 copy TR .96 dup scale neg S neg S
+TR}if}N/cp{pop pop showpage pm restore}N end}if}if}N/normalscale{
+Resolution 72 div VResolution 72 div neg scale magscale{DVImag dup scale
+}if 0 setgray}N/psfts{S 65781.76 div N}N/startTexFig{/psf$SavedState
+save N userdict maxlength dict begin/magscale true def normalscale
+currentpoint TR/psf$ury psfts/psf$urx psfts/psf$lly psfts/psf$llx psfts
+/psf$y psfts/psf$x psfts currentpoint/psf$cy X/psf$cx X/psf$sx psf$x
+psf$urx psf$llx sub div N/psf$sy psf$y psf$ury psf$lly sub div N psf$sx
+psf$sy scale psf$cx psf$sx div psf$llx sub psf$cy psf$sy div psf$ury sub
+TR/showpage{}N/erasepage{}N/setpagedevice{pop}N/copypage{}N/p 3 def
+@MacSetUp}N/doclip{psf$llx psf$lly psf$urx psf$ury currentpoint 6 2 roll
+newpath 4 copy 4 2 roll moveto 6 -1 roll S lineto S lineto S lineto
+closepath clip newpath moveto}N/endTexFig{end psf$SavedState restore}N
+/@beginspecial{SDict begin/SpecialSave save N gsave normalscale
+currentpoint TR @SpecialDefaults count/ocount X/dcount countdictstack N}
+N/@setspecial{CLIP 1 eq{newpath 0 0 moveto hs 0 rlineto 0 vs rlineto hs
+neg 0 rlineto closepath clip}if ho vo TR hsc vsc scale ang rotate
+rwiSeen{rwi urx llx sub div rhiSeen{rhi ury lly sub div}{dup}ifelse
+scale llx neg lly neg TR}{rhiSeen{rhi ury lly sub div dup scale llx neg
+lly neg TR}if}ifelse CLIP 2 eq{newpath llx lly moveto urx lly lineto urx
+ury lineto llx ury lineto closepath clip}if/showpage{}N/erasepage{}N
+/setpagedevice{pop}N/copypage{}N newpath}N/@endspecial{count ocount sub{
+pop}repeat countdictstack dcount sub{end}repeat grestore SpecialSave
+restore end}N/@defspecial{SDict begin}N/@fedspecial{end}B/li{lineto}B
+/rl{rlineto}B/rc{rcurveto}B/np{/SaveX currentpoint/SaveY X N 1
+setlinecap newpath}N/st{stroke SaveX SaveY moveto}N/fil{fill SaveX SaveY
+moveto}N/ellipse{/endangle X/startangle X/yrad X/xrad X/savematrix
+matrix currentmatrix N TR xrad yrad scale 0 0 1 startangle endangle arc
+savematrix setmatrix}N end
+
+%%EndProcSet
+%%BeginProcSet: color.pro 0 0
+%!
+TeXDict begin/setcmykcolor where{pop}{/setcmykcolor{dup 10 eq{pop
+setrgbcolor}{1 sub 4 1 roll 3{3 index add neg dup 0 lt{pop 0}if 3 1 roll
+}repeat setrgbcolor pop}ifelse}B}ifelse/TeXcolorcmyk{setcmykcolor}def
+/TeXcolorrgb{setrgbcolor}def/TeXcolorgrey{setgray}def/TeXcolorgray{
+setgray}def/TeXcolorhsb{sethsbcolor}def/currentcmykcolor where{pop}{
+/currentcmykcolor{currentrgbcolor 10}B}ifelse/DC{exch dup userdict exch
+known{pop pop}{X}ifelse}B/GreenYellow{0.15 0 0.69 0 setcmykcolor}DC
+/Yellow{0 0 1 0 setcmykcolor}DC/Goldenrod{0 0.10 0.84 0 setcmykcolor}DC
+/Dandelion{0 0.29 0.84 0 setcmykcolor}DC/Apricot{0 0.32 0.52 0
+setcmykcolor}DC/Peach{0 0.50 0.70 0 setcmykcolor}DC/Melon{0 0.46 0.50 0
+setcmykcolor}DC/YellowOrange{0 0.42 1 0 setcmykcolor}DC/Orange{0 0.61
+0.87 0 setcmykcolor}DC/BurntOrange{0 0.51 1 0 setcmykcolor}DC
+/Bittersweet{0 0.75 1 0.24 setcmykcolor}DC/RedOrange{0 0.77 0.87 0
+setcmykcolor}DC/Mahogany{0 0.85 0.87 0.35 setcmykcolor}DC/Maroon{0 0.87
+0.68 0.32 setcmykcolor}DC/BrickRed{0 0.89 0.94 0.28 setcmykcolor}DC/Red{
+0 1 1 0 setcmykcolor}DC/OrangeRed{0 1 0.50 0 setcmykcolor}DC/RubineRed{
+0 1 0.13 0 setcmykcolor}DC/WildStrawberry{0 0.96 0.39 0 setcmykcolor}DC
+/Salmon{0 0.53 0.38 0 setcmykcolor}DC/CarnationPink{0 0.63 0 0
+setcmykcolor}DC/Magenta{0 1 0 0 setcmykcolor}DC/VioletRed{0 0.81 0 0
+setcmykcolor}DC/Rhodamine{0 0.82 0 0 setcmykcolor}DC/Mulberry{0.34 0.90
+0 0.02 setcmykcolor}DC/RedViolet{0.07 0.90 0 0.34 setcmykcolor}DC
+/Fuchsia{0.47 0.91 0 0.08 setcmykcolor}DC/Lavender{0 0.48 0 0
+setcmykcolor}DC/Thistle{0.12 0.59 0 0 setcmykcolor}DC/Orchid{0.32 0.64 0
+0 setcmykcolor}DC/DarkOrchid{0.40 0.80 0.20 0 setcmykcolor}DC/Purple{
+0.45 0.86 0 0 setcmykcolor}DC/Plum{0.50 1 0 0 setcmykcolor}DC/Violet{
+0.79 0.88 0 0 setcmykcolor}DC/RoyalPurple{0.75 0.90 0 0 setcmykcolor}DC
+/BlueViolet{0.86 0.91 0 0.04 setcmykcolor}DC/Periwinkle{0.57 0.55 0 0
+setcmykcolor}DC/CadetBlue{0.62 0.57 0.23 0 setcmykcolor}DC
+/CornflowerBlue{0.65 0.13 0 0 setcmykcolor}DC/MidnightBlue{0.98 0.13 0
+0.43 setcmykcolor}DC/NavyBlue{0.94 0.54 0 0 setcmykcolor}DC/RoyalBlue{1
+0.50 0 0 setcmykcolor}DC/Blue{1 1 0 0 setcmykcolor}DC/Cerulean{0.94 0.11
+0 0 setcmykcolor}DC/Cyan{1 0 0 0 setcmykcolor}DC/ProcessBlue{0.96 0 0 0
+setcmykcolor}DC/SkyBlue{0.62 0 0.12 0 setcmykcolor}DC/Turquoise{0.85 0
+0.20 0 setcmykcolor}DC/TealBlue{0.86 0 0.34 0.02 setcmykcolor}DC
+/Aquamarine{0.82 0 0.30 0 setcmykcolor}DC/BlueGreen{0.85 0 0.33 0
+setcmykcolor}DC/Emerald{1 0 0.50 0 setcmykcolor}DC/JungleGreen{0.99 0
+0.52 0 setcmykcolor}DC/SeaGreen{0.69 0 0.50 0 setcmykcolor}DC/Green{1 0
+1 0 setcmykcolor}DC/ForestGreen{0.91 0 0.88 0.12 setcmykcolor}DC
+/PineGreen{0.92 0 0.59 0.25 setcmykcolor}DC/LimeGreen{0.50 0 1 0
+setcmykcolor}DC/YellowGreen{0.44 0 0.74 0 setcmykcolor}DC/SpringGreen{
+0.26 0 0.76 0 setcmykcolor}DC/OliveGreen{0.64 0 0.95 0.40 setcmykcolor}
+DC/RawSienna{0 0.72 1 0.45 setcmykcolor}DC/Sepia{0 0.83 1 0.70
+setcmykcolor}DC/Brown{0 0.81 1 0.60 setcmykcolor}DC/Tan{0.14 0.42 0.56 0
+setcmykcolor}DC/Gray{0 0 0 0.50 setcmykcolor}DC/Black{0 0 0 1
+setcmykcolor}DC/White{0 0 0 0 setcmykcolor}DC end
+
+%%EndProcSet
+TeXDict begin @defspecial
+
+ /DvipsToPDF { 72.27 mul Resolution div } def /PDFToDvips { 72.27 div
+Resolution mul } def /HyperBorder { 1 PDFToDvips } def /H.V {pdf@hoff
+pdf@voff null} def /H.B {/Rect[pdf@llx pdf@lly pdf@urx pdf@ury]} def
+/H.S { currentpoint HyperBorder add /pdf@lly exch def dup DvipsToPDF
+/pdf@hoff exch def HyperBorder sub /pdf@llx exch def } def /H.L { 2
+sub dup /HyperBasePt exch def PDFToDvips /HyperBaseDvips exch def currentpoint
+HyperBaseDvips sub /pdf@ury exch def /pdf@urx exch def } def /H.A {
+H.L currentpoint exch pop vsize 72 sub exch DvipsToPDF HyperBasePt
+sub sub /pdf@voff exch def } def /H.R { currentpoint HyperBorder sub
+/pdf@ury exch def HyperBorder add /pdf@urx exch def currentpoint exch
+pop vsize 72 sub exch DvipsToPDF sub /pdf@voff exch def } def systemdict
+/pdfmark known { userdict /?pdfmark systemdict /exec get put }{ userdict
+/?pdfmark systemdict /pop get put userdict /pdfmark systemdict /cleartomark
+get put } ifelse
+ 
+@fedspecial end TeXDict begin
+39158280 55380996 2074 8000 8000 (textexampletalk.dvi)
+@start /Fa 105[523 29[471 3[262 3[523 2[784 209 471 5[523
+3[523 27[628 11[523 523 523 523 523 523 523 523 523 523
+1[262 46[{TeXBase1Encoding ReEncodeFont}21 941.301 /Helvetica
+rf /Fb 129[1085 1085 1[1085 1085 1085 1085 1085 1085
+1085 1085 1085 1085 1085 1085 1085 1085 1085 1085 1085
+1085 1085 1085 1085 1085 1085 1085 1085 1085 1085 1[1085
+1085 1085 1085 1085 1[1085 1085 1085 1[1085 1085 1085
+1085 1[1085 1085 1085 1085 1085 1[1085 1085 1085 1085
+1085 1085 1085 1085 1085 1085 1[1085 1085 1085 2[1085
+1[1085 1[1085 1085 1085 1085 1085 1085 1085 1085 1085
+1085 1085 1085 1085 1085 1085 1085 1[1085 1085 1085 1085
+1085 33[{TeXBase1Encoding ReEncodeFont}82 1809.12 /Courier
+rf end
+%%EndProlog
+%%BeginSetup
+%%Feature: *Resolution 8000dpi
+TeXDict begin
+%%BeginPaperSize: a4
+a4
+%%EndPaperSize
+ end
+%%EndSetup
+%%Page: 1 1
+TeXDict begin 1 0 bop 0 TeXcolorgray -8000 79998 a
+SDict begin [ /Page 1 /View [ /Fit ] /PageMode /UseOutlines /DOCVIEW pdfmark end
+ -8000
+79998 a -8000 79998 a
+SDict begin [ /CropBox [10 40 594 800] /PAGES pdfmark end
+ -8000 79998 a -8000 79998 a
+SDict begin [ {Catalog} << /ViewerPreferences<</FitWindow true/CenterWindow true>>>> /PUT pdfmark end
+ -8000
+79998 a -8000 79998 a
+SDict begin H.S end
+ -8000 79998 a -8000 79998 a
+SDict begin 12 H.A end
+ -8000
+79998 a -8000 79998 a
+SDict begin [ /View [/XYZ H.V] /Dest (Doc-Start) cvn H.B /DEST pdfmark end
+ -8000 79998 a -8000 79998 a
+SDict begin [ {Catalog} << /PageLabels << /Nums [0 << /P (1) >> 1 << /P (2) >> 2 << /P (3) >> 3 << /P (4) >> 4 << /P (5) >> 5 << /P (6) >> 6 << /P (7) >> 7 << /P (8) >> 8 << /P (9) >> 9 << /P (10) >> 10 << /P (11) >> 11 << /P (12) >> 12 << /P (13) >> 13 << /P (14) >> 14 << /P (15) >> 15 << /P (16) >> 16 << /P (17) >> 17 << /P (18) >> 18 << /P (19) >> 19 << /P (20) >> 20 << /P (21) >> 21 << /P (22) >> 22 << /P (23) >> 23 << /P (24) >> 24 << /P (25) >> 25 << /P (26) >> 26 << /P (27) >> 27 << /P (28) >> 28 << /P (29) >> 29 << /P (30) >> 30 << /P (31) >> 31 << /P (32) >> ] >> >> /PUT pdfmark end
+ -8000
+79998 a 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998 79998 a 66678 45999 a
+SDict begin [ /Rotate 90 /PAGES pdfmark end
+ 66678
+45999 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999 a
+SDict begin H.S end
+ 66678
+45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999 a
+SDict begin H.R end
+ 66678
+45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678
+45999 a 66678 45999 a
+SDict begin [ /Producer (dvips + Distiller) /Title () /Subject () /Creator (LaTeX with hyperref and prosper packages) /Author () /Keywords () /DOCINFO pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748
+18025 a Fb(#)1086 b(First)i(set)f(a)f(few)h(module)h(variables:)60748
+19879 y(package)h(=)d(BeamerSlides)1091 b(#)1086 b(Can)h(also)g(be)g
+('ProsperSlides')1092 b(and)1087 b('HTMLSlides')60748
+21733 y(beamer_theme)k(=)1086 b('hpl1')j(#'shadow',)h('Darmstadt')g
+(are)d(other)h(themes)60748 23587 y(prosper_style)k(=)1086
+b('hplplainsmall')1092 b(#)1086 b('default',)k('hplplain')h(are)1086
+b(other)i(themes)60748 25441 y(header_footer)k(=)1086
+b(True)h(#)f(Decorations)1091 b(are)c(turned)h(on)60748
+29148 y(#)e(Add)h(newcommands:)60748 31002 y(newcommands)k(=)1086
+b(r"""\\newcommand{\\OBS}[1]{\\marginpar{\\scriptsize##1}}""")60748
+34710 y(#)g(Set)h(institutions:)60748 36564 y(ifi)g(=)f("Dept.~of)k
+(Informatics,)h(University)f(of)c(Oslo")60748 38418 y(math)i(=)e
+("Dept.~of)j(Mathematics,)i(University)g(of)1086 b(Oslo")60748
+40272 y(simula)j(=)c("Simula)k(Research)g(Laboratory")60748
+43980 y(#)d(Set)h(authors:)60748 45833 y(hpl)g(=)f('Hans)i(Petter)g
+(Langtangen')60748 47687 y(ilmarw)h(=)c('Ilmar)k(M.)d(Wilbers')60748
+51395 y(slides)j(=)c(package\(title='Using)1095 b(Python)1089
+b(and)e(Latexslides)j(to)d(Make)g(Slides',)79201 53249
+y(author_and_inst=[\(hpl,simula,ifi\),)1102 b(\(ilmarw,simula,math\)],)
+79201 55103 y(date='March)1091 b(2008',)79201 56957 y
+(beamer_theme=beamer_theme,)79201 58811 y(prosper_style=prosper_style,)
+79201 60665 y(header_footer=header_footer,)79201 62519
+y(titlepage_figure='wave-dueto-slide.ps',)79201 64372
+y(titlepage_figure_pos='s',)1097 b(#)1086 b(Figure)j(to)d(the)h(south)
+79201 66226 y(titlepage_figure_fraction_width=0.5,)79201
+68080 y(#titlepage_left_column_width=1.,)1101 b(#)1086
+b(If)g(figure)i(to)f(the)g(east)79201 69934 y(toc_heading='List)1094
+b(of)1086 b(Topics',)79201 71788 y(toc_figure='python1.ps',)79201
+73642 y(toc_figure_fraction_width=1,)79201 75496 y
+(toc_left_column_width=0.5,)79201 77350 y(newcommands=newcommands\))p
+0 TeXcolorgray 0 TeXcolorgray 135486 76484 a Fa(Exampletalk)262
+b(\226)g(p)-33 b(.)262 b(1)p 0 TeXcolorgray 59998 79998
+a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 2 2
+TeXDict begin 2 1 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999 a
+SDict begin H.S end
+ 66678
+45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999 a
+SDict begin H.R end
+ 66678
+45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.2) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678
+45999 a 0 TeXcolorgray 60748 18025 a Fb(#)1086 b(Exemplify)k(raw)d
+(LaTeX,)h(please)g(note)g(that)f(the)g(code)g(is)g(for)g(Beamer,)60748
+19879 y(#)f(so)h(if)f(you)h(want)g(to)g(use)g(Prosper,)i(you)e(should)h
+(comment)h(out)e(this)g(slide)60748 21733 y(#)f(when)i(writing)g(to)f
+(file:)60748 23587 y(first_intro)k(=)1086 b(RawSlide\(r""")60748
+27294 y(\\begin{frame})1092 b(\045\045)1086 b(plain:)j(no)d(header)i
+(and)f(footer)60748 31002 y(\\frametitle{Do)1092 b(you)1087
+b(use)g(\\LaTeX{})i(for)e(writing)i(slides?})60748 32856
+y(Continue)g(studying)h(these)e(slides)g(if)e(your)i(answer)g(to)e(at)h
+(least)h(one)e(of)60748 34710 y(the)h(following)j(questions)g(is)c
+('yes':)60748 36564 y(\\begin{enumerate})60748 38418
+y(\\item)i(Are)f(you)g(using)h(prosper)g(for)f(writing)i(slides?)60748
+40272 y(\\item)f(Have)f(you)g(not)g(yet)g(discovered)j(latex-beamer?)
+60748 42126 y(\\item)e(Would)g(you)f(like)g(your)g(slide)h(collection)i
+(to)d(be)f(independent)1091 b(of)1086 b(what)60748 43980
+y(is)h(the)g(currently)i(most)f(popular)g(LaTeX)g(slide)g(package?)
+60748 45833 y(\\item)g(Would)g(you)f(like)g(to)g(write)g(less)h(LaTeX)g
+(source)g(code)f(when)h(you)60748 47687 y(create)h(presentations?)60748
+49541 y(\\item)f(Would)g(like)f(to)g(get)g(more)g(flexibility)k(than)c
+(what)g(plain)h(ASCII)60748 51395 y(files)g(with)f(LaTeX)h(source)h
+(provide?)60748 53249 y(\\end{enumerate})60748 55103
+y(\\end{frame})60748 56957 y(""",)60748 58811 y(hidden=False\))p
+0 TeXcolorgray 0 TeXcolorgray 135486 76484 a Fa(Exampletalk)262
+b(\226)g(p)-33 b(.)262 b(2)p 0 TeXcolorgray 59998 79998
+a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 3 3
+TeXDict begin 3 2 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999 a
+SDict begin H.S end
+ 66678
+45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999 a
+SDict begin H.R end
+ 66678
+45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.3) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678
+45999 a 0 TeXcolorgray 60748 18025 a Fb(#)1086 b(The)h(talk)g(can)g(be)
+g(divided)h(into)g(sections,)i(subsections,)h(etc.,)c(and)60748
+19879 y(#)f(then)i(a)d(toc)i(is)g(automatically)k(generated,)g
+(navigation)f(utilities)60748 21733 y(#)c(are)h(included)i(in)e(the)g
+(header)h(etc.)60748 25441 y(sec_intro)i(=)c(Section\(r'Intro)1092
+b(to)1087 b(Latexslides',)k(short_title='Intro'\))p 0
+TeXcolorgray 0 TeXcolorgray 135486 76484 a Fa(Exampletalk)262
+b(\226)g(p)-33 b(.)262 b(3)p 0 TeXcolorgray 59998 79998
+a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 4 4
+TeXDict begin 4 3 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999 a
+SDict begin H.S end
+ 66678
+45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999 a
+SDict begin H.R end
+ 66678
+45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.4) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678
+45999 a 0 TeXcolorgray 60748 18025 a Fb(what_is)1089
+b(=)d(\\)60748 19879 y(BulletSlide\('What)1094 b(is)1086
+b(Latexslides?',)73774 21733 y(['A)h(Python)h(module',)74859
+23587 y('You)g(write)g(slides)g(as)e(Python)j(code,)e(i.e.,)h(as)f
+(function)i(calls',)74859 25441 y(r'The)f(function)h(calls)f(are)f
+(translated)j(to)d(\\LaTeX',)74859 27294 y('Changes)j(are)c(easier)j
+(to)d(perform)j(in)d(the)h(Python)i(code)e(than)g(')74859
+29148 y(r'in)h(the)f(corresponding)k(\\LaTeX)d(code)g(--)e(that)i(is)e
+(the)h(main)g(')74859 31002 y('purpose)j(of)c(Latexslides',)74859
+32856 y('From)i(the)f(Python)h(code)g(you)f(can)f(automatically)1092
+b(generate)d(')74859 34710 y(r'prosper)h(or)c(beamer)j(\\LaTeX)f(code)f
+(and)g(HTML',)74859 36564 y(],\))p 0 TeXcolorgray 0 TeXcolorgray
+135486 76484 a Fa(Exampletalk)262 b(\226)g(p)-33 b(.)262
+b(4)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop
+end
+%%Page: 5 5
+TeXDict begin 5 4 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999 a
+SDict begin H.S end
+ 66678
+45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999 a
+SDict begin H.R end
+ 66678
+45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.5) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678
+45999 a 0 TeXcolorgray 60748 18025 a Fb(subsec_plaintext)1093
+b(=)1086 b(SubSection\('Plain)1094 b(Text)1087 b(Slides',)i('Text'\))p
+0 TeXcolorgray 0 TeXcolorgray 135486 76484 a Fa(Exampletalk)262
+b(\226)g(p)-33 b(.)262 b(5)p 0 TeXcolorgray 59998 79998
+a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 6 6
+TeXDict begin 6 5 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999 a
+SDict begin H.S end
+ 66678
+45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999 a
+SDict begin H.R end
+ 66678
+45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.6) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678
+45999 a 0 TeXcolorgray 60748 18025 a Fb(ex1)1087 b(=)f(\\)60748
+19879 y(Slide\('First)1091 b(example:)f(simple)e(bullet)g(lists',)67261
+21733 y([TextBlock\(Code\(""")60748 23587 y(BulletSlide\('What)1094
+b(is)1086 b(Latexslides?',)60748 25441 y(['A)h(Python)h(module',)61834
+27294 y('You)f(write)h(slides)g(as)f(Python)h(code,)g(i.e.,)g(as)e
+(function)j(calls',)61834 29148 y(r'The)f(function)h(calls)f(are)e
+(translated)1091 b(to)1086 b(\\LaTeX',)61834 31002 y('Changes)j(are)e
+(easier)h(to)f(perform)h(in)f(the)g(Python)h(code)f(than)h(')61834
+32856 y(r'in)f(the)g(corresponding)1092 b(\\LaTeX)c(code)f(--)g(that)g
+(is)f(the)h(main)h(')61834 34710 y('purpose)h(of)d(Latexslides',)61834
+36564 y('From)i(the)e(Python)j(code)e(you)g(can)g(automatically)k
+(generate)f(')61834 38418 y(r'prosper)f(or)e(beamer)h(\\LaTeX)g(code)g
+(and)f(HTML'],\))60748 40272 y("""\),)79201 42126 y('Here)h(is)e(how)h
+(we)g(wrote)h(the)e(previous)k(slide:',\),)68347 43980
+y(BulletBlock\(heading='Explanations:',)81372 45833 y(bullets=[r'The)i
+(first)c(argument)h(is)e(the)g(title)g(of)g(the)g(slide',)91141
+47687 y(r'Bullet)j(lists)d(are)g(simply)i(Python)f(lists)g(of)e(')91141
+49541 y(r'\(raw\))j(strings',],\),],\))p 0 TeXcolorgray
+0 TeXcolorgray 135486 76484 a Fa(Exampletalk)262 b(\226)g(p)-33
+b(.)262 b(6)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998
+a eop end
+%%Page: 7 7
+TeXDict begin 7 6 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999 a
+SDict begin H.S end
+ 66678
+45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999 a
+SDict begin H.R end
+ 66678
+45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.7) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678
+45999 a 0 TeXcolorgray 60748 18025 a Fb(structure)1090
+b(=)c(\\)60748 19879 y(Slide\(r"A)k(general)f(slide)f(is)e(defined)j
+(by)d(using)i(\\texttt{Slide}",)67261 21733 y([CodeBlock\(""")60748
+23587 y(Slide\(title='title',)1095 b(content=[)65090
+25441 y(Text\(r'some)c(plain)d(text'\),)65090 27294 y
+(BulletList\([r'item1',)78116 29148 y(r'item2',)78116
+31002 y(r'item3',)77030 32856 y(],\),)65090 34710 y(Code\(r'some)j
+(code'\),],\))60748 36564 y("""\),)68347 38418 y(BulletBlock\([r'Use)i
+(raw)1087 b(strings)i(if)e(the)f(text)i(has)f(\\LaTeX{})i(commands)g(')
+82458 40272 y(r'with)f(backslash)i(\(always)e(using)g(raw)f(strings)i
+(is)d(a)g(good)i(')82458 42126 y(r'habit!\)',)82458 43980
+y(#)e(If)g(you)h(don't)h(like)f(one)g(long)g(strintg)i(line,)f(split)g
+(it:)82458 45833 y(r'The)f(\\texttt{title=})1093 b(and)1087
+b(\\texttt{content=})1093 b(keywords)d(')82458 47687
+y(r'can)d(be)g(omitted)i(if)d(they)h(are)g(the)g(first)h(two)f
+(arguments)j(')82458 49541 y(r'given)e(to)f(Slide)h(or)e(one)h(of)f
+(its)h(subclasses.')82458 51395 y(],\),)68347 53249 y(Text\(r'The)j
+(available)f(objects)g(on)e(a)f(slide)h(are)g(')f(+)73774
+55103 y(r'\\texttt{Text},)1093 b(\\texttt{Code})e(and)c
+(\\texttt{BulletList}',\),],\))p 0 TeXcolorgray 0 TeXcolorgray
+135486 76484 a Fa(Exampletalk)262 b(\226)g(p)-33 b(.)262
+b(7)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop
+end
+%%Page: 8 8
+TeXDict begin 8 7 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999 a
+SDict begin H.S end
+ 66678
+45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999 a
+SDict begin H.R end
+ 66678
+45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.8) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678
+45999 a 0 TeXcolorgray 60748 18025 a Fb(blocks)1089 b(=)c(\\)60748
+19879 y(Slide\("About)1091 b(the)c(appearance)j(of)d(the)g(three)h
+(slide)f(elements",)67261 21733 y([TextBlock\('Text,)1094
+b(code)1087 b(and)g(bullets)i(can)d(be)h(typeset)i(as)d(shadowed)j
+(blocks)g(')79201 23587 y('by)e(using)h(TextBlock,)i(CodeBlock)g(and)d
+(BulletBlock)j(instead)f(')d(+)79201 25441 y('of)h(Text,)h(Code)f(and)g
+(BulletList',\),)68347 27294 y(BulletList\(['Note)1093
+b(that)1087 b(this)h(text)f(is)f(not)h(a)f(block)i(since)g(we)e(used')i
+(+)81372 29148 y(Code\("""BulletList"""\))1096 b(+)81372
+31002 y(r'instead)1090 b(of)c(\\texttt{BulletBlock}',],\),)68347
+32856 y(TextBlock\(heading='Each)1096 b(block)1088 b(may)f(have)g(a)f
+(title!',)79201 34710 y(text='The)k(title)e(is)e(enabled)j(by)d(the)h
+(argument')j(+)79201 36564 y(Code\("heading='Each)1095
+b(block)1087 b(may)g(...'"\),\),)68347 38418 y(TextBlock\(r'Note)1093
+b(that)1087 b(')f(+)g(Code\('Code\("..."\)'\))1094 b(+)79201
+40272 y('can)1088 b(be)e(used)h(within)i(the)e(other)g
+(objects',\),],\))p 0 TeXcolorgray 0 TeXcolorgray 135486
+76484 a Fa(Exampletalk)262 b(\226)g(p)-33 b(.)262 b(8)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 9 9
+TeXDict begin 9 8 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999 a
+SDict begin H.S end
+ 66678
+45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999 a
+SDict begin H.R end
+ 66678
+45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.9) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678
+45999 a 0 TeXcolorgray 60748 18025 a Fb(classes)1089
+b(=)d(\\)60748 19879 y(Slide\('Blocks)1092 b(and)1087
+b(slides',)67261 21733 y([TextBlock\(r'If)1093 b(only)1087
+b(a)f(single)i(block)g(is)e(used)i(on)e(a)g(slide,)i(')e(+)79201
+23587 y(r'subclasses)1091 b(of)c(\\texttt{Slide})1092
+b(can)1087 b(be)f(used,)i(')e(+)79201 25441 y(r'providing)1091
+b(a)1086 b(simpler)j(syntax:'\),)68347 27294 y
+(BulletBlock\([r'\\texttt{BulletSlide}',)82458 29148
+y(r'\\texttt{TextSlide}',)82458 31002 y(r'\\texttt{RawSlide}',],\),)
+68347 32856 y(TextBlock\(r'These)k(only)1087 b(have)h(the)f(following)i
+(keywords:'\),)68347 34710 y(BulletBlock\([Code\('title'\),)1098
+b(Code\('text/bullets'\),)81372 36564 y(Code\('block_heading'\),],\),)
+68347 38418 y(TextBlock\(r'\\texttt{RawSlide})h(simply)1088
+b(takes)g(the)f(raw)g(\\LaTeX{})i(code)e(')79201 40272
+y('for)h(a)e(slide)h(such)h(that)f(old)g(code)g(can)g(be)g(reused)h
+(\(see)f(the)g(')79201 42126 y('code)h(for)f(the)g(first)h
+(slide\)'\),],)67261 43980 y(dim='blocks'\))p 0 TeXcolorgray
+0 TeXcolorgray 135486 76484 a Fa(Exampletalk)262 b(\226)g(p)-33
+b(.)262 b(9)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998
+a eop end
+%%Page: 10 10
+TeXDict begin 10 9 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999 a
+SDict begin H.S end
+ 66678
+45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999 a
+SDict begin H.R end
+ 66678
+45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.10) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678
+45999 a 0 TeXcolorgray 60748 18025 a Fb(dimming)1089
+b(=)d(\\)60748 19879 y(BulletSlide\('How)1093 b(to)1087
+b(dim)g(blocks)h(and)f(bullet)h(points',)73774 21733
+y([r'Want)h(to)d(dim)h(the)g(blocks)h(\(as)f(in)f(the)h(previous)j
+(slide\)?)e(')74859 23587 y('Just)g(add)f(an)f(argument')k(+)74859
+25441 y(Code\("""dim='blocks'"""\),)74859 27294 y(r'Want)f(bullet)f
+(items)g(to)e(pop)h(up)f(one)h(by)g(one?)g(')74859 29148
+y('Just)h(add)f(an)f(argument')k(+)74859 31002 y
+(Code\("""dim='progressive'"""\),)74859 32856 y(r'Want)f(one)e(bullet)h
+(visible)h(and)d(the)h(other)h(dimmed?)h(Just)e(add')h(+)74859
+34710 y(Code\("dim='single')1094 b(#dim=False)c(\(default\))g(turns)e
+(off)f(dimming"\))j(+)74859 36564 y(r'Note)f(that)e(subbullets)j
+(appear)e(at)f(the)g(same)g(time:',)74859 38418 y(['Subbullet)k(1',],)
+74859 40272 y(r'Want)e(the)e(previous)i(effect)f(but)f(with)g(all)g
+(bullets)i(appearing)h(')74859 42126 y('at)d(the)g(end?)g(Just)h(add')f
+(+)74859 43980 y(Code\("""dim='single_then_all'"""\),)74859
+45833 y(r'Changing)k(these)c(arguments)j(is)c(very)i(much)f(easier)h
+(than)g(editing)h(')74859 47687 y(r'the)f(underlying)i(\\LaTeX{})g
+(code!',)74859 49541 y(],)73774 51395 y(dim=True\))p
+0 TeXcolorgray 0 TeXcolorgray 134963 76484 a Fa(Exampletalk)262
+b(\226)g(p)-33 b(.)261 b(10)p 0 TeXcolorgray 59998 79998
+a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 11 11
+TeXDict begin 11 10 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.11) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(why)1087
+b(=)f(\\)60748 19879 y(BulletSlide\('Why?)1094 b(plain)1088
+b(LaTeX)f(is)g(so)f(easy...',)73774 21733 y(['Latexslides)1091
+b(turns)d(the)f(talk)h(into)f(living)h(data)g(structures',)74859
+23587 y('With)g(the)f(data)g(structures,)k(you)c(can)g(easily)h
+(generate)h(Prosper,)h(')74859 25441 y('Beamer,)g(HTML)d(or)f(write)i
+(your)g(own)e(format)j(output',)74859 27294 y("Some)f(of)f(us)f
+(experimented)1091 b(with)c(the)g(idea)h(for)f(fun,)g(now)g(we're)h(")
+74859 29148 y("regularly)j(using)c(it)g(--)f(it's)i(simply)g(more)f
+(convenient",)74859 31002 y(r'Latexslides)1092 b(talks)c(can)f(make)g
+(use)g(of)f(future)j(fancy)e(\\LaTeX{})j(')74859 32856
+y('slide)f(packages',)74859 34710 y(r'You)f(can)f(tweak)h(the)f
+(resulting)i(\\LaTeX{})h(file)d(if)f(you)h(want',)74859
+36564 y('Talks)i(are)e(composed)i(as)d(lists)i(of)e(slide)i(objects)h
+(--)d(you)h(can)g(')74859 38418 y('import)i(slide)f(objects)h(from)e
+(previous)i(talks)f(and)f(compose)i(new)e(')74859 40272
+y('collections',)74859 42126 y('Figures)j(are)c(definitely)1091
+b(easier)d(with)f(Latexslides',)74859 43980 y(],)73774
+45833 y(dim='single_then_all',\))p 0 TeXcolorgray 0 TeXcolorgray
+134963 76484 a Fa(Exampletalk)262 b(\226)g(p)-33 b(.)261
+b(11)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop
+end
+%%Page: 12 12
+TeXDict begin 12 11 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.12) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(#)1086
+b(Short)i(form)f(is)g(taken)h(as)e(the)h(full)g(section)i(name)60748
+19879 y(sec_fig)g(=)d(SubSection\('Figures'\))p 0 TeXcolorgray
+0 TeXcolorgray 134963 76484 a Fa(Exampletalk)262 b(\226)g(p)-33
+b(.)261 b(12)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998
+a eop end
+%%Page: 13 13
+TeXDict begin 13 12 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.13) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(figures)1089
+b(=)d(\\)60748 19879 y(Slide\('Handling)1093 b(figures)c(is)d(really)i
+(easy',)67261 21733 y([BulletBlock\([r'Putting)1096 b(figures)1089
+b(in)e(\\LaTeX{})i(slides)f(is)e(not)h(that)h(easy,)g(')82458
+23587 y('especially)i(not)d(if)g(you)f(want)i(them)f(to)g(the)f(left)i
+(or)e(right)i(')82458 25441 y('of)f(the)f(figure)j(and)e(move)g(them)g
+(around)i(later',)82458 27294 y(r'Here)f(is)e(what)i(you)f(do)f(with)h
+(Latexslides,)k(just)d(add')f(+)82458 29148 y(Code\(""")60748
+31002 y(figure='python1.ps',)3266 b(#)1086 b(filename)60748
+32856 y(figure_pos='e',)8691 b(#)1086 b(east)h(\('e'\),)i(west)e
+(\('w'\),)85714 34710 y(#)f(north)i(\('n'\),)g(south)g(\('e'\))60748
+36564 y(figure_fraction_width=0.5,)60748 38418 y(left_column_width=0.6)
+2181 b(#)1086 b(=>)g(0.4)h(fraction)j(width)d(for)g(figure)60748
+40272 y("""\),],\),)68347 42126 y(Text\('See)i(next)f(slides)g(for)f
+(an)f(example',\),],\))p 0 TeXcolorgray 0 TeXcolorgray
+134963 76484 a Fa(Exampletalk)262 b(\226)g(p)-33 b(.)261
+b(13)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop
+end
+%%Page: 14 14
+TeXDict begin 14 13 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.14) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(ex_fig)1089
+b(=)c(\\)60748 19879 y(Slide\('Slide)1091 b(with)d(a)e(figure',)67261
+21733 y([BulletBlock\(['Bullets)1096 b(to)1086 b(the)h(west',)82458
+23587 y('Figure)h(to)f(the)g(east',)82458 25441 y(r"Easy)h(to)e
+(change:)j(\\texttt{'e'})i($\\rightarrow$)h(")82458 27294
+y(r"\\texttt{'w'}",)82458 29148 y('...and)c(then)g(text)f(is)g(to)f
+(the)h(right',)82458 31002 y(],\),],)67261 32856 y
+(figure='python1.ps',)67261 34710 y(figure_pos='e',)67261
+36564 y(figure_fraction_width=0.5,)67261 38418 y(left_column_width=0.6)
+2181 b(#)1086 b(0.4)h(left)g(for)g(figure)67261 40272
+y(\))p 0 TeXcolorgray 0 TeXcolorgray 134963 76484 a Fa(Exampletalk)262
+b(\226)g(p)-33 b(.)261 b(14)p 0 TeXcolorgray 59998 79998
+a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 15 15
+TeXDict begin 15 14 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.15) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(ex_fig2)1089
+b(=)d(\\)60748 19879 y(Slide\('Slide)1091 b(with)d(a)e(figure',)67261
+21733 y([BulletBlock\(['Bullets)1096 b(to)1086 b(the)h(east',)82458
+23587 y('Figure)h(to)f(the)g(west',)82458 25441 y(r"Easy)h(to)e
+(change:)j(\\texttt{'w'})i($\\rightarrow$)h(")82458 27294
+y(r"\\texttt{'n'}",)82458 29148 y('...and)c(then)g(text)f(below)h(the)f
+(figure',)82458 31002 y(],\),],)67261 32856 y(figure='python1.ps',)
+67261 34710 y(figure_pos='w',)67261 36564 y(figure_fraction_width=0.5,)
+67261 38418 y(left_column_width=0.6)2181 b(#)1086 b(0.4)h(left)g(for)g
+(figure)67261 40272 y(\))p 0 TeXcolorgray 0 TeXcolorgray
+134963 76484 a Fa(Exampletalk)262 b(\226)g(p)-33 b(.)261
+b(15)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop
+end
+%%Page: 16 16
+TeXDict begin 16 15 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.16) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(ex_fig3)1089
+b(=)d(\\)60748 19879 y(Slide\('Slide)1091 b(with)d(a)e(figure',)67261
+21733 y([BulletBlock\(['Bullets)1096 b(to)1086 b(the)h(south',)82458
+23587 y('Figure)h(to)f(the)g(north',)82458 25441 y(r"Easy)h(to)e
+(change:)j(\\texttt{'n'})i($\\rightarrow$)h(")82458 27294
+y(r"\\texttt{'s'}",)82458 29148 y('...and)c(then)g(text)f(is)g(above)g
+(the)g(figure',)82458 31002 y(],\),],)67261 32856 y
+(figure='python1.ps',)67261 34710 y(figure_pos='n',)67261
+36564 y(figure_fraction_width=0.5,)67261 38418 y(left_column_width=0.6)
+2181 b(#)1086 b(0.4)h(left)g(for)g(figure)67261 40272
+y(\))p 0 TeXcolorgray 0 TeXcolorgray 134963 76484 a Fa(Exampletalk)262
+b(\226)g(p)-33 b(.)261 b(16)p 0 TeXcolorgray 59998 79998
+a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 17 17
+TeXDict begin 17 16 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.17) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(multiple_figs)1092
+b(=)1086 b(\\)60748 19879 y(Slide\('Several)1092 b(figures)d(in)d(one)h
+(slide',)67261 21733 y([BulletList\(['You)1094 b(simply)1088
+b(provide)h(a)d(tuple)h(\(or)g(list\))h(of)e(figure)j(')81372
+23587 y('file)f(names)g(and)f(a)f(tuple)h(of)g(fraction)i(widths',)
+80287 25441 y(r'Example:')h(+)c(Code\(""")60748 27294
+y(figure=\('python2.ps','python3.ps'\),)60748 29148 y
+(figure_fraction_width=\(0.45,0.55\),)60748 31002 y(figure_pos='n',)
+60748 32856 y("""\),],\),],)67261 34710 y
+(figure=\('python2.ps','python3.ps'\),)67261 36564 y
+(figure_fraction_width=\(0.45,0.55\),)67261 38418 y(figure_pos='n',\))p
+0 TeXcolorgray 0 TeXcolorgray 134963 76484 a Fa(Exampletalk)262
+b(\226)g(p)-33 b(.)261 b(17)p 0 TeXcolorgray 59998 79998
+a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 18 18
+TeXDict begin 18 17 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.18) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(subsec_code)1091
+b(=)1086 b(SubSection\('Computer)1095 b(Code',)1088 b('Code'\))p
+0 TeXcolorgray 0 TeXcolorgray 134963 76484 a Fa(Exampletalk)262
+b(\226)g(p)-33 b(.)261 b(18)p 0 TeXcolorgray 59998 79998
+a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 19 19
+TeXDict begin 19 18 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.19) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(code_obj)1089
+b(=)d(\\)60748 19879 y(BulletSlide\('Code)1094 b(objects)1088
+b(take)g(care)f(of)g(verbatim)i(text',)73774 21733 y([r'Want)g(to)d
+(include)j(computer)g(code)e(or)g(some)g(')74859 23587
+y(r'other)i(verbatim)g(text?\\\\)g(')d(+)74859 25441
+y(Code\(''')60748 27294 y(bullets=[r'Here)1093 b(is)1086
+b(an)h(example:')i(+)60748 29148 y(Code\(""")60748 31002
+y(def)e(mypyfunc\(somearg\):)65090 32856 y(for)g(i)f(in)g(somearg:)
+69432 34710 y(p)g(=)g(process\(i\))69432 36564 y(if)g(p)g(in)h(mylist:)
+73774 38418 y(return)h(p)69432 40272 y(else:)73774 42126
+y(return)g(None)60748 43980 y("""\))60748 45833 y('''\),)74859
+47687 y(r'Code)h(objects)f(are)f(wrapped)i(in)d(fancyvrb)k(verbatim)f
+(environments')74859 49541 y(,],\))p 0 TeXcolorgray 0
+TeXcolorgray 134963 76484 a Fa(Exampletalk)262 b(\226)g(p)-33
+b(.)261 b(19)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998
+a eop end
+%%Page: 20 20
+TeXDict begin 20 19 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.20) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(code_obj_result)1093
+b(=)1086 b(\\)60748 19879 y(BulletSlide\('Result)1095
+b(of)1086 b(using)i(Code)f(objects',)73774 21733 y(block_heading='Here)
+1094 b(is)1087 b(the)g(result)h(of)e(the)h(constructions)1092
+b(on)1086 b(the)h(')88970 23587 y('previous)j(slide:',)73774
+25441 y(bullets=[r'Here)i(is)1087 b(an)f(example:')k(+)83543
+27294 y(Code\(""")60748 29148 y(def)d(mypyfunc\(somearg\):)65090
+31002 y(for)g(i)f(in)g(somearg:)69432 32856 y(p)g(=)g(process\(i\))
+69432 34710 y(if)g(p)g(in)h(mylist:)73774 36564 y(return)h(p)69432
+38418 y(else:)73774 40272 y(return)g(None)60748 42126
+y("""\),],\))p 0 TeXcolorgray 0 TeXcolorgray 134963 76484
+a Fa(Exampletalk)262 b(\226)g(p)-33 b(.)261 b(20)p 0
+TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 21 21
+TeXDict begin 21 20 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.21) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(sec_specials)1091
+b(=)1086 b(Section\('More)1092 b(information',)f('More'\))p
+0 TeXcolorgray 0 TeXcolorgray 134963 76484 a Fa(Exampletalk)262
+b(\226)g(p)-33 b(.)261 b(21)p 0 TeXcolorgray 59998 79998
+a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 22 22
+TeXDict begin 22 21 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.22) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(sections)1089
+b(=)d(\\)60748 19879 y(BulletSlide\('Adding)1095 b(sections)1089
+b(and)e(subsections',)73774 21733 y(['Adding)i(a)d(section)j(is)d(just)
+i(like)f(adding)h(a)e(slide:)i(')e(+)73774 23587 y(Code\(r"""sec)1091
+b(=)1086 b(Section\('Long)1092 b(title',)c('Short)h(title'\)"""\))h(+)
+73774 25441 y('The)d(short)h(title)g(is)e(optional,)k(and)d(will)g(be)g
+(used)g(if)f(there)i(is)f(not)g(')73774 27294 y('enough)i(room)e(for)g
+(the)g(long)g(title',)73774 29148 y('SubSection)k(works)c(the)g(same)h
+(way,)f(but)g(a)f(Section)j(needs)e(to)g(be)f(')73774
+31002 y('defined)j(prior)f(to)e(a)g(SubSection',)73774
+32856 y('Slide)i(objects)h(are)e(automatically)k(a)1086
+b(part)i(of)e(the)h(current)i(section)g(')73774 34710
+y('or)e(subsection',)73774 36564 y('If)g(no)f(sections)j(are)e
+(defined,)j(all)c(slides)j(will)e(be)f(part)i(of)e(the)h(')73774
+38418 y('main)h(talk',],\))p 0 TeXcolorgray 0 TeXcolorgray
+134963 76484 a Fa(Exampletalk)262 b(\226)g(p)-33 b(.)261
+b(22)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop
+end
+%%Page: 23 23
+TeXDict begin 23 22 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.23) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(navigation)1090
+b(=)c(\\)60748 19879 y(BulletSlide\('You)1093 b(can)1087
+b(turn)g(off)g(the)g(header)i(and)d(footer',)73774 21733
+y(bullets=[r'Want)1092 b(to)1087 b(navigate)i(in)d(your)i(talk?)g
+(Click)f(in)g(the)g(header!',)83543 23587 y(r'Sometimes)k(the)c
+(navigation)j(header)e(and)f(the)g(')83543 25441 y('author/title)1092
+b(in)1086 b(the)h(footer)h(is)f(disturbing',)83543 27294
+y(r'Turn)h(header/footer)k(decoration)e(off)d(for)g(all)g(slides:')i(+)
+83543 29148 y(Code\(""")60748 31002 y(header_footer)j(=)1086
+b(False)60748 32856 y("""\),],\))p 0 TeXcolorgray 0 TeXcolorgray
+134963 76484 a Fa(Exampletalk)262 b(\226)g(p)-33 b(.)261
+b(23)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop
+end
+%%Page: 24 24
+TeXDict begin 24 23 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.24) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(ex_header)1090
+b(=)c(\\)60748 19879 y(TextSlide\('The)1092 b(look)c(of)e(the)h(file)g
+(header',)71603 21733 y(Code\(r''')60748 23587 y(from)h(latexslides)i
+(import)86800 23903 y(*)60748 27294 y(#)c(First)i(set)f(some)g(module)i
+(variables:)60748 29148 y(package)g(=)d(BeamerSlides)60748
+31002 y(theme)i(=)e('hpl1')60748 32856 y(header_footer)1092
+b(=)1086 b(True)60748 36564 y(#)g(Add)h(newcommands:)60748
+38418 y(newcommands)k(=)1086 b(r""")60748 40272 y
+(\\newcommand{\\OBS}[1]{\\marginpar{\\scriptsize##1}})60748
+42126 y(""")60748 43980 y('''\),\))p 0 TeXcolorgray 0
+TeXcolorgray 134963 76484 a Fa(Exampletalk)262 b(\226)g(p)-33
+b(.)261 b(24)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998
+a eop end
+%%Page: 25 25
+TeXDict begin 25 24 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.25) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(prosper)1089
+b(=)d(\\)60748 19879 y(BulletSlide\('Can)1093 b(I)1086
+b(change)i(from)g(Beamer)g(to)f(Prosper)h(or)f(HTML?',)73774
+21733 y(bullets=['Of)k(course,)e(this)e(is)g(trivial:')i(+)83543
+23587 y(Code\(""")60748 25441 y(#package)g(=)d(BeamerSlides)60748
+27294 y(package)j(=)d(ProsperSlides)60748 29148 y(package)j(=)d
+(HTMLSlides)60748 31002 y("""\),)83543 32856 y('Prosper)j(is)e(fine)g
+(\(best?\))i(for)e(handouts',)83543 34710 y('Handouts)j(for)d(Beamer)h
+(are)f(made)g(setting)i(the)e(keyword)i(')d(+)83543 36564
+y(Code\('handout=True'\))1095 b(+)1086 b('for)h(colour)i(prints)f(and)f
+(')f(+)83543 38418 y(Code\('colour=False'\))1095 b(+)1086
+b('for)h(b/w)g(handouts',],\))p 0 TeXcolorgray 0 TeXcolorgray
+134963 76484 a Fa(Exampletalk)262 b(\226)g(p)-33 b(.)261
+b(25)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop
+end
+%%Page: 26 26
+TeXDict begin 26 25 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.26) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(ex_titlepage)1091
+b(=)1086 b(\\)60748 19879 y(TextSlide\('The)1092 b(titlepage',)71603
+21733 y(Code\(r''')60748 23587 y(ifi)1087 b(=)f("Dept.~of)k
+(Informatics,)h(University)f(of)c(Oslo")60748 25441 y(math)i(=)e
+("Dept.~of)j(Mathematics,)i(University)g(of)1086 b(Oslo")60748
+27294 y(simula)j(=)c("Simula)k(Research)g(Laboratory")60748
+31002 y(hpl)e(=)f('Hans)i(Petter)g(Langtangen')60748
+32856 y(ilmarw)h(=)c('Ilmar)k(M.)d(Wilbers')60748 36564
+y(slides)j(=)c(\\)60748 38418 y(package\(title='Using)1095
+b(Python)1088 b(and)f(Latexslides)k(to)1086 b(Make)i(Slides',)69432
+40272 y(author_and_inst=[\(hpl,)1096 b(simula,)1089 b(ifi\),)87885
+42126 y(\(ilmarw,)g(simula,)g(math\)],)69432 43980 y(date='March)i
+(2008',)69432 45833 y(titlepage_figure='wave-dueto-slide.ps',)69432
+47687 y(#)1086 b(Figure)i(to)f(the)g(south)g(of)g(the)g(title:)69432
+49541 y(titlepage_figure_pos='s',)69432 51395 y
+(titlepage_figure_fraction_width=0.5,)69432 53249 y(#)f(Used)h(if)g
+(titlepage_figure_pos)1095 b(is)1086 b('e':)69432 55103
+y(#titlepage_left_column_width=1.0,)69432 56957 y(toc_heading='List)
+1093 b(of)1087 b(Topics',)69432 58811 y
+(toc_figure='clipart/python1.ps',)69432 60665 y
+(toc_figure_fraction_width=1,)69432 62519 y(toc_left_column_width=0.5,)
+69432 64372 y(newcommands=newcommands\))60748 66226 y('''\),\))p
+0 TeXcolorgray 0 TeXcolorgray 134963 76484 a Fa(Exampletalk)262
+b(\226)g(p)-33 b(.)261 b(26)p 0 TeXcolorgray 59998 79998
+a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 27 27
+TeXDict begin 27 26 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.27) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(emacs)1088
+b(=)e(\\)60748 19879 y(BulletSlide\('Emacs)1094 b(commands',)73774
+21733 y(['The)1088 b(authors)g(have)g(found)g(the)f(following)i(Emacs)f
+(shortcuts)i(')74859 23587 y('very)e(helpful:',)74859
+25441 y(['Alt)g(+)e(up-arrow:')k(+)74859 27294 y(Code\(R""")60748
+29148 y(\(global-set-key)j([)1086 b(\(meta)i(up\)])f(")f(=)g
+(Slide\('',)60748 31002 y(content=[BulletBlock\(bullets=[)65090
+32856 y('',"\))60748 34710 y("""\),],)74859 36564 y(['Alt)i(+)e
+(down-arrow:')1091 b(+)74859 38418 y(Code\(r""")60748
+40272 y(\(global-set-key)i([)1086 b(\(meta)i(down\)])g(")60748
+42126 y(]\),)2173 b(#)1086 b(end)g(bullets)j(and)e(BulletBlock)60748
+43980 y(],)3258 b(#)1086 b(end)g(contents)60748 45833
+y(\)"\))60748 47687 y("""\),],)73774 49541 y(r'These)j(should)f(be)e
+(included)k(in)c(the)h(\\texttt{.emacs})1092 b(file)c(')73774
+51395 y('in)f(your)g(home)g(directory',)73774 53249 y('This)h(example)g
+(is)f(for)g(the)g(opening)h(and)f(closing)i(of)d(a)g(BulletBlock,)1092
+b(')73774 55103 y('but)1087 b(illustrate)j(how)d(Emacs)h(shortcuts)i
+(can)d(be)f(used',],\))p 0 TeXcolorgray 0 TeXcolorgray
+134963 76484 a Fa(Exampletalk)262 b(\226)g(p)-33 b(.)261
+b(27)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop
+end
+%%Page: 28 28
+TeXDict begin 28 27 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.28) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(slide_obj1)1090
+b(=)c(\\)60748 19879 y(BulletSlide\('Slide)1094 b(Objects)1089
+b(1)d(',)73774 21733 y(['You)i(may)f(save)g(each)g(slide)h(in)f(a)e
+(Slide)j(object)h(\(recommended!!\)')k(+)74859 23587
+y(Code\(r""")60748 25441 y(slides)c(=)c(BeamerSlides\(...\))60748
+27294 y(motivation2)1091 b(=)1086 b(\\)60748 29148 y
+(Slide\('Motivation)1094 b(Cont.',)67261 31002 y([BulletBlock\([...],)g
+(...\),)1088 b(...])64005 32856 y("""\),)74859 34710
+y('A)f(list)g(of)g(all)f(slide)i(objects)h(in)d(a)g(file)i(can)f(be)f
+(generated)k(')c(+)74859 36564 y('with)i(the)f(following)j
+(executable:')h(+)74859 38418 y(Code\(r""")60748 40272
+y(extract_slidenames)j(mytalk.py)60748 42126 y("""\),)74859
+43980 y('The)1088 b(generated)h(list)f(can)f(be)f(included)j(at)e(the)g
+(bottom)h(')e(+)74859 45833 y('of)h(your)h(file',],\))p
+0 TeXcolorgray 0 TeXcolorgray 134963 76484 a Fa(Exampletalk)262
+b(\226)g(p)-33 b(.)261 b(28)p 0 TeXcolorgray 59998 79998
+a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 29 29
+TeXDict begin 29 28 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.29) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(slide_obj2)1090
+b(=)c(\\)60748 19879 y(BulletSlide\('Slide)1094 b(Objects)1089
+b(2)d(',)74859 21733 y(['Talks)j(can)e(be)f(composed)k(of)c(lists)i(of)
+e(slide)i(objects')h(+)74859 23587 y(Code\(""")60748
+25441 y(slides)g(=)c(BeamerSlides\(...\))60748 27294
+y(collection)1090 b(=)c([header,)k(title,)e(sec1,)g(intro1,)g(intro2,)h
+(sec2,)75945 29148 y(plainloop,)h(parallel1,)g(summary])60748
+31002 y(#)c(Can)h(make)g(some)h(slides)g(invisible:)60748
+32856 y(for)f(s)f(in)g(parallel1,)1091 b(references:)65090
+34710 y(s.hidden)e(=)d(True)60748 36564 y(#)g(Or)h(perhaps)h(more)g
+(elegant:)60748 38418 y(collection)i(=)c([header,)k(title,)e(sec1,)g
+(intro1,)g(intro2,)h(sec2,)75945 40272 y(plainloop,)h(parallel1.hide,)j
+(summary])60748 43980 y(for)1087 b(s)f(in)g(collection:)65090
+45833 y(slides.add_slide\(s\))60748 47687 y(#)g(Write)i(slides)g(to)f
+(file:)60748 49541 y(f)f(=)g(open\('exampletalk.tex',)1096
+b('w'\))60748 51395 y(f.write\(slides.get_latex\(\)\))60748
+55103 y(#)1086 b(Or)h(the)f(simplest,)k(which)e(will)f(output)i(the)
+60748 56957 y(#)d(necessary)k(latex)e(commands)h(as)d(well:)60748
+58811 y(slides.write\(filename\))60748 60665 y("""\),)74859
+62519 y(Text\('In)k(this)d(way)g(you)g(can)g(reuse)g(old)g(slides)i(in)
+d(new)h(contexts)i(')80287 64372 y('without)g(cut)e(and)g(paste,)h
+(i.e.,)g(you)f(can)g(have)g(a)f(single)i(')80287 66226
+y('source)g(for)f(each)h(slide)g(\(important)i(for)d(large)g(slide)h(')
+80287 68080 y('collections!\)'\),],\))p 0 TeXcolorgray
+0 TeXcolorgray 134963 76484 a Fa(Exampletalk)262 b(\226)g(p)-33
+b(.)261 b(29)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998
+a eop end
+%%Page: 30 30
+TeXDict begin 30 29 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.30) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(compiling)1090
+b(=)c(\\)60748 19879 y(BulletSlide\('How)1093 b(to)1087
+b(Compile)h(the)f(Talk',)73774 21733 y(['You)h(write)g(your)f(talk)g
+(as)g(Python)h(code)f(in)g(a)f(plain)h(text)h(file,)g(')74859
+23587 y(r'say)g(\\emp{mytalk.py}',)74859 25441 y(r'The)g(next)g(step)f
+(is)f(to)h(generate)i(\\LaTeX{})g(code:')f(+)74859 27294
+y(Code\(r""")60748 29148 y(unix>)g(python)g(mytalk.py)60748
+31002 y("""\),)74859 32856 y('The)g(latex)g(commands)h(you)e(need)g(to)
+f(run)h(will)h(be)e(the)h(output)h(')e(+)74859 34710
+y('if)h(the)g(\\emp{write})k(function)e(is)d(used',],\))p
+0 TeXcolorgray 0 TeXcolorgray 134963 76484 a Fa(Exampletalk)262
+b(\226)g(p)-33 b(.)261 b(30)p 0 TeXcolorgray 59998 79998
+a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 31 31
+TeXDict begin 31 30 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.31) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(maths)1088
+b(=)e(\\)60748 19879 y(Slide\('How)k(to)d(write)h(mathematics',)67261
+21733 y([TextBlock\('Use)1093 b(triple-quoted)e(raw)c(strings)i(and)e
+(just)g(write)h(the)f(plain)h(')79201 23587 y('\\LaTeX{})i(code'\),)
+68347 25441 y(TextBlock\(heading='Latexslide)1099 b(source:',)79201
+27294 y(text=Code\(r'''TextBlock\(heading='Latexslide)1106
+b(source:',)71603 29148 y(text=r"""Here)1092 b(is)1086
+b(an)g(equation)60748 31002 y(\\[)h(ax^2)g(+)f(bx)g(+)g(c)g(=)g(0\\])
+60748 32856 y(that)i(is)e(easy)h(to)g(solve.)60748 34710
+y("""\))60748 36564 y('''\)\),)67261 38418 y
+(TextBlock\(heading='Result:',)78116 40272 y(text=r"""Here)k(is)c(an)f
+(equation)60748 42126 y(\\[)h(ax^2)g(+)f(bx)g(+)g(c)g(=)g(0\\])60748
+43980 y(that)i(is)e(easy)h(to)g(solve.)60748 45833 y("""\),],\))p
+0 TeXcolorgray 0 TeXcolorgray 134963 76484 a Fa(Exampletalk)262
+b(\226)g(p)-33 b(.)261 b(31)p 0 TeXcolorgray 59998 79998
+a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 32 32
+TeXDict begin 32 31 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 66678 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 66678 45999 a 66678 45999
+a
+SDict begin H.S end
+ 66678 45999 a 0 TeXcolorgray 0 TeXcolorgray 66678 45999
+a
+SDict begin H.R end
+ 66678 45999 a 66678 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.32) cvn H.B /DEST pdfmark end
+ 66678 45999 a 66678 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 66678 45999 a 0 TeXcolorgray 60748 18025 a Fb(learning)1089
+b(=)d(\\)60748 19879 y(Slide\('Learning)1093 b(Latexslides',)67261
+21733 y([BulletBlock\(['Have)h(a)1086 b(look)i(at)e(the)h(source)h
+(code)g(for)f(this)g(presentation,)1092 b(')82458 23587
+y(r'it)1087 b(can)g(be)f(found)i(in)f(the)f(file)i
+(\\emp{exampletalk.py}.)1095 b(')82458 25441 y('Going)1088
+b(through)h(the)e(presentation)k(and)c(the)f(source)j(code)e(')82458
+27294 y('simultaneously)1092 b(should)c(get)f(you)g(started.'],\),)
+68347 29148 y(BulletBlock\(['When)1093 b(running')d(+)81372
+31002 y(Code\(r""")60748 32856 y(unix>)e(latexslides)j(mytalk.py)60748
+34710 y("""\))d(+)82458 36564 y('the)f(file)g(\\emp{mytalk.py})1093
+b(is)1086 b(created.)k(This)d(file)g(')82458 38418 y('contains)i(the)e
+(basics)i(and)d(will)i(help)f(you)g(get)g(started)i(')82458
+40272 y('on)e(a)e(new)i(talk.',],\),],\))p 0 TeXcolorgray
+0 TeXcolorgray 134963 76484 a Fa(Exampletalk)262 b(\226)g(p)-33
+b(.)261 b(32)p 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998
+a eop end
+%%Trailer
+
+userdict /end-hook known{end-hook}if
+%%EOF

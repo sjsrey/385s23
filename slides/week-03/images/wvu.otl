@@ -1,0 +1,62 @@
+Title
+	Introduction to Exploratory Spatial Data Analysis
+Description
+| This course provides an introduction to the exploratory analysis of spatial
+| data. Fundamental data, theories, and methods are covered and participants
+| will gain first hand experience with leading software packages for ESDA.
+Audience
+| This course approaches the material at the level of an intermediate graduate
+| statistics course. The focus is on exploratory spatial data analysis
+| primarily in a cross-sectional setting. Readings listed below give an
+| indication of the level of the content. 
+Content
+	Day 1 Morning 
+		Introduction
+			Spatial Analysis and GIS
+			What is special about spatial data?
+			Spatial Data Analysis
+		Geovisualization, EDA and ESDA
+			EDA and ESDA
+			Dynamic Graphics
+			Geovisualization and Statistical Maps
+	Day 1 Afternoon
+		Spatial Autocorrelation
+			Defined
+			Hypotheses
+			Tests
+		Software 
+			Introduction to GeoDa
+	Day 2 Morning
+		Spatial Weights
+			Contiguity
+			Distance Based
+			Hybrid
+			General
+			Issues
+		Software
+			Weights in GeoDa
+	Day 2 Afternoon
+		Global Spatial Autocorrelation
+			Gamma statistics
+			Join Counts
+			Moran's I, Geary
+		Software
+			Global autocorrelation analysis
+	Day 3 Morning
+		Local Spatial Autocorrelation
+			Principles
+			Local Moran
+			G Statistics
+		Software
+			Local analysis in GeoDa
+	Day 3 Afternoon
+		Space-Time
+			ESTDA overview
+			Spatial Markov
+			LISA Markov
+		Software
+			STARS
+			PySAL
+	Day 4 Morning
+		Open
+			Individual sessions

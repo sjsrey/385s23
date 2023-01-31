@@ -1,0 +1,152 @@
+\beamer@endinputifotherversion {3.07pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/3}{}{0}}
+\headcommand {\beamer@framepages {2}{3}}
+\headcommand {\sectionentry {1}{Point Pattern Analysis Objectives and Examples}{4}{Point Pattern Analysis Objectives and Examples}{0}}
+\headcommand {\beamer@sectionpages {1}{3}}
+\headcommand {\beamer@subsectionpages {1}{3}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{Objectives}}\headcommand {\beamer@subsectionpages {4}{3}}
+\headcommand {\slideentry {1}{1}{1}{4/4}{Objectives}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {1}{1}{2}{5/12}{Objectives}{0}}
+\headcommand {\beamer@framepages {5}{12}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{13}{Definitions}}\headcommand {\beamer@subsectionpages {4}{12}}
+\headcommand {\slideentry {1}{2}{1}{13/13}{Definitions}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {1}{2}{2}{14/19}{Definitions}{0}}
+\headcommand {\beamer@framepages {14}{19}}
+\headcommand {\slideentry {1}{2}{3}{20/24}{Definitions}{0}}
+\headcommand {\beamer@framepages {20}{24}}
+\headcommand {\slideentry {1}{2}{4}{25/25}{Definitions}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\slideentry {1}{2}{5}{26/26}{Definitions}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\slideentry {1}{2}{6}{27/27}{Definitions}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\slideentry {1}{2}{7}{28/34}{Definitions}{0}}
+\headcommand {\beamer@framepages {28}{34}}
+\headcommand {\slideentry {1}{2}{8}{35/43}{Definitions}{0}}
+\headcommand {\beamer@framepages {35}{43}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{44}{Examples and Terminology}}\headcommand {\beamer@subsectionpages {13}{43}}
+\headcommand {\slideentry {1}{3}{1}{44/44}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\slideentry {1}{3}{2}{45/48}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {45}{48}}
+\headcommand {\slideentry {1}{3}{3}{49/53}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {49}{53}}
+\headcommand {\slideentry {1}{3}{4}{54/61}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {54}{61}}
+\headcommand {\slideentry {1}{3}{5}{62/62}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {62}{62}}
+\headcommand {\slideentry {1}{3}{6}{63/63}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {63}{63}}
+\headcommand {\slideentry {1}{3}{7}{64/70}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {64}{70}}
+\headcommand {\slideentry {1}{3}{8}{71/71}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {71}{71}}
+\headcommand {\slideentry {1}{3}{9}{72/72}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {72}{72}}
+\headcommand {\slideentry {1}{3}{10}{73/78}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {73}{78}}
+\headcommand {\slideentry {1}{3}{11}{79/79}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {79}{79}}
+\headcommand {\slideentry {1}{3}{12}{80/80}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {80}{80}}
+\headcommand {\slideentry {1}{3}{13}{81/81}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {81}{81}}
+\headcommand {\slideentry {1}{3}{14}{82/88}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {82}{88}}
+\headcommand {\slideentry {1}{3}{15}{89/89}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {89}{89}}
+\headcommand {\slideentry {1}{3}{16}{90/92}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {90}{92}}
+\headcommand {\slideentry {1}{3}{17}{93/93}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {93}{93}}
+\headcommand {\slideentry {1}{3}{18}{94/97}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {94}{97}}
+\headcommand {\slideentry {1}{3}{19}{98/98}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {98}{98}}
+\headcommand {\slideentry {1}{3}{20}{99/99}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {99}{99}}
+\headcommand {\slideentry {1}{3}{21}{100/107}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {100}{107}}
+\headcommand {\slideentry {1}{3}{22}{108/108}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {108}{108}}
+\headcommand {\slideentry {1}{3}{23}{109/109}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {109}{109}}
+\headcommand {\slideentry {1}{3}{24}{110/110}{Examples and Terminology}{0}}
+\headcommand {\beamer@framepages {110}{110}}
+\headcommand {\sectionentry {2}{Centrography}{111}{Centrography}{0}}
+\headcommand {\beamer@sectionpages {4}{110}}
+\headcommand {\beamer@subsectionpages {44}{110}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{111}{Central Tendency}}\headcommand {\beamer@subsectionpages {111}{110}}
+\headcommand {\slideentry {2}{1}{1}{111/111}{Central Tendency}{0}}
+\headcommand {\beamer@framepages {111}{111}}
+\headcommand {\slideentry {2}{1}{2}{112/120}{Central Tendency}{0}}
+\headcommand {\beamer@framepages {112}{120}}
+\headcommand {\slideentry {2}{1}{3}{121/121}{Central Tendency}{0}}
+\headcommand {\beamer@framepages {121}{121}}
+\headcommand {\slideentry {2}{1}{4}{122/122}{Central Tendency}{0}}
+\headcommand {\beamer@framepages {122}{122}}
+\headcommand {\slideentry {2}{1}{5}{123/123}{Central Tendency}{0}}
+\headcommand {\beamer@framepages {123}{123}}
+\headcommand {\slideentry {2}{1}{6}{124/128}{Central Tendency}{0}}
+\headcommand {\beamer@framepages {124}{128}}
+\headcommand {\slideentry {2}{1}{7}{129/129}{Central Tendency}{0}}
+\headcommand {\beamer@framepages {129}{129}}
+\headcommand {\slideentry {2}{1}{8}{130/132}{Central Tendency}{0}}
+\headcommand {\beamer@framepages {130}{132}}
+\headcommand {\slideentry {2}{1}{9}{133/140}{Central Tendency}{0}}
+\headcommand {\beamer@framepages {133}{140}}
+\headcommand {\slideentry {2}{1}{10}{141/141}{Central Tendency}{0}}
+\headcommand {\beamer@framepages {141}{141}}
+\headcommand {\slideentry {2}{1}{11}{142/142}{Central Tendency}{0}}
+\headcommand {\beamer@framepages {142}{142}}
+\headcommand {\slideentry {2}{1}{12}{143/145}{Central Tendency}{0}}
+\headcommand {\beamer@framepages {143}{145}}
+\headcommand {\slideentry {2}{1}{13}{146/150}{Central Tendency}{0}}
+\headcommand {\beamer@framepages {146}{150}}
+\headcommand {\slideentry {2}{1}{14}{151/151}{Central Tendency}{0}}
+\headcommand {\beamer@framepages {151}{151}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{152}{Dispersion and Orientation}}\headcommand {\beamer@subsectionpages {111}{151}}
+\headcommand {\slideentry {2}{2}{1}{152/152}{Dispersion and Orientation}{0}}
+\headcommand {\beamer@framepages {152}{152}}
+\headcommand {\slideentry {2}{2}{2}{153/156}{Dispersion and Orientation}{0}}
+\headcommand {\beamer@framepages {153}{156}}
+\headcommand {\slideentry {2}{2}{3}{157/161}{Dispersion and Orientation}{0}}
+\headcommand {\beamer@framepages {157}{161}}
+\headcommand {\slideentry {2}{2}{4}{162/162}{Dispersion and Orientation}{0}}
+\headcommand {\beamer@framepages {162}{162}}
+\headcommand {\slideentry {2}{2}{5}{163/170}{Dispersion and Orientation}{0}}
+\headcommand {\beamer@framepages {163}{170}}
+\headcommand {\slideentry {2}{2}{6}{171/179}{Dispersion and Orientation}{0}}
+\headcommand {\beamer@framepages {171}{179}}
+\headcommand {\slideentry {2}{2}{7}{180/180}{Dispersion and Orientation}{0}}
+\headcommand {\beamer@framepages {180}{180}}
+\headcommand {\slideentry {2}{2}{8}{181/182}{Dispersion and Orientation}{0}}
+\headcommand {\beamer@framepages {181}{182}}
+\headcommand {\slideentry {2}{2}{9}{183/185}{Dispersion and Orientation}{0}}
+\headcommand {\beamer@framepages {183}{185}}
+\headcommand {\slideentry {2}{2}{10}{186/186}{Dispersion and Orientation}{0}}
+\headcommand {\beamer@framepages {186}{186}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{187}{Geometry}}\headcommand {\beamer@subsectionpages {152}{186}}
+\headcommand {\slideentry {2}{3}{1}{187/187}{Geometry}{0}}
+\headcommand {\beamer@framepages {187}{187}}
+\headcommand {\slideentry {2}{3}{2}{188/190}{Geometry}{0}}
+\headcommand {\beamer@framepages {188}{190}}
+\headcommand {\slideentry {2}{3}{3}{191/191}{Geometry}{0}}
+\headcommand {\beamer@framepages {191}{191}}
+\headcommand {\slideentry {2}{3}{4}{192/192}{Geometry}{0}}
+\headcommand {\beamer@framepages {192}{192}}
+\headcommand {\slideentry {2}{3}{5}{193/193}{Geometry}{0}}
+\headcommand {\beamer@framepages {193}{193}}
+\headcommand {\slideentry {2}{3}{6}{194/194}{Geometry}{0}}
+\headcommand {\beamer@framepages {194}{194}}
+\headcommand {\slideentry {2}{3}{7}{195/195}{Geometry}{0}}
+\headcommand {\beamer@framepages {195}{195}}
+\headcommand {\beamer@partpages {1}{195}}
+\headcommand {\beamer@subsectionpages {196}{195}}
+\headcommand {\beamer@sectionpages {196}{195}}
+\headcommand {\beamer@documentpages {195}}
+\headcommand {\def \inserttotalframenumber {67}}

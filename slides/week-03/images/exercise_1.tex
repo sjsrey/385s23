@@ -1,0 +1,134 @@
+
+\documentclass{article} %this needs to be at the top of each document
+
+% margins, size, formatting 
+\oddsidemargin=.25in
+\evensidemargin=.25in
+\topmargin=-.5in
+\textwidth=6in
+\textheight=9in
+\pagestyle{empty}
+
+\setlength{\parindent}{0in} %turn off paragraph indentation
+
+% packages for fancy fonts, symbols, theoremm/proof environments, etc - go ahead and use this in your template, whether you need it or not!
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage[pdftex,
+pdftitle={GPH 483/598},
+pdfauthor={Sergio J. Rey},
+pdfkeywords={ESDA},
+pdfpagemode=UseOutlines,
+bookmarks,bookmarksopen,pdfstartview=FitH,
+colorlinks,linkcolor=blue,citecolor=blue,urlcolor=blue,
+]
+{hyperref}
+
+\begin{document}
+
+
+{\large \bf GPH 483/598 Geographic Information Analysis \hfill Spring 2010\\
+\hfill Exercise 1}
+\vspace{.2in}
+\hrule 
+\vspace{.1in} 
+\textbf{Instructions:} Using \texttt{R} you are to carry out a statistical
+analysis of the problem below. Your work must be turned in on the blackboard
+site and include: [1] Your script; [2] Your short interpretation and findings.
+
+Due: February 10, 13:00 mst. 
+\vspace{.1in}
+\hrule 
+\vspace{.2in}
+{\bf Research Question:} You are an economic geographer interested in the
+impact of accessibility on residential rental markets.
+More specifically, you want to investigate the hypothesis
+that apartment rents per square foot are significantly higher for locations
+within 1,000 feet  of a trolley stop, compared to apartments  that
+are further than 1,000 feet away from the nearest trolley stop.
+
+\vspace{.2in}
+
+{\bf Data:} The file \texttt{trolley.dat} has the sample data for your
+analysis. It has $N$ rows, with the first row being a header. Each subsequent
+row is either an apartment  or a trolley record. If the record is for an
+apartment, the value in the first column is the
+total monthly rent, $R$ for the apartment, the second column is the square
+footage of the apartment $s$, while the third and forth column are the $x$ and
+$y$ locational coordinates for the apartment. If the record is for a trolley
+station, the values are -9 for the first two columns, while the third
+and forth columns are the locational coordinates for the trolley station.
+
+\vspace{.2in}
+
+All jobs in this city are in the central business district (CBD), and all
+commuters must go to one of the trolley stations to commute to the CBD each
+day which is located at $(x=0,y=0)$.  You are interested in testing if the
+apartments within 1,000 feet of a trolley station command a
+significantly higher rent (per sq foot) than those beyond 1,000 feet of a
+station.
+
+\vspace{.2in}
+Suppose you also know that the apartment rent gradient (rent per square foot
+at different distances) is as follows:
+\begin{equation}
+  r_{i}=r_0-0.015 (d_i) + \beta T_i
+  \label{e:r}
+\end{equation}
+where $r_{i}$ is the rent (in cents) per square foot of apartment space at
+$d_i$ feet from the CBD, $r_0$ is the rent at the CBD, $\beta$  is the amount by which apartment rents per
+square foot increase if the apartment is within 1,000 feet of a trolley
+station, and $T_i=1$ if $i$ is within 1,000 feet of a trolley station
+otherwise $T_i=0$. 
+
+\vspace{.2in}
+You also know that the apartment size gradient is:
+\begin{equation}
+  s_{i}=500+0.20 (d_i)
+  \label{e:s}
+\end{equation}
+where $s_i$ is the square footage of an apartment at $d_i$ feet from the
+CBD. Finally, the total monthly rent for an apartment is given as:
+
+\begin{equation}
+  R_i = s_i \times r_i \ .
+  \label{e:R} 
+\end{equation}
+
+
+
+\vspace{.2in}
+
+{\bf Tasks:} 
+\begin{enumerate}
+  \item Process your data:
+    \begin{enumerate}
+      \item What is the value of $N$?
+      \item Determine how many trolley stations are in the sample
+      \item Determine how many apartments are in the sample
+      \item What is the size of the bounding rectangle that contains all the
+      apartments?
+    \end{enumerate}
+  \item Visualize your data:
+  \begin{enumerate}
+    \item Plot the locations of the apartments
+    \item On the same plot, add the locations of the trolley stations and a 1,000 foot circular
+      buffer around each station
+    \item On a separate graph, plot the size gradient, $s$
+    \item Plot the total monthly rent gradient, $R$
+    \item Plot the rent per square foot gradient, $r$
+    \item Provide an interpretation of each of your plots
+  \end{enumerate}
+  \item Computationally, determine which apartments are within 1,000 feet of a trolley stop and
+    which are not (assume distance can be measured as the crow flies).
+  \item What is the value of $r_0$?
+  \item Clearly formulate your null and alternative hypotheses regarding your
+    research question
+  \item Based on your sample, provide an estimate of $\beta$
+  \item Select a test statistic
+  \item Calculate the statistic and its p-value
+  \item Interpret your findings with regard to the hypotheses
+\end{enumerate}
+
+
+\end{document} % every document must end with this.

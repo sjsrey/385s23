@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Properties of Point Processes}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{First Order Properties}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Second Order Property}{4}{0}{1}
+\beamer@sectionintoc {2}{Point Processes}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Complete Spatial Randomness}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{Homogeneous Poisson Process}{15}{0}{2}
+\beamer@subsectionintoc {2}{3}{Inhomogeneous Poisson Process (IPP)}{21}{0}{2}

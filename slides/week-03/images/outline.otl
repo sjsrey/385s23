@@ -1,0 +1,28 @@
+Part I Introduction
+	0120 [intro.otl] [intro.tex]
+	0122 [spatialAnalysis.otl] [spatialAnalysis.tex]
+	0127 spatialData.otl
+	0129 labIntroGeoda.otl
+Part II Point Patterns
+	0203 pointPatternBasics.otl
+	0205 labPointPatternsDesc.otl
+	0210 pointPatternProcesses.otl
+	0217 clustering.otl
+	0219 labScanStatistics.otl
+	0224 secondOrder.otl
+	0226 labSecondOrder.otl
+Part III Geostatistics
+	0303 geostatIntro.otl
+	0305 labVariography.otl
+	0317 kriging.otl
+	0319 labKriging.otl
+Part IV Spatial Autocorrelation
+	0331 autocorrelation.otl
+	0402 weights.otl
+	0407 advancedWeights.otl
+	0409 labSpatialWeights.otl
+	0414 global.otl
+	0416 labGlobal.otl
+	0421 local.otl
+	0423 labLocal.otl
+	0430 labStars.otl

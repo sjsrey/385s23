@@ -1,0 +1,168 @@
+preamble
+	@author \textsc{Sergio Rey}
+	@institute \textbf{GPH 483/598}\\\textbf{Geographic Information Analysis}\\School of Geographical Sciences\\Arizona State University\\Spring 2009
+	@instituteShort ASU
+	@title Course Introduction
+	@subtitle 
+	@titleShort GPH 483/598
+	@date 
+	@dateShort Course Introduction
+Course Overview
+	Objectives
+		Course Objectives
+		| * Introduction to fundamentals of ESDA
+		| * Conceptual background
+		| * Hands-on
+	Content and Structure
+		Components
+			Four Sections
+			| * Introduction and Background
+			| * Point Patterns
+			| * Geostatistics
+			| * Spatial Autocorrelation
+		Introduction and Background
+		| \begin{center}
+		| \begin{tabular}{|rl|}
+		| \hline
+		| Session&Topic\\
+		| \hline
+		| Jan 20&Introduction\\
+		| 22& GIS and Spatial Analysis\\
+		| 27&Spatial Data Taxonomy\\
+		| 29&\emph{Lab: Introduction to GeoDa}\\
+		| \hline
+		| \end{tabular}
+		| \end{center}
+		Point Patterns
+		| \begin{center}
+		| \begin{tabular}{|rl|}
+		| \hline
+		| Session&Topic\\
+		| \hline
+		| Feb 3&Point Pattern Analysis Basics\\
+		|   5&\emph{Lab: Descriptive Point Pattern Analysis}\\
+		|10&Point Pattern Processes\\
+		|12&\emph{Lab: Point Pattern Analysis in \emph{R}}\\
+		|17&Clustering and Clusters\\
+		|19&Lab: Scan Statistics in StatScan\\
+		|24&Second Order Analysis and Point Pattern Process Modeling \\
+		|26&\emph{Lab: Second Order Analysis and Point Processes in R}   \\
+		| \hline
+		| \end{tabular}
+		| \end{center}
+		Geostatistics
+		| \begin{center}
+		| \begin{tabular}{|rl|}
+		| \hline
+		| Session&Topic\\
+		| \hline
+		| Mar 3&Geostatistics Basics\\
+		| 5&\emph{Lab:Variography in ArcGIS Geostatistical Analyst and R}\\
+		| 10&Spring Break\\
+		| 12&Spring Break\\
+		| 17&Kriging\\
+		| 19&\emph{Lab: Kriging Predition in R and Geostatistical Analyst}\\
+		| 24&AAG\\
+		| 26&AAG\\
+		| \hline
+		| \end{tabular}
+		| \end{center}
+		Spatial Autocorrelation
+		| \begin{center}
+		| \begin{tabular}{|rl|}
+		| \hline
+		| Session&Topic\\
+		| \hline
+		| Mar 31&Spatial Autocorrelation Basics\\
+		| Apr 2&Spatial Weights\\
+		| 7&Advanced  Weights\\
+		| 9&\emph{Lab: Spatial Weights}\\
+		| 14&Global Autocorrelation\\
+		| 16&\emph{Lab: Global Autocorrelation}\\
+		| 21&Local Autocorrelation\\
+		| 23&\emph{Lab: Local Autocorrelation}\\
+		| 28&Exploratory Space-Time Analysis \\
+		| 30&\emph{Lab: STARS}\\
+		| \hline
+		| \end{tabular}
+		| \end{center}
+		Presentations
+		| \begin{center}
+		| \begin{tabular}{|rl|}
+		| \hline
+		| Session&Topic\\
+		| \hline
+		| May 5&Presentations\\
+		| 12&Presentations (12:10-2:00)\\
+		| \hline
+		| \end{tabular}
+		| \end{center}
+Logistics 
+	Grading
+		Grading
+			Components
+			| * 50\% Graded Assignments
+			| * 50\% Final Project
+			Assignments
+			| * 3: Point Patterns, Geostatistics, Spatial Autocorrelation
+			| * Highest two grades used
+			| * Can resubmit (up to 2 weeks after original submission)
+		Grading 483 vs. 598
+			Undergraduate 
+			| For your project you can either:
+			| * select your own data
+			| * use data I give you
+			Graduate
+			| * you must select your own data for your project
+			| * present assignment or supplementary reading
+			| * 50=40 (assignments) + 10 (presentation)
+			
+		| \alert{All students will present their final projects}
+		Prerequisites
+		| All participants are expected to have  working knowledge of spatial
+		| analysis concepts and to be familiar with multivariate statistics. No
+		| extensive GIS background beyond ArcGIS basics is needed.
+		Course Organization
+		| The course will meet in the GIS Laboratory in 316 Schwada for both
+		| lectures and labs. The class time will be complemented with a
+		| virtual classroom supported by the \emph{moodle} software. This is a
+		| continued experiment but I hope you will appreciate the added
+		| opportunity for virtual office hours and easy access to materials.
+		| As this is an evolving project, any feedback on the design and
+		| features of the site is welcome. The course site will be announced
+		| in class.
+	Reading
+		Readings
+		|There is no required textbook for the course. Supplementary readings will be
+		|taken from journals and the following two textbooks:
+		|\begin{itemize}
+		|\item O'Sullivan, D.O. and D.J. Unwin (2003) \emph{Geographic Information
+		|  Analysis}. John Wiley: New York. 
+		|\item de Smith, M.J., M.F. Goodchild and P.A. Longley (2008) \emph{Geospatial
+		|  Analysis}. Available at \url{http://www.spatialanalysisonline.com/}.
+		|\end{itemize}
+		|Reading lists for each topic will be given out in class and made available on
+		|the moodle class web site.
+	Software
+		Software
+		| \centering
+		|\begin{tabular}{l}
+		| GeoDa\\
+		|   \url{http://geodacenter.asu.edu/software/downloads}
+		|   \\ \hline
+		|  CrimeStat \\
+		|   \url{http://www.icpsr.umich.edu/CRIMESTAT/download.html}
+		|   \\ \hline
+		|  SaTScan\\
+		|  \url{http://www.satscan.org/}
+		|  \\ \hline
+		|  R\\
+		|   \url{http://cran.r-project.org/}
+		|   \\
+		|   \hline
+		|  STARS
+		|  \\
+		|   \url{http://regionalanalysislab.org/index.php/Main/STARS}	
+		|   \\
+		|   \hline
+		|\end{tabular}

@@ -1,0 +1,15 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Spatial Data}{5}{0}{1}
+\beamer@subsectionintoc {1}{1}{Types}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Spatial Effects}{16}{0}{1}
+\beamer@sectionintoc {2}{Spatial Data Analysis}{26}{0}{2}
+\beamer@subsectionintoc {2}{1}{Spatial Process}{26}{0}{2}
+\beamer@subsectionintoc {2}{2}{Point Pattern Analysis}{29}{0}{2}
+\beamer@subsectionintoc {2}{3}{Lattice}{38}{0}{2}
+\beamer@subsectionintoc {2}{4}{Geostatistical}{66}{0}{2}
+\beamer@subsectionintoc {2}{5}{Network Data}{89}{0}{2}
+\beamer@sectionintoc {3}{Transformations of Spatial Data}{106}{0}{3}
+\beamer@subsectionintoc {3}{1}{Area to Point}{106}{0}{3}
+\beamer@subsectionintoc {3}{2}{Point to Area}{108}{0}{3}
+\beamer@subsectionintoc {3}{3}{Change of Support Problem}{110}{0}{3}

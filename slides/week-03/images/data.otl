@@ -1,0 +1,144 @@
+preamble
+	@author Sergio Rey
+	@institute School of Geographical Sciences\\Arizona State University
+	@instituteShort ASU
+	@title Introduction to Exploratory Spatial Data Analysis
+	@subtitle Spatial Data
+	@titleShort RRI Short Course
+	@date December 19, 2008
+	@dateShort GIS and Spatial Analysis
+Spatial Data
+	Types
+		Types of Spatial Data
+			\alert{Events}
+			|	addresses of crimes
+			\alert{Continuous} Surfaces
+			|	air quality, rainfall
+			Discrete Spatial \alert{Objects}
+			|	county income
+	What is special about spatial data?
+		What is special about spatial data?
+			$Location^3$
+			| where matters
+			Dependence is the rule
+			| * spatial interaction
+			| * contagion
+			| * spatial externalities
+			| * spillovers
+			| * copy-catting
+			Spatial Scale Matters
+		Nature of Spatial Data
+			Georeferenceed
+			| attribute data together with location
+			Geocoding
+			|* associate observations with location
+			|* point: latitude-longitude (GPS)
+			|* areal unit: spatial reference
+		Dr. Snow's Map
+		|   \begin{center}
+		|	\includegraphics[width=0.7\linewidth]{snowmap1.pdf}
+		|  \end{center}
+		Now: http://chicago.everyblock.com/crime/
+		|  \begin{center}
+		|	\includegraphics[width=0.8\linewidth]{crimemap.png}
+		|  \end{center}
+		Types of Spatial Data
+			\alert{Events}
+			|	addresses of crimes
+			\alert{Continuous} Surfaces
+			|	air quality, rainfall
+			Discrete Spatial \alert{Objects}
+			|	county income
+		Geocoding on-line
+		|  \begin{center}
+		|	\includegraphics[width=0.8\linewidth]{geocode1.png}
+		|  \end{center}
+		Geocoding where's Serge
+		|  \begin{center}
+		|	\includegraphics[width=0.8\linewidth]{geocode2.png}
+		|  \end{center}
+		Geocoding where's Serge
+		|  \begin{center}
+		|	\includegraphics[width=0.8\linewidth]{geocode3.png}
+		|  \end{center}
+		Geocoding 
+		|  \begin{center}
+		|	\includegraphics[width=0.8\linewidth]{geocode4.png}
+		|  \end{center}
+		Geocoding 
+		|  \begin{center}
+		|	\includegraphics[width=0.8\linewidth]{geocode5.png}
+		|  \end{center}
+		Location
+			Location as a given
+			| * in most spatial analyses no choice in location
+			| * no sampling in the conventional sense
+			| * data = attributes augmented with locational information
+		Spatial Sampling
+			Concepts
+			| * Location as an \emph{Experimental Design} Problem
+			| * Spatial Sampling = \alert{Where} to Collect Data
+			| ** which villages to survey
+			| ** where to locate rain gauges
+	Spatial Effects
+		Spatial Effects
+			Three Classes
+			| * Spatial Dependence
+			| * Spatial Heterogeneity
+			| * Spatial Scale
+		Spatial Dependence
+			First Law of Geography
+			| * Tobler
+			| ** ``everything dependes on everything else, but closer things more so''
+			| * Structure of Spatial Dependence
+			| ** distance decay
+			| ** Closeness = Similarity
+		Spatial Heterogeneity
+		Spatial Scale
+			Scale of process vs. scale of measurement
+			| * points too far apart cannot provide information on small distance variation
+			| * areal aggregates cannot provide information on ecological fallacy
+Spatial Data Analysis
+	Spatial Process
+		Spatial Process
+			Spatial Random Field
+			| A mathematical concept to capture the randomness of values
+			| distributed over space
+			Formal Representation
+		    | \begin{equation}
+		    |\left\{ Z(s): s  \in D \subset \Re^d \right\}
+		    |end{equation}
+		    |\begin{itemize}
+		    |\item $Z$ is an attribute we observe (rainfall, income, crime)
+		    |\item $s$ is the location at which $Z$ is observed. $s$ is a $d \times 1$
+		    |  vector of coordinates. For most of this class $d=2$.
+		    |\item $D$ is the spatial domain.
+		    |\end{itemize}
+
+	Taxonomy
+		Types of Spatial Analysis
+			Point Pattern Analysis
+			| spatial distribution of events
+			Geostatistical Analysis
+			| surface modeling
+			Lattice Data Analysis
+			| spatial patterns of attributes observed for spatial objects
+		Points
+			Points as Events
+			| * crimes (addresses), accidents (locations)
+			| * point pattern analysis
+			Point as Samples from a Surface
+			| * air quality monitors, house prices
+			| * geostatistics
+			Points as Discrete Objects
+			| * county centroids
+			| * lattice data analysis
+		Research Questions
+			Point Pattern Analysis
+			| * identify clusters and other patterns
+			Geostatistical Analysis
+			| * model continuous spatial patterns
+			| * spatial interpolation (kriging)
+			Lattice Data
+			| * model spatial distributions
+			| * spatial autocorrelation, spatial regression

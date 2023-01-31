@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Clustered Patterns}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Neyman Scott}{8}{0}{1}
+\beamer@subsectionintoc {1}{2}{Inhomogeneous Poisson Process}{10}{0}{1}
+\beamer@sectionintoc {2}{Regular Pattern}{24}{0}{2}
+\beamer@subsectionintoc {2}{1}{Inhibition: Matern Processes}{26}{0}{2}
+\beamer@subsectionintoc {2}{2}{Markov Point Processes}{28}{0}{2}

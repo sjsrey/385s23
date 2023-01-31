@@ -1,0 +1,479 @@
+preamble
+	@author \textsc{Sergio Rey}
+	@institute \textbf{GPH 483/598}\\\textbf{Geographic Information Analysis}\\School of Geographical Sciences and Urban Planning\\Arizona State University\\Fall 2010
+	@instituteShort ASU
+	@title Introduction to Geographic Information Analysis
+	@subtitle 
+	@titleShort GPH 483/598
+	@date 
+	@dateShort Introduction
+Course Introduction
+	Objectives
+		Course Objectives
+		| * Introduction to fundamentals of ESDA
+		| * Conceptual background
+		| * Hands-on
+	Content and Structure
+		Components
+			Four Sections
+			| * Introduction and Background
+			| * Point Patterns
+			| * Geostatistics
+			| * Spatial Autocorrelation
+		Introduction and Background
+		| \begin{center}
+		| \begin{tabular}{|rl|}
+		| \hline
+		| Session&Topic\\
+		| \hline
+		| Jan 20&Introduction\\
+		| 22& GIS and Spatial Analysis\\
+		| 27&Spatial Data Taxonomy\\
+		| 29&\emph{Lab: Introduction to GeoDa}\\
+		| \hline
+		| \end{tabular}
+		| \end{center}
+		Point Patterns
+		| \begin{center}
+		| \begin{tabular}{|rl|}
+		| \hline
+		| Session&Topic\\
+		| \hline
+		| Feb 3&Point Pattern Analysis Basics\\
+		|   5&\emph{Lab: Descriptive Point Pattern Analysis}\\
+		|10&Point Pattern Processes\\
+		|12&\emph{Lab: Point Pattern Analysis in \emph{R}}\\
+		|17&Clustering and Clusters\\
+		|19&Lab: Scan Statistics in StatScan\\
+		|24&Second Order Analysis and Point Pattern Process Modeling \\
+		|26&\emph{Lab: Second Order Analysis and Point Processes in R}   \\
+		| \hline
+		| \end{tabular}
+		| \end{center}
+		Geostatistics
+		| \begin{center}
+		| \begin{tabular}{|rl|}
+		| \hline
+		| Session&Topic\\
+		| \hline
+		| Mar 3&Geostatistics Basics\\
+		| 5&\emph{Lab:Variography in ArcGIS Geostatistical Analyst and R}\\
+		| 10&Spring Break\\
+		| 12&Spring Break\\
+		| 17&Kriging\\
+		| 19&\emph{Lab: Kriging Predition in R and Geostatistical Analyst}\\
+		| 24&AAG\\
+		| 26&AAG\\
+		| \hline
+		| \end{tabular}
+		| \end{center}
+		Spatial Autocorrelation
+		| \begin{center}
+		| \begin{tabular}{|rl|}
+		| \hline
+		| Session&Topic\\
+		| \hline
+		| Mar 31&Spatial Autocorrelation Basics\\
+		| Apr 2&Spatial Weights\\
+		| 7&Advanced  Weights\\
+		| 9&\emph{Lab: Spatial Weights}\\
+		| 14&Global Autocorrelation\\
+		| 16&\emph{Lab: Global Autocorrelation}\\
+		| 21&Local Autocorrelation\\
+		| 23&\emph{Lab: Local Autocorrelation}\\
+		| 28&Exploratory Space-Time Analysis \\
+		| 30&\emph{Lab: STARS}\\
+		| \hline
+		| \end{tabular}
+		| \end{center}
+		Presentations
+		| \begin{center}
+		| \begin{tabular}{|rl|}
+		| \hline
+		| Session&Topic\\
+		| \hline
+		| May 5&Presentations\\
+		| 12&Presentations (12:10-2:00)\\
+		| \hline
+		| \end{tabular}
+		| \end{center}
+Logistics 
+	Grading
+		Grading
+			Components
+			| * 50\% Graded Assignments
+			| * 50\% Final Project
+			Assignments
+			| * 3: Point Patterns, Geostatistics, Spatial Autocorrelation
+			| * Highest two grades used
+			| * Can resubmit (up to 2 weeks after original submission)
+		Grading 483 vs. 598
+			Undergraduate 
+			| For your project you can either:
+			| * select your own data
+			| * use data I give you
+			Graduate
+			| * you must select your own data for your project
+			| * present assignment or supplementary reading
+			| * 50=40 (assignments) + 10 (presentation)
+			
+		| \alert{All students will present their final projects}
+		Prerequisites
+		| All participants are expected to have  working knowledge of spatial
+		| analysis concepts and to be familiar with multivariate statistics. No
+		| extensive GIS background beyond ArcGIS basics is needed.
+		Course Organization
+		| The course will meet in the GIS Laboratory in 316 Schwada for both
+		| lectures and labs. The class time will be complemented with a
+		| virtual classroom supported by the \emph{moodle} software. This is a
+		| continued experiment but I hope you will appreciate the added
+		| opportunity for virtual office hours and easy access to materials.
+		| As this is an evolving project, any feedback on the design and
+		| features of the site is welcome. The course site will be announced
+		| in class.
+	Reading
+		Readings
+		|There is no required textbook for the course. Supplementary readings will be
+		|taken from journals and the following two textbooks:
+		|\begin{itemize}
+		|\item O'Sullivan, D.O. and D.J. Unwin (2003) \emph{Geographic Information
+		|  Analysis}. John Wiley: New York. 
+		|\item de Smith, M.J., M.F. Goodchild and P.A. Longley (2008) \emph{Geospatial
+		|  Analysis}. Available at \url{http://www.spatialanalysisonline.com/}.
+		|\end{itemize}
+		|Reading lists for each topic will be given out in class and made available on
+		|the moodle class web site.
+	Software
+		Software
+		| \centering
+		|\begin{tabular}{l}
+		| GeoDa\\
+		|   \url{http://geodacenter.asu.edu/software/downloads}
+		|   \\ \hline
+		|  CrimeStat \\
+		|   \url{http://www.icpsr.umich.edu/CRIMESTAT/download.html}
+		|   \\ \hline
+		|  SaTScan\\
+		|  \url{http://www.satscan.org/}
+		|  \\ \hline
+		|  R\\
+		|   \url{http://cran.r-project.org/}
+		|   \\
+		|   \hline
+		|  STARS
+		|  \\
+		|   \url{http://regionalanalysislab.org/index.php/Main/STARS}	
+		|   \\
+		|   \hline
+		|\end{tabular}
+GIS and Spatial Analysis
+	Big Picture
+		GIS Then
+		|\begin{center}
+		|\includegraphics[width=.85\linewidth]{snowmap1.pdf}
+		| \end{center}
+		GIS Then
+		|\begin{center}
+		|\includegraphics[width=.85\linewidth]{snowmap3.png}
+		| \end{center}
+		GIS Now
+		|\begin{center}
+		|\includegraphics[width=.85\linewidth]{crimemap.png}
+		| \end{center}
+		GIS Functions
+			Anselin-Getis (1992) Taxonomy
+			| * Input
+			| * Storage
+			| * \alert{Analysis}
+			| * Output
+			| Many other taxonomies
+		GIScience
+			Goodchild (1992)
+			| * cross-disciplinary
+			| * \alert{central} role for spatial analysis
+			| * scientific \alert{glue}
+	What is Spatial Analysis?
+		What is Spatial Analysis?
+			From Data to Information
+			| * \alert{Beyond} mapping
+			| * \alert{added value}
+			| * transformations, manipulations and application of analytical methods to spatial (geographic data)
+		Locational Invariance
+			How Insights  Change with location
+			| * spatial analysis is \alert{not} locationally invariant
+			| * the results change when the locations of the study objects change
+			| * \alert{where} matters
+		State Income Distributions 1929
+		|\begin{center}
+		|\includegraphics[width=.65\linewidth]{income29.png}
+		| \end{center}
+		State Income Distributions 1929
+		|\begin{center}
+		|\includegraphics[width=.65\linewidth]{density29.png}
+		| \end{center}
+		Randomized Income Distribution 1929
+		|\begin{center}
+		|\includegraphics[width=.65\linewidth]{income29random.png}
+		| \end{center}
+		Randomized Income Density 1929
+		|\begin{center}
+		|\includegraphics[width=.65\linewidth]{density29random.png}
+		| \end{center}
+		Locational Invariance
+		|\begin{figure}[ht]
+		| \begin{minipage}[b]{0.4\linewidth}
+		| \centering
+		| \includegraphics[scale=0.20]{income29.png}
+		| \end{minipage}
+		| \begin{minipage}[b]{0.4\linewidth}
+		| \centering
+		| \includegraphics[scale=0.20]{density29.png}
+		| \end{minipage}
+		|\begin{minipage}[b]{0.4\linewidth}
+		| \centering
+		| \includegraphics[scale=0.20]{income29random.png}
+		| \end{minipage}
+		|\begin{minipage}[b]{0.4\linewidth}
+		| \centering
+		| \includegraphics[scale=0.20]{density29random.png}
+		| \end{minipage}
+		| \end{figure}
+		Spatial Autocorrelation Income 1929
+		|\begin{center}
+		|\includegraphics[width=.65\linewidth]{moran29.png}
+		| \end{center}
+		Spatial Autocorrelation Randomized Income 1929
+		|\begin{center}
+		|\includegraphics[width=.65\linewidth]{moran29random.png}
+		| \end{center}
+		Locational Invariance
+		|\begin{figure}[ht]
+		| \begin{minipage}[b]{0.4\linewidth}
+		| \centering
+		| \includegraphics[scale=0.20]{income29.png}
+		| \end{minipage}
+		| \begin{minipage}[b]{0.4\linewidth}
+		| \centering
+		| \includegraphics[scale=0.20]{moran29.png}
+		| \end{minipage}
+		|\begin{minipage}[b]{0.4\linewidth}
+		| \centering
+		| \includegraphics[scale=0.20]{income29random.png}
+		| \end{minipage}
+		|\begin{minipage}[b]{0.4\linewidth}
+		| \centering
+		| \includegraphics[scale=0.20]{moran29random.png}
+		| \end{minipage}
+		| \end{figure}
+		Components of Spatial Analysis
+			Mapping and Geovisualization
+			| \alert{showing} interesting patterns
+			Exploratory Spatial Data Analysis
+			| \alert{discovering} interesting patterns
+			Spatial Modeling
+			| \alert{explaining} interesting patterns
+		Summary: Spatial Analysis
+			Beyond Mapping
+			| Central role for \alert{analysis}
+			Distinguished by Locational Variance
+			| \alert{Location} matters
+			Components
+			| Showing, discovering, explaining
+EDA and ESDA
+	Exploratory Data Analysis (EDA)
+		What is EDA?
+			Philosophy
+			| EDA is an approach, not simply a set of techniques, but an
+			| attitude/philosophy about how a data analysis should be carried
+			| out.
+			|
+			|Postpones the usual assumptions about what kind of model the data follow
+			Origins
+			| Tukey, J. (1977) \emph{Exploratory Data Analysis}. Addison,
+			| Wesely
+		Components
+			Set of techniques to
+			| * maximize insight into a data set
+			| * uncover underlying structures
+			| * extract important variables
+			| * detect outliers and anonalies
+			| * test underlying assumptions
+			| * suggest hypotheses
+			| * develop parsimonious models
+		EDA Techniqes
+			Statistical Graphics
+			| * EDA relies heavily on statistical graphics
+			| * EDA is not identical to statistical graphics
+			| * Graphics support pattern recognition and open-minded exploration
+			| * Interactive graphcs push this even further
+			Quantitiatve Methods
+			| Although heavily graphic in orientation, there are also a number
+			| of numerical techniques in EDA.
+		EDA Versus Confirmatory Analysis
+			Confirmatory Analysis (e.g. regression)
+			| Problem $\rightarrow$ Theory $\rightarrow$ Model $\rightarrow$ Data $\rightarrow$ Conclusion
+			Exploratory Analysis 
+			| Problem $\rightarrow$ Data $\rightarrow$ Analysis $\rightarrow$ Model
+	Exploratory Spatial Data Analysis (ESDA)
+		What is ESDA?
+			Definitions
+			| * Type of EDA
+			| * Extended to include spatial attributes of the data
+			Crossfertilization
+			| * Applying classic EDA to spatial data
+			| * Developing new EDA methods for spatial data
+			| * Interactions between EDA and ESDA
+		How does ESDA fit in spatial analysis?
+			Spatial Modeling?
+			| * Modeling based on assumptionss
+			| * ESDA largely model free
+			| * Matter of degree (e.g., clustering)
+			Mapping?
+			| * Maps play a critical role in ESDA
+			| * Does a map = ESDA?
+			| * No. ESDA = map, manipulation + visualization
+	Geovisualization
+		Geovisualization
+			Beyond Mapping
+			| * Combing map and scientific visualization methods
+			| * Exploit human pattern recognition capabilities
+			Statistical Maps
+			| * innovative map devices
+		Mapping Issues
+			How to Lie with Maps
+			|* Monmonnier (1996)
+			|* many design issues
+			|* projects
+			|* human perception can be tricked
+		Visual Analytics
+			The Science of Analytical Reasoning Facilitated by Interactive Visual Interfaces
+			| * NVAC 2005
+			| * science of analytical reasoning
+			| * visual representation and interaction
+			| * data representation and transformations
+			| * production, presentation and dissemination
+		Visual Analysis
+			Tools
+			| * synthesize inforation
+			| * derive insights
+			| * detect the expected and discover the unexpected
+			| * understandable assessments
+			| * communicate effectively
+			| * focused on policy actions
+		Visual Explanations
+			Tufte (1997)
+			| Reasoning about Evidence and Design of Graphics
+			| * documenting sources (metadata)
+			| * appropriate comparisons
+			| * quantify and show cause and effect
+			| * multivariate nature of analytic problems
+			| * evaluate alternative explanations
+		Choropleth Map
+			Map Counterpart of Histogram
+			| * values for discrete spatial uits
+			| * choro from  choros (region) NOT chloro
+			Discrete Approximations
+			| * intervals
+			| * continuous shading
+		Map Design Issues
+			Choice of Intervals
+			| * cut points: equal interval, natural breaks
+			| * statistical criteria: equal area (quantile)
+			Choice of Colors
+			| * important for perception of pattern
+		Income Quintiles
+		|\begin{center}
+		|\includegraphics[width=.65\linewidth]{income29.png}
+		| \end{center}
+		Outlier Map
+			Box Map
+			| * Special Quartile Map
+			| * Outliers Highighlited
+			| ** same  criteria as a box plot
+			| ** outliers added as extra categories
+			| ** six instead of four categories
+			| * Both Magnitude and Location
+		Box Map
+		|\begin{center}
+		|\includegraphics[width=.85\linewidth]{boxmapgeoda.png}
+		| \end{center}
+		Special Maps
+		| * Cartogram
+		| * Conditional Maps
+		| * Map Animation
+		Cartogram
+			Objectives
+			| * Correct for  misleading effect of area
+			| ** larger area units  draw attention
+			| ** change layout to reflect size other than area
+			| * Respect topology
+			Circular Cartogram
+			| * variable maps to area/radius of circle
+		Cartogram
+		|\begin{center}
+		|\includegraphics[width=.85\linewidth]{cartogram.png}
+		| \end{center}
+		Conditional Maps
+			Conditional Choropleth Map (Carr)
+			| * Special case of conditional plots
+			| * trellis graphs	
+			Conditioning
+			| * along two dimensions (variables)
+			| * micromap matrix
+			| * choropleth map on dependent variable
+		Conditional Choropleth: Univariate Conditioning
+		|\begin{center}
+		|\includegraphics[width=.85\linewidth]{conditionalchoropleth.png}
+		| \end{center}
+		Conditional Choropleth: Bivariate Conditioning
+		|\begin{center}
+		|\includegraphics[angle=270,width=.85\linewidth]{conditionalchoropleth1.png}
+		| \end{center}
+		Map Animation
+			Map Movie
+			| * location highlighted in turn
+			| * from low value to high value
+			Looking for pattern
+			| * spatial  heterogeneity
+			| * systematic movements/locations
+		Map Animation
+		|Demo
+		Interactive Graphics
+			Interactive View Manipulation
+			| * the analyst interacts with the data
+			| * dynamic graphics
+			| * no longer passive
+		Linking and Brushing
+			Linking
+			| * selection in one graph is simultaneously selected in all
+			|   graphs
+			Brushing
+			| * changing the selection set is dynamically updated in all graphs and maps
+		Linking
+		|\begin{center}
+		|\includegraphics[width=.85\linewidth]{linking.pdf}
+		| \end{center}
+		Brushing a  Scatter Plot
+		|\begin{center}
+		|\includegraphics[width=.85\linewidth]{brushspgeoda.png}
+		| \end{center}
+		Brushing a  Map
+		|\begin{center}
+		|\includegraphics[width=.85\linewidth]{brushmapgeoda.png}
+		| \end{center}
+		Multivariate EDA
+		| * Scatter Plot Matrix
+		| * Parallel Coordinate Plot
+		| * 3-D Scatter Plot
+		Scatter Plot Matrix
+		|\begin{center}
+		|\includegraphics[width=.85\linewidth]{spmatrix.png}
+		| \end{center}
+		Brushing a  Parallel Coordinate Plot
+		|\begin{center}
+		|\includegraphics[width=.85\linewidth]{brushpcpgeoda.png}
+		| \end{center}
+		Brushing in 3-D
+		|\begin{center}
+		|\includegraphics[width=.85\linewidth]{select3d.png}
+		| \end{center}

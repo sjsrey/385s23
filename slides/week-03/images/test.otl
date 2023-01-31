@@ -1,0 +1,235 @@
+preamble
+	@author Sergio Rey
+	@institute School of Geographical Sciences\\Arizona State University
+	@instituteShort ASU
+	@title Introduction to Exploratory Spatial Data Analysis
+	@subtitle GIS and Spatial Analysis
+	@titleShort RRI Short Course
+	@date December 19, 2008
+	@dateShort GIS and Spatial Analysis
+Course Overview
+	Objectives
+		Course Objectives
+		| * Introduction to fundamentals of ESDA
+		| * Conceptual background
+		| * Hands-on
+	Content and Structure
+		Content: Day 1
+		| \begin{tabular}{|ll|}
+		| \hline
+		| Session&Topic\\
+		| \hline
+		| Day 1 Morning&\textbf{Introduction}\\
+		| & GIS and Spatial Analysis\\
+		|         &Spatial Data Taxonomy\\
+		|         &Spatial Analysis Taxonomy\\
+		|         &\textbf{Geovisualization}\\
+		|         &EDA and ESDA\\
+		|         &Dynamic Graphics\\
+		|         &Geovisualization\\
+		|         Day 1 Afternoon&\textbf{Spatial Dependence}\\
+		| &Defined\\
+		| &Hypotheses\\
+		| &Tests\\
+		| Hands-on&\emph{Introduction to GeoDa}\\
+		| \hline
+		| \end{tabular}
+		Content: Day 2
+		| \begin{tabular}{|ll|}
+		| \hline
+		| Session&Topic\\
+		| \hline
+		| Day 2 Morning&\textbf{Spatial Weights}\\
+		| &Contiguity Concepts\\
+		| &Distance Based Weights\\
+		| &Hybrid and General Weights\\
+		| &Operational Issues\\
+		| Hands-on&\emph{Weights in GeoDa}\\
+		| \hline
+		| Day 2 Afternoon&\textbf{Global Spatial Autocorrelation}\\
+		| &$\Gamma$ statistics\\
+		| &Join Counts\\
+		| &Moran's $I$ and Geary's $c$\\
+		| Hands-on&\emph{GeoDa: Global Autocorrelation}\\
+		| \hline
+		| \end{tabular}
+		Content: Day 2
+		| \begin{tabular}{|ll|}
+		| \hline
+		| Session&Topic\\
+		| \hline
+		| Day 3 Morning&\textbf{Local Spatial Autocorrelation}\\
+		| &Principles\\
+		| &Local Moran\\
+		| &$G$ Statistics\\
+		| Hands-on&\emph{GeoDa: Local statistics}\\
+		| \hline
+		| Day 3 Afternoon&\textbf{Space-Time}\\
+		| &ESTDA Overview\\
+		| &Spatial Markov\\
+		| &LISA Markov\\
+		| Hands-on&\emph{STARS and PySAL}\\ \hline
+		| \end{tabular}
+GIS and Spatial Analysis
+	Big Picture
+		Then: Dr. Snow's Map
+		|   \begin{center}
+		|	\includegraphics[width=0.7\linewidth]{snowmap1.pdf}
+		|  \end{center}
+		Then: Dr. Snow's Map (zoom)
+		|   \begin{center}
+		|	\includegraphics[width=0.7\linewidth]{snowmap3.png}
+		|  \end{center}
+		Now: http://chicago.everyblock.com/crime/
+		|  \begin{center}
+		|	\includegraphics[width=0.8\linewidth]{crimemap.png}
+		|  \end{center}
+		GIS 
+			GIS as Tools
+			|*Burrough
+			|**``set of tools for collecting, storing retrieving at will, transforming and displaying spatial data from the real world for a particular set of purposes''
+			|* GISes
+			|** \alert{information systems}
+		GIS Functions
+			Anselin-Getis (1992): Taxonomy
+			| * Input
+			| * Storage
+			| * \alert{Analysis}
+			| * Output
+		GIScience
+			Goodchild (1992)
+			|* generic scientific questions pertaining to geographic data
+			|* cross-disciplinary
+			|* \alert{central role for spatial analysis}
+			|* scientific \alert{glue}
+What is Spatial Analysis?
+		What is Spatial Analysis?
+			From Data to Information
+			| * Beyond Mapping 
+			| * \alert{added value}
+			| * transformations, manipulations and application of analytical methods to spatial (geographic) data
+		Locational Invariance
+			How Insights Change with Location
+			|* spatial analysis is not locationally invariant
+			|*  the \alert{results change} when the locations of the study objects change
+			|* \alert{where} matters
+			Examples
+			| * map, spatial cluster, spatial autocorrelation
+		Income Distribution: Density
+		|  \begin{center}
+		|	\includegraphics[width=0.7\linewidth]{density29.png}
+		|  \end{center}
+		Spatial Income Distribution: Map
+		|  \begin{center}
+		|	\includegraphics[width=0.65\linewidth]{income29.png}
+		|  \end{center}
+		Spatial Income Distribution: Random 
+		|  \begin{center}
+		|	\includegraphics[width=0.65\linewidth]{income29random.png}
+		|  \end{center}
+		Income Distribution: Income (Random)
+		|  \begin{center}
+		|	\includegraphics[width=0.7\linewidth]{density29.png}
+		|  \end{center}
+		Moran Scatter Plot:  Income
+		|  \begin{center}
+		|	\includegraphics[width=0.65\linewidth]{moran29.png}
+		|  \end{center}
+		Moran Scatter Plot:  Income (Random)
+		|  \begin{center}
+		|	\includegraphics[width=0.65\linewidth]{moran29random.png}
+		|  \end{center}
+		Components of Spatial Analysis
+			Mapping and Geovisualization
+			| \alert{showing} interesting patterns
+			Exploratory Spatial Data Analysis
+			| \alert{discovering} interesting patterns
+			Spatial Modeling
+			| \alert{explaining} interesting patterns
+Spatial Data
+	Types
+		Types of Spatial Data
+			\alert{Events}
+			|	addresses of crimes
+			\alert{Continuous} Surfaces
+			|	air quality, rainfall
+			Discrete Spatial \alert{Objects}
+			|	county income
+		Dr. Snow's Map
+		|   \begin{center}
+		|	\includegraphics[width=0.7\linewidth]{snowmap1.pdf}
+		|  \end{center}
+		Now: http://chicago.everyblock.com/crime/
+		|  \begin{center}
+		|	\includegraphics[width=0.8\linewidth]{crimemap.png}
+		|  \end{center}
+		Types of Spatial Data
+			\alert{Events}
+			|	addresses of crimes
+			\alert{Continuous} Surfaces
+			|	air quality, rainfall
+			Discrete Spatial \alert{Objects}
+			|	county income
+		Geocoding on-line
+		|  \begin{center}
+		|	\includegraphics[width=0.8\linewidth]{geocode1.png}
+		|  \end{center}
+		Geocoding where's Serge
+		|  \begin{center}
+		|	\includegraphics[width=0.8\linewidth]{geocode2.png}
+		|  \end{center}
+		Geocoding where's Serge
+		|  \begin{center}
+		|	\includegraphics[width=0.8\linewidth]{geocode3.png}
+		|  \end{center}
+		Geocoding 
+		|  \begin{center}
+		|	\includegraphics[width=0.8\linewidth]{geocode4.png}
+		|  \end{center}
+		Geocoding 
+		|  \begin{center}
+		|	\includegraphics[width=0.8\linewidth]{geocode5.png}
+		|  \end{center}
+	What is special about spatial data?
+		What is special about spatial data?
+			$Location^3$
+			| where matters
+			Dependence is the rule
+			| * spatial interaction
+			| * contagion
+			| * spatial externalities
+			| * spillovers
+			| * copy-catting
+			Spatial Scale Matters
+		Nature of Spatial Data
+			Georeferenceed
+			| attribute data together with location
+			Geocoding
+			|* associate observations with location
+			|* point: latitude-longitude (GPS)
+			|* areal unit: spatial reference
+	Spatial Effects
+		Dependence
+		Heterogeneity
+		Scale
+Spatial Data Analysis
+	Taxonomy
+		Points
+			Points as Events
+			| * crimes (addresses), accidents (locations)
+			| * point pattern analysis
+			Point as Samples from a Surface
+			| * air quality monitors, house prices
+			| * geostatistics
+			Points as Discrete Objects
+			| * county centroids
+			| * lattice data analysis
+		Research Questions
+		| * Point Pattern Analysis
+		| ** identify clusters and other patterns
+		| * Geostatistical Analysis
+		| ** model continuous spatial patterns
+		| ** spatial interpolation (kriging)
+		| * Lattice Data
+		| ** model spatial distributions
+		| ** spatial autocorrelation, spatial regression

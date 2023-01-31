@@ -1,0 +1,12 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Intro to Latexslides}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Objectives}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Components}{10}{0}{1}
+\beamer@sectionintoc {2}{Logistics}{17}{0}{2}
+\beamer@subsectionintoc {2}{1}{Grading}{18}{0}{2}
+\beamer@subsectionintoc {2}{2}{Reading}{25}{0}{2}
+\beamer@subsectionintoc {2}{3}{Software}{28}{0}{2}
+\beamer@sectionintoc {3}{Introduction to Geographic Information Analysis}{35}{0}{3}
+\beamer@subsectionintoc {3}{1}{GIS and Spatial Analysis}{36}{0}{3}
+\beamer@subsectionintoc {3}{2}{EDA and ESDA}{37}{0}{3}

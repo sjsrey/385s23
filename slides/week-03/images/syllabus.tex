@@ -1,0 +1,208 @@
+
+\documentclass{article} %this needs to be at the top of each document
+
+% margins, size, formatting 
+\oddsidemargin=.25in
+\evensidemargin=.25in
+\topmargin=-.5in
+\textwidth=6in
+\textheight=9in
+\pagestyle{empty}
+
+\setlength{\parindent}{0in} %turn off paragraph indentation
+
+% packages for fancy fonts, symbols, theoremm/proof environments, etc - go ahead and use this in your template, whether you need it or not!
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[pdftex,
+pdftitle={GPH 483/598},
+pdfauthor={Sergio J. Rey},
+pdfkeywords={ESDA},
+pdfpagemode=UseOutlines,
+bookmarks,bookmarksopen,pdfstartview=FitH,
+colorlinks,linkcolor=blue,citecolor=blue,urlcolor=blue,
+]
+{hyperref}
+
+\begin{document}
+
+
+{\large \bf GPH 483/598 Geographic Information Analysis \hfill Spring 2010}
+\vspace{.2in} %This command leaves blank vertical space of the amount described.  I usually use inches.  This is useful if you need to leave space to draw a diagram.  It does not work well at the end of a page.
+\hrule 
+\vspace{.1in} %This command leaves blank vertical space of the amount described.  I usually use inches.  This is useful if you need to leave space to draw a diagram.  It does not work well at the end of a page.
+\textbf{Instructor:} Dr. Sergio J. Rey\\
+\textbf{e-mail:} \texttt{srey@asu.edu}\\
+\textbf{Phone:} (619) 928-4499\\
+\textbf{URL:} \texttt{www.geoplan.asu/rey}\\
+\textbf{Office:} Coor 512\\
+\textbf{Office Hours:} Wed 1-2 and by appointment
+\vspace{.1in} %This command leaves blank vertical space of the amount described.  I usually use inches.  This is useful if you need to leave space to draw a diagram.  It does not work well at the end of a page.
+\hrule 
+\vspace{.2in}
+{\bf COURSE DESCRIPTION:} The purpose of this course is to introduce you to
+advanced methods of exploratory spatial data analysis (ESDA).  The focus is on
+both conceptual and applied aspects of ESDA methods. We will place particular
+emphasis on the computational aspects of ESDA methods for three different
+types of spatial data: point processes, lattice, and geostatistical. Throughout
+the course you will gain valuable hands-on experience with several specialized
+software packages for ESDA.  The overriding goal of the course is for you to
+acquire familiarity with the fundamental methodological and operational issues
+in ESDA and the ability to extend these methods in your own research.
+
+\vspace{.2in}
+
+{\bf PREREQUISITES:}
+All participants are expected to have  working knowledge of spatial analysis
+concepts and to be familiar with multivariate statistics. No extensive GIS
+background beyond ArcGIS basics is needed.
+
+
+\vspace{.2in}
+
+{\bf READINGS:} \emph{Geographic Information Analysis}, David O'Sullivan and
+David J Unwin (required).
+Supplementary Texts: (not required):\\
+\emph{Geospatial Analysis}, Michael De
+Smith, Michael F. Goodchild, Paul A. Longley\\
+\emph{Applied Spatial Data Analysis with R}, Roger S. Bivand, Edzer J.
+Pebesma, and Virgilio G\'omez-Rubio.
+
+\vspace{.2in}
+
+
+{\bf GRADING:}  Grading will be assinged on the following scale: A: 90-100, B:
+80-89, C:70-79, D: 60-69, F below 60. There will be no curves and no extra
+credit. I will assign +/- on an individual basis. Points are assigned as
+follows:
+
+\vspace{.1in}
+\begin{center}
+\begin{tabular}[h]{|l|rr|}
+  \hline
+  &\multicolumn{2}{|c|}{Points}\\
+  Component&Undergraduate&Graduate\\
+  \hline
+  Exercises&40&30\\
+  Project&40&40\\
+  Quizzes&20&40\\
+  Presentations& &10\\
+  \hline
+  TOTAL&100&100\\ \hline
+\end{tabular}
+\end{center}
+\vspace{.1in}
+
+{\em Exercises:} A series of graded class assignments will be given for each
+of the major topics (point patterns, lattice, geostatistics) which focus on
+the mechanics of carrying out an analysis.  Your exercises will be introduced
+in the second half of a class meeting and are to be completed on your own time
+outside of class. You are welcome to collaborate with other students on these
+exercise but the work that you hand in must be your own. 
+
+
+\vspace{.1in}
+
+{\em Project:} The final project will consist of a data analysis and  writeup
+for 40\% of the grade. You will have to select a spatial data set and carry
+out an in-depth analysis of spatial pattern. Your selection will need to be
+approved before you can proceed with the project. Graduate students must find
+their own data, while undergraduate students have the option of finding their
+own data or having data assigned by me. Graduate students will also be
+required to give a presentation of their project at the end of the course.
+
+
+\vspace{.1in}
+
+{\em Quizzes:} Starting the second week of the semester, a short quiz will be
+given during the first half of the class meeting. These will be based on material from the
+previous lectures and are graded on a pass-fail basis. Absence on the day of a
+quiz results in a 0 for that quiz. One quiz will be dropped in determining
+your final quiz average.
+
+\vspace{.1in}
+
+{\em Article Presentations:} Each graduate student will be assigned additional
+readings on a particular type of spatial analysis and will present a synopsis
+of these articles to the course.
+
+
+\vspace{.2in}
+
+{\bf ORGANIZATION:} The course will meet in CoorL 1-18. The first part of each
+weekly meeting will focus on background and theoretical material related to
+the particular type of spatial data analysis. Following a short break, the
+attention will shift to introduce various software packages for the analysis
+of spatial data.
+
+\vspace{.1in}
+
+{\em Classroom etiquette:} To ensure a productive learning environment, all
+participants are expected to abide by the following rules:
+\begin{itemize}
+  \item Because we are meeting in a computer laboratory,
+food is strictly forbidden in the class meetings.
+\item Use of the classroom computers should only be in support of the course.
+  Extracurricular use (i.e., browsing noncourse materials, using  social networks, checking
+  email, chat sessions, etc) during class meetings is disruptive for your colleagues and
+  disrespectful. Individuals violating this rule will be asked to leave for
+  that course session.
+\end{itemize}
+
+\vspace{.2in}
+
+{\bf SOFTWARE:}
+While this course does not have a formal lab unit, in the sense that you would
+get an additional credit unit, the course material lends itself rather nicely
+to computationally based instruction. We will utilize a set of freely available
+software packages\footnote{%
+The majority of the packages recommended can be classified as open source software.
+This means, among other things, you are free to use this software without having
+to pay any licensing fee, so long as you respect the copyright of the author
+who wrote the package. For more details on the concept of open source
+see http://www.opensource.org .} that you can put on your own (or a
+friend's) computer to work on the examples and exercises in support of
+the course material. We will set aside part of the lectures to
+demonstrate various capabilities of these software packages to support
+spatial analysis. You will have additional opportunity to apply these methods
+both in the individual exercises as well as in your  project.
+We will primarily rely on  the  package   \href{http://www.r-project.org/}{R} for 
+which is freely available and runs on a number of platforms, including
+Linux, Unix, Mac OS X, and Windows (all flavors). It is a very powerful
+mathematical programming language with many data analysis, graphical and
+computational functions.
+
+\vspace{.2in}
+
+{\bf SCHEDULE:} 
+The proposed topics and their sequence are as follows:
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|lr|l|l|l|}
+\hline
+Month & \multicolumn{1}{l|}{Date} & Topic & Out & Due \\ \hline
+Jan & 20 & Intro, Spatial Data &  &  \\ 
+ & 27 & Representation of Spatial Structure & Exercise 1 &  \\ 
+Feb & 3 & Point Pattern Basics &  &  \\ 
+ & 10 & Centrography & Exercise 2 & Exercise 1 \\ 
+ & 17 & Advanced Point Patterns &  & \\ 
+ & 24 & WRSA &  & Exercise 2  \\ 
+Mar & 3 & Lattice Data Basics & Exercise 3 &  \\ 
+ & 10 & Spatial Weights &  &  \\ 
+ & 17 & Spring Break &  &  \\ 
+ & 24 & Global Autocorrelation & Exercise 4 & Exercise 3 \\ 
+ & 31 & Local Autocorrelation &  &  \\ 
+Apr & 7 & Space-Time Autocorrelation &  & Exercise 4 \\ 
+ & 14 & Geostatistics Basics & Exercise 5 &  \\ 
+ & 21 & Variography &  &  \\ 
+ & 28 & Kriging &  & Exercise 5 \\ 
+May & 5 &  &  & Projects \\ 
+ & 12 &  &  & Presentations \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+\end{document} % every document must end with this.

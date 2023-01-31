@@ -676,7 +676,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Materials will be posted here as the semester progresses\n\n\n\n\n\n\nWeek\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\nWeek 01\n\n\nJan 19\n\n\nWelcome to Spatial Data Analysis\n\n\n\n\nWeek 02\n\n\nJan 24 - 26\n\n\nSpatial Analysis\n\n\n\n\nWeek 03\n\n\nJan 31 - Feb 2\n\n\nSpatial Analysis\n\n\n\n\n\n\nNo matching items"
+    "text": "Materials will be posted here as the semester progresses\n\n\n\n\n\n\nWeek\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\nWeek 01\n\n\nJan 19\n\n\nWelcome to Spatial Data Analysis\n\n\n\n\nWeek 02\n\n\nJan 24 - 26\n\n\nSpatial Analysis\n\n\n\n\nWeek 03\n\n\nJan 31 - Feb 2\n\n\nSpatial Data and Point Pattern Analysis\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "schedule.html#assignments",
@@ -690,7 +690,7 @@
     "href": "weeks/week-03.html",
     "title": "Week 03",
     "section": "",
-    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\nTitle\n\n\nDue\n\n\n\n\n\n\nQuiz\n\n\nQuiz 2\n\n\nTue, Jan 31\n\n\n\n\n\n\nNo matching items\n\n\n\n\nReadings\n\nGeographic Data Science with Python: Chapter 3 - Spatial Data\nGeographic Data Science with Python: Chapter 8.1 - Point Pattern Analysis"
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nSpatial Data\n\n\nTue, Jan 31\n\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\nTitle\n\n\nDue\n\n\n\n\n\n\nQuiz\n\n\nQuiz 2\n\n\nTue, Jan 31\n\n\n\n\n\n\nNo matching items\n\n\n\n\nReadings\n\nGeographic Data Science with Python: Chapter 3 - Spatial Data\nGeographic Data Science with Python: Chapter 8.1 - Point Pattern Analysis"
   },
   {
     "objectID": "hw/hw3-q2.html",
@@ -698,5 +698,264 @@
     "title": "Quiz 2",
     "section": "",
     "text": "Quiz 2 is on the canvas site"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#data-definitions",
+    "href": "slides/week-03/04-spatial-data.html#data-definitions",
+    "title": "Spatial Data",
+    "section": "Data Definitions",
+    "text": "Data Definitions\n\nfacts and statistics collected together for reference or analysis\n\n\nthe quantities, characters, or symbols on which operations are performed by a computer, being stored and transmitted in the form of electrical signals and recorded on magnetic, optical, or mechanical recording media.\n\n\nthings known or assumed as facts, making the basis of reasoning or calculate\n\nSource: Oxford languages"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#datas-place",
+    "href": "slides/week-03/04-spatial-data.html#datas-place",
+    "title": "Spatial Data",
+    "section": "Data’s Place",
+    "text": "Data’s Place\n\n\n\n\n\nDIKW Pyramid\n\n\n\n\ndata: discrete facts, unorganized and lacking context or information\ninformation: data imbued with meaning - what is in the data\nknowledge: perception of the world seen through information synthesis\nwisdom: “knowing the right things to do”"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#data-sets",
+    "href": "slides/week-03/04-spatial-data.html#data-sets",
+    "title": "Spatial Data",
+    "section": "Data Sets",
+    "text": "Data Sets\nA data set is a collection of observations recorded for individual units on a set of variables.\nVariables are sometimes referred to as attributes or features (in machine learning parlance)."
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#measurement-scales",
+    "href": "slides/week-03/04-spatial-data.html#measurement-scales",
+    "title": "Spatial Data",
+    "section": "Measurement Scales",
+    "text": "Measurement Scales\n\n\n\nScale\nOperations\nExample\n\n\n\n\nnominal\nmode, frequencies\nZip Code\n\n\nordinal\nA > B\nRanks, Primary, Intermediate\n\n\ninterval\n+ -\nTime\n\n\nratio\n+ - * /\nWeight, Kelvin"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#spatial-data-is-special",
+    "href": "slides/week-03/04-spatial-data.html#spatial-data-is-special",
+    "title": "Spatial Data",
+    "section": "Spatial Data is Special",
+    "text": "Spatial Data is Special\n\nSpatial data comes in many varieties and it is not easy to arrive at a system of classification that is simultaneously exclusive, exhaustive, imaginative, and satisfying.\n\n– G. Upton & B. Fingleton"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#what-is-special-about-spatial-data-1",
+    "href": "slides/week-03/04-spatial-data.html#what-is-special-about-spatial-data-1",
+    "title": "Spatial Data",
+    "section": "What is special about spatial data?",
+    "text": "What is special about spatial data?\nLocation, Location, Location\nwhere matters\nDependence is the rule, not the exception\n\nspatial interaction, contagion, spill-overs\nspatial externalities\n\nSpatial Scale\n\nInference can change with scale"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#nature-of-spatial-data",
+    "href": "slides/week-03/04-spatial-data.html#nature-of-spatial-data",
+    "title": "Spatial Data",
+    "section": "Nature of Spatial Data",
+    "text": "Nature of Spatial Data\nGeoreferences\nattribute data together with location\nGeocoding\n\nassociate observations with location\npoint: latitude-longtitude (GPS)\nareal unit: spatial reference"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geocoding-on-line",
+    "href": "slides/week-03/04-spatial-data.html#geocoding-on-line",
+    "title": "Spatial Data",
+    "section": "Geocoding on-line",
+    "text": "Geocoding on-line\n\nGeocode Input"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geocoding-on-line-1",
+    "href": "slides/week-03/04-spatial-data.html#geocoding-on-line-1",
+    "title": "Spatial Data",
+    "section": "Geocoding on-line",
+    "text": "Geocoding on-line\n\nGeocode Output"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#on-the-map",
+    "href": "slides/week-03/04-spatial-data.html#on-the-map",
+    "title": "Spatial Data",
+    "section": "On the Map?",
+    "text": "On the Map?\n\nMap of Geocode Output"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#on-the-map-1",
+    "href": "slides/week-03/04-spatial-data.html#on-the-map-1",
+    "title": "Spatial Data",
+    "section": "On the Map?",
+    "text": "On the Map?\n\nErrors in Geocode Output"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#location",
+    "href": "slides/week-03/04-spatial-data.html#location",
+    "title": "Spatial Data",
+    "section": "Location",
+    "text": "Location\n\nGiven: in most spatial data analysis, no choice in location\nNo sampling in the usual sense\nData = attributes augmented with locational information"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#spatial-effects",
+    "href": "slides/week-03/04-spatial-data.html#spatial-effects",
+    "title": "Spatial Data",
+    "section": "Spatial Effects",
+    "text": "Spatial Effects\nThe Trilogy\n\nSpatial Dependence\nSpatial Heterogeneity\nSpatial Scale"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#spatial-dependence",
+    "href": "slides/week-03/04-spatial-data.html#spatial-dependence",
+    "title": "Spatial Data",
+    "section": "Spatial Dependence",
+    "text": "Spatial Dependence\nTobler’s First Law of Geography\n\n“everything depends on everything else, but closer things more so”\n\n\nStructure of spatial dependence\nDistance Decay\nCloseness = Similarity"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#spatial-heterogenety",
+    "href": "slides/week-03/04-spatial-data.html#spatial-heterogenety",
+    "title": "Spatial Data",
+    "section": "Spatial Heterogenety",
+    "text": "Spatial Heterogenety\nSpatial Instability\n\nProcess varies in some way over spatial units\nMultiple forms\n\nDiscrete = regimes\nContinuous = expansion method, GWR\n\nTrade-off\n\nSpatial homogeneity = stationary process\nUniqueness = extreme heterogeneity"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#spatial-scale-1",
+    "href": "slides/week-03/04-spatial-data.html#spatial-scale-1",
+    "title": "Spatial Data",
+    "section": "Spatial Scale",
+    "text": "Spatial Scale\nMismatch\n\nSpatial scale of the process\nSpatial scale of our measurement\n\nIssues\n\npoints too far apart = miss small distance variation\narea aggregates cannot provide information on individual behavior\nEcological Fallacy"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#modifiable-areal-unit-problem-maup",
+    "href": "slides/week-03/04-spatial-data.html#modifiable-areal-unit-problem-maup",
+    "title": "Spatial Data",
+    "section": "Modifiable Areal Unit Problem (MAUP)",
+    "text": "Modifiable Areal Unit Problem (MAUP)\nAggregation Problem\n\nspecial case of ecological fallacy\na million correlation coefficients\n\nZonation Problem\n\nsize\narangement\nHow many ways could you partition the coterminous US land area into 48 polygons?"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#maup-zonation-problem",
+    "href": "slides/week-03/04-spatial-data.html#maup-zonation-problem",
+    "title": "Spatial Data",
+    "section": "MAUP Zonation Problem",
+    "text": "MAUP Zonation Problem\n\nhttp://en.wikipedia.org/wiki/Modifiable_areal_unit_problem"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#maup-aggregation-problem",
+    "href": "slides/week-03/04-spatial-data.html#maup-aggregation-problem",
+    "title": "Spatial Data",
+    "section": "MAUP Aggregation Problem",
+    "text": "MAUP Aggregation Problem\n\n\n\n\n\nhttp://en.wikipedia.org/wiki/Modifiable_areal_unit_problem\n\n\n\n\nTrue rate = 1/3 = 33%\nA’s rate = (0 +1/2) /2 = 25%\nA’s weighted rate = 1/3 * 0 + 2/3 * 50 = 33%\nB’s rate = (0 + 100) /2 = 50%\nB’s weighted rate = 2/3 * 0 + 1/3 * 100 = 33%"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#spatial-process",
+    "href": "slides/week-03/04-spatial-data.html#spatial-process",
+    "title": "Spatial Data",
+    "section": "Spatial Process",
+    "text": "Spatial Process\nSpatial Random Field\na mathemtical construct to capture randomness of values distributed over space\n\\[\\{Z(s):s \\in D \\} \\]\n\n\\(s \\in R^d:\\) location (e.g., lat-lon)\n\\(D \\in R^d:\\) index set = possible locations\n\\(Z(s):\\) random variable at location \\(s\\)"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#types-of-spatial-data-1",
+    "href": "slides/week-03/04-spatial-data.html#types-of-spatial-data-1",
+    "title": "Spatial Data",
+    "section": "Types of Spatial Data",
+    "text": "Types of Spatial Data\n\nEvents\n\naddresses of crimes\n\nDiscrete Spatial Objects\n\ncounty crime rates\n\nContinuous surfaces\n\nair quality\nrainfall"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#point-pattern-analysis",
+    "href": "slides/week-03/04-spatial-data.html#point-pattern-analysis",
+    "title": "Spatial Data",
+    "section": "Point Pattern Analysis",
+    "text": "Point Pattern Analysis\nData\n\nmapped pattern = all the values\nnot a sample in the usual sense\n\nSpatial Process\n\nobservations as a realization of a random point process\npoints occur in space according to a mathematical model"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#point-patterns",
+    "href": "slides/week-03/04-spatial-data.html#point-patterns",
+    "title": "Spatial Data",
+    "section": "Point Patterns",
+    "text": "Point Patterns\nUnmarked Point Pattern\n\nonly location is recorded\nno other attribute information\n\nMarked Point Pattern\n\nLocation is recorded\nStochastic attributes are also recorded\ne.g., sales price at address, DBH of a tree"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#point-pattern-analysis-quadrat-methods",
+    "href": "slides/week-03/04-spatial-data.html#point-pattern-analysis-quadrat-methods",
+    "title": "Spatial Data",
+    "section": "Point Pattern Analysis: Quadrat Methods",
+    "text": "Point Pattern Analysis: Quadrat Methods\n\nQuadrat Analysis"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#point-pattern-analysis-distance-based-methods",
+    "href": "slides/week-03/04-spatial-data.html#point-pattern-analysis-distance-based-methods",
+    "title": "Spatial Data",
+    "section": "Point Pattern Analysis: Distance Based Methods",
+    "text": "Point Pattern Analysis: Distance Based Methods\n\nDistance Distributions"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#areal-unit-data-lattice",
+    "href": "slides/week-03/04-spatial-data.html#areal-unit-data-lattice",
+    "title": "Spatial Data",
+    "section": "Areal Unit Data (Lattice)",
+    "text": "Areal Unit Data (Lattice)\n\nSpatial Domain: \\(D\\)\n\nDiscrete and fixed\nLocations nonrandom\nLocations countable\n\n\n\nExamples of lattice data\n\nAttributes collected by ZIP code\ncensus tract"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#lattice-data-indexing",
+    "href": "slides/week-03/04-spatial-data.html#lattice-data-indexing",
+    "title": "Spatial Data",
+    "section": "Lattice Data: Indexing",
+    "text": "Lattice Data: Indexing\n\nSite\n\nEach location is now an area or site\nOne observation on \\(Z\\) for each site\nNeed a spatial index: \\(Z(s_i)\\)\n\n\n\n\\(Z(s_i)\\)\n\n\\(s_i\\) is a representative location within the site\ne.g., centroid, largest city\nAllows for measuring distances between sites"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#lattice-data-county-per-capita-incomes",
+    "href": "slides/week-03/04-spatial-data.html#lattice-data-county-per-capita-incomes",
+    "title": "Spatial Data",
+    "section": "Lattice Data: County Per Capita Incomes",
+    "text": "Lattice Data: County Per Capita Incomes\n\n1969"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geostatistical-analysis",
+    "href": "slides/week-03/04-spatial-data.html#geostatistical-analysis",
+    "title": "Spatial Data",
+    "section": "Geostatistical Analysis",
+    "text": "Geostatistical Analysis\n\nSpatial Domain: \\(D\\)\n\nA continuous and fixed set.\nMeaning \\(Z(s)\\) can be observed everywhere within \\(D\\).\nBetween any two sample locations \\(s_i\\) and \\(s_j\\) you can theoretically place an infinite number of other samples.\nBy fixed: the points in \\(D\\) are non-stochastic"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geostatistical-data",
+    "href": "slides/week-03/04-spatial-data.html#geostatistical-data",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data",
+    "text": "Geostatistical Data\n\nContinuous Variation\n\nBecause of the continuity of \\(D\\)\nGeostatistical data is referred to as “spatial data with continuous variation.”\nContinuity is associated with \\(D\\).\nAttribute \\(Z\\) may, or may not, be continuous."
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geostatistical-data-monitoring-sites",
+    "href": "slides/week-03/04-spatial-data.html#geostatistical-data-monitoring-sites",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Monitoring Sites",
+    "text": "Geostatistical Data: Monitoring Sites\n\nSites"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geostatistical-data-surface-reconstruction",
+    "href": "slides/week-03/04-spatial-data.html#geostatistical-data-surface-reconstruction",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Surface Reconstruction",
+    "text": "Geostatistical Data: Surface Reconstruction\n\nTessellation"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geostatistical-data-surface-reconstruction-1",
+    "href": "slides/week-03/04-spatial-data.html#geostatistical-data-surface-reconstruction-1",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Surface Reconstruction",
+    "text": "Geostatistical Data: Surface Reconstruction\n\nInterpolation"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geostatistical-data-surface-reconstruction-2",
+    "href": "slides/week-03/04-spatial-data.html#geostatistical-data-surface-reconstruction-2",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Surface Reconstruction",
+    "text": "Geostatistical Data: Surface Reconstruction\n\nKriging"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#network-data",
+    "href": "slides/week-03/04-spatial-data.html#network-data",
+    "title": "Spatial Data",
+    "section": "Network Data",
+    "text": "Network Data\n\n\nA network is a system of linear features connected at intersections and interchanges.\nThese intersections and interchanges are called nodes.\nThe linear feature connecting any given pair of nodes is called an arc.\nFormally, a network is defined as a directed graph \\(G = (N,  A)\\) consisting of an indexed set of nodes \\(N\\) with \\(n = |N|\\) and a spanning set of directed arcs \\(A\\) with \\(m = |A|\\), where \\(n\\) is the number of nodes and \\(m\\) is the number of arcs.\nEach arc on a network is represented as an ordered pair of nodes, in the form from node \\(i\\) to node \\(j\\), denoted by \\((i, j)\\)."
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#network-data-1",
+    "href": "slides/week-03/04-spatial-data.html#network-data-1",
+    "title": "Spatial Data",
+    "section": "Network Data",
+    "text": "Network Data\n\nStreet Network"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#flow-data",
+    "href": "slides/week-03/04-spatial-data.html#flow-data",
+    "title": "Spatial Data",
+    "section": "Flow Data",
+    "text": "Flow Data\n\nFlows"
   }
 ]

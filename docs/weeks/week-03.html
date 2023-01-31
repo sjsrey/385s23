@@ -71,9 +71,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -191,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title d-none d-lg-block">Week 03</h1>
-<p class="subtitle lead">Spatial Analysis</p>
+<p class="subtitle lead">Spatial Data and Point Pattern Analysis</p>
 </div>
 
 <div>
@@ -227,6 +227,14 @@ Date
 </tr>
 </thead>
 <tbody class="list">
+<tr data-index="0" data-listing-date-sort="1675152000000" data-listing-file-modified-sort="1675190665171" data-listing-reading-time-sort="5.93" data-listing-title-sort="Spatial Data" data-listing-filename-sort="04-spatial-data.qmd">
+<td class="listing-title">
+<a href="../slides/week-03/04-spatial-data.html" class="title">Spatial Data</a>
+</td>
+<td class="listing-date">
+Tue, Jan 31
+</td>
+</tr>
 </tbody>
 
 </table>
