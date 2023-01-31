@@ -30,9 +30,9 @@
   {
     "objectID": "hw/w3-hw02.html",
     "href": "hw/w3-hw02.html",
-    "title": "HW 02: Data visualization",
+    "title": "Quiz 2",
     "section": "",
-    "text": "Add instructions for assignment."
+    "text": "Quiz 2 is on the canvas site"
   },
   {
     "objectID": "hw/w2-hw01.html",
@@ -676,7 +676,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Materials will be posted here as the semester progresses\n\n\n\n\n\n\nWeek\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\nWeek 01\n\n\nJan 19\n\n\nWelcome to Spatial Data Analysis\n\n\n\n\nWeek 02\n\n\nJan 24 - 26\n\n\nSpatial Analysis\n\n\n\n\n\n\nNo matching items"
+    "text": "Materials will be posted here as the semester progresses\n\n\n\n\n\n\nWeek\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\nWeek 01\n\n\nJan 19\n\n\nWelcome to Spatial Data Analysis\n\n\n\n\nWeek 02\n\n\nJan 24 - 26\n\n\nSpatial Analysis\n\n\n\n\nWeek 03\n\n\nJan 31 - Feb 2\n\n\nSpatial Analysis\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "schedule.html#assignments",
@@ -684,5 +684,19 @@
     "title": "Schedule",
     "section": "Assignments",
     "text": "Assignments\nYou can find details and assignment instructions in the relevant week on the schedule.\n\nExercises\nExercises will be due on Thursdays at 2:00pm. You will have two weeks to complete each homework assignment. Details will be provided on the weekly schedule.\n\n\nQuizzes\nOn-line quizzes are due on Tuesdays at 2:00pm. Details are available by week in the schedule.\n\n\nExam\nThere will be a final exam on May 19 (13:00-15:00)"
+  },
+  {
+    "objectID": "weeks/week-03.html",
+    "href": "weeks/week-03.html",
+    "title": "Week 03",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\nTitle\n\n\nDue\n\n\n\n\n\n\nQuiz\n\n\nQuiz 2\n\n\nTue, Jan 31\n\n\n\n\n\n\nNo matching items\n\n\n\n\nReadings\n\nGeographic Data Science with Python: Chapter 3 - Spatial Data\nGeographic Data Science with Python: Chapter 8.1 - Point Pattern Analysis"
+  },
+  {
+    "objectID": "hw/hw3-q2.html",
+    "href": "hw/hw3-q2.html",
+    "title": "Quiz 2",
+    "section": "",
+    "text": "Quiz 2 is on the canvas site"
   }
 ]

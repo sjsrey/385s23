@@ -1,7 +1,8 @@
 ---
-title: "HW 02: Data visualization"
-date: "September 21, 2022"
-categories: "Homework"
+title: "Quiz 2"
+date: "January 31, 2023"
+categories: "Quiz"
 ---
 
-Add instructions for assignment. 
+Quiz 2 is on the [canvas site](https://sdsu.instructure.com/courses/116162/quizzes/237573)
+
