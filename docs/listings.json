@@ -20,7 +20,8 @@
     "items": [
       "/weeks/week-01.html",
       "/weeks/week-02.html",
-      "/weeks/week-03.html"
+      "/weeks/week-03.html",
+      "/weeks/week-04.html"
     ]
   },
   {
@@ -29,6 +30,14 @@
       "/slides/week-03/04-spatial-data.html",
       "/slides/week-03/05-point-patterns.html",
       "/hw/w3-hw02.html"
+    ]
+  },
+  {
+    "listing": "/weeks/week-04.html",
+    "items": [
+      "/slides/week-04/06-centrography.html",
+      "/slides/week-04/07-point-processes.html",
+      "/hw/w4-hw03.html"
     ]
   }
 ]
