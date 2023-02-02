@@ -5,3 +5,8 @@
 
 /.quarto/
 .DS_Store
+
+_freeze/*
+slides/images/translation.gif
+slides/week-02/images/esda.png
+slides/week-02/images/openscience.png
