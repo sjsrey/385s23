@@ -247,11 +247,11 @@ the final submission will be evaluated. There will be no opportunity for
 revising this final submission.
 
 Students need to commit to the project by specifying their team (maximum
-of 4 members on a team) by **2-09**. Once the commitment is made, the team
+of 4 members on a team) by **3-09**. Once the commitment is made, the team
 composition is final. Any student who does not submit a team definition
 by this date will not be able to pursue the project.
 
-Details on the project rubric will be given out on **1-31**.
+Details on the project rubric will be given out on **2-16**.
 
 ## Final Exam
 
