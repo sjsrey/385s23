@@ -190,7 +190,7 @@ specification:
   Level   Hurdles
   ------- -------------------------------------------------------------------------------------
   A       Pass at least 8 of 10 quizzes, earn \"Demonstrates Competency\" on 4 of 4 exercises,
-          **and** submit an project that earns \"Demonstrates Competency\"
+          **and** submit a project that earns \"Demonstrates Competency\"
   B       Pass at least 7 of 10 quizzes, earn \"Demonstrates Competency\" on 3 of 4 exercises
   C       Pass at least 6 of 10 quizzes, earn \"Demonstrates Competency\" on 2 of 4 exercises
   D       Pass at least 5 of 10 quizzes, earn \"Demonstrates Competency\" on 1 of 4 exercises
