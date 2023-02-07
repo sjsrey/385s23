@@ -11,14 +11,14 @@
     "href": "labs/w2-lab01.html",
     "title": "Exercise 01",
     "section": "",
-    "text": "Forthcoming On Canvas"
+    "text": "On Canvas."
   },
   {
     "objectID": "weeks/week-02.html",
     "href": "weeks/week-02.html",
     "title": "Week 02",
     "section": "",
-    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nSpatial Analysis\n\n\nTue, Jan 24\n\n\n\n\nSpatial Data Analysis Software\n\n\nThu, Jan 26\n\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\nTitle\n\n\nDue\n\n\n\n\n\n\nQuiz\n\n\nQuiz 1\n\n\nTue, Jan 24\n\n\n\n\nExercise\n\n\nExercise 01\n\n\nThu, Feb 09\n\n\n\n\n\n\nNo matching items\n\n\n\n\nReadings\n\nGeographic Data Science with Python: Chapter 1 - Geographic Thinking for Data Scientists\nGeographic Data Science with Python: Chapter 2 - Computational Tools for Geographic Data Science"
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nSpatial Analysis\n\n\nTue, Jan 24\n\n\n\n\nSpatial Data Analysis Software\n\n\nThu, Jan 26\n\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\nTitle\n\n\nDue\n\n\n\n\n\n\nQuiz\n\n\nQuiz 1\n\n\nTue, Jan 24\n\n\n\n\nExercise\n\n\nExercise 01\n\n\nThu, Feb 16\n\n\n\n\n\n\nNo matching items\n\n\n\n\nReadings\n\nGeographic Data Science with Python: Chapter 1 - Geographic Thinking for Data Scientists\nGeographic Data Science with Python: Chapter 2 - Computational Tools for Geographic Data Science"
   },
   {
     "objectID": "weeks/week-01.html",
@@ -620,7 +620,7 @@
     "href": "syllabus.html#schedule-planned",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Schedule (Planned)",
-    "text": "Schedule (Planned)\n\n\n\nWeek\nDates\nTopic\nReading\nActivities\n\n\n\n\n1\nJan-19\nIntroduction\n\n\n\n\n2\nJan-24\nSpatial Analysis\nGDS 1\nQuiz 1\n\n\n\nJan-26\nSpatial Analysis Software\nGDS 2\nExercise 1 Out\n\n\n3\nJan-31\nSpatial Data\nGDS 3\nQuiz 2\n\n\n\nFeb-02\nPoint Pattern Basics\nGDS 8.1\n\n\n\n4\nFeb-07\nCentrography\nGDS 8.2\nQuiz 3\n\n\n\nFeb-09\nPoint Processes\n\nExericse 1 Due\n\n\n5\nFeb-14\nNearest Neighbor Methods\nGDS 8.3\nQuiz 4\n\n\n\nFeb-16\nDistance Distributions\n\nExercise 2 Out\n\n\n6\nFeb-21\nArea Data\nGDS II\nQuiz 5\n\n\n\nFeb-23\nVisualization of Area Data\nGDS 5\n\n\n\n7\nFeb-28\nSpatial Autocorrelation Concepts\nGDS 6.1\nQuiz 6\n\n\n\nMar-02\nSpatial Weights\nGDS 4\nExercise 2 Due\n\n\n8\nMar-07\nJoin Count Tests\nGDS 5.1\nQuiz 7\n\n\n\nMar-09\nGlobal Autocorrelation Tests\nGDS 5.2\n\n\n\n9\nMar-14\nLocal Autocorrelation\nGDS 6\nQuiz 8\n\n\n\nMar-16\nGeostatistical Data\nGSA gs\nExercise 3 Out\n\n\n10\nMar-21\nSpatial Interpolation\nGSA int\nQuiz 9\n\n\n\nMar-23\nKriging\nGSA krg\n\n\n\n\nMar-28\nSpring Break\n\n\n\n\n\nMar-30\nSpring Break\n\n\n\n\n11\nApr-04\nIntroduction to Multivariate Analysis\nSAH mv\nQuiz 10\n\n\n\nApr-06\nCorrelation and Spatial Correlation\nSAH cor\nExercise 3 Due\n\n\n12\nApr-11\nIntroduction to Regression\nGSA reg\nExercise 4 Out\n\n\n\nApr-13\nInference in Regression\nSAH inf\n\n\n\n13\nApr-18\nRegression with Spatial Data\nGDS 11\n\n\n\n\nApr-20\nDiagnostics for Spatial Effects\n\n\n\n\n14\nApr-25\nSpatial Dynamics\nGDS 9\nExercise 4 Due\n\n\n\nApr-27\nNext Steps With Spatial Data Analysis\n\n\n\n\n15\nMay-02\nPresentations\n\n\n\n\n\nMay-04\nPresentations\n\n\n\n\n\nMay-10\nFinal Examination (13:00-15:00)"
+    "text": "Schedule (Planned)\n\n\n\nWeek\nDates\nTopic\nReading\nActivities\n\n\n\n\n1\nJan-19\nIntroduction\n\n\n\n\n2\nJan-24\nSpatial Analysis\nGDS 1\nQuiz 1\n\n\n\nJan-26\nSpatial Analysis Software\nGDS 2\nExercise 1 Out\n\n\n3\nJan-31\nSpatial Data\nGDS 3\nQuiz 2\n\n\n\nFeb-02\nPoint Pattern Basics\nGDS 8.1\n\n\n\n4\nFeb-07\nCentrography\nGDS 8.2\nQuiz 3\n\n\n\nFeb-09\nPoint Processes\n\n\n\n\n5\nFeb-14\nNearest Neighbor Methods\nGDS 8.3\nQuiz 4\n\n\n\nFeb-16\nDistance Distributions\n\nExercise 2 Out\n\n\n\n\n\n\nExericse 1 Due\n\n\n6\nFeb-21\nArea Data\nGDS II\nQuiz 5\n\n\n\nFeb-23\nVisualization of Area Data\nGDS 5\n\n\n\n7\nFeb-28\nSpatial Autocorrelation Concepts\nGDS 6.1\nQuiz 6\n\n\n\nMar-02\nSpatial Weights\nGDS 4\nExercise 2 Due\n\n\n8\nMar-07\nJoin Count Tests\nGDS 5.1\nQuiz 7\n\n\n\nMar-09\nGlobal Autocorrelation Tests\nGDS 5.2\n\n\n\n9\nMar-14\nLocal Autocorrelation\nGDS 6\nQuiz 8\n\n\n\nMar-16\nGeostatistical Data\nGSA gs\nExercise 3 Out\n\n\n10\nMar-21\nSpatial Interpolation\nGSA int\nQuiz 9\n\n\n\nMar-23\nKriging\nGSA krg\n\n\n\n\nMar-28\nSpring Break\n\n\n\n\n\nMar-30\nSpring Break\n\n\n\n\n11\nApr-04\nIntroduction to Multivariate Analysis\nSAH mv\nQuiz 10\n\n\n\nApr-06\nCorrelation and Spatial Correlation\nSAH cor\nExercise 3 Due\n\n\n12\nApr-11\nIntroduction to Regression\nGSA reg\nExercise 4 Out\n\n\n\nApr-13\nInference in Regression\nSAH inf\n\n\n\n13\nApr-18\nRegression with Spatial Data\nGDS 11\n\n\n\n\nApr-20\nDiagnostics for Spatial Effects\n\n\n\n\n14\nApr-25\nSpatial Dynamics\nGDS 9\nExercise 4 Due\n\n\n\nApr-27\nNext Steps With Spatial Data Analysis\n\n\n\n\n15\nMay-02\nPresentations\n\n\n\n\n\nMay-04\nPresentations\n\n\n\n\n\nMay-10\nFinal Examination (13:00-15:00)"
   },
   {
     "objectID": "syllabus.html#grading",

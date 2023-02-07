@@ -109,9 +109,10 @@ completed the readings.
 |    3 |   Jan-31 | Spatial Data                          |     [GDS 3][gds3] | Quiz 2         |
 |      |   Feb-02 | Point Pattern Basics                  | [GDS 8.1][gds8.1] |                |
 |    4 |   Feb-07 | Centrography                          | [GDS 8.2][gds8.2] | Quiz 3         |
-|      |   Feb-09 | Point Processes                       |                   | Exericse 1 Due |
+|      |   Feb-09 | Point Processes                       |                   |                |
 |    5 |   Feb-14 | Nearest Neighbor Methods              | [GDS 8.3][gds8.3] | Quiz 4         |
 |      |   Feb-16 | Distance Distributions                |                   | Exercise 2 Out |
+|      |          |                                       |                   | Exericse 1 Due |
 |    6 |   Feb-21 | Area Data                             |   [GDS II][gdsii] | Quiz 5         |
 |      |   Feb-23 | Visualization of Area Data            |     [GDS 5][gds5] |                |
 |    7 |   Feb-28 | Spatial Autocorrelation Concepts      | [GDS 6.1][gds6.1] | Quiz 6         |
