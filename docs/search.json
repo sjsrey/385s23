@@ -1,5 +1,978 @@
 [
   {
+    "objectID": "hw/hw3-q2.html",
+    "href": "hw/hw3-q2.html",
+    "title": "Quiz 2",
+    "section": "",
+    "text": "Quiz 2 is on the canvas site"
+  },
+  {
+    "objectID": "hw/w1-hw00.html",
+    "href": "hw/w1-hw00.html",
+    "title": "Prerequisite Quiz",
+    "section": "",
+    "text": "Prerequisite Quiz on Canvas"
+  },
+  {
+    "objectID": "hw/w2-hw01.html",
+    "href": "hw/w2-hw01.html",
+    "title": "Quiz 1",
+    "section": "",
+    "text": "Quiz 1 is on the canvas site"
+  },
+  {
+    "objectID": "hw/w3-hw02.html",
+    "href": "hw/w3-hw02.html",
+    "title": "Quiz 2",
+    "section": "",
+    "text": "Quiz 2 is on the canvas site"
+  },
+  {
+    "objectID": "hw/w4-hw03.html",
+    "href": "hw/w4-hw03.html",
+    "title": "Quiz 3",
+    "section": "",
+    "text": "Quiz 3 will be available on the canvas site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Spatial Data Analysis",
+    "section": "",
+    "text": "Course overview from GEOG 385: Spatial Data Analysis at San Diego State University\nThe purpose of this course is to introduce you to methods of spatial data analysis. The focus is on both the conceptual and applied aspects of spatial statistical methods. We will place particular emphasis on the computational aspects of Exploratory Spatial Data Analysis (ESDA) methods for three diﬀerent types of spatial data: point processes, lattice, and geostatistical. We will also cover an introduction to regression analysis on spatially referenced data. Throughout the course you will gain valuable hands-on experience with several specialized software packages for spatial data analysis. The overriding goal of the course is for you to acquire familiarity with the fundamental methodological and operational issues in the statistical analysis of geographic information and the ability to extend these methods in your own research."
+  },
+  {
+    "objectID": "index.html#class-meetings",
+    "href": "index.html#class-meetings",
+    "title": "Spatial Data Analysis",
+    "section": "Class meetings",
+    "text": "Class meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nGMCS 307\nTue & Thu 2:00 - 3:15pm"
+  },
+  {
+    "objectID": "index.html#teaching-team",
+    "href": "index.html#teaching-team",
+    "title": "Spatial Data Analysis",
+    "section": "Teaching team",
+    "text": "Teaching team\n\n\n\nName\nOffice hours\nLocation\n\n\n\n\nSergio Rey\nThu 3:30 - 4:30pm\nPSFA 361G\n\n\nDylan Skrah\nTue 3:20-4:20pm\nPSFA 361F"
+  },
+  {
+    "objectID": "labs/w2-lab01.html",
+    "href": "labs/w2-lab01.html",
+    "title": "Exercise 01",
+    "section": "",
+    "text": "On Canvas."
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Materials will be posted here as the semester progresses\n\n\n\n\n\n\nWeek\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\nWeek 01\n\n\nJan 19\n\n\nWelcome to Spatial Data Analysis\n\n\n\n\nWeek 02\n\n\nJan 24 - 26\n\n\nSpatial Analysis\n\n\n\n\nWeek 03\n\n\nJan 31 - Feb 2\n\n\nSpatial Data and Point Pattern Analysis\n\n\n\n\nWeek 04\n\n\nFeb 7 - Feb 9\n\n\nPoint Pattern Analysis - Centrography and Point Processes\n\n\n\n\nWeek 05\n\n\nFeb 14 - Feb 16\n\n\nPoint Pattern Analysis - Nearest Neighbor Methods\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "schedule.html#assignments",
+    "href": "schedule.html#assignments",
+    "title": "Schedule",
+    "section": "Assignments",
+    "text": "Assignments\nYou can find details and assignment instructions in the relevant week on the schedule.\n\nExercises\nExercises will be due on Thursdays at 2:00pm. You will have two weeks to complete each homework assignment. Details will be provided on the weekly schedule.\n\n\nQuizzes\nOn-line quizzes are due on Tuesdays at 2:00pm. Details are available by week in the schedule.\n\n\nExam\nThere will be a final exam on May 19 (13:00-15:00)"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#introduction",
+    "href": "slides/week-01/01-introduction.html#introduction",
+    "title": "Course Introduction",
+    "section": "Introduction",
+    "text": "Introduction\n\nThis course introduces the fundamental concepts of spatial data analysis. Key fundamentals include spatial sampling, descriptive statistics for areal data, inferential statistics, use of maps in data analysis."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#approach",
+    "href": "slides/week-01/01-introduction.html#approach",
+    "title": "Course Introduction",
+    "section": "Approach",
+    "text": "Approach\n\nThe course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#scope",
+    "href": "slides/week-01/01-introduction.html#scope",
+    "title": "Course Introduction",
+    "section": "Scope",
+    "text": "Scope\n\nIn the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#prerequisites",
+    "href": "slides/week-01/01-introduction.html#prerequisites",
+    "title": "Course Introduction",
+    "section": "Prerequisites",
+    "text": "Prerequisites"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#schedule-reading-and-content",
+    "href": "slides/week-01/01-introduction.html#schedule-reading-and-content",
+    "title": "Course Introduction",
+    "section": "Schedule, Reading, and Content",
+    "text": "Schedule, Reading, and Content\nAll required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore coming into class prepared means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#readings",
+    "href": "slides/week-01/01-introduction.html#readings",
+    "title": "Course Introduction",
+    "section": "Readings",
+    "text": "Readings\n\n\n\n\n\n\n\nAbbrevation\nSource\n\n\n\n\nGDS\nRey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press.\n\n\nGSA\nde Smith, M., M.F. Goodchild, P.A. Longly (2021) Geospatial Analysis. Winchelsea Press.\n\n\nSAH\nde Smith, M. (2021) Statistical Analysis Handbook. Drumlin Security Ltd."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#schedule-planned",
+    "href": "slides/week-01/01-introduction.html#schedule-planned",
+    "title": "Course Introduction",
+    "section": "Schedule (Planned)",
+    "text": "Schedule (Planned)\n\n\n\nWeek\nDates\nTopic\nReading\nActivities\n\n\n\n\n1\nJan-19\nIntroduction\n\n\n\n\n2\nJan-24\nSpatial Analysis\nGDS 1\nQuiz 1\n\n\n\nJan-26\nSpatial Analysis Software\nGDS 2\nExercise 1 Out\n\n\n3\nJan-31\nSpatial Data\nGDS 3\n\n\n\n\nFeb-02\nPoint Pattern Basics\nGDS 8.1"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#section",
+    "href": "slides/week-01/01-introduction.html#section",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Week\nDates\nTopic\nReading\nActivities\n\n\n\n\n4\nFeb-07\nCentrography\nGDS 8.2\nQuiz 3\n\n\n\nFeb-09\nPoint Processes\n\nExericse 1 Due\n\n\n5\nFeb-14\nNearest Neighbor Methods\nGDS 8.3\nQuiz 4\n\n\n\nFeb-16\nDistance Distributions\n\nExercise 2 Out\n\n\n6\nFeb-21\nArea Data\nGDS II\nQuiz 5\n\n\n\nFeb-23\nVisualization of Area Data\nGDS 5"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#section-1",
+    "href": "slides/week-01/01-introduction.html#section-1",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Week\nDates\nTopic\nReading\nActivities\n\n\n\n\n7\nFeb-28\nSpatial Autocorrelation Concepts\nGDS 6.1\nQuiz 6\n\n\n\nMar-02\nSpatial Weights\nGDS 4\nExercise 2 Due\n\n\n8\nMar-07\nJoin Count Tests\nGDS 5.1\nQuiz 7\n\n\n\nMar-09\nGlobal Autocorrelation Tests\nGDS 5.2\n\n\n\n9\nMar-14\nLocal Autocorrelation\nGDS 6\nQuiz 8\n\n\n\nMar-16\nGeostatistical Data\nGSA gs\nExercise 3 Out"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#section-2",
+    "href": "slides/week-01/01-introduction.html#section-2",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Week\nDates\nTopic\nReading\nActivities\n\n\n\n\n10\nMar-21\nSpatial Interpolation\nGSA int\nQuiz 9\n\n\n\nMar-23\nKriging\nGSA krg\n\n\n\n11\nApr-04\nIntroduction to Multivariate Analysis\nSAH mv\nQuiz 10\n\n\n\nApr-06\nCorrelation and Spatial Correlation\nSAH cor\nExercise 3 Due\n\n\n12\nApr-11\nIntroduction to Regression\nGSA reg\nExercise 4 Out\n\n\n\nApr-13\nInference in Regression\nSAH inf"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#section-3",
+    "href": "slides/week-01/01-introduction.html#section-3",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Week\nDates\nTopic\nReading\nActivities\n\n\n\n\n13\nApr-18\nRegression with Spatial Data\nGDS 11\n\n\n\n\nApr-20\nDiagnostics for Spatial Effects\n\n\n\n\n14\nApr-25\nSpatial Dynamics\nGDS 9\nExercise 4 Due\n\n\n\nApr-27\nNext Steps With Spatial Data Analysis\n\n\n\n\n15\nMay-02\nPresentations\n\n\n\n\n\nMay-04\nPresentations"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#grading",
+    "href": "slides/week-01/01-introduction.html#grading",
+    "title": "Course Introduction",
+    "section": "Grading",
+    "text": "Grading\nGEOG385 uses specification grading in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#base-grade",
+    "href": "slides/week-01/01-introduction.html#base-grade",
+    "title": "Course Introduction",
+    "section": "Base Grade",
+    "text": "Base Grade\n\n\n\nLevel\nHurdles\n\n\n\n\nA\nPass at least 8 of 10 quizzes, earn \"Demonstrates Competency\" on 4 of 4 exercises,\n\n\n\nand submit an project that earns \"Demonstrates Competency\"\n\n\nB\nPass at least 7 of 10 quizzes, earn \"Demonstrates Competency\" on 3 of 4 exercises\n\n\nC\nPass at least 6 of 10 quizzes, earn \"Demonstrates Competency\" on 2 of 4 exercises\n\n\nD\nPass at least 5 of 10 quizzes, earn \"Demonstrates Competency\" on 1 of 4 exercises\n\n\nF\nFail to clear D-level hurdles"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#final-grade",
+    "href": "slides/week-01/01-introduction.html#final-grade",
+    "title": "Course Introduction",
+    "section": "Final Grade",
+    "text": "Final Grade\n\nIf you earn at least 85% on the final exam, you will obtain a + for your grade. So an A base grade becomes a final A+ course grade, a B becomes a B+, and so on.\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a - for your grade. So an A becomes and A-, a B becomes a B-, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#quizzes",
+    "href": "slides/week-01/01-introduction.html#quizzes",
+    "title": "Course Introduction",
+    "section": "Quizzes",
+    "text": "Quizzes\nQuizzes are graded on a pass/fail basis. Starting in week two, there will be a quiz due before each Tuesday session that pertains to the background reading that is required before our work in class."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#exercises",
+    "href": "slides/week-01/01-introduction.html#exercises",
+    "title": "Course Introduction",
+    "section": "Exercises",
+    "text": "Exercises\nFour exercises will be introduced in class and are due in two weeks.\nEach exercise is graded using a CRN rubric that classifies work with marks of C (\"Demonstrates Competence\"), R (\"Needs Revision\"), or N (\"Not assessable\"):"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#exercises-1",
+    "href": "slides/week-01/01-introduction.html#exercises-1",
+    "title": "Course Introduction",
+    "section": "Exercises",
+    "text": "Exercises\nOf each exercise the following questions will be asked: Does the work demonstrate that the student understands the concepts? Does the work demonstrate competence and meet the expectations outlined in the exercise?\nIf the answer is \"yes\" to both of the questions, a student passes the hurdle for that exercise."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#exercises-2",
+    "href": "slides/week-01/01-introduction.html#exercises-2",
+    "title": "Course Introduction",
+    "section": "Exercises",
+    "text": "Exercises\nIf the initial submission does not clear the hurdle, then a second question is asked: Is there evidence of partial understanding of the concepts? If the answer to this question is \"Yes\" the student can exchange one token to attempt a revision of their work. If the answer is \"No\", the student does not clear the hurdle for this exercise and will not have the opportunity to revise their work."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#project",
+    "href": "slides/week-01/01-introduction.html#project",
+    "title": "Course Introduction",
+    "section": "Project",
+    "text": "Project\nThe project is a required hurdle to earn a level A grade. In order to clear this hurdle, the project must obtain a \"Demonstrates Competence\" evaluation. There will be opportunities for feedback along the way, but the final submission will be evaluated. There will be no opportunity for revising this final submission."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#project-1",
+    "href": "slides/week-01/01-introduction.html#project-1",
+    "title": "Course Introduction",
+    "section": "Project",
+    "text": "Project\nStudents need to commit to the project by specifying their team (maximum of 4 members on a team) by 2-09. Once the commitment is made, the team composition is final. Any student who does not submit a team definition by this date will not be able to pursue the project.\nDetails on the project rubric will be given out on 3-02."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#final-exam",
+    "href": "slides/week-01/01-introduction.html#final-exam",
+    "title": "Course Introduction",
+    "section": "Final Exam",
+    "text": "Final Exam\nA closed book, closed note, timed final exam will be given on May 10 (13:00-15:00). The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#tokens",
+    "href": "slides/week-01/01-introduction.html#tokens",
+    "title": "Course Introduction",
+    "section": "Tokens",
+    "text": "Tokens\nEach student is provided with three tokens at the beginning of the semester."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#using-tokens",
+    "href": "slides/week-01/01-introduction.html#using-tokens",
+    "title": "Course Introduction",
+    "section": "Using Tokens",
+    "text": "Using Tokens\n\nOne token can be used for a one-day extension for an exercise.\nOne token can be used to revise an exercise that was submitted on-time but evaluated as \"Needing Revision\".\nTwo tokens can be used to request a make-up date for the final exam."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#earning-tokens",
+    "href": "slides/week-01/01-introduction.html#earning-tokens",
+    "title": "Course Introduction",
+    "section": "Earning Tokens",
+    "text": "Earning Tokens\n\nHanding in an exercise at least 24 hours before its due date.\nSubmitting all four exercises on time (or early).\nAttempting all 10 quizzes."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#remaining-tokens",
+    "href": "slides/week-01/01-introduction.html#remaining-tokens",
+    "title": "Course Introduction",
+    "section": "Remaining Tokens",
+    "text": "Remaining Tokens\nEach token that remains unused after 4-27 will be counted as a passed quiz. Tokens cannot be exchanged with other students."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#aministration",
+    "href": "slides/week-01/01-introduction.html#aministration",
+    "title": "Course Introduction",
+    "section": "Aministration",
+    "text": "Aministration"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#accomodations",
+    "href": "slides/week-01/01-introduction.html#accomodations",
+    "title": "Course Introduction",
+    "section": "Accomodations",
+    "text": "Accomodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#privacy-and-intellectual-property",
+    "href": "slides/week-01/01-introduction.html#privacy-and-intellectual-property",
+    "title": "Course Introduction",
+    "section": "Privacy and Intellectual Property",
+    "text": "Privacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use [Canvas / Blackboard] to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#academic-integrity",
+    "href": "slides/week-01/01-introduction.html#academic-integrity",
+    "title": "Course Introduction",
+    "section": "Academic Integrity",
+    "text": "Academic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: http://www.sa.sdsu.edu/srr/index.html."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#code-of-conduct",
+    "href": "slides/week-01/01-introduction.html#code-of-conduct",
+    "title": "Course Introduction",
+    "section": "Code of Conduct",
+    "text": "Code of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#code-of-conduct-1",
+    "href": "slides/week-01/01-introduction.html#code-of-conduct-1",
+    "title": "Course Introduction",
+    "section": "Code of Conduct",
+    "text": "Code of Conduct\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct."
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#computational-learning",
+    "href": "slides/week-01/01-introduction.html#computational-learning",
+    "title": "Course Introduction",
+    "section": "Computational Learning",
+    "text": "Computational Learning\n\n\nShow me the code\nimport libpysal.examples\nimport geopandas \n\n# get path to built-in dataset for Mexico\npth = libpysal.examples.get_path(\"mexicojoin.shp\")\n# load the file with geopandas to create a GeoDataframe\ngdf = geopandas.read_file(pth)\n# call the plot method of the GeoDataFrame\ngdf.plot(edgecolor='white');"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#open-source",
+    "href": "slides/week-01/01-introduction.html#open-source",
+    "title": "Course Introduction",
+    "section": "Open Source",
+    "text": "Open Source"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#server-or-laptop",
+    "href": "slides/week-01/01-introduction.html#server-or-laptop",
+    "title": "Course Introduction",
+    "section": "Server or Laptop",
+    "text": "Server or Laptop\nYou can choose to either use an account on our course JupyterHub or install the packages on your own laptop.\nEither way, you will be using Jupyter Notebooks for all computation:"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#my-program",
+    "href": "slides/week-01/01-introduction.html#my-program",
+    "title": "Course Introduction",
+    "section": "My Program",
+    "text": "My Program\n\n\n\nurl"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#why-am-i-here",
+    "href": "slides/week-01/01-introduction.html#why-am-i-here",
+    "title": "Course Introduction",
+    "section": "Why am I here",
+    "text": "Why am I here"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#why-am-i-here-1",
+    "href": "slides/week-01/01-introduction.html#why-am-i-here-1",
+    "title": "Course Introduction",
+    "section": "Why am I here",
+    "text": "Why am I here"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#trump-turned-this-place-into-a-ghost-town",
+    "href": "slides/week-01/01-introduction.html#trump-turned-this-place-into-a-ghost-town",
+    "title": "Course Introduction",
+    "section": "‘Trump turned this place into a ghost town’",
+    "text": "‘Trump turned this place into a ghost town’"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#stockton-and-atlantic-city",
+    "href": "slides/week-01/01-introduction.html#stockton-and-atlantic-city",
+    "title": "Course Introduction",
+    "section": "Stockton and Atlantic City",
+    "text": "Stockton and Atlantic City"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#stockton-and-atlantic-city-1",
+    "href": "slides/week-01/01-introduction.html#stockton-and-atlantic-city-1",
+    "title": "Course Introduction",
+    "section": "Stockton and Atlantic City",
+    "text": "Stockton and Atlantic City\n\nSource"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#stockton",
+    "href": "slides/week-01/01-introduction.html#stockton",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#stockton-1",
+    "href": "slides/week-01/01-introduction.html#stockton-1",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#stockton-2",
+    "href": "slides/week-01/01-introduction.html#stockton-2",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#stockton-3",
+    "href": "slides/week-01/01-introduction.html#stockton-3",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton"
+  },
+  {
+    "objectID": "slides/week-01/01-introduction.html#you",
+    "href": "slides/week-01/01-introduction.html#you",
+    "title": "Course Introduction",
+    "section": "You",
+    "text": "You\nTake a few minutes and let us know a bit about yourself\n\nName\nProgram/Concentration\nWhy you are here"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#gis-then",
+    "href": "slides/week-02/02-spatial-analysis.html#gis-then",
+    "title": "Spatial Analysis",
+    "section": "GIS Then",
+    "text": "GIS Then\n\nSnow Map"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#gis-now",
+    "href": "slides/week-02/02-spatial-analysis.html#gis-now",
+    "title": "Spatial Analysis",
+    "section": "GIS Now",
+    "text": "GIS Now\n\nCrime Map"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#gis-functions",
+    "href": "slides/week-02/02-spatial-analysis.html#gis-functions",
+    "title": "Spatial Analysis",
+    "section": "GIS Functions",
+    "text": "GIS Functions\nAnselin-Getis (1992) Taxonomy\n\nInput\nStorage\nAnalysis\nOutput\n\nMany other taxonomies"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#giscience",
+    "href": "slides/week-02/02-spatial-analysis.html#giscience",
+    "title": "Spatial Analysis",
+    "section": "GIScience",
+    "text": "GIScience\nGoodchild (1992)\n\ncross-disciplinary\ncentral role for spatial analysis\nscientific glue"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#what-is-spatial-analysis-1",
+    "href": "slides/week-02/02-spatial-analysis.html#what-is-spatial-analysis-1",
+    "title": "Spatial Analysis",
+    "section": "What is Spatial Analysis?",
+    "text": "What is Spatial Analysis?\nFrom Data to Information\n\nbeyond mapping\nadded value\ntransformations, manipulations and application of analytical methods to spatial (geographic data)"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#locational-invariance",
+    "href": "slides/week-02/02-spatial-analysis.html#locational-invariance",
+    "title": "Spatial Analysis",
+    "section": "Locational Invariance",
+    "text": "Locational Invariance\nHow Insights Change with Location\n\nspatial analysis is not locationally invariant\nthe results change when the locations of the study objects change\nwhere matters"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#state-income-distributions-1929",
+    "href": "slides/week-02/02-spatial-analysis.html#state-income-distributions-1929",
+    "title": "Spatial Analysis",
+    "section": "State Income Distributions 1929",
+    "text": "State Income Distributions 1929\n\nRelative Quintiles"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#state-income-distributions-1929-1",
+    "href": "slides/week-02/02-spatial-analysis.html#state-income-distributions-1929-1",
+    "title": "Spatial Analysis",
+    "section": "State Income Distributions 1929",
+    "text": "State Income Distributions 1929\n\nIncome Distribution"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#randomized-income-distribution-1929",
+    "href": "slides/week-02/02-spatial-analysis.html#randomized-income-distribution-1929",
+    "title": "Spatial Analysis",
+    "section": "Randomized Income Distribution 1929",
+    "text": "Randomized Income Distribution 1929\n\nRandom Permutation"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#randomized-income-density-1929",
+    "href": "slides/week-02/02-spatial-analysis.html#randomized-income-density-1929",
+    "title": "Spatial Analysis",
+    "section": "Randomized Income Density 1929",
+    "text": "Randomized Income Density 1929\n\nIncome Distribution"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#localtional-invariance",
+    "href": "slides/week-02/02-spatial-analysis.html#localtional-invariance",
+    "title": "Spatial Analysis",
+    "section": "Localtional Invariance",
+    "text": "Localtional Invariance"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#locational-variance",
+    "href": "slides/week-02/02-spatial-analysis.html#locational-variance",
+    "title": "Spatial Analysis",
+    "section": "Locational Variance",
+    "text": "Locational Variance\n\nObserved"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#spatial-autocorrelation-income-1929",
+    "href": "slides/week-02/02-spatial-analysis.html#spatial-autocorrelation-income-1929",
+    "title": "Spatial Analysis",
+    "section": "Spatial Autocorrelation Income 1929",
+    "text": "Spatial Autocorrelation Income 1929\n\nMoran Scatterplot"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#randomized-income-1929",
+    "href": "slides/week-02/02-spatial-analysis.html#randomized-income-1929",
+    "title": "Spatial Analysis",
+    "section": "Randomized Income 1929",
+    "text": "Randomized Income 1929\n\nMoran Scatterplot (Random)"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#locational-variance-1",
+    "href": "slides/week-02/02-spatial-analysis.html#locational-variance-1",
+    "title": "Spatial Analysis",
+    "section": "Locational Variance",
+    "text": "Locational Variance"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#components-of-spatial-analysis",
+    "href": "slides/week-02/02-spatial-analysis.html#components-of-spatial-analysis",
+    "title": "Spatial Analysis",
+    "section": "Components of Spatial Analysis",
+    "text": "Components of Spatial Analysis\n\n\nMapping and Geovisualization showing interesting patterns\nExploratory Spatial Data Analysis discovering interesting patterns\nSpatial Modeling explaining interesting patterns"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#summary-spatial-analysis",
+    "href": "slides/week-02/02-spatial-analysis.html#summary-spatial-analysis",
+    "title": "Spatial Analysis",
+    "section": "Summary: Spatial Analysis",
+    "text": "Summary: Spatial Analysis\n\nBeyond Mapping\nCentral role for analysis\nDistinguished by Locational Variance\nLocation matters\n\nComponents\n\nshowing\ndiscovering\nexplaining"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#exploratory-data-analysis-eda",
+    "href": "slides/week-02/02-spatial-analysis.html#exploratory-data-analysis-eda",
+    "title": "Spatial Analysis",
+    "section": "Exploratory Data Analysis (EDA)",
+    "text": "Exploratory Data Analysis (EDA)\nWhat is EDA?\nEDA is an approach, not simply a set of techniques, but an attitude/philosophy about how a data analysis should be carried out.\nPostpones the usual assumptions about what kind of model the data follow\nOrigins Tukey, J. (1977) Exploratory Data Analysis. Addison, Wesely"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#components-of-eda",
+    "href": "slides/week-02/02-spatial-analysis.html#components-of-eda",
+    "title": "Spatial Analysis",
+    "section": "Components of EDA",
+    "text": "Components of EDA\nSet of techniques to\n\nmaximize insight into a data set\nuncover underlying structures\nextract important variables\ndetect outliers and anonalies\ntest underlying assumptions\nsuggest hypotheses\ndevelop parsimonious models"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#eda-techniqes",
+    "href": "slides/week-02/02-spatial-analysis.html#eda-techniqes",
+    "title": "Spatial Analysis",
+    "section": "EDA Techniqes",
+    "text": "EDA Techniqes\nStatistical Graphics\n\nEDA relies heavily on statistical graphics\nEDA is not identical to statistical graphics\nGraphics support pattern recognition and open-minded exploration\nInteractive graphcs push this even further\n\nQuantitiatve Methods: Although heavily graphic in orientation, there are also a number of numerical techniques in EDA."
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#eda-versus-confirmatory-analysis",
+    "href": "slides/week-02/02-spatial-analysis.html#eda-versus-confirmatory-analysis",
+    "title": "Spatial Analysis",
+    "section": "EDA Versus Confirmatory Analysis",
+    "text": "EDA Versus Confirmatory Analysis\nConfirmatory Analysis (e.g. regression)\nProblem \\(\\rightarrow\\) Theory \\(\\rightarrow\\) Model \\(\\rightarrow\\) Data \\(\\rightarrow\\) Conclusion\nExploratory Analysis\nProblem \\(\\rightarrow\\) Data \\(\\rightarrow\\) Analysis \\(\\rightarrow\\) Model"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#exploratory-spatial-data-analysis-esda",
+    "href": "slides/week-02/02-spatial-analysis.html#exploratory-spatial-data-analysis-esda",
+    "title": "Spatial Analysis",
+    "section": "Exploratory Spatial Data Analysis (ESDA)",
+    "text": "Exploratory Spatial Data Analysis (ESDA)\nDefinitions\n\nType of EDA\nExtended to include spatial attributes of the data\n\nCrossfertilization\n\nApplying classic EDA to spatial data\nDeveloping new EDA methods for spatial data\nInteractions between EDA and ESDA"
+  },
+  {
+    "objectID": "slides/week-02/02-spatial-analysis.html#how-does-esda-fit-in-spatial-analysis",
+    "href": "slides/week-02/02-spatial-analysis.html#how-does-esda-fit-in-spatial-analysis",
+    "title": "Spatial Analysis",
+    "section": "How does ESDA fit in spatial analysis?",
+    "text": "How does ESDA fit in spatial analysis?\nSpatial Modeling?\n\nModeling based on assumptionss\nESDA largely model free\nMatter of degree (e.g., clustering)\n\nMapping?\n\nMaps play a critical role in ESDA\nDoes a map = ESDA?\nNo. ESDA = map, manipulation + visualization"
+  },
+  {
+    "objectID": "slides/week-02/03-hub.html#open-source-freedoms",
+    "href": "slides/week-02/03-hub.html#open-source-freedoms",
+    "title": "Spatial Data Analysis Software",
+    "section": "Open Source: Freedoms",
+    "text": "Open Source: Freedoms\n\nFree as in Beer\nFree as in Speech"
+  },
+  {
+    "objectID": "slides/week-02/03-hub.html#open-science",
+    "href": "slides/week-02/03-hub.html#open-science",
+    "title": "Spatial Data Analysis Software",
+    "section": "Open Science",
+    "text": "Open Science\n\nCOS"
+  },
+  {
+    "objectID": "slides/week-02/03-hub.html#open-education",
+    "href": "slides/week-02/03-hub.html#open-education",
+    "title": "Spatial Data Analysis Software",
+    "section": "Open Education",
+    "text": "Open Education\nMy beliefs:\n\nacces to quality education in everyone’s birthright\nhuman knowledge is a public good that should be available to all\nhuman knowledge is a public good that we all can contribute to"
+  },
+  {
+    "objectID": "slides/week-02/03-hub.html#jupyter-hub",
+    "href": "slides/week-02/03-hub.html#jupyter-hub",
+    "title": "Spatial Data Analysis Software",
+    "section": "Jupyter Hub",
+    "text": "Jupyter Hub\n\nLogging on\nInterface"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#data-definitions",
+    "href": "slides/week-03/04-spatial-data.html#data-definitions",
+    "title": "Spatial Data",
+    "section": "Data Definitions",
+    "text": "Data Definitions\n\nfacts and statistics collected together for reference or analysis\n\n\nthe quantities, characters, or symbols on which operations are performed by a computer, being stored and transmitted in the form of electrical signals and recorded on magnetic, optical, or mechanical recording media.\n\n\nthings known or assumed as facts, making the basis of reasoning or calculate\n\nSource: Oxford languages"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#datas-place",
+    "href": "slides/week-03/04-spatial-data.html#datas-place",
+    "title": "Spatial Data",
+    "section": "Data’s Place",
+    "text": "Data’s Place\n\n\n\n\n\nDIKW Pyramid\n\n\n\n\ndata: discrete facts, unorganized and lacking context or information\ninformation: data imbued with meaning - what is in the data\nknowledge: perception of the world seen through information synthesis\nwisdom: “knowing the right things to do”"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#data-sets",
+    "href": "slides/week-03/04-spatial-data.html#data-sets",
+    "title": "Spatial Data",
+    "section": "Data Sets",
+    "text": "Data Sets\nA data set is a collection of observations recorded for individual units on a set of variables.\nVariables are sometimes referred to as attributes or features (in machine learning parlance)."
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#measurement-scales",
+    "href": "slides/week-03/04-spatial-data.html#measurement-scales",
+    "title": "Spatial Data",
+    "section": "Measurement Scales",
+    "text": "Measurement Scales\n\n\n\nScale\nOperations\nExample\n\n\n\n\nnominal\nmode, frequencies\nZip Code\n\n\nordinal\nA > B\nRanks, Primary, Intermediate\n\n\ninterval\n+ -\nTime\n\n\nratio\n+ - * /\nWeight, Kelvin"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#spatial-data-is-special",
+    "href": "slides/week-03/04-spatial-data.html#spatial-data-is-special",
+    "title": "Spatial Data",
+    "section": "Spatial Data is Special",
+    "text": "Spatial Data is Special\n\nSpatial data comes in many varieties and it is not easy to arrive at a system of classification that is simultaneously exclusive, exhaustive, imaginative, and satisfying.\n\n– G. Upton & B. Fingleton"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#what-is-special-about-spatial-data-1",
+    "href": "slides/week-03/04-spatial-data.html#what-is-special-about-spatial-data-1",
+    "title": "Spatial Data",
+    "section": "What is special about spatial data?",
+    "text": "What is special about spatial data?\nLocation, Location, Location\nwhere matters\nDependence is the rule, not the exception\n\nspatial interaction, contagion, spill-overs\nspatial externalities\n\nSpatial Scale\n\nInference can change with scale"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#nature-of-spatial-data",
+    "href": "slides/week-03/04-spatial-data.html#nature-of-spatial-data",
+    "title": "Spatial Data",
+    "section": "Nature of Spatial Data",
+    "text": "Nature of Spatial Data\nGeoreferences\nattribute data together with location\nGeocoding\n\nassociate observations with location\npoint: latitude-longtitude (GPS)\nareal unit: spatial reference"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geocoding-on-line",
+    "href": "slides/week-03/04-spatial-data.html#geocoding-on-line",
+    "title": "Spatial Data",
+    "section": "Geocoding on-line",
+    "text": "Geocoding on-line\n\nGeocode Input"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geocoding-on-line-1",
+    "href": "slides/week-03/04-spatial-data.html#geocoding-on-line-1",
+    "title": "Spatial Data",
+    "section": "Geocoding on-line",
+    "text": "Geocoding on-line\n\nGeocode Output"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#on-the-map",
+    "href": "slides/week-03/04-spatial-data.html#on-the-map",
+    "title": "Spatial Data",
+    "section": "On the Map?",
+    "text": "On the Map?\n\nMap of Geocode Output"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#on-the-map-1",
+    "href": "slides/week-03/04-spatial-data.html#on-the-map-1",
+    "title": "Spatial Data",
+    "section": "On the Map?",
+    "text": "On the Map?\n\nErrors in Geocode Output"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#location",
+    "href": "slides/week-03/04-spatial-data.html#location",
+    "title": "Spatial Data",
+    "section": "Location",
+    "text": "Location\n\nGiven: in most spatial data analysis, no choice in location\nNo sampling in the usual sense\nData = attributes augmented with locational information"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#spatial-effects",
+    "href": "slides/week-03/04-spatial-data.html#spatial-effects",
+    "title": "Spatial Data",
+    "section": "Spatial Effects",
+    "text": "Spatial Effects\nThe Trilogy\n\nSpatial Dependence\nSpatial Heterogeneity\nSpatial Scale"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#spatial-dependence",
+    "href": "slides/week-03/04-spatial-data.html#spatial-dependence",
+    "title": "Spatial Data",
+    "section": "Spatial Dependence",
+    "text": "Spatial Dependence\nTobler’s First Law of Geography\n\n“everything depends on everything else, but closer things more so”\n\n\nStructure of spatial dependence\nDistance Decay\nCloseness = Similarity"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#spatial-heterogenety",
+    "href": "slides/week-03/04-spatial-data.html#spatial-heterogenety",
+    "title": "Spatial Data",
+    "section": "Spatial Heterogenety",
+    "text": "Spatial Heterogenety\nSpatial Instability\n\nProcess varies in some way over spatial units\nMultiple forms\n\nDiscrete = regimes\nContinuous = expansion method, GWR\n\nTrade-off\n\nSpatial homogeneity = stationary process\nUniqueness = extreme heterogeneity"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#spatial-scale-1",
+    "href": "slides/week-03/04-spatial-data.html#spatial-scale-1",
+    "title": "Spatial Data",
+    "section": "Spatial Scale",
+    "text": "Spatial Scale\nMismatch\n\nSpatial scale of the process\nSpatial scale of our measurement\n\nIssues\n\npoints too far apart = miss small distance variation\narea aggregates cannot provide information on individual behavior\nEcological Fallacy"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#modifiable-areal-unit-problem-maup",
+    "href": "slides/week-03/04-spatial-data.html#modifiable-areal-unit-problem-maup",
+    "title": "Spatial Data",
+    "section": "Modifiable Areal Unit Problem (MAUP)",
+    "text": "Modifiable Areal Unit Problem (MAUP)\nAggregation Problem\n\nspecial case of ecological fallacy\na million correlation coefficients\n\nZonation Problem\n\nsize\narangement\nHow many ways could you partition the coterminous US land area into 48 polygons?"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#maup-zonation-problem",
+    "href": "slides/week-03/04-spatial-data.html#maup-zonation-problem",
+    "title": "Spatial Data",
+    "section": "MAUP Zonation Problem",
+    "text": "MAUP Zonation Problem\n\nhttp://en.wikipedia.org/wiki/Modifiable_areal_unit_problem"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#maup-aggregation-problem",
+    "href": "slides/week-03/04-spatial-data.html#maup-aggregation-problem",
+    "title": "Spatial Data",
+    "section": "MAUP Aggregation Problem",
+    "text": "MAUP Aggregation Problem\n\n\n\n\n\nhttp://en.wikipedia.org/wiki/Modifiable_areal_unit_problem\n\n\n\n\nTrue rate = 1/3 = 33%\nA’s rate = (0 +1/2) /2 = 25%\nA’s weighted rate = 1/3 * 0 + 2/3 * 50 = 33%\nB’s rate = (0 + 100) /2 = 50%\nB’s weighted rate = 2/3 * 0 + 1/3 * 100 = 33%"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#spatial-process",
+    "href": "slides/week-03/04-spatial-data.html#spatial-process",
+    "title": "Spatial Data",
+    "section": "Spatial Process",
+    "text": "Spatial Process\nSpatial Random Field\na mathemtical construct to capture randomness of values distributed over space\n\\[\\{Z(s):s \\in D \\} \\]\n\n\\(s \\in R^d:\\) location (e.g., lat-lon)\n\\(D \\in R^d:\\) index set = possible locations\n\\(Z(s):\\) random variable at location \\(s\\)"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#types-of-spatial-data-1",
+    "href": "slides/week-03/04-spatial-data.html#types-of-spatial-data-1",
+    "title": "Spatial Data",
+    "section": "Types of Spatial Data",
+    "text": "Types of Spatial Data\n\nEvents\n\naddresses of crimes\n\nDiscrete Spatial Objects\n\ncounty crime rates\n\nContinuous surfaces\n\nair quality\nrainfall"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#point-pattern-analysis",
+    "href": "slides/week-03/04-spatial-data.html#point-pattern-analysis",
+    "title": "Spatial Data",
+    "section": "Point Pattern Analysis",
+    "text": "Point Pattern Analysis\nData\n\nmapped pattern = all the values\nnot a sample in the usual sense\n\nSpatial Process\n\nobservations as a realization of a random point process\npoints occur in space according to a mathematical model"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#point-patterns",
+    "href": "slides/week-03/04-spatial-data.html#point-patterns",
+    "title": "Spatial Data",
+    "section": "Point Patterns",
+    "text": "Point Patterns\nUnmarked Point Pattern\n\nonly location is recorded\nno other attribute information\n\nMarked Point Pattern\n\nLocation is recorded\nStochastic attributes are also recorded\ne.g., sales price at address, DBH of a tree"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#point-pattern-analysis-quadrat-methods",
+    "href": "slides/week-03/04-spatial-data.html#point-pattern-analysis-quadrat-methods",
+    "title": "Spatial Data",
+    "section": "Point Pattern Analysis: Quadrat Methods",
+    "text": "Point Pattern Analysis: Quadrat Methods\n\nQuadrat Analysis"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#point-pattern-analysis-distance-based-methods",
+    "href": "slides/week-03/04-spatial-data.html#point-pattern-analysis-distance-based-methods",
+    "title": "Spatial Data",
+    "section": "Point Pattern Analysis: Distance Based Methods",
+    "text": "Point Pattern Analysis: Distance Based Methods\n\nDistance Distributions"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#areal-unit-data-lattice",
+    "href": "slides/week-03/04-spatial-data.html#areal-unit-data-lattice",
+    "title": "Spatial Data",
+    "section": "Areal Unit Data (Lattice)",
+    "text": "Areal Unit Data (Lattice)\n\nSpatial Domain: \\(D\\)\n\nDiscrete and fixed\nLocations nonrandom\nLocations countable\n\n\n\nExamples of lattice data\n\nAttributes collected by ZIP code\ncensus tract"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#lattice-data-indexing",
+    "href": "slides/week-03/04-spatial-data.html#lattice-data-indexing",
+    "title": "Spatial Data",
+    "section": "Lattice Data: Indexing",
+    "text": "Lattice Data: Indexing\n\nSite\n\nEach location is now an area or site\nOne observation on \\(Z\\) for each site\nNeed a spatial index: \\(Z(s_i)\\)\n\n\n\n\\(Z(s_i)\\)\n\n\\(s_i\\) is a representative location within the site\ne.g., centroid, largest city\nAllows for measuring distances between sites"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#lattice-data-county-per-capita-incomes",
+    "href": "slides/week-03/04-spatial-data.html#lattice-data-county-per-capita-incomes",
+    "title": "Spatial Data",
+    "section": "Lattice Data: County Per Capita Incomes",
+    "text": "Lattice Data: County Per Capita Incomes\n\n1969"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geostatistical-analysis",
+    "href": "slides/week-03/04-spatial-data.html#geostatistical-analysis",
+    "title": "Spatial Data",
+    "section": "Geostatistical Analysis",
+    "text": "Geostatistical Analysis\n\nSpatial Domain: \\(D\\)\n\nA continuous and fixed set.\nMeaning \\(Z(s)\\) can be observed everywhere within \\(D\\).\nBetween any two sample locations \\(s_i\\) and \\(s_j\\) you can theoretically place an infinite number of other samples.\nBy fixed: the points in \\(D\\) are non-stochastic"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geostatistical-data",
+    "href": "slides/week-03/04-spatial-data.html#geostatistical-data",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data",
+    "text": "Geostatistical Data\n\nContinuous Variation\n\nBecause of the continuity of \\(D\\)\nGeostatistical data is referred to as “spatial data with continuous variation.”\nContinuity is associated with \\(D\\).\nAttribute \\(Z\\) may, or may not, be continuous."
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geostatistical-data-monitoring-sites",
+    "href": "slides/week-03/04-spatial-data.html#geostatistical-data-monitoring-sites",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Monitoring Sites",
+    "text": "Geostatistical Data: Monitoring Sites\n\nSites"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geostatistical-data-surface-reconstruction",
+    "href": "slides/week-03/04-spatial-data.html#geostatistical-data-surface-reconstruction",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Surface Reconstruction",
+    "text": "Geostatistical Data: Surface Reconstruction\n\nTessellation"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geostatistical-data-surface-reconstruction-1",
+    "href": "slides/week-03/04-spatial-data.html#geostatistical-data-surface-reconstruction-1",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Surface Reconstruction",
+    "text": "Geostatistical Data: Surface Reconstruction\n\nInterpolation"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#geostatistical-data-surface-reconstruction-2",
+    "href": "slides/week-03/04-spatial-data.html#geostatistical-data-surface-reconstruction-2",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Surface Reconstruction",
+    "text": "Geostatistical Data: Surface Reconstruction\n\nKriging"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#network-data",
+    "href": "slides/week-03/04-spatial-data.html#network-data",
+    "title": "Spatial Data",
+    "section": "Network Data",
+    "text": "Network Data\n\n\nA network is a system of linear features connected at intersections and interchanges.\nThese intersections and interchanges are called nodes.\nThe linear feature connecting any given pair of nodes is called an arc.\nFormally, a network is defined as a directed graph \\(G = (N,  A)\\) consisting of an indexed set of nodes \\(N\\) with \\(n = |N|\\) and a spanning set of directed arcs \\(A\\) with \\(m = |A|\\), where \\(n\\) is the number of nodes and \\(m\\) is the number of arcs.\nEach arc on a network is represented as an ordered pair of nodes, in the form from node \\(i\\) to node \\(j\\), denoted by \\((i, j)\\)."
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#network-data-1",
+    "href": "slides/week-03/04-spatial-data.html#network-data-1",
+    "title": "Spatial Data",
+    "section": "Network Data",
+    "text": "Network Data\n\nStreet Network"
+  },
+  {
+    "objectID": "slides/week-03/04-spatial-data.html#flow-data",
+    "href": "slides/week-03/04-spatial-data.html#flow-data",
+    "title": "Spatial Data",
+    "section": "Flow Data",
+    "text": "Flow Data\n\nFlows"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#point-pattern-analysis-objectives",
+    "href": "slides/week-03/05-point-patterns.html#point-pattern-analysis-objectives",
+    "title": "Point Pattern Basics",
+    "section": "Point Pattern Analysis Objectives",
+    "text": "Point Pattern Analysis Objectives\nGoals\n\nPattern detection\nAssessing the presence of clustering\nIdentification of individual clusters\n\nGeneral Approaches\n\nEstimate intensity of the process\nFormulating an idealized model and investigating deviations from expectations\nFormulating a stochastic model and fitting it to the data"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#point-pattern-analysis-definitions",
+    "href": "slides/week-03/05-point-patterns.html#point-pattern-analysis-definitions",
+    "title": "Point Pattern Basics",
+    "section": "Point Pattern Analysis Definitions",
+    "text": "Point Pattern Analysis Definitions\nSpatial Point Pattern: A set of events, irregularly distributed within a region \\(A\\) and presumed to have been generated by some form of stochastic mechanism.\nRepresentation \\(\\left\\{Y(A),  A \\subset \\Re \\right\\}\\), where \\(Y(A)\\) is the number of events occurring in area \\(A\\).\nEvents, points, locations\n\nEvent\n\nan occurrence of interest\n\nPoint\n\nany location in study area\n\nEvent location\n\na particular point where an event occurs"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#point-pattern-analysis-definitions-1",
+    "href": "slides/week-03/05-point-patterns.html#point-pattern-analysis-definitions-1",
+    "title": "Point Pattern Basics",
+    "section": "Point Pattern Analysis Definitions",
+    "text": "Point Pattern Analysis Definitions\nRegion: \\(A\\)\n\nMost often planar (two-dimensional Euclidean space)\nOne dimensional applications also possible\nThree-dimensional increasingly popular (space + time)\nPoint processes on networks (non-planar)"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#space-time-point-patterns",
+    "href": "slides/week-03/05-point-patterns.html#space-time-point-patterns",
+    "title": "Point Pattern Basics",
+    "section": "Space-Time Point Patterns",
+    "text": "Space-Time Point Patterns"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#space-time-point-patterns-1",
+    "href": "slides/week-03/05-point-patterns.html#space-time-point-patterns-1",
+    "title": "Point Pattern Basics",
+    "section": "Space-Time Point Patterns",
+    "text": "Space-Time Point Patterns"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#point-patterns-on-networks",
+    "href": "slides/week-03/05-point-patterns.html#point-patterns-on-networks",
+    "title": "Point Pattern Basics",
+    "section": "Point Patterns on Networks",
+    "text": "Point Patterns on Networks"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#point-patterns",
+    "href": "slides/week-03/05-point-patterns.html#point-patterns",
+    "title": "Point Pattern Basics",
+    "section": "Point Patterns",
+    "text": "Point Patterns\nUnmarked Point Patterns\n\nOnly location is recorded\nAttribute is binary (presence, absence)\n\nMarked Point Patterns\n\nLocation is recorded\nNon-binary stochastic attribute\ne.g., sales at a retail store, dbh of tree"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#realizations",
+    "href": "slides/week-03/05-point-patterns.html#realizations",
+    "title": "Point Pattern Basics",
+    "section": "Realizations",
+    "text": "Realizations\nMapped Point Patterns\n\nAll events are recorded and mapped\nComplete enumeration of events\nFull information on the realization from the process\n\nSampled Point Patterns\n\nSample of events are recorded and mapped\nComplete enumeration of events impossible or intractable\nPartial information on the realization from the process\nPresence/“absence” data (ecology, forestry)"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#research-questions-1",
+    "href": "slides/week-03/05-point-patterns.html#research-questions-1",
+    "title": "Point Pattern Basics",
+    "section": "Research Questions",
+    "text": "Research Questions\n\nLocation Only are points randomly located or patterned\nLocation and Value\n\nmarked point pattern\nis combination of location and value random or patterned\n\n\nBoth Cases: What is the Underlying Process?"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#points-on-a-plane-planar-point-pattern-anaysis",
+    "href": "slides/week-03/05-point-patterns.html#points-on-a-plane-planar-point-pattern-anaysis",
+    "title": "Point Pattern Basics",
+    "section": "Points on a Plane (Planar Point Pattern Anaysis)",
+    "text": "Points on a Plane (Planar Point Pattern Anaysis)\nClassic Point Pattern Analysis\n\npoints on an isotropic plane\nno effect of translation and rotation\nclassic examples: tree seedlings, rocks, etc\n\nDistance\n\nno directional effects\nno translational effects\nstraight line distance only"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#events-point-map",
+    "href": "slides/week-03/05-point-patterns.html#events-point-map",
+    "title": "Point Pattern Basics",
+    "section": "Events: Point Map",
+    "text": "Events: Point Map"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#points-in-context",
+    "href": "slides/week-03/05-point-patterns.html#points-in-context",
+    "title": "Point Pattern Basics",
+    "section": "Points in Context",
+    "text": "Points in Context"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#intensity",
+    "href": "slides/week-03/05-point-patterns.html#intensity",
+    "title": "Point Pattern Basics",
+    "section": "Intensity",
+    "text": "Intensity\nFirst Moment\n\nnumber of points \\(N\\), area of study \\(|A|\\)\nintensity: \\(\\lambda = N/|A|\\)\narea depends on bounds, often arbitrary\n\nArtificial Boundaries\n\nbounding box (rectangle, square)\nother (city boundary)"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#bounding-box",
+    "href": "slides/week-03/05-point-patterns.html#bounding-box",
+    "title": "Point Pattern Basics",
+    "section": "Bounding Box",
+    "text": "Bounding Box"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#district-boundary",
+    "href": "slides/week-03/05-point-patterns.html#district-boundary",
+    "title": "Point Pattern Basics",
+    "section": "District Boundary",
+    "text": "District Boundary"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#convex-hull",
+    "href": "slides/week-03/05-point-patterns.html#convex-hull",
+    "title": "Point Pattern Basics",
+    "section": "Convex Hull",
+    "text": "Convex Hull\n\nTightest fit various algorithms\nRescaled Convex Hull (Ripley-Rasson)\n\nadjust to properly reflect spatial domain of point process\nuse centroid of convex hull\nrescale by \\(1/[\\sqrt{(1-m/N)}]\\)\n\\(m\\): number of vertices of convex hull"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#convex-hull-1",
+    "href": "slides/week-03/05-point-patterns.html#convex-hull-1",
+    "title": "Point Pattern Basics",
+    "section": "Convex Hull",
+    "text": "Convex Hull"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#multiple-boundaries",
+    "href": "slides/week-03/05-point-patterns.html#multiple-boundaries",
+    "title": "Point Pattern Basics",
+    "section": "Multiple Boundaries",
+    "text": "Multiple Boundaries"
+  },
+  {
+    "objectID": "slides/week-03/05-point-patterns.html#intensity-estimates",
+    "href": "slides/week-03/05-point-patterns.html#intensity-estimates",
+    "title": "Point Pattern Basics",
+    "section": "Intensity Estimates",
+    "text": "Intensity Estimates\n\n\n\n\nArea\nIntensity\n\n\n\n\\(km^2\\)\n\\(cases/km^2\\)\n\n\nDistrict Boundary\n315.155\n3.29\n\n\nBounding Box\n310.951\n3.33\n\n\nConvex Hull\n229.421\n4.52\n\n\n\n\nN=1036"
+  },
+  {
     "objectID": "slides/week-04/06-centrography.html",
     "href": "slides/week-04/06-centrography.html",
     "title": "Centrography for Point Patterns",
@@ -11,35 +984,35 @@
     "href": "slides/week-04/06-centrography.html#mean-center-x_mcy_mc",
     "title": "Centrography for Point Patterns",
     "section": "Mean Center \\((x_{mc},y_{mc})\\)",
-    "text": "Mean Center \\((x_{mc},y_{mc})\\)\n\\[x_{mc}=\\frac{1}{n} \\sum^n_{i=1}x_i\\] \\[y_{mc}=\\frac{1}{n} \\sum^n_{i=1}y_i\\]\n\nmc = mean_center(pp.points)\nmc\n\narray([52.57166667, 46.17166667])\n\n\n\npp.plot()\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f987ff3d660>"
+    "text": "Mean Center \\((x_{mc},y_{mc})\\)\n\\[x_{mc}=\\frac{1}{n} \\sum^n_{i=1}x_i\\] \\[y_{mc}=\\frac{1}{n} \\sum^n_{i=1}y_i\\]\n\nmc = mean_center(pp.points)\nmc\n\narray([52.57166667, 46.17166667])\n\n\n\npp.plot()\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f614d76a020>"
   },
   {
     "objectID": "slides/week-04/06-centrography.html#weighted-mean-center-x_wmcy_wmc",
     "href": "slides/week-04/06-centrography.html#weighted-mean-center-x_wmcy_wmc",
     "title": "Centrography for Point Patterns",
     "section": "Weighted Mean Center \\((x_{wmc},y_{wmc})\\)",
-    "text": "Weighted Mean Center \\((x_{wmc},y_{wmc})\\)\n\\[x_{wmc}=\\sum^n_{i=1} \\frac{w_i x_i}{\\sum^n_{i=1}w_i}\\] \\[y_{wmc}=\\sum^n_{i=1} \\frac{w_i y_i}{\\sum^n_{i=1}w_i}\\]\nThe Weighted mean center is meant for marked point patterns. Aside from the first argument which is a series of \\((x,y)\\) coordinates in weighted_mean_center function, we need to specify its second argument which is the weight for each event point.\n\nweights = np.arange(12)\nweights\n\narray([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])\n\n\n\nwmc = weighted_mean_center(pp.points, weights)\nwmc\n\narray([60.51681818, 47.76848485])\n\n\n\npp.plot() #use class method \"plot\" to visualize point pattern\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center') \nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f987ff9b310>"
+    "text": "Weighted Mean Center \\((x_{wmc},y_{wmc})\\)\n\\[x_{wmc}=\\sum^n_{i=1} \\frac{w_i x_i}{\\sum^n_{i=1}w_i}\\] \\[y_{wmc}=\\sum^n_{i=1} \\frac{w_i y_i}{\\sum^n_{i=1}w_i}\\]\nThe Weighted mean center is meant for marked point patterns. Aside from the first argument which is a series of \\((x,y)\\) coordinates in weighted_mean_center function, we need to specify its second argument which is the weight for each event point.\n\nweights = np.arange(12)\nweights\n\narray([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])\n\n\n\nwmc = weighted_mean_center(pp.points, weights)\nwmc\n\narray([60.51681818, 47.76848485])\n\n\n\npp.plot() #use class method \"plot\" to visualize point pattern\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center') \nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f614d7c7df0>"
   },
   {
     "objectID": "slides/week-04/06-centrography.html#manhattan-median-x_mmy_mm",
     "href": "slides/week-04/06-centrography.html#manhattan-median-x_mmy_mm",
     "title": "Centrography for Point Patterns",
     "section": "Manhattan Median \\((x_{mm},y_{mm})\\)",
-    "text": "Manhattan Median \\((x_{mm},y_{mm})\\)\n\\[min  f(x_{mm},y_{mm})= \\sum^n_{i=1}(|x_i-x_{mm}|+|y_i-y_{mm}|)\\]\nThe Manhattan median is the location which minimizes the absolute distance to all the event points. It is an extension of the median measure in one-dimensional space to two-dimensional space. Since in one-dimensional space, a median is the number separating the higher half of a dataset from the lower half, we define the Manhattan median as a tuple whose first element is the median of \\(x\\) coordinates and second element is the median of \\(y\\) coordinates.\nThough Manhattan median can be found very quickly, it is not unique if you have even number of points. In this case, pysal handles the Manhattan median the same way as numpy.median: return the average of the two middle values.\n\n#get the number of points in point pattern \"pp\"\npp.n\n\n12\n\n\n\n#Manhattan Median is not unique for \"pp\"\nmm = manhattan_median(pp.points)\nmm\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/pointpats/centrography.py:208: UserWarning: Manhattan Median is not unique for even point patterns.\n  warnings.warn(s)\n\n\narray([59.825, 41.23 ])\n\n\n\npp.plot()\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f987fe38a90>"
+    "text": "Manhattan Median \\((x_{mm},y_{mm})\\)\n\\[min  f(x_{mm},y_{mm})= \\sum^n_{i=1}(|x_i-x_{mm}|+|y_i-y_{mm}|)\\]\nThe Manhattan median is the location which minimizes the absolute distance to all the event points. It is an extension of the median measure in one-dimensional space to two-dimensional space. Since in one-dimensional space, a median is the number separating the higher half of a dataset from the lower half, we define the Manhattan median as a tuple whose first element is the median of \\(x\\) coordinates and second element is the median of \\(y\\) coordinates.\nThough Manhattan median can be found very quickly, it is not unique if you have even number of points. In this case, pysal handles the Manhattan median the same way as numpy.median: return the average of the two middle values.\n\n#get the number of points in point pattern \"pp\"\npp.n\n\n12\n\n\n\n#Manhattan Median is not unique for \"pp\"\nmm = manhattan_median(pp.points)\nmm\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/pointpats/centrography.py:208: UserWarning: Manhattan Median is not unique for even point patterns.\n  warnings.warn(s)\n\n\narray([59.825, 41.23 ])\n\n\n\npp.plot()\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f614d660f70>"
   },
   {
     "objectID": "slides/week-04/06-centrography.html#euclidean-median-x_emy_em",
     "href": "slides/week-04/06-centrography.html#euclidean-median-x_emy_em",
     "title": "Centrography for Point Patterns",
     "section": "Euclidean Median \\((x_{em},y_{em})\\)",
-    "text": "Euclidean Median \\((x_{em},y_{em})\\)\n\\[min  f(x_{em},y_{em})= \\sum^n_{i=1} \\sqrt{(x_i-x_{em})^2+(y_i-y_{em})^2}\\]\nThe Euclidean Median is the location from which the sum of the Euclidean distances to all points in a distribution is a minimum. It is an optimization problem and very important for more general location allocation problems. There is no closed form solution. We can use first iterative algorithm (Kuhn and Kuenne, 1962) to approximate Euclidean Median.\nBelow, we define a function named median_center with the first argument points a series of \\((x,y)\\) coordinates and the second argument crit the convergence criterion.\n\ndef median_center(points, crit=0.0001):\n    points = np.asarray(points)\n    x0, y0 = points.mean(axis=0)\n    dx = np.inf\n    dy = np.inf\n    iteration = 0\n    while np.abs(dx) > crit or np.abs(dy) > crit:\n        xd = points[:, 0] - x0\n        yd = points[:, 1] - y0\n        d = np.sqrt(xd*xd + yd*yd)\n        w = 1./d\n        w = w / w.sum()\n        x1 = w * points[:, 0]\n        x1 = x1.sum()\n        y1 = w * points[:, 1]\n        y1 = y1.sum()\n        dx = x1 - x0\n        dy = y1 - y0\n        iteration +=1 \n        print(x0, x1, dx, dy, d.sum(), iteration)\n        x0 = x1\n        y0 = y1\n               \n    return x1, y1\n\n\nmedian_center(pp.points, crit=.0001)\n\n52.57166666666668 53.178128280602785 0.606461613936105 -0.9290354286335258 466.24479074356606 1\n53.178128280602785 53.56643624463614 0.388307964033352 -0.4199402653980684 465.9311160558993 2\n53.56643624463614 53.80720376806838 0.24076752343224683 -0.1974862190386233 465.84555867343346 3\n53.80720376806838 53.95348076207835 0.1462769940099662 -0.09642613786996179 465.8197750145871 4\n53.95348076207835 54.04117257066307 0.08769180858472225 -0.04872250646902643 465.8115372002813 5\n54.04117257066307 54.09327726928146 0.05210469861838618 -0.025370793047137852 465.80882301324334 6\n54.09327726928146 54.12405125525861 0.030773985977148755 -0.013552246205456697 465.8079149010591 7\n54.12405125525861 54.14215248769505 0.018101232436443127 -0.00739190209046825 465.8076087750224 8\n54.14215248769505 54.15276956049696 0.010617072801906602 -0.0040992658298719675 465.8075052025632 9\n54.15276956049696 54.15898467957115 0.0062151190741914775 -0.0023026998071102867 465.80747009858044 10\n54.15898467957115 54.16261796248172 0.0036332829105703013 -0.0013061853179365812 465.80745819050844 11\n54.16261796248172 54.16473989468326 0.002121932201539778 -0.0007463404183738476 465.80745414933307 12\n54.16473989468326 54.165978319450346 0.00123842476708802 -0.00042875101595285514 465.80745277762423 13\n54.165978319450346 54.166700756153695 0.0007224367033487056 -0.00024727631074483725 465.80745231197506 14\n54.166700756153695 54.16712204754273 0.0004212913890384584 -0.00014302182778891392 465.8074521538953 15\n54.16712204754273 54.16736766581608 0.00024561827334679265 -8.289363293556562e-05 465.8074521002288 16\n54.16736766581608 54.167510839857464 0.0001431740413835314 -4.8115880247223686e-05 465.80745208200943 17\n54.167510839857464 54.167594287646125 8.344778866131719e-05 -2.7959041396741213e-05 465.807452075824 18\n\n\n(54.167594287646125, 44.42430865883205)\n\n\nAfter 18 iterations, the convergence criterion is reached. The Euclidean Median is \\((54.167594287646125,44.424308658832047)\\).\nWe can also call the function euclidean_median in pysal to calculate the Euclidean Median.\n\nem = euclidean_median(pp.points)\nem\n\narray([54.16770671, 44.4242589 ])\n\n\nThe two results we get from euclidean_median function in pysal and the median_center function we define here are very much the same.\n\npp.plot()\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f987fe1e0b0>"
+    "text": "Euclidean Median \\((x_{em},y_{em})\\)\n\\[min  f(x_{em},y_{em})= \\sum^n_{i=1} \\sqrt{(x_i-x_{em})^2+(y_i-y_{em})^2}\\]\nThe Euclidean Median is the location from which the sum of the Euclidean distances to all points in a distribution is a minimum. It is an optimization problem and very important for more general location allocation problems. There is no closed form solution. We can use first iterative algorithm (Kuhn and Kuenne, 1962) to approximate Euclidean Median.\nBelow, we define a function named median_center with the first argument points a series of \\((x,y)\\) coordinates and the second argument crit the convergence criterion.\n\ndef median_center(points, crit=0.0001):\n    points = np.asarray(points)\n    x0, y0 = points.mean(axis=0)\n    dx = np.inf\n    dy = np.inf\n    iteration = 0\n    while np.abs(dx) > crit or np.abs(dy) > crit:\n        xd = points[:, 0] - x0\n        yd = points[:, 1] - y0\n        d = np.sqrt(xd*xd + yd*yd)\n        w = 1./d\n        w = w / w.sum()\n        x1 = w * points[:, 0]\n        x1 = x1.sum()\n        y1 = w * points[:, 1]\n        y1 = y1.sum()\n        dx = x1 - x0\n        dy = y1 - y0\n        iteration +=1 \n        print(x0, x1, dx, dy, d.sum(), iteration)\n        x0 = x1\n        y0 = y1\n               \n    return x1, y1\n\n\nmedian_center(pp.points, crit=.0001)\n\n52.57166666666668 53.178128280602785 0.606461613936105 -0.9290354286335258 466.24479074356606 1\n53.178128280602785 53.56643624463614 0.388307964033352 -0.4199402653980684 465.9311160558993 2\n53.56643624463614 53.80720376806838 0.24076752343224683 -0.1974862190386233 465.84555867343346 3\n53.80720376806838 53.95348076207835 0.1462769940099662 -0.09642613786996179 465.8197750145871 4\n53.95348076207835 54.04117257066307 0.08769180858472225 -0.04872250646902643 465.8115372002813 5\n54.04117257066307 54.09327726928146 0.05210469861838618 -0.025370793047137852 465.80882301324334 6\n54.09327726928146 54.12405125525861 0.030773985977148755 -0.013552246205456697 465.8079149010591 7\n54.12405125525861 54.14215248769505 0.018101232436443127 -0.00739190209046825 465.8076087750224 8\n54.14215248769505 54.15276956049696 0.010617072801906602 -0.0040992658298719675 465.8075052025632 9\n54.15276956049696 54.15898467957115 0.0062151190741914775 -0.0023026998071102867 465.80747009858044 10\n54.15898467957115 54.16261796248172 0.0036332829105703013 -0.0013061853179365812 465.80745819050844 11\n54.16261796248172 54.16473989468326 0.002121932201539778 -0.0007463404183738476 465.80745414933307 12\n54.16473989468326 54.165978319450346 0.00123842476708802 -0.00042875101595285514 465.80745277762423 13\n54.165978319450346 54.166700756153695 0.0007224367033487056 -0.00024727631074483725 465.80745231197506 14\n54.166700756153695 54.16712204754273 0.0004212913890384584 -0.00014302182778891392 465.8074521538953 15\n54.16712204754273 54.16736766581608 0.00024561827334679265 -8.289363293556562e-05 465.8074521002288 16\n54.16736766581608 54.167510839857464 0.0001431740413835314 -4.8115880247223686e-05 465.80745208200943 17\n54.167510839857464 54.167594287646125 8.344778866131719e-05 -2.7959041396741213e-05 465.807452075824 18\n\n\n(54.167594287646125, 44.42430865883205)\n\n\nAfter 18 iterations, the convergence criterion is reached. The Euclidean Median is \\((54.167594287646125,44.424308658832047)\\).\nWe can also call the function euclidean_median in pysal to calculate the Euclidean Median.\n\nem = euclidean_median(pp.points)\nem\n\narray([54.16770671, 44.4242589 ])\n\n\nThe two results we get from euclidean_median function in pysal and the median_center function we define here are very much the same.\n\npp.plot()\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f614d6e3580>"
   },
   {
     "objectID": "slides/week-04/06-centrography.html#standard-distance-standard-distance-circle",
     "href": "slides/week-04/06-centrography.html#standard-distance-standard-distance-circle",
     "title": "Centrography for Point Patterns",
     "section": "Standard Distance & Standard Distance Circle",
-    "text": "Standard Distance & Standard Distance Circle\n\\[SD = \\displaystyle \\sqrt{\\frac{\\sum^n_{i=1}(x_i-x_{m})^2}{n} + \\frac{\\sum^n_{i=1}(y_i-y_{m})^2}{n}}\\]\nThe Standard distance is closely related to the usual definition of the standard deviation of a data set, and it provides a measure of how dispersed the events are around their mean center \\((x_m,y_m)\\). Taken together, these measurements can be used to plot a summary circle (standard distance circle) for the point pattern, centered at \\((x_m,y_m)\\) with radius \\(SD\\), as shown below.\n\nstdd = std_distance(pp.points)\nstdd\n\n40.14980648908671\n\n\nPlot mean center as well as the standard distance circle.\n\ncircle1=plt.Circle((mc[0], mc[1]),stdd,color='r')\nax = pp.plot(get_ax=True, title='Standard Distance Circle')\nax.add_artist(circle1)\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nax.set_aspect('equal')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f987fdf5de0>\n\n\n\n\n\nFrom the above figure, we can observe that there are five points outside the standard distance circle which are potential outliers."
+    "text": "Standard Distance & Standard Distance Circle\n\\[SD = \\displaystyle \\sqrt{\\frac{\\sum^n_{i=1}(x_i-x_{m})^2}{n} + \\frac{\\sum^n_{i=1}(y_i-y_{m})^2}{n}}\\]\nThe Standard distance is closely related to the usual definition of the standard deviation of a data set, and it provides a measure of how dispersed the events are around their mean center \\((x_m,y_m)\\). Taken together, these measurements can be used to plot a summary circle (standard distance circle) for the point pattern, centered at \\((x_m,y_m)\\) with radius \\(SD\\), as shown below.\n\nstdd = std_distance(pp.points)\nstdd\n\n40.14980648908671\n\n\nPlot mean center as well as the standard distance circle.\n\ncircle1=plt.Circle((mc[0], mc[1]),stdd,color='r')\nax = pp.plot(get_ax=True, title='Standard Distance Circle')\nax.add_artist(circle1)\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nax.set_aspect('equal')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f614d59e020>\n\n\n\n\n\nFrom the above figure, we can observe that there are five points outside the standard distance circle which are potential outliers."
   },
   {
     "objectID": "slides/week-04/06-centrography.html#standard-deviational-ellipse",
@@ -53,28 +1026,28 @@
     "href": "slides/week-04/06-centrography.html#convex-hull",
     "title": "Centrography for Point Patterns",
     "section": "Convex Hull",
-    "text": "Convex Hull\nThe convex hull of a point pattern pp is the smallest convex set that contains pp. We can call function hull to caculate the convex hull.\n\nhull(pp.points)\n\narray([[31.01, 81.21],\n       [ 8.23, 39.93],\n       [ 9.47, 31.02],\n       [22.52, 22.39],\n       [54.46,  8.48],\n       [79.26,  7.68],\n       [89.78, 42.53],\n       [98.73, 77.17],\n       [65.19, 92.08]])\n\n\nBy specifying “hull” argument True in PointPattern class method plot, we can easily plot convex hull of the point pattern.\n\npp.plot(title='Centers', hull=True ) #plot point pattern \"pp\" as well as its convex hull\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f987fbcbe20>"
+    "text": "Convex Hull\nThe convex hull of a point pattern pp is the smallest convex set that contains pp. We can call function hull to caculate the convex hull.\n\nhull(pp.points)\n\narray([[31.01, 81.21],\n       [ 8.23, 39.93],\n       [ 9.47, 31.02],\n       [22.52, 22.39],\n       [54.46,  8.48],\n       [79.26,  7.68],\n       [89.78, 42.53],\n       [98.73, 77.17],\n       [65.19, 92.08]])\n\n\nBy specifying “hull” argument True in PointPattern class method plot, we can easily plot convex hull of the point pattern.\n\npp.plot(title='Centers', hull=True ) #plot point pattern \"pp\" as well as its convex hull\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f614d409d20>"
   },
   {
     "objectID": "slides/week-04/06-centrography.html#minimum-bounding-rectangle",
     "href": "slides/week-04/06-centrography.html#minimum-bounding-rectangle",
     "title": "Centrography for Point Patterns",
     "section": "Minimum Bounding Rectangle",
-    "text": "Minimum Bounding Rectangle\nMinimum Bounding Rectangle (Box) is the same as the minimum bounding Rectangle of its convex hull. Thus, it is almost always bigger than convex hull.\nWe can call mbr function to calculate the leftmost, downmost, rightmost, and upmost value of the vertices of minimum bounding rectangle.\n\nmbr(pp.points)\n\n/tmp/ipykernel_831773/2243439823.py:1: FutureWarning: This function will be deprecated in the next release of pointpats.\n  mbr(pp.points)\n\n\n(8.23, 7.68, 98.73, 92.08)\n\n\nThus, four vertices of the minimum bounding rectangle is \\((8.23,7.68),(98.73,7.68),(98.73,92.08),(8.23,92.08)\\).\n\npp.plot(title='Centers', window=True ) #plot point pattern \"pp\" as well as its Minimum Bounding Rectangle\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f987fae7b50>\n\n\n\n\n\n\npp.plot(title='Centers',  hull=True , window=True )#plot point pattern \"pp\", convex hull, and Minimum Bounding Rectangle\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f987fb7b1f0>\n\n\n\n\n\nPlot Standard Distance Circle and Convex Hull.\n\ncircle1=plt.Circle((mc[0], mc[1]),stdd,color='r',alpha=0.2)\nax = pp.plot(get_ax=True, title='Standard Distance Circle', hull=True)\nax.add_artist(circle1)\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nax.set_aspect('equal')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f987f565a20>"
+    "text": "Minimum Bounding Rectangle\nMinimum Bounding Rectangle (Box) is the same as the minimum bounding Rectangle of its convex hull. Thus, it is almost always bigger than convex hull.\nWe can call mbr function to calculate the leftmost, downmost, rightmost, and upmost value of the vertices of minimum bounding rectangle.\n\nmbr(pp.points)\n\n/tmp/ipykernel_4165363/2243439823.py:1: FutureWarning: This function will be deprecated in the next release of pointpats.\n  mbr(pp.points)\n\n\n(8.23, 7.68, 98.73, 92.08)\n\n\nThus, four vertices of the minimum bounding rectangle is \\((8.23,7.68),(98.73,7.68),(98.73,92.08),(8.23,92.08)\\).\n\npp.plot(title='Centers', window=True ) #plot point pattern \"pp\" as well as its Minimum Bounding Rectangle\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f614d3f3100>\n\n\n\n\n\n\npp.plot(title='Centers',  hull=True , window=True )#plot point pattern \"pp\", convex hull, and Minimum Bounding Rectangle\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f614d3965c0>\n\n\n\n\n\nPlot Standard Distance Circle and Convex Hull.\n\ncircle1=plt.Circle((mc[0], mc[1]),stdd,color='r',alpha=0.2)\nax = pp.plot(get_ax=True, title='Standard Distance Circle', hull=True)\nax.add_artist(circle1)\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nax.set_aspect('equal')\nplt.legend(numpoints=1)\n\n<matplotlib.legend.Legend at 0x7f614d303a00>"
   },
   {
     "objectID": "slides/week-04/06-centrography.html#simulate-a-100-point-dataset-within-va-state-border-from-a-csr-complete-spatial-randomness-process.",
     "href": "slides/week-04/06-centrography.html#simulate-a-100-point-dataset-within-va-state-border-from-a-csr-complete-spatial-randomness-process.",
     "title": "Centrography for Point Patterns",
     "section": "Simulate a 100-point dataset within VA state border from a CSR (complete spatial randomness) process.",
-    "text": "Simulate a 100-point dataset within VA state border from a CSR (complete spatial randomness) process.\n\npp = csr(as_window(state), 100, 1, asPP=True).realizations[0]\npp.plot(window=True)\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n\n\n\n\n\n\npp.plot(window=True, hull=True)\n\n\n\n\n\nmc = mean_center(pp.points)\nmm = manhattan_median(pp.points)\nem = euclidean_median(pp.points)\npp.plot(title='Centers',  hull=True , window=True )#plot point pattern \"pp\", convex hull, and Minimum Bounding Rectangle\nplt.plot(mc[0], mc[1], 'c^', label='Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/pointpats/centrography.py:208: UserWarning: Manhattan Median is not unique for even point patterns.\n  warnings.warn(s)\n\n\n<matplotlib.legend.Legend at 0x7f987faa2d10>\n\n\n\n\n\nPlot Standard Distance Circle of the simulated point pattern.\n\nsx, sy, theta = ellipse(pp.points)\nsx, sy, theta\ntheta_degree = np.degrees(theta) #need degree of rotation to plot the ellipse\nfrom matplotlib.patches import Ellipse\nfrom pylab import figure, show,rand\nfig = figure()\n#ax = fig.add_subplot(111, aspect='equal')\ne = Ellipse(xy=mean_center(pp.points), width=sx*2, height=sy*2, angle=-theta_degree)\nax = pp.plot(get_ax=True, title='Standard Deviational Ellipse')\nax.add_artist(e)\ne.set_clip_box(ax.bbox)\ne.set_facecolor([0.8,0,0])\ne.set_edgecolor([1,0,0])\nax.set_xlim(300000,1000000)\nax.set_ylim(4050000,4350000)\n#ax.set_aspect('equal')\nplt.plot(mc[0], mc[1], 'c^', label='Mean Center')\nplt.legend(numpoints=1)\nshow()\n\n<Figure size 672x480 with 0 Axes>"
+    "text": "Simulate a 100-point dataset within VA state border from a CSR (complete spatial randomness) process.\n\npp = csr(as_window(state), 100, 1, asPP=True).realizations[0]\npp.plot(window=True)\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n\n\n\n\n\n\npp.plot(window=True, hull=True)\n\n\n\n\n\nmc = mean_center(pp.points)\nmm = manhattan_median(pp.points)\nem = euclidean_median(pp.points)\npp.plot(title='Centers',  hull=True , window=True )#plot point pattern \"pp\", convex hull, and Minimum Bounding Rectangle\nplt.plot(mc[0], mc[1], 'c^', label='Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/pointpats/centrography.py:208: UserWarning: Manhattan Median is not unique for even point patterns.\n  warnings.warn(s)\n\n\n<matplotlib.legend.Legend at 0x7f615583c940>\n\n\n\n\n\nPlot Standard Distance Circle of the simulated point pattern.\n\nsx, sy, theta = ellipse(pp.points)\nsx, sy, theta\ntheta_degree = np.degrees(theta) #need degree of rotation to plot the ellipse\nfrom matplotlib.patches import Ellipse\nfrom pylab import figure, show,rand\nfig = figure()\n#ax = fig.add_subplot(111, aspect='equal')\ne = Ellipse(xy=mean_center(pp.points), width=sx*2, height=sy*2, angle=-theta_degree)\nax = pp.plot(get_ax=True, title='Standard Deviational Ellipse')\nax.add_artist(e)\ne.set_clip_box(ax.bbox)\ne.set_facecolor([0.8,0,0])\ne.set_edgecolor([1,0,0])\nax.set_xlim(300000,1000000)\nax.set_ylim(4050000,4350000)\n#ax.set_aspect('equal')\nplt.plot(mc[0], mc[1], 'c^', label='Mean Center')\nplt.legend(numpoints=1)\nshow()\n\n<Figure size 672x480 with 0 Axes>"
   },
   {
     "objectID": "slides/week-04/06-centrography.html#simulate-a-500-point-dataset-within-va-state-border-from-a-csr-complete-spatial-randomness-process.",
     "href": "slides/week-04/06-centrography.html#simulate-a-500-point-dataset-within-va-state-border-from-a-csr-complete-spatial-randomness-process.",
     "title": "Centrography for Point Patterns",
     "section": "Simulate a 500-point dataset within VA state border from a CSR (complete spatial randomness) process.",
-    "text": "Simulate a 500-point dataset within VA state border from a CSR (complete spatial randomness) process.\n\npp = csr(as_window(state), 500, 1, asPP=True).realizations[0]\npp.plot(window=True)\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n\n\n\n\n\n\npp.plot(window=True, hull=True)\n\n\n\n\n\nmc = mean_center(pp.points)\nmm = manhattan_median(pp.points)\nem = euclidean_median(pp.points)\npp.plot(title='Centers',  hull=True , window=True )#plot point pattern \"pp\", convex hull, and Minimum Bounding Rectangle\nplt.plot(mc[0], mc[1], 'c^', label='Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/pointpats/centrography.py:208: UserWarning: Manhattan Median is not unique for even point patterns.\n  warnings.warn(s)\n\n\n<matplotlib.legend.Legend at 0x7f987f80faf0>\n\n\n\n\n\n\nsx, sy, theta = ellipse(pp.points)\nsx, sy, theta\ntheta_degree = np.degrees(theta) #need degree of rotation to plot the ellipse\nfrom matplotlib.patches import Ellipse\nfrom pylab import figure, show,rand\nfig = figure()\n#ax = fig.add_subplot(111, aspect='equal')\ne = Ellipse(xy=mean_center(pp.points), width=sx*2, height=sy*2, angle=-theta_degree)\nax = pp.plot(get_ax=True, title='Standard Deviational Ellipse')\nax.add_artist(e)\ne.set_clip_box(ax.bbox)\ne.set_facecolor([0.8,0,0])\ne.set_edgecolor([1,0,0])\nax.set_xlim(300000,1000000)\nax.set_ylim(4050000,4350000)\n#ax.set_aspect('equal')\nplt.plot(mc[0], mc[1], 'c^', label='Mean Center')\nplt.legend(numpoints=1)\nshow()\n\n<Figure size 672x480 with 0 Axes>\n\n\n\n\n\nIf we calculate the Euclidean distances between every event point and Mean Center (Euclidean Median), and sum them up, we can see that Euclidean Median is the optimal point in iterms of minimizing the Euclidean distances to all the event points.\n\nfrom pointpats import dtot\nprint(dtot(mc, pp.points))\nprint(dtot(em, pp.points))\nprint(dtot(mc, pp.points) > dtot(em, pp.points))\n\n74417063.1370569\n74123909.89396742\nTrue"
+    "text": "Simulate a 500-point dataset within VA state border from a CSR (complete spatial randomness) process.\n\npp = csr(as_window(state), 500, 1, asPP=True).realizations[0]\npp.plot(window=True)\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n\n\n\n\n\n\npp.plot(window=True, hull=True)\n\n\n\n\n\nmc = mean_center(pp.points)\nmm = manhattan_median(pp.points)\nem = euclidean_median(pp.points)\npp.plot(title='Centers',  hull=True , window=True )#plot point pattern \"pp\", convex hull, and Minimum Bounding Rectangle\nplt.plot(mc[0], mc[1], 'c^', label='Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/pointpats/centrography.py:208: UserWarning: Manhattan Median is not unique for even point patterns.\n  warnings.warn(s)\n\n\n<matplotlib.legend.Legend at 0x7f614d05ba00>\n\n\n\n\n\n\nsx, sy, theta = ellipse(pp.points)\nsx, sy, theta\ntheta_degree = np.degrees(theta) #need degree of rotation to plot the ellipse\nfrom matplotlib.patches import Ellipse\nfrom pylab import figure, show,rand\nfig = figure()\n#ax = fig.add_subplot(111, aspect='equal')\ne = Ellipse(xy=mean_center(pp.points), width=sx*2, height=sy*2, angle=-theta_degree)\nax = pp.plot(get_ax=True, title='Standard Deviational Ellipse')\nax.add_artist(e)\ne.set_clip_box(ax.bbox)\ne.set_facecolor([0.8,0,0])\ne.set_edgecolor([1,0,0])\nax.set_xlim(300000,1000000)\nax.set_ylim(4050000,4350000)\n#ax.set_aspect('equal')\nplt.plot(mc[0], mc[1], 'c^', label='Mean Center')\nplt.legend(numpoints=1)\nshow()\n\n<Figure size 672x480 with 0 Axes>\n\n\n\n\n\nIf we calculate the Euclidean distances between every event point and Mean Center (Euclidean Median), and sum them up, we can see that Euclidean Median is the optimal point in iterms of minimizing the Euclidean distances to all the event points.\n\nfrom pointpats import dtot\nprint(dtot(mc, pp.points))\nprint(dtot(em, pp.points))\nprint(dtot(mc, pp.points) > dtot(em, pp.points))\n\n73063247.16322914\n72846989.47744936\nTrue"
   },
   {
     "objectID": "slides/week-04/07-point-processes.html",
@@ -259,6 +1232,41 @@
     "text": "CSR n=20\n\ndelta = 0.1\nxy = np.random.rand(20,2)\ndf = pd.DataFrame(data=xy, columns=['x', 'y'])\nsns.scatterplot(x='x', y='y', data=df);"
   },
   {
+    "objectID": "slides/week-05/0216_nearest_neighbor.html",
+    "href": "slides/week-05/0216_nearest_neighbor.html",
+    "title": "Nearest Neighbor Methods",
+    "section": "",
+    "text": "Now that we have been introduced to the different statistical models than are used to represent point processes, we turn to the methods that are used to link observed point patterns back to the process that generated the pattern.\nMore specifically, the challenge that we face is as follows. Given an observed point pattern, we wish to make inferences about the process that generated the observed pattern.\nThe general approach that is used is to construct measures that characterise the observed point pattern, and then compare these against the proporties of the theoretical process models we explored previously.\nFor example, if we assume that the underlying process is CSR, we know what kinds of properties the empirical patterns from such a process should exhibit. The critical thing to keep in mind is that we never actually see the underlying process - we only see outcomes of the process (i.e., the pattern).\nThis raises a number of challenges that we will need to address later on, but for now we are going to build up an inituition of the general strategy for analyzing point patterns."
+  },
+  {
+    "objectID": "slides/week-05/0216_nearest_neighbor.html#example-patterns",
+    "href": "slides/week-05/0216_nearest_neighbor.html#example-patterns",
+    "title": "Nearest Neighbor Methods",
+    "section": "Example Patterns",
+    "text": "Example Patterns\nTo begin we are going to create two different point patterns, one from a CSR process and one from a clustered process. We will use these two patterns to introduce the different statistical methods used to analyze the patterns. Here we are in the rare circumstance in which we actually know what process generated the pattern.\n\nCSR n=60\n\nimport numpy as np\nimport pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nnp.random.seed(12345)\nn = 60\nxy = np.random.rand(60,2)\ndf = pd.DataFrame(data=xy, columns=['x', 'y'])\nsns.scatterplot(x='x', y='y', data=df);\n\n\n\n\n\nimport pointpats as pp\n\n\ncsr = pp.PointPattern(xy)\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n\n\n\ncsr.summary()\n\nPoint Pattern\n60 points\nBounding rectangle [(0.00838829794155349,0.024676210429265266), (0.9940145858999619,0.9613067360728214)]\nArea of window: 0.9231676681785911\nIntensity estimate for window: 64.99361066054225\n          x         y\n0  0.929616  0.316376\n1  0.183919  0.204560\n2  0.567725  0.595545\n3  0.964515  0.653177\n4  0.748907  0.653570\n\n\n\nw = pp.Window([(0,0), (0,1), (1,1), (1,0), (0,0)])\ndraw = pp.PoissonClusterPointProcess(w, n, 2, 0.05, 1, asPP=True, conditioning=False)\ndraw.realizations[0].plot(window=True, title='Contagion Point Process (2 parents)')\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n\n\n\n\n\n\nclustered = draw.realizations[0]\n\n\nclustered.summary()\n\nPoint Pattern\n60 points\nBounding rectangle [(0.47331760265312733,0.023178703349462502), (0.9696584457277277,0.6150208352748628)]\nArea of window: 1.0\nIntensity estimate for window: 60.0\n          x         y\n0  0.513060  0.541971\n1  0.473318  0.578385\n2  0.508373  0.536200\n3  0.881716  0.060328\n4  0.894221  0.059273"
+  },
+  {
+    "objectID": "slides/week-05/0216_nearest_neighbor.html#quadrat-statistics",
+    "href": "slides/week-05/0216_nearest_neighbor.html#quadrat-statistics",
+    "title": "Nearest Neighbor Methods",
+    "section": "Quadrat Statistics",
+    "text": "Quadrat Statistics\n\nimport pointpats.quadrat_statistics as qs\n\n\ncsr_qr = qs.QStatistic(csr, shape='rectangle', nx=3, ny=3)\ncsr_qr.plot()\n\n\n\n\n\ncsr_qr.chi2\n\n10.8\n\n\n\ncsr_qr.chi2_pvalue\n\n0.21329101843394052\n\n\n\nclustered_qr = qs.QStatistic(clustered, shape='rectangle', nx=3, ny=3)\nclustered_qr.plot()\n\n\n\n\n\nclustered_qr.chi2\n\n209.99999999999994\n\n\n\nclustered_qr.chi2_pvalue\n\n4.976940117448032e-41"
+  },
+  {
+    "objectID": "slides/week-05/0216_nearest_neighbor.html#nearest-neighbor-distances",
+    "href": "slides/week-05/0216_nearest_neighbor.html#nearest-neighbor-distances",
+    "title": "Nearest Neighbor Methods",
+    "section": "Nearest Neighbor Distances",
+    "text": "Nearest Neighbor Distances\n\nplt.scatter(csr.points.x, csr.points.y);\n\n\n\n\n\nimport networkx as nx\n\n\nG = nx.DiGraph()\nfor idx, point in enumerate(csr.points.values):\n    G.add_node(idx, pos=point)\n    \n\n\npos = nx.get_node_attributes(G, 'pos')\nnx.draw(G, pos, node_size=2)\n\n\n\n\n\nnidx, nnd = csr.knn(1) # here we have the indices of the nearest neighbors (nidx) and the distances (nnd)\n\n\nfor idx, neighbor in enumerate(nidx):\n    edge = (idx, neighbor[0])\n    G.add_edges_from([edge])\n    \n\n\npos = nx.get_node_attributes(G, 'pos')\nnx.draw(G, pos, node_size=2)\n\n\n\n\nHere we draw an arrow towards the nearest neighbor for a given observation.\nIn some cases, an observation is also the nearest neighbor to its nearest neighbor, or so-called “mutual nearest neighbors”. These pairs would appear at the the end of a segment with arrows on both ends.\nIf we look in the extreme northwest three points, we see one pair of mutual nearest neighbors, while the third point is not a mutual nearest neighbor.\nIt is also possible for a point to be a nearest neighbor to more than a single point, as is also seen in this case.\nThe nearest neighbor distances are the lengths of these segments.\n\nMean Nearest Neighbor Distance\nOur first distance based statistic was suggested by Clark and Evans (1954) as the average nearest neighbor distances:\n\\[\\bar{d}_{min} = \\frac{1}{n} \\sum_{i} d_{i, min} \\]\nwhere \\(d_{i, min}\\) is the nearest neighbor distance for observation \\(i\\), and \\(n\\) is the number of observations.\nUnder a CSR process, the expected value of this statistic is:\n\\[E[\\bar{d}_{min}] = \\frac{1}{2 \\sqrt{\\lambda}}\\]\nThe logic of the statistic is to compare the observed mean nearest neighbor distance to this expectation forming their ratio:\n\\[R = \\frac{\\bar{d}_{min}}{\\frac{1}{2 \\sqrt{\\lambda}}} = 2 \\bar{d}_{min} \\sqrt{\\lambda}\\]\nValues of \\(R<1\\) are indicative of a tendancy towards clustering since the observed nearest neighbor distances are smaller than expected under CSR.\nValues of \\(R>1\\) are indicative of a uniform or dispersed pattern.\n\nnnd.mean() # the mean nearest neighbor distance\n\n0.07360281110243255\n\n\n\ncsr.lambda_window # the intensity using the window for the point pattern\n\n64.99361066054225\n\n\n\ndmin = nnd.mean()\nlam = csr.lambda_window\nR = 2 * dmin * lam**(1/2)\nR\n\n1.1867513365512292\n\n\nLet’s compare this to the same statistic based on the mean nearest neighbor distance for the clustered pattern:\n\nnidx, nnd = clustered.knn(1) # here we have the indices of the nearest neighbors (nidx) and the distances (nnd)\n\n\ndmin = nnd.mean()\nlam = clustered.lambda_window\nR = 2 * dmin * lam**(1/2)\nR\n\n0.13087134840769868\n\n\nSo we see that the \\(R\\) value for the clustered pattern is much below 1, while the R value for the CSR pattern is slightly over 1.\nWhat we would like to know is if these values are significantly different from what we would expect if the underlying process that generated the patterns was CSR?\nOne approach is to use theoretical results on the distribution for the \\(R\\) statistic from Petrere (1985). The expected value of \\(R\\) is \\(E[R]=1\\). The variance of the \\(R\\) statistic is: \\[ \\sigma^2_R = \\frac{0.2732}{n}\\]\n\nimport scipy.stats\ndef R_test(pattern):\n    nidx, nnd = pattern.knn(1) # here we have the indices of the nearest neighbors (nidx) and the distances (nnd)\n    lam = pattern.lambda_window\n    R = 2 * nnd.mean() * lam**(1/2)\n    n = nnd.shape[0]\n    var = 0.2732 / n\n    se = var**(1/2)\n    stat = (R - 1 )/ se\n    p_value = scipy.stats.norm.sf(abs(stat)) * 2\n    return R, stat, p_value\n\n\nR_test(csr)\n\n(1.1867513365512292, 2.7675724348891184, 0.005647549379017388)\n\n\n\nR_test(clustered)\n\n(0.13087134840769868, -12.880103258909552, 5.825756575218341e-38)\n\n\n\n\nInference via simulation\n\nimport pointpats\nimport numpy\nsamples = pointpats.PoissonPointProcess(csr.window, n, 99, asPP=True)\n\nr_tests = np.array([R_test(samples.realizations[k]) for k in samples.realizations])\n\nr_tests\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n\n\narray([[ 9.81105197e-01, -2.80012645e-01,  7.79467803e-01],\n       [ 9.28415089e-01, -1.06085681e+00,  2.88754981e-01],\n       [ 1.05435206e+00,  8.05473519e-01,  4.20546481e-01],\n       [ 1.11821360e+00,  1.75187335e+00,  7.97955886e-02],\n       [ 1.12387424e+00,  1.83576157e+00,  6.63929272e-02],\n       [ 1.16724422e+00,  2.47848561e+00,  1.31941433e-02],\n       [ 1.10700813e+00,  1.58581325e+00,  1.12781678e-01],\n       [ 1.09108797e+00,  1.34988348e+00,  1.77053361e-01],\n       [ 9.69002352e-01, -4.59371472e-01,  6.45967431e-01],\n       [ 1.03760497e+00,  5.57289124e-01,  5.77329905e-01],\n       [ 1.02704882e+00,  4.00851546e-01,  6.88529426e-01],\n       [ 1.10508460e+00,  1.55730742e+00,  1.19397514e-01],\n       [ 1.15793416e+00,  2.34051463e+00,  1.92571837e-02],\n       [ 1.04250723e+00,  6.29938355e-01,  5.28734918e-01],\n       [ 1.10758728e+00,  1.59439606e+00,  1.10847354e-01],\n       [ 1.07177650e+00,  1.06369612e+00,  2.87466383e-01],\n       [ 1.02551521e+00,  3.78124168e-01,  7.05338356e-01],\n       [ 9.46840660e-01, -7.87797970e-01,  4.30814888e-01],\n       [ 1.03757582e+00,  5.56857151e-01,  5.77625033e-01],\n       [ 9.90592969e-01, -1.39408044e-01,  8.89127716e-01],\n       [ 1.04856233e+00,  7.19672330e-01,  4.71726767e-01],\n       [ 1.10811705e+00,  1.60224699e+00,  1.09101003e-01],\n       [ 9.54688187e-01, -6.71501077e-01,  5.01901374e-01],\n       [ 1.10995667e+00,  1.62950930e+00,  1.03205247e-01],\n       [ 1.15162238e+00,  2.24697675e+00,  2.46415129e-02],\n       [ 9.31182120e-01, -1.01985062e+00,  3.07799310e-01],\n       [ 9.71814911e-01, -4.17690588e-01,  6.76173355e-01],\n       [ 1.14149435e+00,  2.09688392e+00,  3.60038522e-02],\n       [ 1.07165594e+00,  1.06190948e+00,  2.88276781e-01],\n       [ 1.14437709e+00,  2.13960485e+00,  3.23867145e-02],\n       [ 9.26536025e-01, -1.08870370e+00,  2.76284570e-01],\n       [ 1.00659687e+00,  9.77627322e-02,  9.22120701e-01],\n       [ 1.19240160e+00,  2.85130688e+00,  4.35399261e-03],\n       [ 1.02219381e+00,  3.28902433e-01,  7.42229435e-01],\n       [ 1.17405296e+00,  2.57938804e+00,  9.89755372e-03],\n       [ 1.15649472e+00,  2.31918276e+00,  2.03851289e-02],\n       [ 9.45617539e-01, -8.05924083e-01,  4.20286624e-01],\n       [ 1.05893614e+00,  8.73407565e-01,  3.82440969e-01],\n       [ 1.09368529e+00,  1.38837464e+00,  1.65022993e-01],\n       [ 1.07631454e+00,  1.13094776e+00,  2.58077078e-01],\n       [ 9.78530574e-01, -3.18167420e-01,  7.50357945e-01],\n       [ 1.07064731e+00,  1.04696203e+00,  2.95117090e-01],\n       [ 1.08860485e+00,  1.31308486e+00,  1.89154355e-01],\n       [ 1.19551229e+00,  2.89740597e+00,  3.76262510e-03],\n       [ 1.07442246e+00,  1.10290799e+00,  2.70067126e-01],\n       [ 1.09651586e+00,  1.43032247e+00,  1.52624489e-01],\n       [ 1.10573862e+00,  1.56699976e+00,  1.17114749e-01],\n       [ 9.18296882e-01, -1.21080418e+00,  2.25970464e-01],\n       [ 9.75959250e-01, -3.56273307e-01,  7.21635897e-01],\n       [ 1.12270070e+00,  1.81837021e+00,  6.90075678e-02],\n       [ 1.16124927e+00,  2.38964311e+00,  1.68647518e-02],\n       [ 1.14288622e+00,  2.11751071e+00,  3.42165274e-02],\n       [ 8.95782250e-01, -1.54446109e+00,  1.22476670e-01],\n       [ 1.05289923e+00,  7.83943286e-01,  4.33073389e-01],\n       [ 1.21757563e+00,  3.22437488e+00,  1.26248010e-03],\n       [ 1.03138599e+00,  4.65126525e-01,  6.41840852e-01],\n       [ 1.07305973e+00,  1.08271294e+00,  2.78935859e-01],\n       [ 1.11578890e+00,  1.71594046e+00,  8.61729410e-02],\n       [ 9.58111837e-01, -6.20764093e-01,  5.34754852e-01],\n       [ 9.37476396e-01, -9.26572231e-01,  3.54148678e-01],\n       [ 9.63173031e-01, -5.45759439e-01,  5.85231308e-01],\n       [ 1.03085430e+00,  4.57247129e-01,  6.47493427e-01],\n       [ 1.12588430e+00,  1.86554984e+00,  6.21043732e-02],\n       [ 1.04886527e+00,  7.24161732e-01,  4.68966450e-01],\n       [ 1.11417108e+00,  1.69196511e+00,  9.06526264e-02],\n       [ 9.09443001e-01, -1.34201478e+00,  1.79591204e-01],\n       [ 1.11892848e+00,  1.76246763e+00,  7.79903206e-02],\n       [ 1.14728332e+00,  2.18267389e+00,  2.90598342e-02],\n       [ 9.66649872e-01, -4.94234183e-01,  6.21140802e-01],\n       [ 1.01975820e+00,  2.92807770e-01,  7.69669089e-01],\n       [ 1.06807716e+00,  1.00887343e+00,  3.13035340e-01],\n       [ 8.87332323e-01, -1.66968527e+00,  9.49816494e-02],\n       [ 1.06116818e+00,  9.06485480e-01,  3.64678947e-01],\n       [ 9.73221131e-01, -3.96851022e-01,  6.91477323e-01],\n       [ 1.10831264e+00,  1.60514552e+00,  1.08461783e-01],\n       [ 1.15121609e+00,  2.24095569e+00,  2.50289451e-02],\n       [ 1.06442269e+00,  9.54715861e-01,  3.39721407e-01],\n       [ 1.09045697e+00,  1.34053244e+00,  1.80072304e-01],\n       [ 1.21321146e+00,  3.15969983e+00,  1.57931759e-03],\n       [ 1.03753327e+00,  5.56226553e-01,  5.78055989e-01],\n       [ 9.92381824e-01, -1.12898015e-01,  9.10111410e-01],\n       [ 9.89597771e-01, -1.54156441e-01,  8.77486386e-01],\n       [ 8.69471915e-01, -1.93436865e+00,  5.30678183e-02],\n       [ 1.07456759e+00,  1.10505883e+00,  2.69134096e-01],\n       [ 1.01501782e+00,  2.22557427e-01,  8.23879974e-01],\n       [ 1.06339883e+00,  9.39542766e-01,  3.47452146e-01],\n       [ 1.04251892e+00,  6.30111598e-01,  5.28621572e-01],\n       [ 1.01595310e+00,  2.36417893e-01,  8.13108413e-01],\n       [ 9.76030325e-01, -3.55220016e-01,  7.22424770e-01],\n       [ 1.02700974e+00,  4.00272457e-01,  6.88955852e-01],\n       [ 1.05167838e+00,  7.65850808e-01,  4.43765079e-01],\n       [ 1.03268084e+00,  4.84315702e-01,  6.28161834e-01],\n       [ 1.07237329e+00,  1.07254022e+00,  2.83477458e-01],\n       [ 1.17864464e+00,  2.64743472e+00,  8.11050176e-03],\n       [ 1.00495856e+00,  7.34836527e-02,  9.41421252e-01],\n       [ 9.57599581e-01, -6.28355512e-01,  5.29771074e-01],\n       [ 1.01309195e+00,  1.94016950e-01,  8.46162610e-01],\n       [ 1.06834012e+00,  1.01277043e+00,  3.11169828e-01],\n       [ 1.04123161e+00,  6.11034274e-01,  5.41176890e-01]])\n\n\n\nR_csr = R_test(csr)\n\n\nR_csr[0]\n\n1.1867513365512292\n\n\n\n(r_tests[:,0] >= R_csr[0]).sum()\n\n4\n\n\n\nR_clustered = R_test(clustered)\n\n\nimport pandas\n\nimport seaborn as sns\n\n\ndf = pandas.DataFrame(data=r_tests, columns=['R', 'z', 'p'])\n\nsns.displot(df, kind='kde', x=\"R\")\nplt.axvline(R_csr[0], 0, 0.1, color='g');\nplt.axvline(R_clustered[0], 0, 0.1, color='r');\n\n\n\n\n\ndf.describe()\n\n\n\n\n\n  \n    \n      \n      R\n      z\n      p\n    \n  \n  \n    \n      count\n      99.000000\n      99.000000\n      99.000000\n    \n    \n      mean\n      1.052286\n      0.774857\n      0.357230\n    \n    \n      std\n      0.078631\n      1.165280\n      0.282182\n    \n    \n      min\n      0.869472\n      -1.934369\n      0.001262\n    \n    \n      25%\n      0.991487\n      -0.126153\n      0.099093\n    \n    \n      50%\n      1.054352\n      0.805474\n      0.295117\n    \n    \n      75%\n      1.108215\n      1.603696\n      0.581644\n    \n    \n      max\n      1.217576\n      3.224375\n      0.941421\n    \n  \n\n\n\n\n\n\nsamples = pointpats.PoissonPointProcess(csr.window, n, 999, asPP=True)\n\nr_tests = np.array([R_test(samples.realizations[k]) for k in samples.realizations])\n\nr_tests\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n\n\narray([[ 1.04108274,  0.60882811,  0.54263838],\n       [ 1.08726785,  1.2932711 ,  0.19591731],\n       [ 0.96240692, -0.5571128 ,  0.57745036],\n       ...,\n       [ 1.18467435,  2.73679237,  0.00620414],\n       [ 1.05998867,  0.88900566,  0.37400004],\n       [ 0.92024492, -1.18193507,  0.23723146]])\n\n\n\ndf = pandas.DataFrame(data=r_tests, columns=['R', 'z', 'p'])\n\nsns.displot(df, kind='kde', x=\"R\")\nplt.axvline(R_csr[0], 0, 0.1, color='g');\nplt.axvline(R_clustered[0], 0, 0.1, color='r');\n\n\n\n\n\ndf.describe()\n\n\n\n\n\n  \n    \n      \n      R\n      z\n      p\n    \n  \n  \n    \n      count\n      999.000000\n      999.000000\n      999.000000\n    \n    \n      mean\n      1.057947\n      0.858756\n      0.357294\n    \n    \n      std\n      0.077832\n      1.153438\n      0.296165\n    \n    \n      min\n      0.805327\n      -2.884969\n      0.000001\n    \n    \n      25%\n      1.004814\n      0.071334\n      0.092286\n    \n    \n      50%\n      1.061867\n      0.916842\n      0.283196\n    \n    \n      75%\n      1.111235\n      1.648461\n      0.577714\n    \n    \n      max\n      1.328334\n      4.865765\n      0.998563"
+  },
+  {
+    "objectID": "slides/week-05/0214_exercise1.html",
+    "href": "slides/week-05/0214_exercise1.html",
+    "title": "Exercise 1",
+    "section": "",
+    "text": "Complete all the tasks below in this notebook (you must show the code used to get your answers).\nSave and Export As - PDF\nUpload your pdf to the Canvas site\n\nDue February 16 2pm\n\n\nCreate a folder called exercise using the File Explorer in Jupyter Hub\nIn that folder, copy this file, and do all your work in that file/notebook\n\nimport geopandas \nimport pandas\nimport matplotlib.pyplot as plt\nimport numpy\nimport seaborn\nimport contextily\n\n\n\n\nCreate a GeoDataFrame called: sd_gdf that contains the data from the file /data/shared/tims/sdcounty_2020_fatal.geojson\n\n\n\n\n\n\n\n\n\n\n\n\nProvide an explanation of what sd_gdf.crs reports. What is this attribute used for? What does the code mean\n\n\n\nCreate an east spatial variable using the median longitude value for the geodataframe.\nUse the plot method to create a categorical map of accidents by east-west.\nAre the number of fatalities different between the accidents in the west and east?\n\n\n\nUsing groupby explore whether Alcohol is more prevalant in the weekend fatal accidents than the weekday fatal accidents."
+  },
+  {
     "objectID": "syllabus.html#class-meetings",
     "href": "syllabus.html#class-meetings",
     "title": "Geography 385 Spatial Data Analysis",
@@ -385,80 +1393,10 @@
     "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nCentrography for Point Patterns\n\n\nTue, Feb 07\n\n\n\n\nPoint Processes\n\n\nThu, Feb 09\n\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\nTitle\n\n\nDue\n\n\n\n\n\n\nQuiz\n\n\nQuiz 3\n\n\nTue, Feb 07\n\n\n\n\n\n\nNo matching items\n\n\n\n\nReadings\n\nGeographic Data Science with Python: 8.2 - Point Pattern Analysis"
   },
   {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "Materials will be posted here as the semester progresses\n\n\n\n\n\n\nWeek\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\nWeek 01\n\n\nJan 19\n\n\nWelcome to Spatial Data Analysis\n\n\n\n\nWeek 02\n\n\nJan 24 - 26\n\n\nSpatial Analysis\n\n\n\n\nWeek 03\n\n\nJan 31 - Feb 2\n\n\nSpatial Data and Point Pattern Analysis\n\n\n\n\nWeek 04\n\n\nFeb 7 - Feb 9\n\n\nPoint Pattern Analysis - Centrography and Point Processes\n\n\n\n\nWeek 05\n\n\nFeb 14 - Feb 16\n\n\nPoint Pattern Analysis - Nearest Neighbor Methods\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "schedule.html#assignments",
-    "href": "schedule.html#assignments",
-    "title": "Schedule",
-    "section": "Assignments",
-    "text": "Assignments\nYou can find details and assignment instructions in the relevant week on the schedule.\n\nExercises\nExercises will be due on Thursdays at 2:00pm. You will have two weeks to complete each homework assignment. Details will be provided on the weekly schedule.\n\n\nQuizzes\nOn-line quizzes are due on Tuesdays at 2:00pm. Details are available by week in the schedule.\n\n\nExam\nThere will be a final exam on May 19 (13:00-15:00)"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Spatial Data Analysis",
-    "section": "",
-    "text": "Course overview from GEOG 385: Spatial Data Analysis at San Diego State University\nThe purpose of this course is to introduce you to methods of spatial data analysis. The focus is on both the conceptual and applied aspects of spatial statistical methods. We will place particular emphasis on the computational aspects of Exploratory Spatial Data Analysis (ESDA) methods for three diﬀerent types of spatial data: point processes, lattice, and geostatistical. We will also cover an introduction to regression analysis on spatially referenced data. Throughout the course you will gain valuable hands-on experience with several specialized software packages for spatial data analysis. The overriding goal of the course is for you to acquire familiarity with the fundamental methodological and operational issues in the statistical analysis of geographic information and the ability to extend these methods in your own research."
-  },
-  {
-    "objectID": "index.html#class-meetings",
-    "href": "index.html#class-meetings",
-    "title": "Spatial Data Analysis",
-    "section": "Class meetings",
-    "text": "Class meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nGMCS 307\nTue & Thu 2:00 - 3:15pm"
-  },
-  {
-    "objectID": "index.html#teaching-team",
-    "href": "index.html#teaching-team",
-    "title": "Spatial Data Analysis",
-    "section": "Teaching team",
-    "text": "Teaching team\n\n\n\nName\nOffice hours\nLocation\n\n\n\n\nSergio Rey\nThu 3:30 - 4:30pm\nPSFA 361G\n\n\nDylan Skrah\nTue 3:20-4:20pm\nPSFA 361F"
-  },
-  {
-    "objectID": "slides/week-05/0216_nearest_neighbor.html",
-    "href": "slides/week-05/0216_nearest_neighbor.html",
-    "title": "Nearest Neighbor Methods",
-    "section": "",
-    "text": "Now that we have been introduced to the different statistical models than are used to represent point processes, we turn to the methods that are used to link observed point patterns back to the process that generated the pattern.\nMore specifically, the challenge that we face is as follows. Given an observed point pattern, we wish to make inferences about the process that generated the observed pattern.\nThe general approach that is used is to construct measures that characterise the observed point pattern, and then compare these against the proporties of the theoretical process models we explored previously.\nFor example, if we assume that the underlying process is CSR, we know what kinds of properties the empirical patterns from such a process should exhibit. The critical thing to keep in mind is that we never actually see the underlying process - we only see outcomes of the process (i.e., the pattern).\nThis raises a number of challenges that we will need to address later on, but for now we are going to build up an inituition of the general strategy for analyzing point patterns."
-  },
-  {
-    "objectID": "slides/week-05/0216_nearest_neighbor.html#example-patterns",
-    "href": "slides/week-05/0216_nearest_neighbor.html#example-patterns",
-    "title": "Nearest Neighbor Methods",
-    "section": "Example Patterns",
-    "text": "Example Patterns\nTo begin we are going to create two different point patterns, one from a CSR process and one from a clustered process. We will use these two patterns to introduce the different statistical methods used to analyze the patterns. Here we are in the rare circumstance in which we actually know what process generated the pattern.\n\nCSR n=60\n\nimport numpy as np\nimport pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nnp.random.seed(12345)\nn = 60\nxy = np.random.rand(60,2)\ndf = pd.DataFrame(data=xy, columns=['x', 'y'])\nsns.scatterplot(x='x', y='y', data=df);\n\n\n\n\n\nimport pointpats as pp\n\n\ncsr = pp.PointPattern(xy)\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n\n\n\ncsr.summary()\n\nPoint Pattern\n60 points\nBounding rectangle [(0.00838829794155349,0.024676210429265266), (0.9940145858999619,0.9613067360728214)]\nArea of window: 0.9231676681785911\nIntensity estimate for window: 64.99361066054225\n          x         y\n0  0.929616  0.316376\n1  0.183919  0.204560\n2  0.567725  0.595545\n3  0.964515  0.653177\n4  0.748907  0.653570\n\n\n\nw = pp.Window([(0,0), (0,1), (1,1), (1,0), (0,0)])\ndraw = pp.PoissonClusterPointProcess(w, n, 2, 0.05, 1, asPP=True, conditioning=False)\ndraw.realizations[0].plot(window=True, title='Contagion Point Process (2 parents)')\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n\n\n\n\n\n\nclustered = draw.realizations[0]\n\n\nclustered.summary()\n\nPoint Pattern\n60 points\nBounding rectangle [(0.47331760265312733,0.023178703349462502), (0.9696584457277277,0.6150208352748628)]\nArea of window: 1.0\nIntensity estimate for window: 60.0\n          x         y\n0  0.513060  0.541971\n1  0.473318  0.578385\n2  0.508373  0.536200\n3  0.881716  0.060328\n4  0.894221  0.059273"
-  },
-  {
-    "objectID": "slides/week-05/0216_nearest_neighbor.html#quadrat-statistics",
-    "href": "slides/week-05/0216_nearest_neighbor.html#quadrat-statistics",
-    "title": "Nearest Neighbor Methods",
-    "section": "Quadrat Statistics",
-    "text": "Quadrat Statistics\n\nimport pointpats.quadrat_statistics as qs\n\n\ncsr_qr = qs.QStatistic(csr, shape='rectangle', nx=3, ny=3)\ncsr_qr.plot()\n\n\n\n\n\ncsr_qr.chi2\n\n10.8\n\n\n\ncsr_qr.chi2_pvalue\n\n0.21329101843394052\n\n\n\nclustered_qr = qs.QStatistic(clustered, shape='rectangle', nx=3, ny=3)\nclustered_qr.plot()\n\n\n\n\n\nclustered_qr.chi2\n\n209.99999999999994\n\n\n\nclustered_qr.chi2_pvalue\n\n4.976940117448032e-41"
-  },
-  {
-    "objectID": "slides/week-05/0216_nearest_neighbor.html#nearest-neighbor-distances",
-    "href": "slides/week-05/0216_nearest_neighbor.html#nearest-neighbor-distances",
-    "title": "Nearest Neighbor Methods",
-    "section": "Nearest Neighbor Distances",
-    "text": "Nearest Neighbor Distances\n\nplt.scatter(csr.points.x, csr.points.y);\n\n\n\n\n\nimport networkx as nx\n\n\nG = nx.DiGraph()\nfor idx, point in enumerate(csr.points.values):\n    G.add_node(idx, pos=point)\n    \n\n\npos = nx.get_node_attributes(G, 'pos')\nnx.draw(G, pos, node_size=2)\n\n\n\n\n\nnidx, nnd = csr.knn(1) # here we have the indices of the nearest neighbors (nidx) and the distances (nnd)\n\n\nfor idx, neighbor in enumerate(nidx):\n    edge = (idx, neighbor[0])\n    G.add_edges_from([edge])\n    \n\n\npos = nx.get_node_attributes(G, 'pos')\nnx.draw(G, pos, node_size=2)\n\n\n\n\nHere we draw an arrow towards the nearest neighbor for a given observation.\nIn some cases, an observation is also the nearest neighbor to its nearest neighbor, or so-called “mutual nearest neighbors”. These pairs would appear at the the end of a segment with arrows on both ends.\nIf we look in the extreme northwest three points, we see one pair of mutual nearest neighbors, while the third point is not a mutual nearest neighbor.\nIt is also possible for a point to be a nearest neighbor to more than a single point, as is also seen in this case.\nThe nearest neighbor distances are the lengths of these segments.\n\nMean Nearest Neighbor Distance\nOur first distance based statistic was suggested by Clark and Evans (1954) as the average nearest neighbor distances:\n\\[\\bar{d}_{min} = \\frac{1}{n} \\sum_{i} d_{i, min} \\]\nwhere \\(d_{i, min}\\) is the nearest neighbor distance for observation \\(i\\), and \\(n\\) is the number of observations.\nUnder a CSR process, the expected value of this statistic is:\n\\[E[\\bar{d}_{min}] = \\frac{1}{2 \\sqrt{\\lambda}}\\]\nThe logic of the statistic is to compare the observed mean nearest neighbor distance to this expectation forming their ratio:\n\\[R = \\frac{\\bar{d}_{min}}{\\frac{1}{2 \\sqrt{\\lambda}}} = 2 \\bar{d}_{min} \\sqrt{\\lambda}\\]\nValues of \\(R<1\\) are indicative of a tendancy towards clustering since the observed nearest neighbor distances are smaller than expected under CSR.\nValues of \\(R>1\\) are indicative of a uniform or dispersed pattern.\n\nnnd.mean() # the mean nearest neighbor distance\n\n0.07360281110243255\n\n\n\ncsr.lambda_window # the intensity using the window for the point pattern\n\n64.99361066054225\n\n\n\ndmin = nnd.mean()\nlam = csr.lambda_window\nR = 2 * dmin * lam**(1/2)\nR\n\n1.1867513365512292\n\n\nLet’s compare this to the same statistic based on the mean nearest neighbor distance for the clustered pattern:\n\nnidx, nnd = clustered.knn(1) # here we have the indices of the nearest neighbors (nidx) and the distances (nnd)\n\n\ndmin = nnd.mean()\nlam = clustered.lambda_window\nR = 2 * dmin * lam**(1/2)\nR\n\n0.13087134840769868\n\n\nSo we see that the \\(R\\) value for the clustered pattern is much below 1, while the R value for the CSR pattern is slightly over 1.\nWhat we would like to know is if these values are significantly different from what we would expect if the underlying process that generated the patterns was CSR?\nOne approach is to use theoretical results on the distribution for the \\(R\\) statistic from Petrere (1985). The expected value of \\(R\\) is \\(E[R]=1\\). The variance of the \\(R\\) statistic is: \\[ \\sigma^2_R = \\frac{0.2732}{n}\\]\n\nimport scipy.stats\ndef R_test(pattern):\n    nidx, nnd = pattern.knn(1) # here we have the indices of the nearest neighbors (nidx) and the distances (nnd)\n    lam = pattern.lambda_window\n    R = 2 * nnd.mean() * lam**(1/2)\n    n = nnd.shape[0]\n    var = 0.2732 / n\n    se = var**(1/2)\n    stat = (R - 1 )/ se\n    p_value = scipy.stats.norm.sf(abs(stat)) * 2\n    return R, stat, p_value\n\n\nR_test(csr)\n\n(1.1867513365512292, 2.7675724348891184, 0.005647549379017388)\n\n\n\nR_test(clustered)\n\n(0.13087134840769868, -12.880103258909552, 5.825756575218341e-38)\n\n\n\n\nInference via simulation\n\nimport pointpats\nimport numpy\nsamples = pointpats.PoissonPointProcess(csr.window, n, 99, asPP=True)\n\nr_tests = np.array([R_test(samples.realizations[k]) for k in samples.realizations])\n\nr_tests\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n\n\narray([[ 9.81105197e-01, -2.80012645e-01,  7.79467803e-01],\n       [ 9.28415089e-01, -1.06085681e+00,  2.88754981e-01],\n       [ 1.05435206e+00,  8.05473519e-01,  4.20546481e-01],\n       [ 1.11821360e+00,  1.75187335e+00,  7.97955886e-02],\n       [ 1.12387424e+00,  1.83576157e+00,  6.63929272e-02],\n       [ 1.16724422e+00,  2.47848561e+00,  1.31941433e-02],\n       [ 1.10700813e+00,  1.58581325e+00,  1.12781678e-01],\n       [ 1.09108797e+00,  1.34988348e+00,  1.77053361e-01],\n       [ 9.69002352e-01, -4.59371472e-01,  6.45967431e-01],\n       [ 1.03760497e+00,  5.57289124e-01,  5.77329905e-01],\n       [ 1.02704882e+00,  4.00851546e-01,  6.88529426e-01],\n       [ 1.10508460e+00,  1.55730742e+00,  1.19397514e-01],\n       [ 1.15793416e+00,  2.34051463e+00,  1.92571837e-02],\n       [ 1.04250723e+00,  6.29938355e-01,  5.28734918e-01],\n       [ 1.10758728e+00,  1.59439606e+00,  1.10847354e-01],\n       [ 1.07177650e+00,  1.06369612e+00,  2.87466383e-01],\n       [ 1.02551521e+00,  3.78124168e-01,  7.05338356e-01],\n       [ 9.46840660e-01, -7.87797970e-01,  4.30814888e-01],\n       [ 1.03757582e+00,  5.56857151e-01,  5.77625033e-01],\n       [ 9.90592969e-01, -1.39408044e-01,  8.89127716e-01],\n       [ 1.04856233e+00,  7.19672330e-01,  4.71726767e-01],\n       [ 1.10811705e+00,  1.60224699e+00,  1.09101003e-01],\n       [ 9.54688187e-01, -6.71501077e-01,  5.01901374e-01],\n       [ 1.10995667e+00,  1.62950930e+00,  1.03205247e-01],\n       [ 1.15162238e+00,  2.24697675e+00,  2.46415129e-02],\n       [ 9.31182120e-01, -1.01985062e+00,  3.07799310e-01],\n       [ 9.71814911e-01, -4.17690588e-01,  6.76173355e-01],\n       [ 1.14149435e+00,  2.09688392e+00,  3.60038522e-02],\n       [ 1.07165594e+00,  1.06190948e+00,  2.88276781e-01],\n       [ 1.14437709e+00,  2.13960485e+00,  3.23867145e-02],\n       [ 9.26536025e-01, -1.08870370e+00,  2.76284570e-01],\n       [ 1.00659687e+00,  9.77627322e-02,  9.22120701e-01],\n       [ 1.19240160e+00,  2.85130688e+00,  4.35399261e-03],\n       [ 1.02219381e+00,  3.28902433e-01,  7.42229435e-01],\n       [ 1.17405296e+00,  2.57938804e+00,  9.89755372e-03],\n       [ 1.15649472e+00,  2.31918276e+00,  2.03851289e-02],\n       [ 9.45617539e-01, -8.05924083e-01,  4.20286624e-01],\n       [ 1.05893614e+00,  8.73407565e-01,  3.82440969e-01],\n       [ 1.09368529e+00,  1.38837464e+00,  1.65022993e-01],\n       [ 1.07631454e+00,  1.13094776e+00,  2.58077078e-01],\n       [ 9.78530574e-01, -3.18167420e-01,  7.50357945e-01],\n       [ 1.07064731e+00,  1.04696203e+00,  2.95117090e-01],\n       [ 1.08860485e+00,  1.31308486e+00,  1.89154355e-01],\n       [ 1.19551229e+00,  2.89740597e+00,  3.76262510e-03],\n       [ 1.07442246e+00,  1.10290799e+00,  2.70067126e-01],\n       [ 1.09651586e+00,  1.43032247e+00,  1.52624489e-01],\n       [ 1.10573862e+00,  1.56699976e+00,  1.17114749e-01],\n       [ 9.18296882e-01, -1.21080418e+00,  2.25970464e-01],\n       [ 9.75959250e-01, -3.56273307e-01,  7.21635897e-01],\n       [ 1.12270070e+00,  1.81837021e+00,  6.90075678e-02],\n       [ 1.16124927e+00,  2.38964311e+00,  1.68647518e-02],\n       [ 1.14288622e+00,  2.11751071e+00,  3.42165274e-02],\n       [ 8.95782250e-01, -1.54446109e+00,  1.22476670e-01],\n       [ 1.05289923e+00,  7.83943286e-01,  4.33073389e-01],\n       [ 1.21757563e+00,  3.22437488e+00,  1.26248010e-03],\n       [ 1.03138599e+00,  4.65126525e-01,  6.41840852e-01],\n       [ 1.07305973e+00,  1.08271294e+00,  2.78935859e-01],\n       [ 1.11578890e+00,  1.71594046e+00,  8.61729410e-02],\n       [ 9.58111837e-01, -6.20764093e-01,  5.34754852e-01],\n       [ 9.37476396e-01, -9.26572231e-01,  3.54148678e-01],\n       [ 9.63173031e-01, -5.45759439e-01,  5.85231308e-01],\n       [ 1.03085430e+00,  4.57247129e-01,  6.47493427e-01],\n       [ 1.12588430e+00,  1.86554984e+00,  6.21043732e-02],\n       [ 1.04886527e+00,  7.24161732e-01,  4.68966450e-01],\n       [ 1.11417108e+00,  1.69196511e+00,  9.06526264e-02],\n       [ 9.09443001e-01, -1.34201478e+00,  1.79591204e-01],\n       [ 1.11892848e+00,  1.76246763e+00,  7.79903206e-02],\n       [ 1.14728332e+00,  2.18267389e+00,  2.90598342e-02],\n       [ 9.66649872e-01, -4.94234183e-01,  6.21140802e-01],\n       [ 1.01975820e+00,  2.92807770e-01,  7.69669089e-01],\n       [ 1.06807716e+00,  1.00887343e+00,  3.13035340e-01],\n       [ 8.87332323e-01, -1.66968527e+00,  9.49816494e-02],\n       [ 1.06116818e+00,  9.06485480e-01,  3.64678947e-01],\n       [ 9.73221131e-01, -3.96851022e-01,  6.91477323e-01],\n       [ 1.10831264e+00,  1.60514552e+00,  1.08461783e-01],\n       [ 1.15121609e+00,  2.24095569e+00,  2.50289451e-02],\n       [ 1.06442269e+00,  9.54715861e-01,  3.39721407e-01],\n       [ 1.09045697e+00,  1.34053244e+00,  1.80072304e-01],\n       [ 1.21321146e+00,  3.15969983e+00,  1.57931759e-03],\n       [ 1.03753327e+00,  5.56226553e-01,  5.78055989e-01],\n       [ 9.92381824e-01, -1.12898015e-01,  9.10111410e-01],\n       [ 9.89597771e-01, -1.54156441e-01,  8.77486386e-01],\n       [ 8.69471915e-01, -1.93436865e+00,  5.30678183e-02],\n       [ 1.07456759e+00,  1.10505883e+00,  2.69134096e-01],\n       [ 1.01501782e+00,  2.22557427e-01,  8.23879974e-01],\n       [ 1.06339883e+00,  9.39542766e-01,  3.47452146e-01],\n       [ 1.04251892e+00,  6.30111598e-01,  5.28621572e-01],\n       [ 1.01595310e+00,  2.36417893e-01,  8.13108413e-01],\n       [ 9.76030325e-01, -3.55220016e-01,  7.22424770e-01],\n       [ 1.02700974e+00,  4.00272457e-01,  6.88955852e-01],\n       [ 1.05167838e+00,  7.65850808e-01,  4.43765079e-01],\n       [ 1.03268084e+00,  4.84315702e-01,  6.28161834e-01],\n       [ 1.07237329e+00,  1.07254022e+00,  2.83477458e-01],\n       [ 1.17864464e+00,  2.64743472e+00,  8.11050176e-03],\n       [ 1.00495856e+00,  7.34836527e-02,  9.41421252e-01],\n       [ 9.57599581e-01, -6.28355512e-01,  5.29771074e-01],\n       [ 1.01309195e+00,  1.94016950e-01,  8.46162610e-01],\n       [ 1.06834012e+00,  1.01277043e+00,  3.11169828e-01],\n       [ 1.04123161e+00,  6.11034274e-01,  5.41176890e-01]])\n\n\n\nR_csr = R_test(csr)\n\n\nR_csr[0]\n\n1.1867513365512292\n\n\n\n(r_tests[:,0] >= R_csr[0]).sum()\n\n4\n\n\n\nR_clustered = R_test(clustered)\n\n\nimport pandas\n\nimport seaborn as sns\n\n\ndf = pandas.DataFrame(data=r_tests, columns=['R', 'z', 'p'])\n\nsns.displot(df, kind='kde', x=\"R\")\nplt.axvline(R_csr[0], 0, 0.1, color='g');\nplt.axvline(R_clustered[0], 0, 0.1, color='r');\n\n\n\n\n\ndf.describe()\n\n\n\n\n\n  \n    \n      \n      R\n      z\n      p\n    \n  \n  \n    \n      count\n      99.000000\n      99.000000\n      99.000000\n    \n    \n      mean\n      1.052286\n      0.774857\n      0.357230\n    \n    \n      std\n      0.078631\n      1.165280\n      0.282182\n    \n    \n      min\n      0.869472\n      -1.934369\n      0.001262\n    \n    \n      25%\n      0.991487\n      -0.126153\n      0.099093\n    \n    \n      50%\n      1.054352\n      0.805474\n      0.295117\n    \n    \n      75%\n      1.108215\n      1.603696\n      0.581644\n    \n    \n      max\n      1.217576\n      3.224375\n      0.941421\n    \n  \n\n\n\n\n\n\nsamples = pointpats.PoissonPointProcess(csr.window, n, 999, asPP=True)\n\nr_tests = np.array([R_test(samples.realizations[k]) for k in samples.realizations])\n\nr_tests\n\n/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.\n  warnings.warn(dep_msg, FutureWarning)\n\n\narray([[ 1.04108274,  0.60882811,  0.54263838],\n       [ 1.08726785,  1.2932711 ,  0.19591731],\n       [ 0.96240692, -0.5571128 ,  0.57745036],\n       ...,\n       [ 1.18467435,  2.73679237,  0.00620414],\n       [ 1.05998867,  0.88900566,  0.37400004],\n       [ 0.92024492, -1.18193507,  0.23723146]])\n\n\n\ndf = pandas.DataFrame(data=r_tests, columns=['R', 'z', 'p'])\n\nsns.displot(df, kind='kde', x=\"R\")\nplt.axvline(R_csr[0], 0, 0.1, color='g');\nplt.axvline(R_clustered[0], 0, 0.1, color='r');\n\n\n\n\n\ndf.describe()\n\n\n\n\n\n  \n    \n      \n      R\n      z\n      p\n    \n  \n  \n    \n      count\n      999.000000\n      999.000000\n      999.000000\n    \n    \n      mean\n      1.057947\n      0.858756\n      0.357294\n    \n    \n      std\n      0.077832\n      1.153438\n      0.296165\n    \n    \n      min\n      0.805327\n      -2.884969\n      0.000001\n    \n    \n      25%\n      1.004814\n      0.071334\n      0.092286\n    \n    \n      50%\n      1.061867\n      0.916842\n      0.283196\n    \n    \n      75%\n      1.111235\n      1.648461\n      0.577714\n    \n    \n      max\n      1.328334\n      4.865765\n      0.998563"
-  },
-  {
     "objectID": "weeks/week-05.html",
     "href": "weeks/week-05.html",
     "title": "Week 05",
     "section": "",
     "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nExercise 1\n\n\nTue, Feb 14\n\n\n\n\nNearest Neighbor Methods\n\n\nThu, Feb 16\n\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\nTitle\n\n\nDue\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nReadings\n\nGeographic Data Science with Python: 8.3 - Point Pattern Analysis"
-  },
-  {
-    "objectID": "slides/week-05/0214_exercise1.html",
-    "href": "slides/week-05/0214_exercise1.html",
-    "title": "Exercise 1",
-    "section": "",
-    "text": "Complete all the tasks below in this notebook (you must show the code used to get your answers).\nSave and Export As - PDF\nUpload your pdf to the Canvas site\n\nDue February 16 2pm\n\n\nCreate a folder called exercise using the File Explorer in Jupyter Hub\nIn that folder, copy this file, and do all your work in that file/notebook\n\nimport geopandas \nimport pandas\nimport matplotlib.pyplot as plt\nimport numpy\nimport seaborn\nimport contextily\n\n\n\n\nCreate a GeoDataFrame called: sd_gdf that contains the data from the file /data/shared/tims/sdcounty_2020_fatal.geojson\n\n\n\n\n\n\n\n\n\n\n\n\nProvide an explanation of what sd_gdf.crs reports. What is this attribute used for? What does the code mean\n\n\n\nCreate an east spatial variable using the median longitude value for the geodataframe.\nUse the plot method to create a categorical map of accidents by east-west.\nAre the number of fatalities different between the accidents in the west and east?\n\n\n\nUsing groupby explore whether Alcohol is more prevalant in the weekend fatal accidents than the weekday fatal accidents."
   }
 ]
