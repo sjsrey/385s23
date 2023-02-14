@@ -18,10 +18,10 @@ format:
 
 ## Teaching team 
 
-| Name        | Office hours      | Location  |
-|-------------|-------------------|-----------|
-| [Sergio Rey](https://geography.sdsu.edu/people/bios/rey) | Thu 3:30 - 4:30pm | [PSFA 361G](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/) |
-| Dylan Skrah | Tue 3:20-4:20pm     | [PSFA 361F](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/)    |
+| Name                                                     | Office hours      | Location                                                                                                                      |
+|----------------------------------------------------------|-------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| [Sergio Rey](https://geography.sdsu.edu/people/bios/rey) | [Thu 3:30 - 4:30pm (by appointment)](https://calendly.com/sjsrey/office-hours) | [PSFA 361G](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/) |
+| Dylan Skrah                                              | Tue 3:20-4:20pm   | [PSFA 361F](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/) |
 
 
 
@@ -110,8 +110,8 @@ completed the readings.
 |      |   Feb-02 | Point Pattern Basics                  | [GDS 8.1][gds8.1] |                |
 |    4 |   Feb-07 | Centrography                          | [GDS 8.2][gds8.2] | Quiz 3         |
 |      |   Feb-09 | Point Processes                       |                   |                |
-|    5 |   Feb-14 | Nearest Neighbor Methods              | [GDS 8.3][gds8.3] | Quiz 4         |
-|      |   Feb-16 | Distance Distributions                |                   | Exercise 2 Out |
+|    5 |   Feb-14 | Hands on Exercise 1                   |                   | Quiz 4         |
+|      |   Feb-16 | Nearest Neighbor Methods              | [GDS 8.3][gds8.3] | Exercise 2 Out |
 |      |          |                                       |                   | Exericse 1 Due |
 |    6 |   Feb-21 | Area Data                             |   [GDS II][gdsii] | Quiz 5         |
 |      |   Feb-23 | Visualization of Area Data            |     [GDS 5][gds5] |                |

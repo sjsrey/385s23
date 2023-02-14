@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Serge Rey">
+<meta name="dcterms.date" content="2023-02-16">
+
+<title>Geography 385 Spatial Data Analysis - Nearest Neighbor Methods</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Nearest Neighbor Methods</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/esda.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://github.com/sjsrey/385s23" title="GitHub" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+</div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">Home</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../syllabus.html" class="sidebar-item-text sidebar-link">Syllabus</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../schedule.html" class="sidebar-item-text sidebar-link">Schedule</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#example-patterns" id="toc-example-patterns" class="nav-link" data-scroll-target="#example-patterns">Example Patterns</a>
+  <ul class="collapse">
+  <li><a href="#csr-n60" id="toc-csr-n60" class="nav-link" data-scroll-target="#csr-n60">CSR n=60</a></li>
+  </ul></li>
+  <li><a href="#quadrat-statistics" id="toc-quadrat-statistics" class="nav-link" data-scroll-target="#quadrat-statistics">Quadrat Statistics</a></li>
+  <li><a href="#nearest-neighbor-distances" id="toc-nearest-neighbor-distances" class="nav-link" data-scroll-target="#nearest-neighbor-distances">Nearest Neighbor Distances</a>
+  <ul class="collapse">
+  <li><a href="#mean-nearest-neighbor-distance" id="toc-mean-nearest-neighbor-distance" class="nav-link" data-scroll-target="#mean-nearest-neighbor-distance">Mean Nearest Neighbor Distance</a></li>
+  <li><a href="#inference-via-simulation" id="toc-inference-via-simulation" class="nav-link" data-scroll-target="#inference-via-simulation">Inference via simulation</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Nearest Neighbor Methods</h1>
+<p class="subtitle lead">Spring 2023</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Serge Rey </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 16, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Now that we have been introduced to the different statistical models than are used to represent point processes, we turn to the methods that are used to link observed point patterns back to the process that generated the pattern.</p>
+<p>More specifically, the challenge that we face is as follows. Given an observed point pattern, we wish to make inferences about the process that generated the observed pattern.</p>
+<p>The general approach that is used is to construct measures that characterise the observed point pattern, and then compare these against the proporties of the theoretical process models we explored previously.</p>
+<p>For example, if we assume that the underlying process is CSR, we know what kinds of properties the empirical patterns from such a process should exhibit. The critical thing to keep in mind is that we never actually see the underlying process - we only see outcomes of the process (i.e., the pattern).</p>
+<p>This raises a number of challenges that we will need to address later on, but for now we are going to build up an inituition of the general strategy for analyzing point patterns.</p>
+</section>
+<section id="example-patterns" class="level2">
+<h2 class="anchored" data-anchor-id="example-patterns">Example Patterns</h2>
+<p>To begin we are going to create two different point patterns, one from a CSR process and one from a clustered process. We will use these two patterns to introduce the different statistical methods used to analyze the patterns. Here we are in the rare circumstance in which we actually know what process generated the pattern.</p>
+<section id="csr-n60" class="level3">
+<h3 class="anchored" data-anchor-id="csr-n60">CSR n=60</h3>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">12345</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">60</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>xy <span class="op">=</span> np.random.rand(<span class="dv">60</span>,<span class="dv">2</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data<span class="op">=</span>xy, columns<span class="op">=</span>[<span class="st">'x'</span>, <span class="st">'y'</span>])</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(x<span class="op">=</span><span class="st">'x'</span>, y<span class="op">=</span><span class="st">'y'</span>, data<span class="op">=</span>df)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="0216_nearest_neighbor_files/figure-html/cell-2-output-1.png" width="589" height="432"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pointpats <span class="im">as</span> pp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>csr <span class="op">=</span> pp.PointPattern(xy)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+  warnings.warn(dep_msg, FutureWarning)
+/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+  warnings.warn(dep_msg, FutureWarning)</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>csr.summary()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Point Pattern
+60 points
+Bounding rectangle [(0.00838829794155349,0.024676210429265266), (0.9940145858999619,0.9613067360728214)]
+Area of window: 0.9231676681785911
+Intensity estimate for window: 64.99361066054225
+          x         y
+0  0.929616  0.316376
+1  0.183919  0.204560
+2  0.567725  0.595545
+3  0.964515  0.653177
+4  0.748907  0.653570</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> pp.Window([(<span class="dv">0</span>,<span class="dv">0</span>), (<span class="dv">0</span>,<span class="dv">1</span>), (<span class="dv">1</span>,<span class="dv">1</span>), (<span class="dv">1</span>,<span class="dv">0</span>), (<span class="dv">0</span>,<span class="dv">0</span>)])</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>draw <span class="op">=</span> pp.PoissonClusterPointProcess(w, n, <span class="dv">2</span>, <span class="fl">0.05</span>, <span class="dv">1</span>, asPP<span class="op">=</span><span class="va">True</span>, conditioning<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>draw.realizations[<span class="dv">0</span>].plot(window<span class="op">=</span><span class="va">True</span>, title<span class="op">=</span><span class="st">'Contagion Point Process (2 parents)'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+  warnings.warn(dep_msg, FutureWarning)
+/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+  warnings.warn(dep_msg, FutureWarning)
+/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+  warnings.warn(dep_msg, FutureWarning)
+/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+  warnings.warn(dep_msg, FutureWarning)</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="0216_nearest_neighbor_files/figure-html/cell-6-output-2.png" width="571" height="431"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>clustered <span class="op">=</span> draw.realizations[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>clustered.summary()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Point Pattern
+60 points
+Bounding rectangle [(0.47331760265312733,0.023178703349462502), (0.9696584457277277,0.6150208352748628)]
+Area of window: 1.0
+Intensity estimate for window: 60.0
+          x         y
+0  0.513060  0.541971
+1  0.473318  0.578385
+2  0.508373  0.536200
+3  0.881716  0.060328
+4  0.894221  0.059273</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="quadrat-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="quadrat-statistics">Quadrat Statistics</h2>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pointpats.quadrat_statistics <span class="im">as</span> qs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>csr_qr <span class="op">=</span> qs.QStatistic(csr, shape<span class="op">=</span><span class="st">'rectangle'</span>, nx<span class="op">=</span><span class="dv">3</span>, ny<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>csr_qr.plot()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="0216_nearest_neighbor_files/figure-html/cell-10-output-1.png" width="571" height="431"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>csr_qr.chi2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<pre><code>10.8</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>csr_qr.chi2_pvalue</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<pre><code>0.21329101843394052</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>clustered_qr <span class="op">=</span> qs.QStatistic(clustered, shape<span class="op">=</span><span class="st">'rectangle'</span>, nx<span class="op">=</span><span class="dv">3</span>, ny<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>clustered_qr.plot()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="0216_nearest_neighbor_files/figure-html/cell-13-output-1.png" width="571" height="431"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>clustered_qr.chi2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="13">
+<pre><code>209.99999999999994</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>clustered_qr.chi2_pvalue</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="14">
+<pre><code>4.976940117448032e-41</code></pre>
+</div>
+</div>
+</section>
+<section id="nearest-neighbor-distances" class="level2">
+<h2 class="anchored" data-anchor-id="nearest-neighbor-distances">Nearest Neighbor Distances</h2>
+<div class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>plt.scatter(csr.points.x, csr.points.y)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="0216_nearest_neighbor_files/figure-html/cell-16-output-1.png" width="571" height="413"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.DiGraph()</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> idx, point <span class="kw">in</span> <span class="bu">enumerate</span>(csr.points.values):</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>    G.add_node(idx, pos<span class="op">=</span>point)</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>    </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>pos <span class="op">=</span> nx.get_node_attributes(G, <span class="st">'pos'</span>)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>nx.draw(G, pos, node_size<span class="op">=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="0216_nearest_neighbor_files/figure-html/cell-19-output-1.png" width="691" height="499"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>nidx, nnd <span class="op">=</span> csr.knn(<span class="dv">1</span>) <span class="co"># here we have the indices of the nearest neighbors (nidx) and the distances (nnd)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> idx, neighbor <span class="kw">in</span> <span class="bu">enumerate</span>(nidx):</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>    edge <span class="op">=</span> (idx, neighbor[<span class="dv">0</span>])</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>    G.add_edges_from([edge])</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>    </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>pos <span class="op">=</span> nx.get_node_attributes(G, <span class="st">'pos'</span>)</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>nx.draw(G, pos, node_size<span class="op">=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="0216_nearest_neighbor_files/figure-html/cell-22-output-1.png" width="691" height="499"></p>
+</div>
+</div>
+<p>Here we draw an arrow towards the nearest neighbor for a given observation.</p>
+<p>In some cases, an observation is also the nearest neighbor to its nearest neighbor, or so-called “mutual nearest neighbors”. These pairs would appear at the the end of a segment with arrows on both ends.</p>
+<p>If we look in the extreme northwest three points, we see one pair of mutual nearest neighbors, while the third point is not a mutual nearest neighbor.</p>
+<p>It is also possible for a point to be a nearest neighbor to more than a single point, as is also seen in this case.</p>
+<p>The <strong>nearest neighbor distances</strong> are the lengths of these segments.</p>
+<section id="mean-nearest-neighbor-distance" class="level3">
+<h3 class="anchored" data-anchor-id="mean-nearest-neighbor-distance">Mean Nearest Neighbor Distance</h3>
+<p>Our first distance based statistic was suggested by Clark and Evans (1954) as the average nearest neighbor distances:</p>
+<p><span class="math display">\[\bar{d}_{min} = \frac{1}{n} \sum_{i} d_{i, min} \]</span></p>
+<p>where <span class="math inline">\(d_{i, min}\)</span> is the nearest neighbor distance for observation <span class="math inline">\(i\)</span>, and <span class="math inline">\(n\)</span> is the number of observations.</p>
+<p>Under a CSR process, the expected value of this statistic is:</p>
+<p><span class="math display">\[E[\bar{d}_{min}] = \frac{1}{2 \sqrt{\lambda}}\]</span></p>
+<p>The logic of the statistic is to compare the <em>observed</em> mean nearest neighbor distance to this expectation forming their ratio:</p>
+<p><span class="math display">\[R = \frac{\bar{d}_{min}}{\frac{1}{2 \sqrt{\lambda}}} = 2 \bar{d}_{min} \sqrt{\lambda}\]</span></p>
+<p>Values of <span class="math inline">\(R&lt;1\)</span> are indicative of a tendancy towards clustering since the observed nearest neighbor distances are smaller than expected under CSR.</p>
+<p>Values of <span class="math inline">\(R&gt;1\)</span> are indicative of a uniform or dispersed pattern.</p>
+<div class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>nnd.mean() <span class="co"># the mean nearest neighbor distance</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="22">
+<pre><code>0.07360281110243255</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>csr.lambda_window <span class="co"># the intensity using the window for the point pattern</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="23">
+<pre><code>64.99361066054225</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>dmin <span class="op">=</span> nnd.mean()</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>lam <span class="op">=</span> csr.lambda_window</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>R <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> dmin <span class="op">*</span> lam<span class="op">**</span>(<span class="dv">1</span><span class="op">/</span><span class="dv">2</span>)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="24">
+<pre><code>1.1867513365512292</code></pre>
+</div>
+</div>
+<p>Let’s compare this to the same statistic based on the mean nearest neighbor distance for the clustered pattern:</p>
+<div class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>nidx, nnd <span class="op">=</span> clustered.knn(<span class="dv">1</span>) <span class="co"># here we have the indices of the nearest neighbors (nidx) and the distances (nnd)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>dmin <span class="op">=</span> nnd.mean()</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>lam <span class="op">=</span> clustered.lambda_window</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>R <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> dmin <span class="op">*</span> lam<span class="op">**</span>(<span class="dv">1</span><span class="op">/</span><span class="dv">2</span>)</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="26">
+<pre><code>0.13087134840769868</code></pre>
+</div>
+</div>
+<p>So we see that the <span class="math inline">\(R\)</span> value for the clustered pattern is much below 1, while the R value for the CSR pattern is slightly over 1.</p>
+<p>What we would like to know is if these values are significantly different from what we would expect if the underlying process that generated the patterns was CSR?</p>
+<p>One approach is to use theoretical results on the distribution for the <span class="math inline">\(R\)</span> statistic from Petrere (1985). The expected value of <span class="math inline">\(R\)</span> is <span class="math inline">\(E[R]=1\)</span>. The variance of the <span class="math inline">\(R\)</span> statistic is: <span class="math display">\[ \sigma^2_R = \frac{0.2732}{n}\]</span></p>
+<div class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy.stats</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> R_test(pattern):</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>    nidx, nnd <span class="op">=</span> pattern.knn(<span class="dv">1</span>) <span class="co"># here we have the indices of the nearest neighbors (nidx) and the distances (nnd)</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>    lam <span class="op">=</span> pattern.lambda_window</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>    R <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> nnd.mean() <span class="op">*</span> lam<span class="op">**</span>(<span class="dv">1</span><span class="op">/</span><span class="dv">2</span>)</span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> nnd.shape[<span class="dv">0</span>]</span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>    var <span class="op">=</span> <span class="fl">0.2732</span> <span class="op">/</span> n</span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>    se <span class="op">=</span> var<span class="op">**</span>(<span class="dv">1</span><span class="op">/</span><span class="dv">2</span>)</span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a>    stat <span class="op">=</span> (R <span class="op">-</span> <span class="dv">1</span> )<span class="op">/</span> se</span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a>    p_value <span class="op">=</span> scipy.stats.norm.sf(<span class="bu">abs</span>(stat)) <span class="op">*</span> <span class="dv">2</span></span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> R, stat, p_value</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>R_test(csr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="28">
+<pre><code>(1.1867513365512292, 2.7675724348891184, 0.005647549379017388)</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>R_test(clustered)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="29">
+<pre><code>(0.13087134840769868, -12.880103258909552, 5.825756575218341e-38)</code></pre>
+</div>
+</div>
+</section>
+<section id="inference-via-simulation" class="level3">
+<h3 class="anchored" data-anchor-id="inference-via-simulation">Inference via simulation</h3>
+<div class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pointpats</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>samples <span class="op">=</span> pointpats.PoissonPointProcess(csr.window, n, <span class="dv">99</span>, asPP<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>r_tests <span class="op">=</span> np.array([R_test(samples.realizations[k]) <span class="cf">for</span> k <span class="kw">in</span> samples.realizations])</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>r_tests</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+  warnings.warn(dep_msg, FutureWarning)
+/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+  warnings.warn(dep_msg, FutureWarning)</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="30">
+<pre><code>array([[ 9.81105197e-01, -2.80012645e-01,  7.79467803e-01],
+       [ 9.28415089e-01, -1.06085681e+00,  2.88754981e-01],
+       [ 1.05435206e+00,  8.05473519e-01,  4.20546481e-01],
+       [ 1.11821360e+00,  1.75187335e+00,  7.97955886e-02],
+       [ 1.12387424e+00,  1.83576157e+00,  6.63929272e-02],
+       [ 1.16724422e+00,  2.47848561e+00,  1.31941433e-02],
+       [ 1.10700813e+00,  1.58581325e+00,  1.12781678e-01],
+       [ 1.09108797e+00,  1.34988348e+00,  1.77053361e-01],
+       [ 9.69002352e-01, -4.59371472e-01,  6.45967431e-01],
+       [ 1.03760497e+00,  5.57289124e-01,  5.77329905e-01],
+       [ 1.02704882e+00,  4.00851546e-01,  6.88529426e-01],
+       [ 1.10508460e+00,  1.55730742e+00,  1.19397514e-01],
+       [ 1.15793416e+00,  2.34051463e+00,  1.92571837e-02],
+       [ 1.04250723e+00,  6.29938355e-01,  5.28734918e-01],
+       [ 1.10758728e+00,  1.59439606e+00,  1.10847354e-01],
+       [ 1.07177650e+00,  1.06369612e+00,  2.87466383e-01],
+       [ 1.02551521e+00,  3.78124168e-01,  7.05338356e-01],
+       [ 9.46840660e-01, -7.87797970e-01,  4.30814888e-01],
+       [ 1.03757582e+00,  5.56857151e-01,  5.77625033e-01],
+       [ 9.90592969e-01, -1.39408044e-01,  8.89127716e-01],
+       [ 1.04856233e+00,  7.19672330e-01,  4.71726767e-01],
+       [ 1.10811705e+00,  1.60224699e+00,  1.09101003e-01],
+       [ 9.54688187e-01, -6.71501077e-01,  5.01901374e-01],
+       [ 1.10995667e+00,  1.62950930e+00,  1.03205247e-01],
+       [ 1.15162238e+00,  2.24697675e+00,  2.46415129e-02],
+       [ 9.31182120e-01, -1.01985062e+00,  3.07799310e-01],
+       [ 9.71814911e-01, -4.17690588e-01,  6.76173355e-01],
+       [ 1.14149435e+00,  2.09688392e+00,  3.60038522e-02],
+       [ 1.07165594e+00,  1.06190948e+00,  2.88276781e-01],
+       [ 1.14437709e+00,  2.13960485e+00,  3.23867145e-02],
+       [ 9.26536025e-01, -1.08870370e+00,  2.76284570e-01],
+       [ 1.00659687e+00,  9.77627322e-02,  9.22120701e-01],
+       [ 1.19240160e+00,  2.85130688e+00,  4.35399261e-03],
+       [ 1.02219381e+00,  3.28902433e-01,  7.42229435e-01],
+       [ 1.17405296e+00,  2.57938804e+00,  9.89755372e-03],
+       [ 1.15649472e+00,  2.31918276e+00,  2.03851289e-02],
+       [ 9.45617539e-01, -8.05924083e-01,  4.20286624e-01],
+       [ 1.05893614e+00,  8.73407565e-01,  3.82440969e-01],
+       [ 1.09368529e+00,  1.38837464e+00,  1.65022993e-01],
+       [ 1.07631454e+00,  1.13094776e+00,  2.58077078e-01],
+       [ 9.78530574e-01, -3.18167420e-01,  7.50357945e-01],
+       [ 1.07064731e+00,  1.04696203e+00,  2.95117090e-01],
+       [ 1.08860485e+00,  1.31308486e+00,  1.89154355e-01],
+       [ 1.19551229e+00,  2.89740597e+00,  3.76262510e-03],
+       [ 1.07442246e+00,  1.10290799e+00,  2.70067126e-01],
+       [ 1.09651586e+00,  1.43032247e+00,  1.52624489e-01],
+       [ 1.10573862e+00,  1.56699976e+00,  1.17114749e-01],
+       [ 9.18296882e-01, -1.21080418e+00,  2.25970464e-01],
+       [ 9.75959250e-01, -3.56273307e-01,  7.21635897e-01],
+       [ 1.12270070e+00,  1.81837021e+00,  6.90075678e-02],
+       [ 1.16124927e+00,  2.38964311e+00,  1.68647518e-02],
+       [ 1.14288622e+00,  2.11751071e+00,  3.42165274e-02],
+       [ 8.95782250e-01, -1.54446109e+00,  1.22476670e-01],
+       [ 1.05289923e+00,  7.83943286e-01,  4.33073389e-01],
+       [ 1.21757563e+00,  3.22437488e+00,  1.26248010e-03],
+       [ 1.03138599e+00,  4.65126525e-01,  6.41840852e-01],
+       [ 1.07305973e+00,  1.08271294e+00,  2.78935859e-01],
+       [ 1.11578890e+00,  1.71594046e+00,  8.61729410e-02],
+       [ 9.58111837e-01, -6.20764093e-01,  5.34754852e-01],
+       [ 9.37476396e-01, -9.26572231e-01,  3.54148678e-01],
+       [ 9.63173031e-01, -5.45759439e-01,  5.85231308e-01],
+       [ 1.03085430e+00,  4.57247129e-01,  6.47493427e-01],
+       [ 1.12588430e+00,  1.86554984e+00,  6.21043732e-02],
+       [ 1.04886527e+00,  7.24161732e-01,  4.68966450e-01],
+       [ 1.11417108e+00,  1.69196511e+00,  9.06526264e-02],
+       [ 9.09443001e-01, -1.34201478e+00,  1.79591204e-01],
+       [ 1.11892848e+00,  1.76246763e+00,  7.79903206e-02],
+       [ 1.14728332e+00,  2.18267389e+00,  2.90598342e-02],
+       [ 9.66649872e-01, -4.94234183e-01,  6.21140802e-01],
+       [ 1.01975820e+00,  2.92807770e-01,  7.69669089e-01],
+       [ 1.06807716e+00,  1.00887343e+00,  3.13035340e-01],
+       [ 8.87332323e-01, -1.66968527e+00,  9.49816494e-02],
+       [ 1.06116818e+00,  9.06485480e-01,  3.64678947e-01],
+       [ 9.73221131e-01, -3.96851022e-01,  6.91477323e-01],
+       [ 1.10831264e+00,  1.60514552e+00,  1.08461783e-01],
+       [ 1.15121609e+00,  2.24095569e+00,  2.50289451e-02],
+       [ 1.06442269e+00,  9.54715861e-01,  3.39721407e-01],
+       [ 1.09045697e+00,  1.34053244e+00,  1.80072304e-01],
+       [ 1.21321146e+00,  3.15969983e+00,  1.57931759e-03],
+       [ 1.03753327e+00,  5.56226553e-01,  5.78055989e-01],
+       [ 9.92381824e-01, -1.12898015e-01,  9.10111410e-01],
+       [ 9.89597771e-01, -1.54156441e-01,  8.77486386e-01],
+       [ 8.69471915e-01, -1.93436865e+00,  5.30678183e-02],
+       [ 1.07456759e+00,  1.10505883e+00,  2.69134096e-01],
+       [ 1.01501782e+00,  2.22557427e-01,  8.23879974e-01],
+       [ 1.06339883e+00,  9.39542766e-01,  3.47452146e-01],
+       [ 1.04251892e+00,  6.30111598e-01,  5.28621572e-01],
+       [ 1.01595310e+00,  2.36417893e-01,  8.13108413e-01],
+       [ 9.76030325e-01, -3.55220016e-01,  7.22424770e-01],
+       [ 1.02700974e+00,  4.00272457e-01,  6.88955852e-01],
+       [ 1.05167838e+00,  7.65850808e-01,  4.43765079e-01],
+       [ 1.03268084e+00,  4.84315702e-01,  6.28161834e-01],
+       [ 1.07237329e+00,  1.07254022e+00,  2.83477458e-01],
+       [ 1.17864464e+00,  2.64743472e+00,  8.11050176e-03],
+       [ 1.00495856e+00,  7.34836527e-02,  9.41421252e-01],
+       [ 9.57599581e-01, -6.28355512e-01,  5.29771074e-01],
+       [ 1.01309195e+00,  1.94016950e-01,  8.46162610e-01],
+       [ 1.06834012e+00,  1.01277043e+00,  3.11169828e-01],
+       [ 1.04123161e+00,  6.11034274e-01,  5.41176890e-01]])</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="31">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>R_csr <span class="op">=</span> R_test(csr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>R_csr[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="32">
+<pre><code>1.1867513365512292</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="33">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>(r_tests[:,<span class="dv">0</span>] <span class="op">&gt;=</span> R_csr[<span class="dv">0</span>]).<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="33">
+<pre><code>4</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>R_clustered <span class="op">=</span> R_test(clustered)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="35">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="36">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pandas.DataFrame(data<span class="op">=</span>r_tests, columns<span class="op">=</span>[<span class="st">'R'</span>, <span class="st">'z'</span>, <span class="st">'p'</span>])</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>sns.displot(df, kind<span class="op">=</span><span class="st">'kde'</span>, x<span class="op">=</span><span class="st">"R"</span>)</span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>plt.axvline(R_csr[<span class="dv">0</span>], <span class="dv">0</span>, <span class="fl">0.1</span>, color<span class="op">=</span><span class="st">'g'</span>)<span class="op">;</span></span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>plt.axvline(R_clustered[<span class="dv">0</span>], <span class="dv">0</span>, <span class="fl">0.1</span>, color<span class="op">=</span><span class="st">'r'</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="0216_nearest_neighbor_files/figure-html/cell-37-output-1.png" width="469" height="468"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="37">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>df.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="37">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>R</th>
+      <th>z</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>99.000000</td>
+      <td>99.000000</td>
+      <td>99.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>1.052286</td>
+      <td>0.774857</td>
+      <td>0.357230</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.078631</td>
+      <td>1.165280</td>
+      <td>0.282182</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.869472</td>
+      <td>-1.934369</td>
+      <td>0.001262</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.991487</td>
+      <td>-0.126153</td>
+      <td>0.099093</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>1.054352</td>
+      <td>0.805474</td>
+      <td>0.295117</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>1.108215</td>
+      <td>1.603696</td>
+      <td>0.581644</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1.217576</td>
+      <td>3.224375</td>
+      <td>0.941421</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="38">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>samples <span class="op">=</span> pointpats.PoissonPointProcess(csr.window, n, <span class="dv">999</span>, asPP<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>r_tests <span class="op">=</span> np.array([R_test(samples.realizations[k]) <span class="cf">for</span> k <span class="kw">in</span> samples.realizations])</span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a>r_tests</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+  warnings.warn(dep_msg, FutureWarning)</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="38">
+<pre><code>array([[ 1.04108274,  0.60882811,  0.54263838],
+       [ 1.08726785,  1.2932711 ,  0.19591731],
+       [ 0.96240692, -0.5571128 ,  0.57745036],
+       ...,
+       [ 1.18467435,  2.73679237,  0.00620414],
+       [ 1.05998867,  0.88900566,  0.37400004],
+       [ 0.92024492, -1.18193507,  0.23723146]])</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="39">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pandas.DataFrame(data<span class="op">=</span>r_tests, columns<span class="op">=</span>[<span class="st">'R'</span>, <span class="st">'z'</span>, <span class="st">'p'</span>])</span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>sns.displot(df, kind<span class="op">=</span><span class="st">'kde'</span>, x<span class="op">=</span><span class="st">"R"</span>)</span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a>plt.axvline(R_csr[<span class="dv">0</span>], <span class="dv">0</span>, <span class="fl">0.1</span>, color<span class="op">=</span><span class="st">'g'</span>)<span class="op">;</span></span>
+<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a>plt.axvline(R_clustered[<span class="dv">0</span>], <span class="dv">0</span>, <span class="fl">0.1</span>, color<span class="op">=</span><span class="st">'r'</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="0216_nearest_neighbor_files/figure-html/cell-40-output-1.png" width="469" height="468"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="40">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>df.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="40">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>R</th>
+      <th>z</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>999.000000</td>
+      <td>999.000000</td>
+      <td>999.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>1.057947</td>
+      <td>0.858756</td>
+      <td>0.357294</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.077832</td>
+      <td>1.153438</td>
+      <td>0.296165</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.805327</td>
+      <td>-2.884969</td>
+      <td>0.000001</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>1.004814</td>
+      <td>0.071334</td>
+      <td>0.092286</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>1.061867</td>
+      <td>0.916842</td>
+      <td>0.283196</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>1.111235</td>
+      <td>1.648461</td>
+      <td>0.577714</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1.328334</td>
+      <td>4.865765</td>
+      <td>0.998563</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
