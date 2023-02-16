@@ -6,7 +6,8 @@
       "/weeks/week-02.html",
       "/weeks/week-03.html",
       "/weeks/week-04.html",
-      "/weeks/week-05.html"
+      "/weeks/week-05.html",
+      "/weeks/week-06.html"
     ]
   },
   {
@@ -46,6 +47,13 @@
     "items": [
       "/slides/week-05/0214_exercise1.html",
       "/slides/week-05/0216_nearest_neighbor.html"
+    ]
+  },
+  {
+    "listing": "/weeks/week-06.html",
+    "items": [
+      "/slides/week-06/0221_area_1.html",
+      "/slides/week-06/0223_viz.html"
     ]
   }
 ]
