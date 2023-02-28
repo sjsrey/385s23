@@ -18,7 +18,7 @@ execute:
 ## Outline
 
 - Concepts and Issues
-- Null and Alternative Hyptotheses
+- Null and Alternative Hypotheses
 - Spatial Autocorrelation Tests
 
 Concepts and Issues
