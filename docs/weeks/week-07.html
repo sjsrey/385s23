@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="">
+<meta name="description" content="Feb 28 - Mar 2">
 
-<title>Geography 385 Spatial Data Analysis - Schedule</title>
+<title>Geography 385 Spatial Data Analysis - Week 07</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +25,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -62,20 +64,48 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-schedule .list');
+    const listingTargetEl = window.document.querySelector('#listing-slides .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-author"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-schedule'] = new List('listing-schedule', options);
+    window['quarto-listings']['listing-slides'] = new List('listing-slides', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-assignments .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-categories','listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-assignments'] = new List('listing-assignments', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -99,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Schedule</h1>
+      <h1 class="quarto-secondary-nav-title">Week 07</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -111,8 +141,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/esda.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/esda.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="https://github.com/sjsrey/385s23" title="GitHub" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
@@ -127,17 +157,17 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Home</a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link">Home</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./syllabus.html" class="sidebar-item-text sidebar-link">Syllabus</a>
+  <a href="../syllabus.html" class="sidebar-item-text sidebar-link">Syllabus</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./schedule.html" class="sidebar-item-text sidebar-link active">Schedule</a>
+  <a href="../schedule.html" class="sidebar-item-text sidebar-link">Schedule</a>
   </div>
 </li>
     </ul>
@@ -149,13 +179,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#weekly-schedule" id="toc-weekly-schedule" class="nav-link active" data-scroll-target="#weekly-schedule">Weekly schedule</a></li>
-  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a>
-  <ul class="collapse">
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
-  <li><a href="#quizzes" id="toc-quizzes" class="nav-link" data-scroll-target="#quizzes">Quizzes</a></li>
-  <li><a href="#exam" id="toc-exam" class="nav-link" data-scroll-target="#exam">Exam</a></li>
-  </ul></li>
+  <li><a href="#lectures" id="toc-lectures" class="nav-link active" data-scroll-target="#lectures">Lectures</a></li>
+  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a></li>
+  <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a></li>
   </ul>
 </nav>
     </div>
@@ -164,10 +190,15 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Schedule</h1>
-<p class="subtitle lead">Spring 2023</p>
+<h1 class="title d-none d-lg-block">Week 07</h1>
+<p class="subtitle lead">Area Data and Spatial Autocorrelation</p>
 </div>
 
+<div>
+  <div class="description">
+    Feb 28 - Mar 2
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -180,101 +211,28 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="weekly-schedule" class="level2">
-<h2 class="anchored" data-anchor-id="weekly-schedule">Weekly schedule</h2>
-<p>Materials will be posted here as the semester progresses</p>
-<div id="listing-schedule" class="quarto-listing quarto-listing-container-table">
+<section id="lectures" class="level1">
+<h1>Lectures</h1>
+<div id="listing-slides" class="quarto-listing quarto-listing-container-table">
 
 <table class="quarto-listing-table table">
 <thead>
 <tr>
 <th>
-Week
-</th>
-<th>
-Dates
-</th>
-<th>
 Topic
+</th>
+<th>
+Date
 </th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-listing-file-modified-sort="1675967914307" data-listing-reading-time-sort="1.02" data-listing-title-sort="Week 01" data-listing-filename-sort="week-01.qmd">
+<tr data-index="0" data-listing-date-sort="1677571200000" data-listing-file-modified-sort="1677617941489" data-listing-reading-time-sort="6.83" data-listing-title-sort="Spatial Autocorrelation Concepts" data-listing-filename-sort="0228_dependence.qmd">
 <td class="listing-title">
-<a href="./weeks/week-01.html" class="title">Week 01</a>
+<a href="../slides/week-07/0228_dependence.html" class="title">Spatial Autocorrelation Concepts</a>
 </td>
-<td class="listing-description">
-Jan 19
-</td>
-<td class="listing-subtitle">
-Welcome to Spatial Data Analysis
-</td>
-</tr>
-<tr data-index="1" data-listing-file-modified-sort="1675967914307" data-listing-reading-time-sort="0.21" data-listing-title-sort="Week 02" data-listing-filename-sort="week-02.qmd">
-<td class="listing-title">
-<a href="./weeks/week-02.html" class="title">Week 02</a>
-</td>
-<td class="listing-description">
-Jan 24 - 26
-</td>
-<td class="listing-subtitle">
-Spatial Analysis
-</td>
-</tr>
-<tr data-index="2" data-listing-file-modified-sort="1675967914307" data-listing-reading-time-sort="0.15" data-listing-title-sort="Week 03" data-listing-filename-sort="week-03.qmd">
-<td class="listing-title">
-<a href="./weeks/week-03.html" class="title">Week 03</a>
-</td>
-<td class="listing-description">
-Jan 31 - Feb 2
-</td>
-<td class="listing-subtitle">
-Spatial Data and Point Pattern Analysis
-</td>
-</tr>
-<tr data-index="3" data-listing-file-modified-sort="1675967914307" data-listing-reading-time-sort="0.09" data-listing-title-sort="Week 04" data-listing-filename-sort="week-04.qmd">
-<td class="listing-title">
-<a href="./weeks/week-04.html" class="title">Week 04</a>
-</td>
-<td class="listing-description">
-Feb 7 - Feb 9
-</td>
-<td class="listing-subtitle">
-Point Pattern Analysis - Centrography and Point Processes
-</td>
-</tr>
-<tr data-index="4" data-listing-file-modified-sort="1676398252409" data-listing-reading-time-sort="0.09" data-listing-title-sort="Week 05" data-listing-filename-sort="week-05.qmd">
-<td class="listing-title">
-<a href="./weeks/week-05.html" class="title">Week 05</a>
-</td>
-<td class="listing-description">
-Feb 14 - Feb 16
-</td>
-<td class="listing-subtitle">
-Point Pattern Analysis - Nearest Neighbor Methods
-</td>
-</tr>
-<tr data-index="5" data-listing-file-modified-sort="1677025802230" data-listing-reading-time-sort="0.13" data-listing-title-sort="Week 06" data-listing-filename-sort="week-06.qmd">
-<td class="listing-title">
-<a href="./weeks/week-06.html" class="title">Week 06</a>
-</td>
-<td class="listing-description">
-Feb 21 - Feb 23
-</td>
-<td class="listing-subtitle">
-Area Data and Visualization
-</td>
-</tr>
-<tr data-index="6" data-listing-file-modified-sort="1677617941490" data-listing-reading-time-sort="0.125" data-listing-title-sort="Week 07" data-listing-filename-sort="week-07.qmd">
-<td class="listing-title">
-<a href="./weeks/week-07.html" class="title">Week 07</a>
-</td>
-<td class="listing-description">
-Feb 28 - Mar 2
-</td>
-<td class="listing-subtitle">
-Area Data and Spatial Autocorrelation
+<td class="listing-date">
+Tue, Feb 28
 </td>
 </tr>
 </tbody>
@@ -285,24 +243,42 @@ No matching items
 </div>
 </div>
 </section>
-<section id="assignments" class="level2">
-<h2 class="anchored" data-anchor-id="assignments">Assignments</h2>
-<p>You can find details and assignment instructions in the relevant week on the schedule.</p>
-<section id="exercises" class="level3">
-<h3 class="anchored" data-anchor-id="exercises">Exercises</h3>
-<p>Exercises will be due on Thursdays at 2:00pm. You will have two weeks to complete each homework assignment. Details will be provided on the weekly schedule.</p>
+<section id="assignments" class="level1">
+<h1>Assignments</h1>
+<div id="listing-assignments" class="quarto-listing quarto-listing-container-table">
+
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Assignment
+</th>
+<th>
+Title
+</th>
+<th>
+Due
+</th>
+</tr>
+</thead>
+<tbody class="list">
+</tbody>
+
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 </section>
-<section id="quizzes" class="level3">
-<h3 class="anchored" data-anchor-id="quizzes">Quizzes</h3>
-<p>On-line quizzes are due on Tuesdays at 2:00pm. Details are available by week in the schedule.</p>
-</section>
-<section id="exam" class="level3">
-<h3 class="anchored" data-anchor-id="exam">Exam</h3>
-<p>There will be a final exam on May 19 (13:00-15:00)</p>
+<section id="readings" class="level1">
+<h1>Readings</h1>
+<ul>
+<li><a href="https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html">Geographic Data Science with Python: Spatial Autocorrelation</a></li>
+<li><a href="https://geographicdata.science/book/notebooks/04_spatial_weights.html">Geographic Data Science with Python: Spatial Weights</a></li>
+</ul>
 
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
