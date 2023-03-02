@@ -8,7 +8,7 @@ listing:
   - id: slides
     contents:
       - ../slides/week-07/*.qmd
-      - ../slides/week-07/*.ipynb
+      - ../slides/week-07/*.pdf
     type: table
     fields: [title, date]
     date-format: "ddd, MMM DD"

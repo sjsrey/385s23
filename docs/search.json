@@ -1456,18 +1456,11 @@
     "text": "Map Customization\n\nLegends\nColor Schemes\n\n\nLegends\n\nsouth_gdf[['STATE_NAME', 'HR60', 'HR90']].head()\n\n\n\n\n\n  \n    \n      \n      STATE_NAME\n      HR60\n      HR90\n    \n  \n  \n    \n      0\n      West Virginia\n      1.682864\n      0.946083\n    \n    \n      1\n      West Virginia\n      4.607233\n      1.234934\n    \n    \n      2\n      West Virginia\n      0.974132\n      2.621009\n    \n    \n      3\n      West Virginia\n      0.876248\n      4.461577\n    \n    \n      4\n      Delaware\n      4.228385\n      6.712736\n    \n  \n\n\n\n\n\nsouth_gdf['increased' ] =  south_gdf.HR90 > south_gdf.HR60\n\n\nsouth_gdf.plot(column='increased', categorical=True, legend=True);\n\n\n\n\n\nv = south_gdf.increased.map({True: 'Increased', False: 'Decreased'})\n\n\nsouth_gdf['Increased'] = v\n\n\nsouth_gdf.plot(column='Increased', categorical=True, legend=True);\n\n\n\n\n\nsouth_gdf.plot(column='Increased', categorical=True, legend=True,\n               legend_kwds={'bbox_to_anchor': (1.3, 1)});\n\n\n\n\n\nsouth_gdf.plot(column='Increased', categorical=True, legend=True,\n               legend_kwds={'bbox_to_anchor': (1.3, 1),\n                           'title':'Homicide Rates 1960-1990'},\n           );\n\n\n\n\n\nsouth_gdf.plot(column='Increased', categorical=True, legend=True,\n               legend_kwds={'bbox_to_anchor': (0, 1),\n                           'title':'Homicide Rates 1960-1990'},\n           );\n\n\n\n\n\nsouth_gdf.plot(column='Increased', categorical=True, legend=True,\n               legend_kwds={'bbox_to_anchor': (-0.1, 1),\n                           'title':'Homicide Rates 1960-1990'},\n           );\n\n\n\n\n\n\nColor schemes\nFor more info see matplotlib\n\nSequential Color Schemes\n\nsouth_gdf.plot(column='HR60', scheme='Quantiles', legend=True, \n                legend_kwds={'bbox_to_anchor': (1.3, 1)},\n               cmap='Blues');\n\n\n\n\n\nsouth_gdf.plot(column='HR60', scheme='Quantiles', legend=True, \n                legend_kwds={'bbox_to_anchor': (1.3, 1)},\n               cmap='Greens');\n\n\n\n\n\nsouth_gdf.plot(column='HR60', scheme='Quantiles', legend=True, \n                legend_kwds={'bbox_to_anchor': (1.3, 1)},\n               cmap='YlGnBu');\n\n\n\n\n\n\nDiverging Color Schme\n\nsouth_gdf.plot(column='Increased', categorical=True, legend=True,\n               legend_kwds={'bbox_to_anchor': (-0.1, 1),\n                           'title':'Homicide Rates 1960-1990'},\n               cmap='coolwarm',\n           );\n\n\n\n\n\nsouth_gdf.plot(column='Increased', categorical=True, legend=True,\n               legend_kwds={'bbox_to_anchor': (-0.1, 1),\n                           'title':'Homicide Rates 1960-1990'},\n               cmap='bwr',\n           );\n\n\n\n\n\n\nQualitative Color Scheme\n\nsouth_gdf.plot(column='STATE_NAME', categorical=True)\n\n<AxesSubplot: >\n\n\n\n\n\n\nsouth_gdf.plot(column='STATE_NAME', categorical=True, legend=True)\n\n<AxesSubplot: >\n\n\n\n\n\n\nsouth_gdf.plot(column='STATE_NAME', categorical=True, legend=True,\n               legend_kwds={'bbox_to_anchor': (0, 1)})\n\n<AxesSubplot: >\n\n\n\n\n\n\nimport matplotlib.pyplot as plt\nfig = plt.figure()\nax = fig.add_axes([0, 0, 1, 1])\nax.axis('off')\n\nsouth_gdf.plot(column='STATE_NAME', categorical=True, legend=True,\n               legend_kwds={'bbox_to_anchor': (0, 1)}, ax=ax);"
   },
   {
-    "objectID": "weeks/week-07.html",
-    "href": "weeks/week-07.html",
-    "title": "Week 07",
-    "section": "",
-    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nSpatial Autocorrelation Concepts\n\n\nTue, Feb 28\n\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\nTitle\n\n\nDue\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nReadings\n\nGeographic Data Science with Python: Spatial Autocorrelation\nGeographic Data Science with Python: Spatial Weights"
-  },
-  {
     "objectID": "slides/week-07/0228_dependence.html#outline",
     "href": "slides/week-07/0228_dependence.html#outline",
     "title": "Spatial Autocorrelation Concepts",
     "section": "Outline",
-    "text": "Outline\n\nConcepts and Issues\nNull and Alternative Hypotheses\nSpatial Autocorrelation Tests"
+    "text": "Outline\n\nConcepts and Issues\nNull and Alternative Hyptotheses\nSpatial Autocorrelation Tests"
   },
   {
     "objectID": "slides/week-07/0228_dependence.html#spatial-dependence",
@@ -1741,5 +1734,54 @@
     "title": "Spatial Autocorrelation Concepts",
     "section": "Summary",
     "text": "Summary\nSpatial Dependence\n\nCore of Lattice Analysis\nSpatial Autocorrelation More Complex than Temporal Autocorrelation\nCombine Value and Locational Similarities"
+  },
+  {
+    "objectID": "weeks/week-07.html",
+    "href": "weeks/week-07.html",
+    "title": "Week 07",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nSpatial Autocorrelation Concepts\n\n\nTue, Feb 28\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\nTitle\n\n\nDue\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nReadings\n\nGeographic Data Science with Python: Spatial Autocorrelation\nGeographic Data Science with Python: Spatial Weights"
+  },
+  {
+    "objectID": "slides/week-07/0302_weights.html",
+    "href": "slides/week-07/0302_weights.html",
+    "title": "Spatial Weights",
+    "section": "",
+    "text": "Weights General Concepts\nContiguity Weights\nDistance Based Weights\nGeneral Weights\nGuidance"
+  },
+  {
+    "objectID": "slides/week-07/0302_weights.html#weights-general-concepts",
+    "href": "slides/week-07/0302_weights.html#weights-general-concepts",
+    "title": "Spatial Weights",
+    "section": "Weights General Concepts",
+    "text": "Weights General Concepts\n\nWhy Spatial Weights\n\nIdentification Problem\n\ntotal number of interactions is \\(n(n-1)/2\\)\nall possible unique paris \\(i-j\\)\nonly \\(n\\) observations avaialable in a cross-section\n\n\n\nIndicental Parameter Problem\n\nnumber of parameters increases with size of the sample \\(O(n^2)\\)\nmore data is not the solution\n\n\n\n\nProblem: Spatial Correlation\n\n\\(C[y_i, y_j] \\ne 0 \\ \\forall i \\ne j\\)\n\\(n(n-1)/2\\) covariances\nOnly \\(n\\) observations at hand\n\n\n\nSolution\n\nImpose Structure on the Problem\n\nset some interactions to zero\nonly “neighbors” interact directly\nconstrain the number of neighbors\n\n\n\nAssume a Single Parameter\n\nspatial autocorrelation coefficient\n\n\n\nCode\nfrom shapely.geometry import Polygon\nimport geopandas\n\np0 = Polygon([(0,0), (10,0), (10, 3),\n              (7,3), (3,3), (0, 3), (0, 0)])\n\np1 = Polygon([(0,3), (0,6), (5,6), (5,5), (3,5), (3,3), (0,3)])\n\n\np2 = Polygon([(7,6), (7, 8), (9,8), (10, 8), (10, 6), (7,6)])\n\n\np3 = Polygon([(3,3), (3,5), (7,5), (7,3), (3,3)])\n\n\np4 = Polygon([(5, 5), (5, 6), (7,6), (10, 6), (10, 3), (7,3), (7,5), (5,5)])\n\n\np5 = Polygon([(9, 8), (9, 10), (10, 10), (10, 8)])\n\ngs = geopandas.GeoSeries([p0, p1, p2, p3, p4, p5])\ngdf = geopandas.GeoDataFrame(geometry=gs)\ngdf['Label'] = [0,1,2,3,4,5]\n\nimport matplotlib.pyplot as plt\nax = gdf.plot(edgecolor='k')\ngdf.apply(lambda x: ax.annotate(text=x['Label'], xy=x.geometry.centroid.coords[0], ha='center'), axis=1);\n\n\n\n\n\n\n\nCode\nimport libpysal\nimport networkx\n\nW = libpysal.weights.Rook.from_dataframe(gdf)\n\nG = W.to_networkx()\n\nnetworkx.draw_networkx(G)\nplt.show()\n\n\n\n\n\n\n\nCode\n_ = plt.figure(figsize=(16, 9));\n\nfig, (ax1, ax2)  = plt.subplots(1, 2);\n_ = gdf.plot(ax=ax1, edgecolor='k');\n_ = gdf.apply(lambda x: ax1.annotate(text=x['Label'], xy=x.geometry.centroid.coords[0], ha='center'), axis=1);\n_ = networkx.draw_networkx(G, ax=ax2);\n_ = ax1.set_title('Map')\n_ = ax2.set_title('Adjacency Graph')\n_ = plt.show()\n\n\n<Figure size 1536x864 with 0 Axes>\n\n\n\n\n\n\n\n\nSpatial Weights Matrix\n\nDefinition\n\n\\(n\\) by \\(n\\) positive matrix \\(W\\), elements \\(w_{i,j}\\)\n\\(w_{i,j}\\) nonzero for neighbors, \\(0\\) otherwise\n\\(w_{i,i} = 0\\), no self-neighbors\n\nGeneral:\n\n\\[ W =\n  \\begin{bmatrix}\nw_{1,1} & w_{1,2} & \\ldots & w_{1,n} \\\\\nw_{2,1} & w_{2,2} & \\ldots & w_{2,n} \\\\\n\\vdots & \\vdots & \\ddots & \\vdots \\\\\nw_{n,1} & w_{n,2} & \\ldots & w_{n,n} \\\\\n\\end{bmatrix}\n\\]\n\n\nBinary Contiguity\n\nWeights are \\(0\\) or \\(1\\)\nfor \\(i,j\\) neighbors, \\(w_{i,j}=1\\)\nExample for our map using common boundary\n\n\\[ W =\n  \\begin{bmatrix}\n0 & 1 & 0 & 1 & 1 & 0 \\\\\n1 & 1 & 0 & 1 & 1 & 0 \\\\\n0 & 0 & 0 & 0 & 1 & 1 \\\\\n1 & 1 & 0 & 0 & 1 & 0 \\\\\n1 & 1 & 1 & 1 & 0 & 0 \\\\\n0 & 0 & 1 & 0 & 0 & 0 \\\\\n\\end{bmatrix}\n\\]\n\n\nExample\nPolygons \\(0\\) and \\(4\\) share a boundary\n\\[ W =\n  \\begin{bmatrix}\n0 & 1 & 0 & 1 & \\textbf{1} & 0 \\\\\n1 & 1 & 0 & 1 & 1 & 0 \\\\\n0 & 0 & 0 & 0 & 1 & 1 \\\\\n1 & 1 & 0 & 0 & 1 & 0 \\\\\n\\textbf{1} & 1 & 1 & 1 & 0 & 0 \\\\\n0 & 0 & 1 & 0 & 0 & 0 \\\\\n\\end{bmatrix}\n\\]\n\n\nCode\nimport matplotlib.lines as lines\n\nax = gdf.plot(edgecolor='k')\ngdf.apply(lambda x: ax.annotate(text=x['Label'], xy=x.geometry.centroid.coords[0], ha='center'), axis=1);\nline = lines.Line2D([9, 9], [1.5, 4],\n                    lw=2, color='yellow', axes=ax)\nax.add_line(line)\n\n\n<matplotlib.lines.Line2D at 0x7f0ff87e37c0>"
+  },
+  {
+    "objectID": "slides/week-07/0302_weights.html#contiguity-weights",
+    "href": "slides/week-07/0302_weights.html#contiguity-weights",
+    "title": "Spatial Weights",
+    "section": "Contiguity Weights",
+    "text": "Contiguity Weights"
+  },
+  {
+    "objectID": "slides/week-07/0302_weights.html#distance-based-weights",
+    "href": "slides/week-07/0302_weights.html#distance-based-weights",
+    "title": "Spatial Weights",
+    "section": "Distance Based Weights",
+    "text": "Distance Based Weights"
+  },
+  {
+    "objectID": "slides/week-07/0302_weights.html#general-weights",
+    "href": "slides/week-07/0302_weights.html#general-weights",
+    "title": "Spatial Weights",
+    "section": "General Weights",
+    "text": "General Weights"
+  },
+  {
+    "objectID": "slides/week-07/0302_weights.html#guidance",
+    "href": "slides/week-07/0302_weights.html#guidance",
+    "title": "Spatial Weights",
+    "section": "Guidance",
+    "text": "Guidance\n\nHow to Select the Right \\(W\\)?\n\nTheoretical priors\n\nexceptionally rare\n\nTypically no “best” solution\nRelation to spatial interaction theory\n\n\n\nGeneral Rules\n\nFor testing for autocorrelatoin\n\npower matters\ncontiguity may be sufficient\npower robust to misspecification\n\nFor modeling and parameter estimation\n\nmore complex and fragile"
   }
 ]
