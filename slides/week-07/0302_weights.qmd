@@ -1,0 +1,17 @@
+---
+title: "Spatial Weights"
+author: "Sergio Rey"
+date: "March 2, 2023"
+format: 
+  revealjs:
+    theme: simple
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+---
+
+[Weights](./weights.pdf)
