@@ -111,29 +111,29 @@ completed the readings.
 |    4 |   Feb-07 | Centrography                          | [GDS 8.2][gds8.2] | Quiz 3         |
 |      |   Feb-09 | Point Processes                       |                   |                |
 |    5 |   Feb-14 | Hands on Exercise 1                   |                   | Quiz 4         |
-|      |   Feb-16 | Nearest Neighbor Methods              | [GDS 8.3][gds8.3] | Exercise 1 Due  |
-|      |          |                                       |                   |  |
+|      |   Feb-16 | Nearest Neighbor Methods              | [GDS 8.3][gds8.3] | Exercise 1 Due |
+|      |          |                                       |                   |                |
 |    6 |   Feb-21 | Area Data                             |   [GDS II][gdsii] | Quiz 5         |
-|      |   Feb-23 | Visualization of Area Data            |     [GDS 5][gds5] | Exercise 2 Out               |
+|      |   Feb-23 | Visualization of Area Data            |     [GDS 5][gds5] | Exercise 2 Out |
 |    7 |   Feb-28 | Spatial Autocorrelation Concepts      | [GDS 6.1][gds6.1] | Quiz 6         |
-|      |   Mar-02 | Spatial Weights                       |     [GDS 4][gds4] | |
-|    8 |   Mar-07 | Join Count Tests                      | [GDS 5.1][gds5.1] | Quiz 7         |
-|      |   Mar-09 | Global Autocorrelation Tests          | [GDS 5.2][gds5.2] |  Exercise 2 Due               |
-|    9 |   Mar-14 | Local Autocorrelation                 |     [GDS 6][gds6] | Quiz 8         |
-|      |   Mar-16 | Geostatistical Data                   |   [GSA gs][gsags] | Exercise 3 Out |
-|   10 |   Mar-21 | Spatial Interpolation                 | [GSA int][gsaint] | Quiz 9         |
-|      |   Mar-23 | Kriging                               | [GSA krg][gsakrg] |                |
+|      |   Mar-02 | Spatial Weights I                     |     [GDS 4][gds4] |                |
+|    8 |   Mar-07 | Spatial Weights II                    |                   | Quiz 7         |
+|      |   Mar-09 | Hands-on Exercise 2                   |                   |  Exercise 2 Due|
+|    9 |   Mar-14 | Global Autocorrelation Tests          | [GDS 5.1][gds5.1] | Quiz 8         |
+|      |   Mar-16 | Join Counts   I                       | [GDS 5.1][gds5.1] | Exercise 3 Out |
+|   10 |   Mar-21 | Joint Counts II                       |                   | Quiz 9         |
+|      |   Mar-23 | AAG (No Class)                        |                   |                |
 |      | *Mar-28* | *Spring Break*                        |                   |                |
 |      | *Mar-30* | *Spring Break*                        |                   |                |
-|   11 |   Apr-04 | Introduction to Multivariate Analysis |   [SAH mv][sahmv] | Quiz 10        |
-|      |   Apr-06 | Correlation and Spatial Correlation   | [SAH cor][sahcor] | Exercise 3 Due |
-|   12 |   Apr-11 | Introduction to Regression            | [GSA reg][gsareg] | Exercise 4 Out |
-|      |   Apr-13 | Inference in Regression               | [SAH inf][sahinf] |                |
-|   13 |   Apr-18 | Regression with Spatial Data          |   [GDS 11][gds11] |                |
-|      |   Apr-20 | Diagnostics for Spatial Effects       |                   |                |
-|   14 |   Apr-25 | Spatial Dynamics                      |     [GDS 9][gds9] | Exercise 4 Due |
-|      |   Apr-27 | Next Steps With Spatial Data Analysis |                   |                |
-|   15 |   May-02 | Presentations                         |                   |                |
+|   11 |   Apr-04 | Global Autocorrelation: Moran's I     | [GDS 5.2][gds5.2] |                |
+|      |   Apr-06 | Hands-on Exercise 3                   |                   | Quiz 10        |
+|   12 |   Apr-11 | Local Spatial Autocorrelation         | [GDS 6][gds6]     | Exercise 3 Due, 4 Out |
+|      |   Apr-13 | Project Studio                        |                   |                |
+|   13 |   Apr-18 | Spatial Interpolation                 | [GSA int][gsaint] |                |
+|      |   Apr-20 | Project Studio                        |                   |                |
+|   14 |   Apr-25 | Spatial Networks                      | [GSA net][gsanet] |                |
+|      |   Apr-27 | Hands On Exercise 4                   |                   |                |
+|   15 |   May-02 | Presentations                         |                   | Exercise 4 Due |
 |      |   May-04 | Presentations                         |                   |                |
 |      |   May-10 | Final Examination (13:00-15:00)       |                   |                |
 
@@ -156,6 +156,7 @@ completed the readings.
 [gsags]: https://www.spatialanalysisonline.com/HTML/geostatistical_interpolation_m.htm?zoom_highlightsub=geostatistical
 [gsakrg]: https://www.spatialanalysisonline.com/HTML/kriging_interpolation.htm 
 [gsaint]: https://www.spatialanalysisonline.com/HTML/deterministic_interpolation_me.htm
+[gsanet]: https://www.spatialanalysisonline.com/HTML/network_and_location_analysis.htm
 [gsareg]: https://www.spatialanalysisonline.com/HTML/regression_overview.htm?zoom_highlightsub=regression
 [sahmv]: https://www.statsref.com/HTML/multivariate_distributions.html?zoom_highlightsub=multivariate
 [sahcor]: https://www.statsref.com/HTML/correlation.html
