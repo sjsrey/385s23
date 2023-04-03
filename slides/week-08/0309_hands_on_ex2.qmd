@@ -1,0 +1,17 @@
+---
+title: "Hands-on Exercise 2 Collaboration"
+author: "Sergio Rey"
+date: "March 9, 2023"
+format: 
+  revealjs:
+    theme: simple
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+---
+
+Session dedicated to help on exercise 2.

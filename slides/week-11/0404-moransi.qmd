@@ -1,0 +1,17 @@
+---
+title: "Global Spatial Autocorrelation: Moran's I"
+author: "Sergio Rey"
+date: "April 4, 2023"
+format: 
+  revealjs:
+    theme: simple
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+---
+
+[Moran's I](./20230404-morans.pdf)

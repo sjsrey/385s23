@@ -1,0 +1,50 @@
+---
+title: "Week 11"
+subtitle: "Global Autocorrelation: Moran's I"
+description: "Apr 4 - Apr 6"
+author: ""
+date: ""
+listing:
+  - id: slides
+    contents:
+      - ../slides/week-11/*.qmd
+      - ../slides/week-11/*.pdf
+    type: table
+    fields: [title, date]
+    date-format: "ddd, MMM DD"
+    field-display-names:
+      title: "Topic"
+      date: "Date"
+    sort: [filename]
+    sort-ui: false
+    filter-ui: false
+  - id: assignments
+    contents:
+      - ../hw/w10-*.qmd
+    type: table
+    fields: [categories, title, date]
+    date-format: "ddd, MMM DD"
+    field-display-names:
+      categories: "Assignment"
+      title: "Title"
+      date: "Due"
+    sort: [date]
+    sort-ui: false
+    filter-ui: false
+tbl-colwidths: [10,50,40]
+---
+
+# Lectures
+
+
+::: {#slides}
+:::
+
+# Assignments
+
+::: {#assignments}
+:::
+
+# Readings
+
+-   [Geographic Data Science with Python: Global Autocorrelation](https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html)

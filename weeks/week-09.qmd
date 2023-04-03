@@ -1,0 +1,49 @@
+---
+title: "Week 09"
+subtitle: "Global Spatial Autcorrelation"
+description: "Mar 14 - Mar 16"
+author: ""
+date: ""
+listing:
+  - id: slides
+    contents:
+      - ../slides/week-09/*.qmd
+      - ../slides/week-09/*.pdf
+    type: table
+    fields: [title, date]
+    date-format: "ddd, MMM DD"
+    field-display-names:
+      title: "Topic"
+      date: "Date"
+    sort: [filename]
+    sort-ui: false
+    filter-ui: false
+  - id: assignments
+    contents:
+      - ../hw/w9-*.qmd
+    type: table
+    fields: [categories, title, date]
+    date-format: "ddd, MMM DD"
+    field-display-names:
+      categories: "Assignment"
+      title: "Title"
+      date: "Due"
+    sort: [date]
+    sort-ui: false
+    filter-ui: false
+tbl-colwidths: [10,50,40]
+---
+
+# Lectures
+
+::: {#slides}
+:::
+
+# Assignments
+
+::: {#assignments}
+:::
+
+# Readings
+
+-   [Geographic Data Science with Python: Spatial Weights](https://geographicdata.science/book/notebooks/04_spatial_weights.html)
