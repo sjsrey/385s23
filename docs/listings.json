@@ -8,7 +8,11 @@
       "/weeks/week-04.html",
       "/weeks/week-05.html",
       "/weeks/week-06.html",
-      "/weeks/week-07.html"
+      "/weeks/week-07.html",
+      "/weeks/week-08.html",
+      "/weeks/week-09.html",
+      "/weeks/week-10.html",
+      "/weeks/week-11.html"
     ]
   },
   {
@@ -62,6 +66,27 @@
     "items": [
       "/slides/week-07/0228_dependence.html",
       "/slides/week-07/0302_weights.html"
+    ]
+  },
+  {
+    "listing": "/weeks/week-08.html",
+    "items": [
+      "/slides/week-08/0307_weights.html",
+      "/slides/week-08/0309_hands_on_ex2.html"
+    ]
+  },
+  {
+    "listing": "/weeks/week-09.html",
+    "items": []
+  },
+  {
+    "listing": "/weeks/week-10.html",
+    "items": []
+  },
+  {
+    "listing": "/weeks/week-11.html",
+    "items": [
+      "/slides/week-11/0404-moransi.html"
     ]
   }
 ]

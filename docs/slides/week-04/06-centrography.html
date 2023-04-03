@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.280">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -287,9 +287,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>pp <span class="op">=</span> PointPattern(points) <span class="co">#create a point pattern "pp" from list</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>pp.points </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+<pre><code>/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)
-/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)</code></pre>
 </div>
 <div class="cell-output cell-output-display" data-execution_count="1">
@@ -407,7 +407,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>plt.plot(mc[<span class="dv">0</span>], mc[<span class="dv">1</span>], <span class="st">'b^'</span>, label<span class="op">=</span><span class="st">'Mean Center'</span>)</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7f614d76a020&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x13b1e1d80&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="06-centrography_files/figure-html/cell-7-output-2.png" width="566" height="431"></p>
@@ -438,7 +438,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>plt.plot(wmc[<span class="dv">0</span>], wmc[<span class="dv">1</span>], <span class="st">'gd'</span>, label<span class="op">=</span><span class="st">'Weighted Mean Center'</span>)</span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7f614d7c7df0&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x13b18efe0&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="06-centrography_files/figure-html/cell-10-output-2.png" width="566" height="431"></p>
@@ -462,7 +462,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>mm <span class="op">=</span> manhattan_median(pp.points)</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>mm</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/pointpats/centrography.py:208: UserWarning: Manhattan Median is not unique for even point patterns.
+<pre><code>/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/pointpats/centrography.py:208: UserWarning: Manhattan Median is not unique for even point patterns.
   warnings.warn(s)</code></pre>
 </div>
 <div class="cell-output cell-output-display" data-execution_count="11">
@@ -476,7 +476,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>plt.plot(mm[<span class="dv">0</span>], mm[<span class="dv">1</span>], <span class="st">'rv'</span>, label<span class="op">=</span><span class="st">'Manhattan Median'</span>)</span>
 <span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7f614d660f70&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x13b2d1150&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="06-centrography_files/figure-html/cell-13-output-2.png" width="566" height="431"></p>
@@ -546,7 +546,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>em <span class="op">=</span> euclidean_median(pp.points)</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>em</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
-<pre><code>array([54.16770671, 44.4242589 ])</code></pre>
+<pre><code>array([54.16773427, 44.42425854])</code></pre>
 </div>
 </div>
 <p>The two results we get from <strong>euclidean_median</strong> function in pysal and the <strong>median_center</strong> function we define here are very much the same.</p>
@@ -558,7 +558,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>plt.plot(em[<span class="dv">0</span>], em[<span class="dv">1</span>], <span class="st">'m+'</span>, label<span class="op">=</span><span class="st">'Euclidean Median'</span>)</span>
 <span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7f614d6e3580&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x13b356aa0&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="06-centrography_files/figure-html/cell-17-output-2.png" width="566" height="431"></p>
@@ -588,7 +588,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>ax.set_aspect(<span class="st">'equal'</span>)</span>
 <span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7f614d59e020&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x13b529c90&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="06-centrography_files/figure-html/cell-19-output-2.png" width="442" height="431"></p>
@@ -680,7 +680,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>plt.plot(em[<span class="dv">0</span>], em[<span class="dv">1</span>], <span class="st">'m+'</span>, label<span class="op">=</span><span class="st">'Euclidean Median'</span>)</span>
 <span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7f614d409d20&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x13b18e560&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="06-centrography_files/figure-html/cell-24-output-2.png" width="566" height="431"></p>
@@ -694,7 +694,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>mbr(pp.points)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/tmp/ipykernel_4165363/2243439823.py:1: FutureWarning: This function will be deprecated in the next release of pointpats.
+<pre><code>/var/folders/_n/1q8cd8t93vd7g0sp8v27v25h0000gn/T/ipykernel_20738/2243439823.py:1: FutureWarning: This function will be deprecated in the next release of pointpats.
   mbr(pp.points)</code></pre>
 </div>
 <div class="cell-output cell-output-display" data-execution_count="24">
@@ -710,7 +710,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>plt.plot(em[<span class="dv">0</span>], em[<span class="dv">1</span>], <span class="st">'m+'</span>, label<span class="op">=</span><span class="st">'Euclidean Median'</span>)</span>
 <span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="25">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7f614d3f3100&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x13b529720&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="06-centrography_files/figure-html/cell-26-output-2.png" width="566" height="431"></p>
@@ -724,7 +724,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>plt.plot(em[<span class="dv">0</span>], em[<span class="dv">1</span>], <span class="st">'m+'</span>, label<span class="op">=</span><span class="st">'Euclidean Median'</span>)</span>
 <span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="26">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7f614d3965c0&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x13b7b7cd0&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="06-centrography_files/figure-html/cell-27-output-2.png" width="566" height="431"></p>
@@ -739,7 +739,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>ax.set_aspect(<span class="st">'equal'</span>)</span>
 <span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7f614d303a00&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x13c146740&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="06-centrography_files/figure-html/cell-28-output-2.png" width="442" height="431"></p>
@@ -765,11 +765,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb55-12"><a href="#cb55-12" aria-hidden="true" tabindex="-1"></a>polys <span class="op">=</span> [shp <span class="cf">for</span> shp <span class="kw">in</span> va]</span>
 <span id="cb55-13"><a href="#cb55-13" aria-hidden="true" tabindex="-1"></a>state <span class="op">=</span> shapely_ext.cascaded_union(polys)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+<pre><code>/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)
-/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)
-/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)</code></pre>
 </div>
 </div>
@@ -779,7 +779,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>pp <span class="op">=</span> csr(as_window(state), <span class="dv">100</span>, <span class="dv">1</span>, asPP<span class="op">=</span><span class="va">True</span>).realizations[<span class="dv">0</span>]</span>
 <span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>pp.plot(window<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+<pre><code>/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)</code></pre>
 </div>
 <div class="cell-output cell-output-display">
@@ -802,11 +802,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb60-7"><a href="#cb60-7" aria-hidden="true" tabindex="-1"></a>plt.plot(em[<span class="dv">0</span>], em[<span class="dv">1</span>], <span class="st">'m+'</span>, label<span class="op">=</span><span class="st">'Euclidean Median'</span>)</span>
 <span id="cb60-8"><a href="#cb60-8" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/pointpats/centrography.py:208: UserWarning: Manhattan Median is not unique for even point patterns.
+<pre><code>/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/pointpats/centrography.py:208: UserWarning: Manhattan Median is not unique for even point patterns.
   warnings.warn(s)</code></pre>
 </div>
 <div class="cell-output cell-output-display" data-execution_count="31">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7f615583c940&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x13c3731f0&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="06-centrography_files/figure-html/cell-32-output-3.png" width="579" height="448"></p>
@@ -847,23 +847,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>pp <span class="op">=</span> csr(as_window(state), <span class="dv">500</span>, <span class="dv">1</span>, asPP<span class="op">=</span><span class="va">True</span>).realizations[<span class="dv">0</span>]</span>
 <span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>pp.plot(window<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+<pre><code>/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)
-/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)
-/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)
-/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="06-centrography_files/figure-html/cell-34-output-2.png" width="586" height="448"></p>
+<p><img src="06-centrography_files/figure-html/cell-34-output-2.png" width="581" height="448"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="34">
 <div class="sourceCode cell-code" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>pp.plot(window<span class="op">=</span><span class="va">True</span>, hull<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="06-centrography_files/figure-html/cell-35-output-1.png" width="586" height="448"></p>
+<p><img src="06-centrography_files/figure-html/cell-35-output-1.png" width="581" height="448"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="35">
@@ -876,11 +876,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb68-7"><a href="#cb68-7" aria-hidden="true" tabindex="-1"></a>plt.plot(em[<span class="dv">0</span>], em[<span class="dv">1</span>], <span class="st">'m+'</span>, label<span class="op">=</span><span class="st">'Euclidean Median'</span>)</span>
 <span id="cb68-8"><a href="#cb68-8" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/pointpats/centrography.py:208: UserWarning: Manhattan Median is not unique for even point patterns.
+<pre><code>/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/pointpats/centrography.py:208: UserWarning: Manhattan Median is not unique for even point patterns.
   warnings.warn(s)</code></pre>
 </div>
 <div class="cell-output cell-output-display" data-execution_count="35">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7f614d05ba00&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x13c59ee90&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="06-centrography_files/figure-html/cell-36-output-3.png" width="579" height="448"></p>
@@ -920,8 +920,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dtot(em, pp.points))</span>
 <span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dtot(mc, pp.points) <span class="op">&gt;</span> dtot(em, pp.points))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>73063247.16322914
-72846989.47744936
+<pre><code>75784868.04717293
+75653997.40676868
 True</code></pre>
 </div>
 </div>

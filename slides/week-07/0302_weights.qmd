@@ -1,7 +1,7 @@
 ---
 title: "Spatial Weights"
 author: "Sergio Rey"
-date: "March 2, 2023"
+date: "March 7, 2023"
 format: 
   revealjs:
     theme: simple

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.280">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -266,9 +266,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>csr <span class="op">=</span> pp.PointPattern(xy)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+<pre><code>/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)
-/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)</code></pre>
 </div>
 </div>
@@ -293,13 +293,13 @@ Intensity estimate for window: 64.99361066054225
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>draw <span class="op">=</span> pp.PoissonClusterPointProcess(w, n, <span class="dv">2</span>, <span class="fl">0.05</span>, <span class="dv">1</span>, asPP<span class="op">=</span><span class="va">True</span>, conditioning<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>draw.realizations[<span class="dv">0</span>].plot(window<span class="op">=</span><span class="va">True</span>, title<span class="op">=</span><span class="st">'Contagion Point Process (2 parents)'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+<pre><code>/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:1492: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)
-/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:1208: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)
-/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)
-/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)</code></pre>
 </div>
 <div class="cell-output cell-output-display">
@@ -480,13 +480,13 @@ Intensity estimate for window: 60.0
 <div class="cell" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>R_test(csr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
-<pre><code>(1.1867513365512292, 2.7675724348891184, 0.005647549379017388)</code></pre>
+<pre><code>(1.1867513365512292, 2.7675724348891184, 0.005647549379017387)</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="29">
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>R_test(clustered)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="29">
-<pre><code>(0.13087134840769868, -12.880103258909552, 5.825756575218341e-38)</code></pre>
+<pre><code>(0.13087134840769868, -12.880103258909552, 5.82575657521834e-38)</code></pre>
 </div>
 </div>
 </section>
@@ -501,9 +501,9 @@ Intensity estimate for window: 60.0
 <span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>r_tests</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+<pre><code>/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:1923: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)
-/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)</code></pre>
 </div>
 <div class="cell-output cell-output-display" data-execution_count="30">
@@ -718,7 +718,7 @@ Intensity estimate for window: 60.0
 <span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a>r_tests</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/home/serge/miniconda3/envs/libpysal/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
+<pre><code>/Users/serge/miniconda3/envs/courses/lib/python3.10/site-packages/libpysal/cg/shapes.py:103: FutureWarning: Objects based on the `Geometry` class will deprecated and removed in a future version of libpysal.
   warnings.warn(dep_msg, FutureWarning)</code></pre>
 </div>
 <div class="cell-output cell-output-display" data-execution_count="38">
