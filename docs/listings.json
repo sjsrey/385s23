@@ -12,7 +12,8 @@
       "/weeks/week-08.html",
       "/weeks/week-09.html",
       "/weeks/week-10.html",
-      "/weeks/week-11.html"
+      "/weeks/week-11.html",
+      "/weeks/week-12.html"
     ]
   },
   {
@@ -87,6 +88,12 @@
     "listing": "/weeks/week-11.html",
     "items": [
       "/slides/week-11/0404-moransi.html"
+    ]
+  },
+  {
+    "listing": "/weeks/week-12.html",
+    "items": [
+      "/slides/week-12/04-11-local_autocorrelation.html"
     ]
   }
 ]

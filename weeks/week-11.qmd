@@ -47,4 +47,4 @@ tbl-colwidths: [10,50,40]
 
 # Readings
 
--   [Geographic Data Science with Python: Global Autocorrelation](https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html)
+-   [Geographic Data Science with Python: Global Autocorrelation](https://geographicdata.science/book/notebooks/06_global_autocorrelation.html)
